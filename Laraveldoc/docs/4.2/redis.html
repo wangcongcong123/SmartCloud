@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>Redis</h1>
+<ul>
+<li><a href="#introduction">简介</a></li>
+<li><a href="#configuration">配置</a></li>
+<li><a href="#usage">使用方法</a></li>
+<li><a href="#pipelining">流水线(Pipelining)</a></li>
+</ul>
+<p><a name="Introduction"></a></p>
+<h2>简介</h2>
+<p><a href="http://redis.io" target="_blank">Redis</a> 是一个开源的先进键值存储工具(其实是Nosql数据库的一种). 它常用来进行一些数据结构的存储,这些数据结构包括 <a href="http://redis.io/topics/data-types#strings" target="_blank">strings(字符串)</a>, <a href="http://redis.io/topics/data-types#hashes" target="_blank">hashes(哈希表)</a>, <a href="http://redis.io/topics/data-types#lists" target="_blank">lists(双向链表)</a>, <a href="http://redis.io/topics/data-types#sets" target="_blank">sets(无序集合)</a>, and <a href="http://redis.io/topics/data-types#sorted-sets" target="_blank">sorted sets(有序集合)</a>.</p>
+<blockquote>
+<p><strong>注意:</strong> 如果你的Redis PHP扩展是使用PECL安装的,那你需要将 <code>app/config/app.php</code> 文件中的 Redis别名(alias)改成别的名字.</p>
+</blockquote>
+<p><a name="configuration"></a></p>
+<h2>配置</h2>
+<p>Redis的配置信息存储在 <strong>app/config/database.php</strong> 文件内. 在这个文件里你可以看见一个 <strong>redis</strong> 数组,它就是你应用中使用Redis的相关配置:</p>
+<pre><code>'redis' =&gt; array(
+
+    'cluster' =&gt; true,
+
+    'default' =&gt; array('host' =&gt; '127.0.0.1', 'port' =&gt; 6379),
+
+),
+</code></pre>
+<p>这个 <code>defaule</code>(默认) 的服务器配置可以在做开发的时候使用. 你也可以任意的按照你的需要和使用环境来进行配置. 你可以简单的给每个Redis服务器起一个名字并指定服务器(host)和端口(port).</p>
+<p>上面那个 <code>cluster</code>(集群) 选项是告诉Laravel框架Redis的客户端要访问多个节点,允许你在内存中建立一个记录这些节点的节点池. 然而,请注意客户端不会处理故障转移,也就是说缓存的数据可能会从另一个服务器上读取(这个不是特别理解,可能是说一旦一个节点上的服务器挂了,有可能配置了集群这个选项后就能在集群中其他服务器节点上读取到你要的缓存数据了).</p>
+<p>如果你的 Redis服务器端使用了用户验证,你需要增加一个 <code>password</code> 键值对选项到配置的数组中来配置密码.</p>
+<p><a name="usage"></a></p>
+<h2>使用方法</h2>
+<p>你可以用 <code>Redis::connection</code> 方法来获取一个Redis连接实例:</p>
+<pre><code>$redis = Redis::connection();
+</code></pre>
+<p>这样做可以给你一个默认的Redis服务器连接实例.如果你需要其他服务器连接实例,那么你就要在连接函数中声明你具体需要使用的那个连接配置名称(这个名称就是前面你在配置里除了 default 外自定义的其他连接名称):</p>
+<pre><code>$redis = Redis::connection('other');
+</code></pre>
+<p>一旦你有了一个Redis的客户端连接实例,你就可以发送你的 <a href="http://redis.io/commands" target="_blank">Redis commands(Redis操作命令)</a> 来操作Redis数据库了.Laravel使用魔术方法来发送命令到Redis服务器(即你可以按照实际需要发送任何Redis能处理的命令过去):</p>
+<pre><code>$redis-&gt;set('name', 'Taylor');
+
+$name = $redis-&gt;get('name');
+
+$values = $redis-&gt;lrange('names', 5, 10);
+</code></pre>
+<p>注意命令对应的参数可以简单的放在魔术方法调用的函数括号里面发送.当然,你可能不喜欢使用魔术方法来调用那些命令,你也可以通过 <code>command</code> 方法向服务器发送命令:</p>
+<pre><code>$values = $redis-&gt;command('lrange', array(5, 10));
+</code></pre>
+<p>当你只是想简单执行一下default(默认)连接的命令时,你可以使用 <code>Redis</code> 类的静态魔术方法:</p>
+<pre><code>Redis::set('name', 'Taylor');
+
+$name = Redis::get('name');
+
+$values = Redis::lrange('names', 5, 10);
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> Redis <a href="../cache">cache(缓存)</a> 和 <a href="../session">session</a> 驱动程序已经包含在Laravel框架内.</p>
+</blockquote>
+<p><a name="pipelining"></a></p>
+<h2>流水线(Pipelining)</h2>
+<p>流水线模式(Pipelining)是当你需要一次向服务器发送多个命令的时候使用的方法.你需要使用 <code>pipeline</code> 命令来开头:</p>
+<h4>流水线模式可以一次向Redis服务器发送多条指令</h4>
+<pre><code>Redis::pipeline(function($pipe)
+{
+    for ($i = 0; $i &lt; 1000; $i++)
+    {
+        $pipe-&gt;set(&quot;key:$i&quot;, $i);
+    }
+});</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

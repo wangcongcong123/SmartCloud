@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>Contracts</h1>
+<ul>
+<li><a href="#introduction">简介</a></li>
+<li><a href="#why-contracts">为什么用 Contracts？</a></li>
+<li><a href="#contract-reference">Contract 参考</a></li>
+<li><a href="#how-to-use-contracts">如何使用 Contracts</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>简介</h2>
+<p>Laravel 的 Contracts 是一组定义了框架核心服务的接口（ interfaces ）。例如，<code>Queue</code> contract 定义了队列任务所需要的方法，而 <code>Mailer</code> contract 定义了发送 e-mail 需要的方法。</p>
+<p>在 Laravel 框架里，每个 contract 都提供了一个对应的实现。例如， Laravel 提供了有多种驱动的 <code>Queue</code> 的实现，而根据 <a href="http://swiftmailer.org/" target="_blank">SwiftMailer</a> 实现了 <code>Mailer</code>。</p>
+<p>Laravel 所有的 contracts 都放在<a href="https://github.com/illuminate/contracts" target="_blank">各自的 Github repository</a>。除了提供了所有可用的 contracts 一个快速的参考，也可以单独作为一个低耦合的扩展包让其他扩展包开发者使用。</p>
+<p><a name="why-contracts"></a></p>
+<h2>为什么用 Contracts？</h2>
+<p>你可能有很多关于 contracts 的问题。如为什么要使用接口？使用接口会不会变的更复杂？</p>
+<p>让我们用下面的标题来解释为什么要使用接口：低耦合和简单性。</p>
+<h3>低耦合</h3>
+<p>首先，看一些强耦合的缓存实现代码。如下：</p>
+<pre><code>&lt;?php namespace App\Orders;
+
+class Repository {
+
+    /**
+     * The cache.
+     */
+    protected $cache;
+
+    /**
+     * Create a new repository instance.
+     *
+     * @param  \SomePackage\Cache\Memcached  $cache
+     * @return void
+     */
+    public function __construct(\SomePackage\Cache\Memcached $cache)
+    {
+        $this-&gt;cache = $cache;
+    }
+
+    /**
+     * Retrieve an Order by ID.
+     *
+     * @param  int  $id
+     * @return Order
+     */
+    public function find($id)
+    {
+        if ($this-&gt;cache-&gt;has($id))
+        {
+            //
+        }
+    }
+
+}
+</code></pre>
+<p>在上面的类里，代码跟缓存实现之间是强耦合。理由是它会依赖于扩展包库（ package vendor ）的特定缓存类。一旦这个扩展包的 API 更改了，我们的代码也要跟着改变。</p>
+<p>同样的，如果想要将底层的缓存技术（比如 Memcached ）抽换成另一种（像 Redis ），又一次的我们必须修改这个 repository 类。我们的 repository 不应该知道这么多关于谁提供了数据，或是如何提供等等细节。</p>
+<p><strong>比起上面的做法，我们可以改用一个简单、和扩展包无关的接口来改进代码：</strong></p>
+<pre><code>&lt;?php namespace App\Orders;
+
+use Illuminate\Contracts\Cache\Repository as Cache;
+
+class Repository {
+
+    /**
+     * Create a new repository instance.
+     *
+     * @param  Cache  $cache
+     * @return void
+     */
+    public function __construct(Cache $cache)
+    {
+        $this-&gt;cache = $cache;
+    }
+
+}
+</code></pre>
+<p>现在上面的代码没有跟任何扩展包耦合，甚至是 Laravel。既然 contracts 扩展包没有包含实现和任何依赖，你可以很简单的对任何 contract 进行实现，你可以很简单的写一个替换的实现，甚至是替换 contracts，让你可以替换缓存实现而不用修改任何用到缓存的代码。</p>
+<h3>简单性</h3>
+<p>当所有的 Laravel 服务都简洁的使用简单的接口定义，就能够很简单的决定一个服务需要提供的功能。** 可以将 contracts 视为说明框架特色的简洁文档。**</p>
+<p>除此之外，当你依赖简洁的接口，你的代码能够很简单的被了解和维护。比起搜索一个大型复杂的类里有哪些可用的方法，你有一个简单，干净的接口可以参考。</p>
+<p><a name="contract-reference"></a></p>
+<h2>Contract 参考</h2>
+<p>以下是大部分 Laravel Contracts 的参考，以及相对应的 &quot;facade&quot;</p>
+<table>
+<thead>
+<tr><th>Contract</th><th>Laravel 4.x Facade</th></tr>
+</thead>
+<tbody>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Auth/Guard.php" target="_blank">Illuminate\Contracts\Auth\Guard</a></td><td>Auth</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Auth/PasswordBroker.php" target="_blank">Illuminate\Contracts\Auth\PasswordBroker</a></td><td>Password</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Bus/Dispatcher.php" target="_blank">Illuminate\Contracts\Bus\Dispatcher</a></td><td>Bus</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Cache/Repository.php" target="_blank">Illuminate\Contracts\Cache\Repository</a></td><td>Cache</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Cache/Factory.php" target="_blank">Illuminate\Contracts\Cache\Factory</a></td><td>Cache::driver()</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Config/Repository.php" target="_blank">Illuminate\Contracts\Config\Repository</a></td><td>Config</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Container/Container.php" target="_blank">Illuminate\Contracts\Container\Container</a></td><td>App</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Cookie/Factory.php" target="_blank">Illuminate\Contracts\Cookie\Factory</a></td><td>Cookie</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Cookie/QueueingFactory.php" target="_blank">Illuminate\Contracts\Cookie\QueueingFactory</a></td><td>Cookie::queue()</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Encryption/Encrypter.php" target="_blank">Illuminate\Contracts\Encryption\Encrypter</a></td><td>Crypt</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Events/Dispatcher.php" target="_blank">Illuminate\Contracts\Events\Dispatcher</a></td><td>Event</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Filesystem/Cloud.php" target="_blank">Illuminate\Contracts\Filesystem\Cloud</a></td><td> </td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Filesystem/Factory.php" target="_blank">Illuminate\Contracts\Filesystem\Factory</a></td><td>File</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Filesystem/Filesystem.php" target="_blank">Illuminate\Contracts\Filesystem\Filesystem</a></td><td>File</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Foundation/Application.php" target="_blank">Illuminate\Contracts\Foundation\Application</a></td><td>App</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Hashing/Hasher.php" target="_blank">Illuminate\Contracts\Hashing\Hasher</a></td><td>Hash</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Logging/Log.php" target="_blank">Illuminate\Contracts\Logging\Log</a></td><td>Log</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Mail/MailQueue.php" target="_blank">Illuminate\Contracts\Mail\MailQueue</a></td><td>Mail::queue()</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Mail/Mailer.php" target="_blank">Illuminate\Contracts\Mail\Mailer</a></td><td>Mail</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Queue/Factory.php" target="_blank">Illuminate\Contracts\Queue\Factory</a></td><td>Queue::driver()</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Queue/Queue.php" target="_blank">Illuminate\Contracts\Queue\Queue</a></td><td>Queue</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Redis/Database.php" target="_blank">Illuminate\Contracts\Redis\Database</a></td><td>Redis</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Routing/Registrar.php" target="_blank">Illuminate\Contracts\Routing\Registrar</a></td><td>Route</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Routing/ResponseFactory.php" target="_blank">Illuminate\Contracts\Routing\ResponseFactory</a></td><td>Response</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Routing/UrlGenerator.php" target="_blank">Illuminate\Contracts\Routing\UrlGenerator</a></td><td>URL</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Support/Arrayable.php" target="_blank">Illuminate\Contracts\Support\Arrayable</a></td><td> </td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Support/Jsonable.php" target="_blank">Illuminate\Contracts\Support\Jsonable</a></td><td> </td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Support/Renderable.php" target="_blank">Illuminate\Contracts\Support\Renderable</a></td><td> </td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Validation/Factory.php" target="_blank">Illuminate\Contracts\Validation\Factory</a></td><td>Validator::make()</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/Validation/Validator.php" target="_blank">Illuminate\Contracts\Validation\Validator</a></td><td> </td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/View/Factory.php" target="_blank">Illuminate\Contracts\View\Factory</a></td><td>View::make()</td></tr>
+<tr><td><a href="https://github.com/illuminate/contracts/blob/master/View/View.php" target="_blank">Illuminate\Contracts\View\View</a></td><td> </td></tr>
+</tbody>
+</table>
+<p><a name="how-to-use-contracts"></a></p>
+<h2>如何使用 Contracts</h2>
+<p>所以，要如何实现一个 contract？实际上非常的简单。很多 Laravel 的类都是经由 <a href="container.html">service container</a> 解析，包含控制器，事件监听，过滤器，队列任务，甚至是闭包。所以，要实现一个 contract，你可以在类的构造器使用「类型提示」解析类。例如，看下面的事件处理程序：</p>
+<pre><code>&lt;?php namespace App\Handlers\Events;
+
+use App\User;
+use App\Events\NewUserRegistered;
+use Illuminate\Contracts\Redis\Database;
+
+class CacheUserInformation {
+
+    /**
+     * Redis 数据库实现
+     */
+    protected $redis;
+
+    /**
+     * 建立新的事件处理实例
+     *
+     * @param  Database  $redis
+     * @return void
+     */
+    public function __construct(Database $redis)
+    {
+        $this-&gt;redis = $redis;
+    }
+
+    /**
+     * 处理事件
+     *
+     * @param  NewUserRegistered  $event
+     * @return void
+     */
+    public function handle(NewUserRegistered $event)
+    {
+        //
+    }
+
+}
+</code></pre>
+<p>当事件监听被解析时，服务容器会经由类构造器参数的类型提示，注入适当的值。要知道怎么注册更多服务容器，参考<a href="container.html">这个文档</a>。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>迁移和数据填充</h1>
+<ul>
+<li><a href="#introduction">介绍</a></li>
+<li><a href="#creating-migrations">建立迁移文件</a></li>
+<li><a href="#running-migrations">执行迁移</a></li>
+<li><a href="#rolling-back-migrations">回滚迁移</a></li>
+<li><a href="#database-seeding">数据填充</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介绍</h2>
+<p>迁移是一种数据库的版本控制。可以让团队在修改数据库结构的同时，保持彼此的进度一致。迁移通常会和 <a href="schema.html">结构生成器</a> 一起使用，可以简单的管理数据库结构。</p>
+<p><a name="creating-migrations"></a></p>
+<h2>建立迁移文件</h2>
+<p>使用 Artisan CLI 的 <code>make:migrate</code> 命令建立迁移文件：</p>
+<pre><code>php artisan make:migration create_users_table
+</code></pre>
+<p>迁移文件会建立在 <code>database/migrations</code> 目录下，文件名会包含时间戳记，在执行迁移时用来决定顺序。</p>
+<p>你也可以在建立迁移命令加上 <code>--path</code> 参数。路径要相对于应用程序所在的根目录。</p>
+<pre><code>php artisan make:migration foo --path=app/migrations
+</code></pre>
+<p><code>--table</code> 和 <code>--create</code> 参数可以用来指定数据表名称，以及迁移文件是否要建立新的数据表。</p>
+<pre><code>php artisan make:migration add_votes_to_users_table --table=users
+
+php artisan make:migration create_users_table --create=users
+</code></pre>
+<p><a name="running-migrations"></a></p>
+<h2>执行迁移</h2>
+<h4>执行所有未执行的迁移</h4>
+<pre><code>php artisan migrate
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 如果在执行迁移时发生「class not found」错误，试着先执行 <code>composer dump-autoload</code> 命令后再进行一次。</p>
+</blockquote>
+<h3>在线上环境 (Production) 中强制执行迁移</h3>
+<p>有些迁移操作是具有破坏性的，意味着可能让你遗失原本保存的数据。为了防止你在上线环境执行到这些迁移命令，你会被提示要在执行迁移前进行确认。加上 <code>--force</code> 参数执行强制迁移：</p>
+<pre><code>php artisan migrate --force
+</code></pre>
+<p><a name="rolling-back-migrations"></a></p>
+<h2>回滚迁移</h2>
+<h4>回滚上一次的迁移</h4>
+<pre><code>php artisan migrate:rollback
+</code></pre>
+<h4>回滚所有迁移</h4>
+<pre><code>php artisan migrate:reset
+</code></pre>
+<h4>回滚所有迁移并且再执行一次</h4>
+<pre><code>php artisan migrate:refresh
+
+php artisan migrate:refresh --seed
+</code></pre>
+<p><a name="database-seeding"></a></p>
+<h2>数据填充</h2>
+<p>Laravel 可以简单的使用 seed 类，填充测试数据到数据库。所有的 seed 类放在 <code>database/seeds</code> 目录下。可以使用任何你想要的类名称，但是应该遵守某些大小写规范，如 <code>UserTableSeeder</code> 之类。默认已经有一个 <code>DatabaseSeeder</code> 类。在这个类里，使用 <code>call</code> 方法执行其他的 seed 类，让你控制填充的顺序。</p>
+<h4>Seed 类例子</h4>
+<pre><code>class DatabaseSeeder extends Seeder {
+
+    public function run()
+    {
+        $this-&gt;call('UserTableSeeder');
+
+        $this-&gt;command-&gt;info('User table seeded!');
+    }
+
+}
+
+class UserTableSeeder extends Seeder {
+
+    public function run()
+    {
+        DB::table('users')-&gt;delete();
+
+        User::create(array('email' =&gt; 'foo@bar.com'));
+    }
+
+}
+</code></pre>
+<p>要执行数据填充，可以使用 Artisan CLI 的 <code>db:seed</code> 命令：</p>
+<pre><code>php artisan db:seed
+</code></pre>
+<p>默认 <code>db:seed</code> 命令会执行 <code>DatabaseSeeder</code>，可以使用它来调用其他 seed 类，不过，也可以使用 <code>--class</code> 参数指定要单独执行的类：</p>
+<pre><code>php artisan db:seed --class=UserTableSeeder
+</code></pre>
+<p>你也可以使用 <code>migrate:refresh</code> 命令填充数据，它会回滚并且再次执行所有迁移：</p>
+<pre><code>php artisan migrate:refresh --seed
+</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

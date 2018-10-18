@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>Package Development</h1>
+<ul>
+<li><a href="#introduction">简介</a></li>
+<li><a href="#creating-a-package">创建包</a></li>
+<li><a href="#package-structure">包结构</a></li>
+<li><a href="#service-providers">服务提供器</a></li>
+<li><a href="#deferred-providers">延迟加载服务提供器</a></li>
+<li><a href="#package-conventions">包约定</a></li>
+<li><a href="#development-workflow">开发流程</a></li>
+<li><a href="#package-routing">包路由</a></li>
+<li><a href="#package-configuration">包配置</a></li>
+<li><a href="#package-views">包视图</a></li>
+<li><a href="#package-migrations">包迁移</a></li>
+<li><a href="#package-assets">包Assets</a></li>
+<li><a href="#publishing-packages">发布包</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>简介</h2>
+<p>包是向Laravel中添加功能最重要的途径。它通过一种强大的方式几乎可以包含任意功能，比如处理日期的扩展包<a href="https://github.com/briannesbitt/Carbon" target="_blank">Carbon</a>，完整的<a href="http://baike.baidu.com/view/1384794.htm" target="_blank">BDD</a>测试框架扩展包<a href="https://github.com/Behat/Behat" target="_blank">Behat</a>.</p>
+<p>当然，还有很多不同类型的包。有些包是独立的，这意味着它们可以在任何框架中工作，而不仅仅是Laravel。上面提到的Carbon和Behat就是独立的包。要在Laravel中使用这些包只需要在<code>composer.json</code>文件中指明。</p>
+<p>另一方面，有些包仅支持Laravel。在上一个Laravel版本中，这些类型的包我们称为&quot;bundles&quot;。这些包可以增强Laravel应用的路由、控制器、视图、配置和迁移。由于开发独立的包不需要专门的过程，因此，本手册主要涵盖针对Laravel开发独立的包。</p>
+<p>所有Laravel包都是通过<a href="http://packagist.org" target="_blank">Packagist</a>和<a href="http://getcomposer.org" target="_blank">Composer</a>发布的，因此很有必要学习这些功能强大的PHP包发布管理工具。</p>
+<p><a name="creating-a-package"></a></p>
+<h2>创建包</h2>
+<p>为Laravel创建一个包的最简单方式是使用Artisan的<code>workbench</code>命令。首先，你需要在<code>app/confg/workbench.php</code>文件中配置一些参数。在该文件中，你会看到<code>name</code>和<code>email</code>两个参数，这些值是用来为您新创建的包生成<code>composer.json</code>文件的。一旦你提供了这些值，就可以开始构建一个新包了！</p>
+<h4>执行Artisan的workbench命令</h4>
+<pre><code>php artisan workbench vendor/package --resources
+</code></pre>
+<p>厂商名称（vendor name）是用来区分不同作者构建了相同名字的包。例如，如果我（Taylor Otwell）创建了个名为&quot;Zapper&quot;的包，厂商名就可以叫做<code>Taylor</code>，包名可以叫做<code>Zapper</code>。默认情况下，workbench命令建的包是不依赖任何框架的；不过，<code>resources</code>命令将会告诉workbench生成关联Laravel的一些特殊目录，例如migrations、views、config等。</p>
+<p>一旦执行了<code>workbench</code>命令，新创建的包就会出现在Laravel安装跟目录下的<code>workbench</code>目录中。接下来就应该为你创建的包注册<code>ServiceProvider</code>了。你可以通过在<code>app/config/app.php</code>文件里的<code>provides</code>数组中添加该包。这将通知Laravel在应用程序开始启动时加载该包。服务提供者（Service providers）使用<code>[Package]ServiceProvider</code>样式的命名方式。所以，以上案例中，你需要将<code>Taylor\Zapper\ZapperServiceProvider</code>添加到providers数组。</p>
+<p>一旦注册了provider，你就可以开始写代码了！然而，在此之前，建议你查看以下部分来了解更多关于包结构和开发流程的知识。</p>
+<blockquote>
+<p><strong>注意:</strong> 如果你的Service providers提示无法找到, 在项目根目录执行<code>php artisan dump-autoload</code></p>
+</blockquote>
+<p><a name="package-structure"></a></p>
+<h2>包结构</h2>
+<p>执行<code>workbench</code>命令之后，你的包结构将被初始化，并能够与laravel框架完美融合：</p>
+<h4>包的基本目录结构</h4>
+<pre><code>/src
+    /Vendor
+        /Package
+            PackageServiceProvider.php
+    /config
+    /lang
+    /migrations
+    /views
+/tests
+/public
+</code></pre>
+<p>让我们来深入了解该结构。<code>src/Vendor/Package</code>目录是所有<code>class</code>的主目录，包括<code>ServiceProvider</code>。<code>config</code>、<code>lang</code>、<code>migrations</code>和<code>views</code>目录，就如你所猜测，包含了你创建的包的相应资源。包可以包含这些资源中的任意几个，就像一个&quot;常规&quot;的应用。</p>
+<p><a name="service-providers"></a></p>
+<h2>服务提供器</h2>
+<p>服务提供器只是包的引导类。默认情况下，他们包含两个方法：<code>boot</code>和<code>register</code>。你可以在这些方法内做任何事情，例如：包含路由文件、注册IoC容器的绑定、监听事件或者其他任何你想做的事情。</p>
+<p><code>register</code>方法在服务提供器注册时被立即调用，而<code>boot</code>方法仅在请求被路由到之前调用。因此，如果服务提供器中的动作（action）依赖另一个已经注册的服务提供器，或者你正在覆盖另一个服务提供其绑定的服务，就应该使用<code>boot</code>方法。</p>
+<p>当使用<code>workbench</code>命令创建包时，<code>boot</code>方法已经包含了如下的动作：</p>
+<pre><code>$this-&gt;package('vendor/package');
+</code></pre>
+<p>该方法告诉Laravel如何为应用程序加载视图、配置或其他资源。通常情况下，你没有必要改变这行代码，因为它会根据workbench的默认约定将包设置好的。</p>
+<p>默认情况下，一旦注册了一个包，那么它的资源可以通过&quot;package&quot;方法在<code>vendor/package</code>中找到。你也可以向<code>package</code> 方法中传入第二个参数来重写这个方法。例如</p>
+<pre><code>//向 `package` 方法中传入一个自定义的命名空间
+$this-&gt;package('vendor/package', 'custom-namespace');
+
+//现在，这个包的资源现在可以通过这个自定义的命名空间来访问
+$view = View::make('custom-namespace::foo');
+</code></pre>
+<p>Laravel并没有为service provider提供“默认”的存放地点。您可以根据自己的喜好，将它们放置在任何地方，您也可以将它们统一组织在一个<code>Providers</code>命名空间里，并放置在应用的<code>app</code>目录下。这些文件可以被放置在任何地方，只需保证Composer的<a href="http://getcomposer.org/doc/01-basic-usage.md#autoloading" target="_blank">自动加载</a>组件知道如何加载这些类。</p>
+<p>如果你改变了你的包得资源的位置，比如配置文件或者视图，你需要在<code>package</code>函数中传递第三个参数，指定你的资源位置</p>
+<pre><code>$this-&gt;package('vendor/package', null, '/path/to/resources');
+</code></pre>
+<p><a name="deferred-providers"></a></p>
+<h2>延迟加载服务提供器</h2>
+<p>如果你写了一个服务提供器，但没有注册任何资源，比如配置文件或视图等，你可以选择&quot;延迟&quot;加载你的提供器。延迟加载的服务提供器在这个服务真正被IoC容器需要的时候才会被加载和注册。如果这个服务提供器没有被当前的请求路由需要，那么这个提供器永远不会被加载</p>
+<p>如果想延时载入你的服务提供器，只需要在提供器重设置<code>defer</code>属性为<code>true</code>:</p>
+<pre><code>protected $defer = true;
+</code></pre>
+<p>接下来你需要重写继承自基类<code>Illuminate\Support\ServiceProvider</code>的<code>provides</code>方法，并返回绑定了你的提供器，对应的IoC容器中类型的数组集合。例如，你的提供器在IoC容器注册了<code>package.service</code> 和 <code>package.another-service</code>两个类型，你的<code>provides</code>的方法看起来应该是这个样子：</p>
+<pre><code>public function provides()
+{
+    return array('package.service', 'package.another-service');
+}
+</code></pre>
+<p><a name="package-conventions"></a></p>
+<h2>包约定</h2>
+<p>要使用包中的资源，例如配置或视图，需要用双冒号语法：</p>
+<h4>从包中载入视图</h4>
+<pre><code>return View::make('package::view.name');
+</code></pre>
+<h4>获取包的某个配置项</h4>
+<pre><code>return Config::get('package::group.option');
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 如果你包中包含迁移，请为迁移名（migration name）添加包名作为前缀，以避免与其他包中的类名冲突。</p>
+</blockquote>
+<p><a name="development-workflow"></a></p>
+<h2>开发流程</h2>
+<p>当开发一个包时，能够使用应用程序上文是相当有用的，这样将允许你很容易的解决视图模板的等问题。所以，我们开始，安装一个全新的Laravel框架，使用<code>workbench</code>命令创建包结构。</p>
+<p>在使用<code>workbench</code>命令创建包后。你可以在<code>workbench/[vendor]/[package]</code>目录使用<code>git init</code>，并在workbench中直接<code>git push</code>！这将允许你在应用程序上下文中方便开发而不用为反复使用<code>composer update</code>命令苦扰。</p>
+<p>当包存放在<code>workbench</code>目录时，你可能担心Composer如何知道自动加载包文件。当workbench目录存在，Laravel将智能扫描该目录，在应用程序开始时加载它们的Composer自动加载文件！</p>
+<p>如果你需要重新生成包的自动加载文件，你可以使用<code>php artisan dump-autoload</code>命令，这个命令将会重新为您的整个项目生成自动加载文件，也包括你的工作台(workbenches)中的包</p>
+<h4>运行Artisan的自动加载命令</h4>
+<pre><code>php artisan dump-autoload
+</code></pre>
+<p><a name="package-routing"></a></p>
+<h2>包路由</h2>
+<p>在之前的Laravel版本中，<code>handlers</code>用来指定哪个URI包会响应。然而，在Laravel4中，一个包可以响应任意URI。要在包中加载路由文件，只需在服务提供器的<code>boot</code>方法<code>include</code>它。</p>
+<h4>在服务提供器中包含路由文件</h4>
+<pre><code>public function boot()
+{
+    $this-&gt;package('vendor/package');
+
+    include __DIR__.'/../../routes.php';
+}
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 如果你的包中使用了控制器, 你需要确保正确配置了<code>composer.json</code>文件的auto-load字段.</p>
+</blockquote>
+<p><a name="package-configuration"></a></p>
+<h2>包配置</h2>
+<h4>访问包配置文件</h4>
+<p>有时创建的包可能会需要配置文件。这些配置文件应该和应用程序配置文件相同方法定义。并且，当使用 <code>$this-&gt;package</code>方法来注册服务提供器时，那么就可以使用“双冒号”语法来访问：</p>
+<pre><code>Config::get('package::file.option');
+</code></pre>
+<h4>访问包单一配置文件</h4>
+<p>然而，如果你包仅有一个配置文件，你可以简单命名为<code>config.php</code>。当你这么做时，你可以直接访问该配置项，而不需要特别指明文件名：
+Config::get('package::option');</p>
+<h4>Registering A Resource Namespace Manually</h4>
+<h4>手动注册资源的命名空间</h4>
+<p>有时候，你可能希望在<code>$this-&gt;package</code>特有方法之外注册包的资源，比如视图。通常只有在这些资源不在约定的位置的时候才应该这么做。如果需要手动注册资源，你可以使用<code>View</code>, <code>Lang</code>, 和 <code>Config</code> 中的<code>addNamespace</code>方法实现:</p>
+<pre><code>View::addNamespace('package', __DIR__.'/path/to/views');
+</code></pre>
+<p>一旦这个资源命名空间被注册，你就可以使用这个空间名，并使用&quot;双冒号&quot;语法去访问这个资源</p>
+<pre><code>return View::make('package::view.name');
+</code></pre>
+<p><code>View</code>, <code>Lang</code>, 和 <code>Config</code>类中的<code>addNamespace</code>方法的参数都是一样的</p>
+<h3>级联配置文件</h3>
+<p>但其他开发者安装你的包时，他们也许需要覆盖一些配置项。然而，如果从包源代码中改变值，他们将会在下次使用Composer更新包时又被覆盖。替代方法是使用artisan命令<code>config:publish</code>：</p>
+<pre><code>php artisan config:publish vendor/package
+</code></pre>
+<p>当执行该命令，配置文件就会拷贝到<code>app/config/packages/vendor/package</code>，开发者就可以安全的更改配置项了。</p>
+<blockquote>
+<p><strong>注意:</strong> 开发者也可以为该包创建指定环境下的配置文件，替换某些配置项然后并放置在<code>app/config/packages/vendor/package/environment</code>.</p>
+</blockquote>
+<p><a name="package-views"></a></p>
+<h2>包视图</h2>
+<p>如果在你的应用程序中使用某个包，你可能会定制这个包的视图。你可以很轻松的将这个包的视图文件导入到你自己的<code>app/views</code>目录，只需使用<code>view:publish</code>这个Artisan命令</p>
+<pre><code>php artisan view:publish vendor/package
+</code></pre>
+<p>这个命令会将包的视图文件迁移到<code>app/views/packages</code>目录，如果这个目录不存在，将会被创建。一旦这些视图文件被公开创建，你就可以按照你自己的喜好去修改他们，这些导出的视图会比包自己的视图文件优先载入。</p>
+<p><a name="package-migrations"></a></p>
+<h2>包迁移</h2>
+<h4>为工作台(Workbench)的包创建迁移</h4>
+<p>你可以很容易在包中创建和运行迁移。要为工作台里的包创建迁移，使用<code>--bench</code>选项：</p>
+<pre><code>php artisan migrate:make create_users_table --bench=&quot;vendor/package&quot;
+</code></pre>
+<h4>为工作台(Workbench)的包运行迁移</h4>
+<pre><code>php artisan migrate --bench=&quot;vendor/package&quot;
+</code></pre>
+<h4>为已安装的包执行迁移</h4>
+<p>要为已经通过Composer安装在vendor目录下的包执行迁移，你可以直接使用<code>--package</code>：</p>
+<pre><code>php artisan migrate --package=&quot;vendor/package&quot;
+</code></pre>
+<p><a name="package-assets"></a></p>
+<h2>包Assets</h2>
+<h4>将包Assets移动到Public</h4>
+<p>有些包可能含有assets，例如JavaScript，CSS，和图片。然而，我们无法链接到<code>vendor</code>或<code>workbench</code>目录里的<code>assets</code>，所以我们需要可以将这些<code>assets</code>移入应用程序的<code>public</code>目录。<code>asset:publish</code>命令可以实现：</p>
+<pre><code>php artisan asset:publish
+
+php artisan asset:publish vendor/package
+</code></pre>
+<p>如果这个包仍在<code>workbench</code>中，那么请使用<code>--bench</code>指令:</p>
+<pre><code>php artisan asset:publish --bench=&quot;vendor/package&quot;
+</code></pre>
+<p>这个命令将会把assets移入与“供应商”和“包名”相对应的<code>public/packages</code>目录下面。因此，包名为<code>userscape/kudos</code>的assets将会被移至<code>public/packages/userscape/kudos</code>。通过使用这个assets发布方法，可以让您安全的在包中的view内访问assets路径。</p>
+<p><a name="publishing-packages"></a></p>
+<h2>发布包</h2>
+<p>当你创建的包准备发布时，你应该将包提交到 <a href="http://packagist.org" target="_blank">Packagist</a> 仓库。如果你的包只针对Laravel，最好在包的<code>composer.json</code>文件中添加<code>laravel</code>标签</p>
+<p>还有，在发布的版本中添加tag，以便开发者能当请求你的包在他们<code>composer.json</code>文件中依赖稳定版本。如果稳定版本还没有好，考虑直接在Composer中使用<code>branch-alias</code>。</p>
+<p>一旦你的包发布，放舒心，继续在由<code>workbench</code>创建的包中，结合应用程序上下文进行开发。对于在发布包后继续进行开发，这是相当便利的。</p>
+<p>一些组织使用他们私有分支包为他们自己开发者。如果你对这感兴趣，查看Composer团队构建的<a href="http://github.com/composer/satis" target="_blank">Satis</a> 文档。</p>
+<p>译者：mpandar（马胜盼）</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

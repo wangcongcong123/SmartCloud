@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.1
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">Release Notes</a></li>
+<li><a href="upgrade.html">Upgrade Guide</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">Authentication</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">Release Notes</a></li>
+<li><a href="upgrade.html">Upgrade Guide</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">Authentication</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>配置</h1>
+<ul>
+<li><a href="#introduction">简介</a></li>
+<li><a href="#environment-configuration">环境配置</a></li>
+<li><a href="#provider-configuration">Provider Configuration</a></li>
+<li><a href="#protecting-sensitive-configuration">Protecting Sensitive Configuration</a></li>
+<li><a href="#maintenance-mode">维护模式</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>简介</h2>
+<p>所有关于Laravel框架的配置文件都存放在<code>app/config</code>目录里。所有文件里的配置选项都有说明文档，因此你可以轻松的查看这些文件，并熟悉这些配置项。</p>
+<p>当你需要在运行时访问配置项时，可以使用<code>Config</code>类：</p>
+<h4>获取一个配置项的值**</h4>
+<pre><code>Config::get('app.timezone');
+</code></pre>
+<p>如果配置项不存在，你还可以指定返回的默认值：</p>
+<pre><code>$timezone = Config::get('app.timezone', 'UTC');
+</code></pre>
+<h4>为配置项赋值</h4>
+<p>注意&quot;点&quot;式语法可以用来访问不同文件里的配置项的值。你还可以在运行时为配置项赋值。:</p>
+<pre><code>Config::set('database.default', 'sqlite');
+</code></pre>
+<p>在程序运行时设置的配置值只在本次请求中有效，不会对以后的请求造成影响。</p>
+<p><a name="environment-configuration"></a></p>
+<h2>环境配置</h2>
+<p>通常应用程序根据不同的运行环境确定不同的配置项的值是非常有用的。例如，你也许希望在开发机器与生产机器上使用不同的缓存驱动（cache driver）。根据环境来改变配置就能很容易的达到此目的。</p>
+<p>在<code>config</code>目录下创建一个和你的环境名同名的目录，例如<code>local</code>。然后，创建配置文件，这些配置文件中包含你想覆盖的配置选项。例如，要在本地环境中覆盖缓存驱动（cache driver），你可以在<code>app/config/local</code>目录中创建<code>cache.php</code>文件并包含如下内容：</p>
+<pre><code>&lt;?php
+
+return array(
+
+    'driver' =&gt; 'file',
+
+);
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 不要使用'testing'作为环境名，它是专门为单元测试所保留的。</p>
+</blockquote>
+<p>注意，你不需要为基础配置文件中的<em>所有</em>配置项指定值，只需指定你需要覆盖的配置选项即可。环境配置文件将会以&quot;cascade&quot;方式覆盖基本配置文件。</p>
+<p>接下来，我们需要指导框架如何确定其运行环境。默认环境总是<code>produciton</code>。然而，你可以在安装目录的根目录下的<code>bootstrap/start.php</code> 文件中设置其他的环境。在该文件中，你可以找到 <code>$app-&gt;detectEnvironment</code>方法的调用。传入的数组参数就是用来确定当前运行环境的。你可以根据需要添加其他的环境或机器名。</p>
+<pre><code>&lt;?php
+
+$env = $app-&gt;detectEnvironment(array(
+
+    'local' =&gt; array('your-machine-name'),
+
+));
+</code></pre>
+<p>在此案例中，'local' 是运行环境的名称，'your-machine-name' 是服务器的主机名。在Linux和Mac上，可以通过 <code>hostname</code> 命令来确定所用机器的主机名。</p>
+<p>如果你需要更灵活的环境检查方式，可以在调用<code>detectEnvironment</code>时传递一个<code>闭包（Closure）</code> ， 这样你就可以按照自己的方式检查环境了：</p>
+<pre><code>$env = $app-&gt;detectEnvironment(function()
+{
+    return $_SERVER['MY_LARAVEL_ENV'];
+});
+</code></pre>
+<h4>获取当前的应用环境</h4>
+<p>可以通用调用<code>environment</code>方法来获取当前的应用环境：</p>
+<pre><code>$environment = App::environment();
+</code></pre>
+<p>你还可以将参数传递给 <code>environment</code> 方法来判断应用环境是否与某个给定值匹配：</p>
+<pre><code>if (App::environment('local'))
+{
+    // The environment is local
+}
+
+if (App::environment('local', 'staging'))
+{
+    // The environment is either local OR staging...
+}
+</code></pre>
+<p><a name="provider-configuration"></a></p>
+<h3>Provider Configuration</h3>
+<p>When using environment configuration, you may want to &quot;append&quot; environment <a href="../ioc#service-providers">service providers</a> to your primary <code>app</code> configuration file. However, if you try this, you will notice the environment <code>app</code> providers are overriding the providers in your primary <code>app</code> configuration file. To force the providers to be appended, use the <code>append_config</code> helper method in your environment <code>app</code> configuration file:</p>
+<pre><code>'providers' =&gt; append_config(array(
+    'LocalOnlyServiceProvider',
+))
+</code></pre>
+<p><a name="protecting-sensitive-configuration"></a></p>
+<h2>Protecting Sensitive Configuration</h2>
+<p>For &quot;real&quot; applications, it is advisable to keep all of your sensitive configuration out of your configuration files. Things such as database passwords, Stripe API keys, and encryption keys should be kept out of your configuration files whenever possible. So, where should we place them? Thankfully, Laravel provides a very simple solution to protecting these types of configuration items using &quot;dot&quot; files.</p>
+<p>First, <a href="../configuration#environment-configuration">configure your application</a> to recognize your machine as being in the <code>local</code> environment. Next, create a <code>.env.local.php</code> file within the root of your project, which is usually the same directory that contains your <code>composer.json</code> file. The <code>.env.local.php</code> should return an array of key-value pairs, much like a typical Laravel configuration file:</p>
+<pre><code>&lt;?php
+
+return array(
+
+    'TEST_STRIPE_KEY' =&gt; 'super-secret-sauce',
+
+);
+</code></pre>
+<p>All of the key-value pairs returned by this file will automatically be available via the <code>$_ENV</code> and <code>$_SERVER</code> PHP &quot;superglobals&quot;. You may now reference these globals from within your configuration files:</p>
+<pre><code>'key' =&gt; $_ENV['TEST_STRIPE_KEY']
+</code></pre>
+<p>Be sure to add the <code>.env.local.php</code> file to your <code>.gitignore</code> file. This will allow other developers on your team to create their own local environment configuration, as well as hide your sensitive configuration items from source control.</p>
+<p>Now, On your production server, create a <code>.env.php</code> file in your project root that contains the corresponding values for your production environment. Like the <code>.env.local.php</code> file, the production <code>.env.php</code> file should never be included in source control.</p>
+<blockquote>
+<p><strong>Note:</strong> You may create a file for each environment supported by your application. For example, the <code>development</code> environment will load the <code>.env.development.php</code> file if it exists.</p>
+</blockquote>
+<p><a name="maintenance-mode"></a></p>
+<h2>维护模式</h2>
+<p>当应用处于维护模式时，所有的路由都会指向一个自定义的视图。这对于更新应用或执行维护任务时临时&quot;禁用&quot;当前应用是很方便的。<code>App::down</code>方法在<code>app/start/global.php</code>文件里进行了定义，它将在维护模式时将该方法输出的内容展示给用户。</p>
+<p>要开启维护模式，只需执行Artisan 的 <code>down</code>命令：</p>
+<pre><code>php artisan down
+</code></pre>
+<p>要关闭维护模式，只需执行 <code>up</code> 命令：</p>
+<pre><code>php artisan up
+</code></pre>
+<p>当你的应用处于维护模式时，如需展示一个自定义的视图，只要在<code>app/start/global.php</code>文件中加入如下代码即可：</p>
+<pre><code>App::down(function()
+{
+    return Response::view('maintenance', array(), 503);
+});
+</code></pre>
+<p>如果传递给 <code>down</code> 方法的闭包返回值为 <code>NULL</code>, 在此次请求中将忽略维护模式。</p>
+<h3>维护模式 &amp; 队列</h3>
+<p>当应用程序处于维护模式时, 将不接受新的<a href="../queues">队列任务</a> 。一旦应用程序退出维护模式，队列任务的处理即恢复正常。</p>
+<p>译者：王赛  <a href="http://www.bootcss.com" target="_blank">（Bootstrap中文网）</a></p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

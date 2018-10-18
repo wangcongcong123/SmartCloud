@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>辅助方法</h1>
+<ul>
+<li><a href="#arrays">数组</a></li>
+<li><a href="#paths">路径</a></li>
+<li><a href="#strings">字串</a></li>
+<li><a href="#urls">网址</a></li>
+<li><a href="#miscellaneous">其他</a></li>
+</ul>
+<p><a name="arrays"></a></p>
+<h2>数组</h2>
+<h3>array_add</h3>
+<p>如果给定的键不在数组中， <code>array_add</code> 函数会把给定的键值对加到数组中。</p>
+<pre><code>$array = array('foo' =&gt; 'bar');
+
+$array = array_add($array, 'key', 'value');
+</code></pre>
+<h3>array_divide</h3>
+<p><code>array_divide</code> 函数回传两个数组，一个包含原本数组的键，另一个包含原本数组的值。</p>
+<pre><code>$array = array('foo' =&gt; 'bar');
+
+list($keys, $values) = array_divide($array);
+</code></pre>
+<h3>array_dot</h3>
+<p><code>array_dot</code> 函数把多维数组扁平化成一维数组，并用 &quot;逗点&quot; 符号表示深度。</p>
+<pre><code>$array = array('foo' =&gt; array('bar' =&gt; 'baz'));
+
+$array = array_dot($array);
+
+// array('foo.bar' =&gt; 'baz');
+</code></pre>
+<h3>array_except</h3>
+<p><code>array_except</code> 函数从数组移除给定的键值对。</p>
+<pre><code>$array = array_except($array, array('keys', 'to', 'remove'));
+</code></pre>
+<h3>array_fetch</h3>
+<p><code>array_fetch</code> 函数回传包含被选择的巢状元素的扁平化数组。</p>
+<pre><code>$array = array(
+    array('developer' =&gt; array('name' =&gt; 'Taylor')),
+    array('developer' =&gt; array('name' =&gt; 'Dayle')),
+);
+
+$array = array_fetch($array, 'developer.name');
+
+// array('Taylor', 'Dayle');
+</code></pre>
+<h3>array_first</h3>
+<p><code>array_first</code> 函数回传数组中第一个通过给定的测试为真的元素。</p>
+<pre><code>$array = array(100, 200, 300);
+
+$value = array_first($array, function($key, $value)
+{
+    return $value &gt;= 150;
+});
+</code></pre>
+<p>也可以传递默认值当作第三个参数：</p>
+<pre><code>$value = array_first($array, $callback, $default);
+</code></pre>
+<h3>array_last</h3>
+<p><code>array_last</code> 函数回传数组中最后一个通过给定的测试为真的元素。</p>
+<pre><code>$array = array(350, 400, 500, 300, 200, 100);
+
+$value = array_last($array, function($key, $value)
+{
+    return $value &gt; 350;
+});
+
+// 500
+</code></pre>
+<p>也可以传递默认值当作第三个参数：</p>
+<pre><code>$value = array_last($array, $callback, $default);
+</code></pre>
+<h3>array_flatten</h3>
+<p><code>array_flatten</code> 函数将会把多维数组扁平化成一维。</p>
+<pre><code>$array = array('name' =&gt; 'Joe', 'languages' =&gt; array('PHP', 'Ruby'));
+
+$array = array_flatten($array);
+
+// array('Joe', 'PHP', 'Ruby');
+</code></pre>
+<h3>array_forget</h3>
+<p><code>array_forget</code> 函数将会用 &quot;逗点&quot; 符号从深度巢状数组移除给定的键值对。</p>
+<pre><code>$array = array('names' =&gt; array('joe' =&gt; array('programmer')));
+
+array_forget($array, 'names.joe');
+</code></pre>
+<h3>array_get</h3>
+<p><code>array_get</code> 函数将会使用 &quot;逗点&quot; 符号从深度巢状数组取回给定的值。</p>
+<pre><code>$array = array('names' =&gt; array('joe' =&gt; array('programmer')));
+
+$value = array_get($array, 'names.joe');
+
+$value = array_get($array, 'names.john', 'default');
+</code></pre>
+<blockquote>
+<p><strong>备注:</strong> 想要把 <code>array_get</code> 用在对象上？ 请使用 <code>object_get</code>。</p>
+</blockquote>
+<h3>array_only</h3>
+<p><code>array_only</code> 函数将会只从数组回传给定的键值对。</p>
+<pre><code>$array = array('name' =&gt; 'Joe', 'age' =&gt; 27, 'votes' =&gt; 1);
+
+$array = array_only($array, array('name', 'votes'));
+</code></pre>
+<h3>array_pluck</h3>
+<p><code>array_pluck</code> 函数将会从数组拉出给定键值对的清单。</p>
+<pre><code>$array = array(array('name' =&gt; 'Taylor'), array('name' =&gt; 'Dayle'));
+
+$array = array_pluck($array, 'name');
+
+// array('Taylor', 'Dayle');
+</code></pre>
+<h3>array_pull</h3>
+<p><code>array_pull</code> 函数将会从数组回传给定的键值对，并移除它。</p>
+<pre><code>$array = array('name' =&gt; 'Taylor', 'age' =&gt; 27);
+
+$name = array_pull($array, 'name');
+</code></pre>
+<h3>array_set</h3>
+<p><code>array_set</code> 函数将会使用 &quot;逗点&quot; 符号在深度巢状数组中指定值。</p>
+<pre><code>$array = array('names' =&gt; array('programmer' =&gt; 'Joe'));
+
+array_set($array, 'names.editor', 'Taylor');
+</code></pre>
+<h3>array_sort</h3>
+<p><code>array_sort</code> 函数通过给定闭包的结果来排序数组。</p>
+<pre><code>$array = array(
+    array('name' =&gt; 'Jill'),
+    array('name' =&gt; 'Barry'),
+);
+
+$array = array_values(array_sort($array, function($value)
+{
+    return $value['name'];
+}));
+</code></pre>
+<h3>array_where</h3>
+<p>使用给定的闭包过滤数组。</p>
+<pre><code>$array = array(100, '200', 300, '400', 500);
+
+$array = array_where($array, function($key, $value)
+{
+    return is_string($value);
+});
+
+// Array ( [1] =&gt; 200 [3] =&gt; 400 )
+</code></pre>
+<h3>head</h3>
+<p>回传数组中第一个元素。 对 PHP 5.3.x 的方法链很有用。</p>
+<pre><code>$first = head($this-&gt;returnsArray('foo'));
+</code></pre>
+<h3>last</h3>
+<p>回传数组中最后一个元素。 对方法链很有用。</p>
+<pre><code>$last = last($this-&gt;returnsArray('foo'));
+</code></pre>
+<p><a name="paths"></a></p>
+<h2>路径</h2>
+<h3>app_path</h3>
+<p>取得 <code>app</code> 文件夹的完整路径。</p>
+<pre><code>$path = app_path();
+</code></pre>
+<h3>base_path</h3>
+<p>取得应用程序安装根目录的完整路径。</p>
+<h3>public_path</h3>
+<p>取得 <code>public</code> 文件夹的完整路径。</p>
+<h3>storage_path</h3>
+<p>取得 <code>app/storage</code> 文件夹的完整路径。</p>
+<p><a name="strings"></a></p>
+<h2>字串</h2>
+<h3>camel_case</h3>
+<p>把给定的字串转换成 <code>驼峰式命名</code>。</p>
+<pre><code>$camel = camel_case('foo_bar');
+
+// fooBar
+</code></pre>
+<h3>class_basename</h3>
+<p>取得给定类的类名称，不含任何命名空间的名称。</p>
+<pre><code>$class = class_basename('Foo\Bar\Baz');
+
+// Baz
+</code></pre>
+<h3>e</h3>
+<p>对给定字串执行 <code>htmlentities</code>，并支持 UTF-8。</p>
+<pre><code>$entities = e('&lt;html&gt;foo&lt;/html&gt;');
+</code></pre>
+<h3>ends_with</h3>
+<p>判断句子结尾是否有给定的字串。</p>
+<pre><code>$value = ends_with('This is my name', 'name');
+</code></pre>
+<h3>snake_case</h3>
+<p>把给定的字串转换成 <code>蛇形命名</code>。</p>
+<pre><code>$snake = snake_case('fooBar');
+
+// foo_bar
+</code></pre>
+<h3>str_limit</h3>
+<p>限制字串的字串数量。</p>
+<pre><code>str_limit($value, $limit = 100, $end = '...')
+</code></pre>
+<p>例子：</p>
+<pre><code>$value = str_limit('The PHP framework for web artisans.', 7);
+
+// The PHP...
+</code></pre>
+<h3>starts_with</h3>
+<p>判断句子是否开头有给定的字串。</p>
+<pre><code>$value = starts_with('This is my name', 'This');
+</code></pre>
+<h3>str_contains</h3>
+<p>判断句子是否有给定的字串。</p>
+<pre><code>$value = str_contains('This is my name', 'my');
+</code></pre>
+<h3>str_finish</h3>
+<p>加一个给定字串到句子结尾。 多余一个的给定字串则移除。</p>
+<pre><code>$string = str_finish('this/string', '/');
+
+// this/string/
+</code></pre>
+<h3>str_is</h3>
+<p>判断字串是否符合给定的模式。 星号可以用来当作通配符。</p>
+<pre><code>$value = str_is('foo*', 'foobar');
+</code></pre>
+<h3>str_plural</h3>
+<p>把字串转换成它的多数形态 (只有英文)。</p>
+<pre><code>$plural = str_plural('car');
+</code></pre>
+<h3>str_random</h3>
+<p>产生给定长度的随机字串。</p>
+<pre><code>$string = str_random(40);
+</code></pre>
+<h3>str_singular</h3>
+<p>把字串转换成它的单数形态 (只有英文)。</p>
+<pre><code>$singular = str_singular('cars');
+</code></pre>
+<h3>studly_case</h3>
+<p>把给定字串转换成 <code>首字大写命名</code>。</p>
+<pre><code>$value = studly_case('foo_bar');
+
+// FooBar
+</code></pre>
+<h3>trans</h3>
+<p>翻译给定的语句。 等同 <code>Lang::get</code>。</p>
+<pre><code>$value = trans('validation.required'):
+</code></pre>
+<h3>trans_choice</h3>
+<p>随着词形变化翻译给定的语句。 等同 <code>Lang::choice</code>。</p>
+<pre><code>$value = trans_choice('foo.bar', $count);
+</code></pre>
+<p><a name="urls"></a></p>
+<h2>网址</h2>
+<h3>action</h3>
+<p>产生给定控制器行为的网址。</p>
+<pre><code>$url = action('HomeController@getIndex', $params);
+</code></pre>
+<h3>route</h3>
+<p>产生给定路由名称的网址。</p>
+<pre><code>$url = route('routeName', $params);
+</code></pre>
+<h3>asset</h3>
+<p>产生资产的网址。</p>
+<pre><code>$url = asset('img/photo.jpg');
+</code></pre>
+<h3>link_to</h3>
+<p>产生给定网址的 HTML 链接。</p>
+<pre><code>echo link_to('foo/bar', $title, $attributes = array(), $secure = null);
+</code></pre>
+<h3>link_to_asset</h3>
+<p>产生给定资产的 HTML 链接。</p>
+<pre><code>echo link_to_asset('foo/bar.zip', $title, $attributes = array(), $secure = null);
+</code></pre>
+<h3>link_to_route</h3>
+<p>产生给定路由的 HTML 链接。</p>
+<pre><code>echo link_to_route('route.name', $title, $parameters = array(), $attributes = array());
+</code></pre>
+<h3>link_to_action</h3>
+<p>产生给定控制器行为的 HTML 链接。</p>
+<pre><code>echo link_to_action('HomeController@getIndex', $title, $parameters = array(), $attributes = array());
+</code></pre>
+<h3>secure_asset</h3>
+<p>产生给定资产的 HTTPS HTML 链接。</p>
+<pre><code>echo secure_asset('foo/bar.zip', $title, $attributes = array());
+</code></pre>
+<h3>secure_url</h3>
+<p>产生给定路径的 HTTPS 完整网址。</p>
+<pre><code>echo secure_url('foo/bar', $parameters = array());
+</code></pre>
+<h3>url</h3>
+<p>产生给定路径的完整网址。</p>
+<pre><code>echo url('foo/bar', $parameters = array(), $secure = null);
+</code></pre>
+<p><a name="miscellaneous"></a></p>
+<h2>其他</h2>
+<h3>csrf_token</h3>
+<p>取得现在 CSRF token 的值。</p>
+<pre><code>$token = csrf_token();
+</code></pre>
+<h3>dd</h3>
+<p>打印给定变量并结束脚本执行。</p>
+<pre><code>dd($value);
+</code></pre>
+<h3>value</h3>
+<p>如果给定的值是个 <code>闭包</code>， 回传 <code>闭包</code> 的回传值。 不是的话，则回传值。</p>
+<pre><code>$value = value(function() { return 'bar'; });
+</code></pre>
+<h3>with</h3>
+<p>回传给定对象。 对 PHP 5.3.x 的建构式方法链很有用。</p>
+<pre><code>$value = with(new Foo)-&gt;doWork();
+</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

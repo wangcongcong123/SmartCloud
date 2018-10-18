@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>升级向导</h1>
+<ul>
+<li><a href="#upgrade-5.0">从 4.2 升级到 5.0</a></li>
+<li><a href="#upgrade-4.2">从 4.1 升级到 4.2</a></li>
+<li><a href="#upgrade-4.1.29">从 4.1.x 升级到 4.1.29</a></li>
+<li><a href="#upgrade-4.1.26">从 4.1.25 升级到 4.1.26</a></li>
+<li><a href="#upgrade-4.1">从 4.0 升级到 4.1</a></li>
+</ul>
+<p><a name="upgrade-5.0"></a></p>
+<h2>从 4.2 升级到 5.0</h2>
+<h3>全新安装，然后迁移</h3>
+<p>推荐的升级方式是建立一个全新的 Laravel <code>5.0</code> 项目，然后复制您在 <code>4.2</code> 的文件到此新的应用程序，这将包含控制器、路由、Eloquent 模型、Artisan 命令（Asset）、资源和关于此应用程序的其他特定文件。</p>
+<p>最开始，<a href="installation.html">安装新的 Laravel 5 应用程序</a>到新的本地目录下，我们将详细探讨迁移各部分的过程。</p>
+<h3>Composer 依赖与组件</h3>
+<p>别忘了将任何附加于 Composer 的依赖组件加入 5.0 应用程序内，包含第三方代码(例如 SDKs)。</p>
+<p>部分组件也许不兼容刚发布的 Laravel 5 版本，请向组件管理者确认该组件支持 Laravel 5 的版本，当您在 Composer 内加入任何组件，请执行 <code>composer update</code>。</p>
+<h3>命名空间</h3>
+<p>默认情况下，Laravel 4 没有在应用程序的源码中使用命名空间，所以，举例来说，所有的 Eloquent 模型和控制器仅存在「全局」的命名空间下，为了更快速的迁移，Laravel 5 也允许您可以将这些类别一样保留在「全局」的命名空间。</p>
+<h3>设置文件</h3>
+<h4>迁移环境变量</h4>
+<p>复制新的 <code>.env.example</code> 文件到 <code>.env</code>，在 <code>5.0</code> 这相当于原本的 <code>.env.php</code>。像是您的 <code>APP_ENV</code> 和 <code>APP_KEY</code> (您的加密钥匙)、数据库认证和您的缓存驱动与 session 驱动。</p>
+<p>此外，复制原先自定义的 <code>.env.php</code> 文件，并修改为 <code>.env</code> (本机环境的真实设置值) 和 <code>.env.example</code> (给其他团队成员的示例)。</p>
+<p>更多关于环境设置值，请见<a href="configuration.html#environment-configuration">完整文档</a>。</p>
+<blockquote>
+<p><strong>注意:</strong> 在部署 Laravel 5 应用程序之前，您需要在正式主机上放置 <code>.env</code> 文件并设置适当的值。</p>
+</blockquote>
+<h4>设置文件</h4>
+<p>Laravel 5.0 不再使用 <code>app/config/{environmentName}/</code> 目录结构来提供对应该环境的设置文件，取而代之的是，将环境对应的设置值复制到 <code>.env</code>，然后在设置文件使用 <code>env('key', 'default value')</code> 来访问，您可以在 <code>config/database.php</code> 文件内看到相关范例。</p>
+<p>将设置文件放在 <code>config/</code> 目录下，来表示所有环境共用的设置文件，或是在文件内使用 <code>env()</code> 来取得对应该环境的设置值。</p>
+<p>请记住，若您在 <code>.env</code> 文件内增加 key 值，同时也要对应增加到 <code>.env.example</code> 文件中，这将可以帮助团队成员修改他们的 <code>.env</code> 文件。</p>
+<h3>路由</h3>
+<p>复制原本的 <code>routes.php</code> 文件到 <code>app/Http/routes.php</code>。</p>
+<h3>控制器</h3>
+<p>下一步，请将所有的控制器复制到 <code>app/Http/Controllers</code> 目录，既然在本指南中我们不打算迁移到完整的命名空间，请将 <code>app/Http/Controllers</code> 添加到 <code>composer.json</code> 的 <code>classmap</code>，接下来，您可以从 <code>app/Http/Controllers/Controller.php</code> 基础抽象类中移除命名空间，并确认迁移过来的控制器要继承这个基础类。</p>
+<p>在 <code>app/Providers/RouteServiceProvider.php</code> 文件中，将 <code>namespace</code> 属性设置为 <code>null</code>。</p>
+<h3>路由过滤器</h3>
+<p>将过滤器绑定从原来的 <code>app/filters.php</code> 复制到 <code>app/Providers/RouteServiceProvider.php</code> 的 <code>boot()</code> 方法中，并在 <code>app/Providers/RouteServiceProvider.php</code> 加入 <code>use Illuminate\Support\Facades\Route;</code> 来继续使用 <code>Route</code> Facade。</p>
+<p>您不需要移动任何 Laravel 4.0 默认的过滤器，像是 <code>auth</code> 和 <code>csrf</code> 。他们已经内置，只是换作以中间件形式出现。那些在路由或控制器内有参照到旧有的过滤器 (例如 <code>['before' =&gt; 'auth']</code>) 请修改参照到新的中间件 (例如 <code>['middleware' =&gt; 'auth'].</code>)</p>
+<p>Laravel 5 并没有将过滤器移除，您一样可以使用 <code>before</code> 和 <code>after</code> 绑定和使用您自定义的过滤器。</p>
+<h3>全局 CSRF</h3>
+<p>默认情况下，所有路由都会使用<a href="routing.html#csrf-protection">CSRF 保护</a>。若想关闭他们，或是在指定在特定路由开启，请移除 <code>App\Http\Kernel</code> 中 <code>middleware</code> 数组内的这一行：</p>
+<pre><code>'App\Http\Middleware\VerifyCsrfToken',
+</code></pre>
+<p>如果您想在其他地方使用它，加入这一行到 <code>$routeMiddleware</code>:</p>
+<pre><code>'csrf' =&gt; 'App\Http\Middleware\VerifyCsrfToken',
+</code></pre>
+<p>现在，您可于路由内使用 <code>['middleware' =&gt; 'csrf']</code> 即可个别添加中间件到路由/控制器。了解更多关于中间件，请见<a href="middleware.html">完整文档</a>。</p>
+<h3>Eloquent 模型</h3>
+<p>你可以建立新的 <code>app/Models</code> 目录来放置所有 Eloquent 模型。并且同样的，在 <code>composer.json</code> 将此目录添加到 <code>classmap</code> 内。</p>
+<p>在模型内加入 <code>SoftDeletingTrait</code> 来使用<code>Illuminate\Database\Eloquent\SoftDeletes</code>.</p>
+<h4>Eloquent 缓存</h4>
+<p>Eloquent 不再提供 <code>remember</code> 方法来缓存查询。现在你需要手动使用 <code>Cache::remember</code> 方法快速缓存。了解更多关于缓存，请见<a href="cache.html">完整文档</a>。</p>
+<h3>会员认证模型</h3>
+<p>要使用 Laravel 5 的会员认证系统，请遵循以下指引来升级您的 <code>User</code> 模型：</p>
+<p><strong>从 <code>use</code> 区块删除以下内容：</strong></p>
+<pre><code class="language-php">use Illuminate\Auth\UserInterface;
+use Illuminate\Auth\Reminders\RemindableInterface;
+</code></pre>
+<p><strong>添加以下内容到 <code>use</code> 区块：</strong></p>
+<pre><code class="language-php">use Illuminate\Auth\Authenticatable;
+use Illuminate\Auth\Passwords\CanResetPassword;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+</code></pre>
+<p><strong>移除 UserInterface 和 RemindableInterface 接口。</strong></p>
+<p><strong>实现以下接口：</strong></p>
+<pre><code class="language-php">implements AuthenticatableContract, CanResetPasswordContract
+</code></pre>
+<p><strong>在类中声明引入以下 traits：</strong></p>
+<pre><code class="language-php">use Authenticatable, CanResetPassword;
+</code></pre>
+<p><strong>如果你引入了上面的 traits，从 use 区块和类声明中移除 <code>Illuminate\Auth\Reminders\RemindableTrait</code> 和 <code>Illuminate\Auth\UserTrait</code></strong></p>
+<h3>Cashier 的用户需要的修改</h3>
+<p><a href="billing.html">Laravel Cashier</a> 的 trait 和接口名称已作修改。trait 请改用 <code>Laravel\Cashier\Billable</code> 取代 <code>BillableTrait</code>。接口请改用 <code>Laravel\Cashier\Contracts\Billable</code> 取代 <code>Larave\Cashier\BillableInterface</code> 。不需要修改任何方法。</p>
+<h3>Artisan 命令</h3>
+<p>将所有的命令从旧的 <code>app/commands</code> 目录移到新的<code>app/Console/Commands</code> 目录。接下来，把 <code>app/Console/Commands</code> 目录添加到 <code>composer.json</code> 的 <code>classmap</code> 中。</p>
+<p>然后，复制 Artisan 命令列表从 <code>start/artisan.php</code> 到 <code>app/Console/Kernel.php</code> 文件的 <code>command</code> 数组内。</p>
+<h3>数据库迁移和数据填充</h3>
+<p>如果在您的数据库内已经有 users 表，请移除 Laravel 5 内置的两个迁移文件。</p>
+<p>将所有的迁移文件从旧的 <code>app/database/migrations</code> 目录复制到新的 <code>database/migrations</code> 。所有的数据填充文件也要从 <code>app/database/seeds</code> 复制到 <code>database/seeds</code>。</p>
+<h3>全局 IoC 绑定</h3>
+<p>若您在 <code>start/global.php</code> 有绑定任何 <a href="container.html">IoC</a>，请将它们复制到 <code>app/Providers/AppServiceProvider.php</code> 内的 <code>register</code> 方法，您可能需要引入 <code>App</code> facade。</p>
+<p>你可以选择将这些绑定，依照类型拆分到不同的服务提供者中。</p>
+<h3>视图</h3>
+<p>将所有的视图从旧的 <code>app/views</code> 复制到新的<code>resources/views</code> 目录内。</p>
+<h3>Blade 标签修改</h3>
+<p>从安全的角度考虑，Laravel 5.0 会过滤所有输出，不论您使用 <code>{{ }}</code> 或 <code>{{{ }}}</code> 标签。您可以使用 <code>{!! !!}</code> 新的标签来取消输出过滤。请务必 <strong>确定</strong> 输出内容是安全地才使用 <code>{!! !!}</code> 标签。</p>
+<p>不过，如果您 <strong>仍然必须</strong> 使用旧的 Blade 语法，请在 <code>AppServiceProvider@register</code> 开头加入以下内容：</p>
+<pre><code class="language-php">\Blade::setRawTags('{{', '}}');
+\Blade::setContentTags('{{{', '}}}');
+\Blade::setEscapedContentTags('{{{', '}}}');
+</code></pre>
+<p>但是轻易不要这样做，这可能使您的应用进程更加容易受到 XSS 攻击，并且用 <code>{{--</code> 来注释代码将不再起作用。</p>
+<h3>多语言配置文件</h3>
+<p>将所有的多语言配置文件从旧的 <code>app/lang</code> 目录复制到新的<code>resources/lang</code> 目录。</p>
+<h3>公开目录</h3>
+<p>将 <code>4.2</code> 版公共目录内的资源复制到新应用程序内的<code>public</code> 目录。并确认保留 <code>5.0</code> 版的 <code>index.php</code> 文件。</p>
+<h3>测试</h3>
+<p>将所有的测试文件从旧的 <code>app/tests</code> 复制到 <code>tests</code> 目录。</p>
+<h3>各式各样的文件</h3>
+<p>复制项目内其他各式各样的文件，例如：<code>.scrutinizer.yml</code>, <code>bower.json</code> 以及其他类似工具的设置文件。</p>
+<p>您可以将 Sass，Less 或 CoffeeScript 移动到任何您想放置的地方。 <code>resources/assets</code> 目录是一个不错的默认位置。</p>
+<h3>表单和 HTML 辅助函数</h3>
+<p>如果您使用表单或 HTML 辅助函数，您将会看到以下错误 <code>class 'Form' not found</code> 或 <code>class 'Html' not found</code> 。Form 类以及 HTML 辅助函数在 Laravel 5.0 中已经废弃了；不过，这里有一些替代方法，比如基于社区驱动的，由 <a href="http://laravelcollective.com/docs/5.0/html" target="_blank">Laravel Collective</a> 维护。</p>
+<p>比如，你可以在 <code>composer.json</code> 文件中的 <code>require</code> 区块增加 <code>&quot;laravelcollective/html&quot;: &quot;~5.0&quot;</code>。</p>
+<p>您也需要添加表单和 HTML 的 facades 以及服务提供者。 编辑 <code>config/app.php</code> 文件，添加此行到 'providers' 数组内：</p>
+<pre><code>'Collective\Html\HtmlServiceProvider',
+</code></pre>
+<p>接着，添加以下到 'aliases' 数组内：</p>
+<pre><code>'Form' =&gt; 'Collective\Html\FormFacade',
+'Html' =&gt; 'Collective\Html\HtmlFacade',
+</code></pre>
+<h3>缓存管理员</h3>
+<p>如果您的程序注入 <code>Illuminate\Cache\CacheManager</code> 来取得非 Facade 版本的 Laravel 缓存，请改用 <code>Illuminate\Contracts\Cache\Repository</code> 注入。</p>
+<h3>分页</h3>
+<p>请将所有的 <code>$paginator-&gt;links()</code> 用 <code>$paginator-&gt;render()</code> 取代。</p>
+<h3>Beanstalk 队列</h3>
+<p>Laravel 5.0 使用 <code>&quot;pda/pheanstalk&quot;: &quot;~3.0&quot;</code> 取代原本的 <code>&quot;pda/pheanstalk&quot;: &quot;~2.1&quot;</code>。</p>
+<h3>Remote</h3>
+<p>Remote 组件已不再使用。</p>
+<h3>工作区</h3>
+<p>工作区组件已不再使用。</p>
+<p><a name="upgrade-4.2"></a></p>
+<h2>从 4.1 升级到 4.2</h2>
+<h3>PHP 5.4+</h3>
+<p>Laravel 4.2 需要 PHP 5.4.0 以上。</p>
+<h3>默认加密</h3>
+<p>增加一个新的 <code>cipher</code> 选项在你的 <code>app/config/app.php</code> 设置文件中。其选项值应为 <code>MCRYPT_RIJNDAEL_256</code>。</p>
+<pre><code>'cipher' =&gt; MCRYPT_RIJNDAEL_256
+</code></pre>
+<p>该设置可用于设置所使用的 Laravel 加密工具的默认加密方法。</p>
+<blockquote>
+<p><strong>附注:</strong> 在 Laravel 4.2，默认加密方法为<code>MCRYPT_RIJNDAEL_128</code> (AES)，被认为是最安全的加密。必须将加密改回<code>MCRYPT_RIJNDAEL_256</code> 来解密在 Laravel &lt;= 4.1 下加密的 cookies/values</p>
+</blockquote>
+<h3>软删除模型现在改使用特性</h3>
+<p>如果你在模型下有使用软删除，现在 <code>softDeletes</code> 的属性已经被移除。你现在要使用 <code>SoftDeletingTrait</code> 如下：</p>
+<pre><code>use Illuminate\Database\Eloquent\SoftDeletingTrait;
+
+class User extends Eloquent {
+    use SoftDeletingTrait;
+}
+</code></pre>
+<p>你一样必须手动增加 <code>deleted_at</code> 字段到你的 <code>dates</code> 属性中：</p>
+<pre><code>class User extends Eloquent {
+    use SoftDeletingTrait;
+
+    protected $dates = ['deleted_at'];
+}
+</code></pre>
+<p>而所有软删除的 API 使用方式维持相同。</p>
+<blockquote>
+<p><strong>附注:</strong> <code>SoftDeletingTrait</code> 无法在基本模型下被使用。他只能在一个实际模型类别中使用。</p>
+</blockquote>
+<h3>视图 / 分页 / 环境 类别改名</h3>
+<p>如果你直接使用 <code>Illuminate\View\Environment</code> 或 <code>Illuminate\Pagination\Environment</code> 类别，请更新你的代码将其改为参照 <code>Illuminate\View\Factory</code> 和 <code>Illuminate\Pagination\Factory</code>。改名后的这两个类别更可以代表他们的功能。</p>
+<h3>Additional Parameter On Pagination Presenter</h3>
+<p>如果你扩展了 <code>Illuminate\Pagination\Presenter</code> 类别，抽象方法 <code>getPageLinkWrapper</code> 参数表变成要加上 <code>rel</code> 参数：</p>
+<pre><code>abstract public function getPageLinkWrapper($url, $page, $rel = null);
+</code></pre>
+<h3>Iron.Io Queue 加密</h3>
+<p>如果你使用 Iron.io queue 驱动，你将需要增加一个新的 <code>encrypt</code> 选项到你的 queue 设置文件中：</p>
+<pre><code>'encrypt' =&gt; true
+</code></pre>
+<p><a name="upgrade-4.1.29"></a></p>
+<h2>从 4.1.x 升级到 4.1.29</h2>
+<p>Laravel 4.1.29 对于所有的数据库驱动加强了 column quoting 的部分。当你的模型中<strong>没有</strong>使用 <code>fillable</code> 属性，他保护你的应用程序不会受到 mass assignment 漏洞影响。如果你在模型中使用 <code>fillable</code> 属性来防范 mass assignment，你的应用程序将不会有漏洞。如果你使用 <code>guarded</code> 且在「更新」或「保存」类型的函式中，传递了末端用户控制的数组，那你应该立即升级到 <code>4.1.29</code> 以避免 mass assignment 的风险。</p>
+<p>升级到 Laravel 4.1.29，只要 <code>composer update</code> 即可。在这个发行版本中没有重大的更新。</p>
+<p><a name="upgrade-4.1.26"></a></p>
+<h2>从 4.1.25 升级到 4.1.26</h2>
+<p>Laravel 4.1.26 采用了针对「记得我」cookies 的安全性更新。在此更新之前，如果一个记得我的 cookies 被恶意用户劫持，该 cookie 将还可以生存很长一段时间，即使真实用户重设密码或者注销亦同。</p>
+<p>此更动需要在你的 <code>users</code> (或者类似的) 的数据表中增加一个额外的 <code>remember_token</code> 字段。在更新之后，当用户每次登录你的应用程序将会有一个全新的 token 将会被指派。这个 token 也会在用户注销应用程序后被更新。这个更新的影响为：如果一个「记得我」的 cookie 被劫持，只要用户注销应用程序将会废除该 cookie。</p>
+<h3>升级路径</h3>
+<p>首先，增加一个新的字段，可空值、属性为 VARCHAR(100)、TEXT 或同类型的字段 <code>remember_token</code> 到你的 <code>users</code> 数据表中。</p>
+<p>然后，如果你使用 Eloquent 认证驱动，依照下面更新你的 <code>User</code> 类别的三个方法：</p>
+<pre><code>public function getRememberToken()
+{
+    return $this-&gt;remember_token;
+}
+
+public function setRememberToken($value)
+{
+    $this-&gt;remember_token = $value;
+}
+
+public function getRememberTokenName()
+{
+    return 'remember_token';
+}
+</code></pre>
+<blockquote>
+<p><strong>附注:</strong> 所有现存的「记得我」sessions 在此更新后将会失效，所以应用程序的所有用户将会被迫重新登录。</p>
+</blockquote>
+<h3>组件管理者</h3>
+<p>两个新的方法被加入到 <code>Illuminate\Auth\UserProviderInterface</code> 接口。范例实现方式可以在默认驱动中找到：</p>
+<pre><code>public function retrieveByToken($identifier, $token);
+
+public function updateRememberToken(UserInterface $user, $token);
+</code></pre>
+<p><code>Illuminate\Auth\UserInterface</code> 也加了三个新方法描述在「升级路径」。</p>
+<p><a name="upgrade-4.1"></a></p>
+<h2>从 4.0 升级到 4.1</h2>
+<h3>升级你的 Composer 依赖性</h3>
+<p>升级你的应用程序至 Laravel 4.1，将 <code>composer.json</code> 里的 <code>laravel/framework</code> 版本更改至 <code>4.1.*</code>。</p>
+<h3>文件置换</h3>
+<p>将你的 <code>public/index.php</code> 置换成 <a href="https://github.com/laravel/laravel/blob/master/public/index.php" target="_blank">这个 repository 的干净版本</a>。</p>
+<p>同样的，将你的 <code>artisan</code> 置换成 <a href="https://github.com/laravel/laravel/blob/master/artisan" target="_blank">这个 repository 的干净版本</a>。</p>
+<h3>添加设置文件及选项</h3>
+<p>更新你在设置文件 <code>app/config/app.php</code> 里的 <code>aliases</code> 和 <code>providers</code> 数组。而更新的选项值可以在 <a href="https://github.com/laravel/laravel/blob/master/app/config/app.php" target="_blank">这个文件</a> 中找到。请确定将你后来加入自定和组件所需的 providers / aliases 加回数组中。</p>
+<p>从 <a href="https://github.com/laravel/laravel/blob/master/app/config/remote.php" target="_blank">这个 repository</a> 增加 <code>app/config/remote.php</code> 文件。</p>
+<p>在你的 <code>app/config/session.php</code> 增加新的选项 <code>expire_on_close</code>。而默认值为 <code>false</code>。</p>
+<p>在你的 <code>app/config/queue.php</code> 文件里添加 <code>failed</code> 设置区块。以下为区块的默认值：</p>
+<pre><code>'failed' =&gt; array(
+    'database' =&gt; 'mysql', 'table' =&gt; 'failed_jobs',
+),
+</code></pre>
+<p><strong>（非必要）</strong> 在你的 <code>app/config/view.php</code> 里，将 <code>pagination</code> 设置选项更新为 <code>pagination::slider-3</code>。</p>
+<h3>更新控制器（Controllers）</h3>
+<p>如果 <code>app/controllers/BaseController.php</code> 有 <code>use</code> 语句在最上面，将 <code>use Illuminate\Routing\Controllers\Controller;</code> 改为 <code>use Illuminate\Routing\Controller;</code>。</p>
+<h3>更新密码提醒</h3>
+<p>密码提醒功能已经大幅修正拥有更大的弹性。你可以执行 Artisan 指令 <code>php artisan auth:reminders-controller</code> 来检查新的存根控制器。你也可以浏览 <a href="../security#password-reminders-and-reset">更新文件</a> 然后相应的更新你的应用程序。</p>
+<p>更新你的 <code>app/lang/en/reminders.php</code> 语系文件来符合 <a href="https://github.com/laravel/laravel/blob/master/app/lang/en/reminders.php" target="_blank">这个新版文件</a>。</p>
+<h3>更新环境侦测</h3>
+<p>为了安全因素，不再使用网域网址来侦测辨别应用程序的环境。因为这些直很容易被伪造欺骗，继而让攻击者透过请求来达到变更环境。所以你必须改为使用机器的 hostname（在 Mac &amp; Ubuntu 下执行 <code>hostname</code> 出来的值）</p>
+<p>（译按：的确原有方式有安全性考量，但对于现行 VirtualHost 大量使用下，反而这样改会造成不便）</p>
+<h3>更简单的日志文件</h3>
+<p>Laravel 目前只会产生单一的日志文件：<code>app/storage/logs/laravel.log</code>。然而，你还是可以透过设置你的 <code>app/start/global.php</code> 文件来更改他的行为。</p>
+<h3>删除重定向结尾的斜线</h3>
+<p>在你的 <code>bootstrap/start.php</code> 文件中，移除调用 <code>$app-&gt;redirectIfTrailingSlash()</code>。这个方法已不再需要了，因为之后将会改以框架内的 <code>.htaccess</code> 来处理。</p>
+<p>然后，用 <a href="https://github.com/laravel/laravel/blob/master/public/.htaccess" target="_blank">新版</a> 替换掉你 Apache 中的 <code>.htaccess</code> 文件，来处理结尾的斜线问题。</p>
+<h3>取得目前路由</h3>
+<p>取得目前路由的方法由 <code>Route::getCurrentRoute()</code> 改为 <code>Route::current()</code>。</p>
+<h3>Composer 更新</h3>
+<p>一旦你完成以上的更新，你可以执行 <code>composer update</code> 来更新应用程序的核心文件。如果有 class load 错误，请在 <code>update</code> 之后加上 <code>--no-scripts</code>，如：<code>composer update --no-scripts</code>。</p>
+<h3>万用字符事件监听者</h3>
+<p>万用字符事件监听者不再添加事件为参数到你的处理函数。如果你需要寻找你触发的事件你应该用 <code>Event::firing()</code>.</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

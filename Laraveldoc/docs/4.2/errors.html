@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>错误与日志</h1>
+<ul>
+<li><a href="#configuration">配置文件</a></li>
+<li><a href="#handling-errors">错误处理</a></li>
+<li><a href="#http-exceptions">HTTP异常</a></li>
+<li><a href="#handling-404-errors">处理404错误</a></li>
+<li><a href="#logging">日志</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>配置文件</h2>
+<p>日志处理程序注册在<a href="../lifecycle#start-files">启动文件</a> <code>app/start/global.php</code> 文件里面。日志都默认储存在一个单独的文件中，您可以依照实际需求自定义日志。因为 Laravel 使用了非常流行的 Monolog 日志库，您可以利用 Monolog 提供的多种方式管理你的日志。</p>
+<p>例如，如果您想每天使用一个文件记录日志而不是使用单独的庞大文件，您可以照着下面的例子更改开始配置文件：</p>
+<pre><code>$logFile = 'laravel.log';
+
+Log::useDailyFiles(storage_path().'/logs/'.$logFile);
+</code></pre>
+<h3>错误显示</h3>
+<p>错误显示默认为开启，意味着当错误发生时，将有错误页面显示详细的调用追踪和错误信息。您可以关掉错误显示的选项，把<code>app/config/app.php</code>里的<code>debug</code>选项改成<code>false</code>。</p>
+<blockquote>
+<p>**注意：**强烈建议在生产环境中关掉错误显示。</p>
+</blockquote>
+<p><a name="handling-errors"></a></p>
+<h2>错误处理</h2>
+<p><code>app/start/global.php</code>里默认有一个处理所有异常的异常处理程序：</p>
+<pre><code>App::error(function(Exception $exception)
+{
+    Log::error($exception);
+});
+</code></pre>
+<p>这是最基本的异常处理程序，然而您可以依照需求设定更多异常处理程序。异常处理程序会依照异常的类型提示( type-hint )被调用。例如，您可以创造一个只处理<code>RuntimeException</code>的异常处理程序：</p>
+<pre><code>App::error(function(RuntimeException $exception)
+{
+    // Handle the exception...
+});
+</code></pre>
+<p>如果异常处理程序回传一个 response，response 会直接回传到浏览器，而其他异常处理程序将不会被调用：</p>
+<pre><code>App::error(function(InvalidUserException $exception)
+{
+    Log::error($exception);
+
+    return 'Sorry! Something is wrong with this account!';
+});
+</code></pre>
+<p>为了监听 PHP fetal errors，您可以利用<code>App::fatal</code>方法：</p>
+<pre><code>App::fatal(function($exception)
+{
+    //
+});
+</code></pre>
+<p>如果您有很多异常处理程序，他们应该依照从最通用到最特定的顺序被定义。例如，一个对应处理类型为<code>Exception</code>的异常处理程序，应该被定义在一个对应处理自定义异常类型，如<code>Illuminate\Encryption\DecryptException</code>的异常处理程序之前。</p>
+<h3>何处定义异常处理程序</h3>
+<p>默认上没有注册异常处理程序的地方。Laravel 可以让您自由设定。选择之一是定义程序在 <code>start/global.php</code>中，一般来说，这是一个让您方便写入任何&quot;bootstrapping&quot; 代码的地方。如果文件变得很拥挤，可以建立一个 <code>app/errors.php</code>文件，并且在<code>start/global.php</code>中引入。第三个选择是建立 <a href="../ioc#service-providers">service provider</a> 以注册程序。再一次强调，这个问题并没有正确的答案，您直接选择一个让您觉得舒适的地方注册异常处理程序即可。</p>
+<p><a name="http-exceptions"></a></p>
+<h2>HTTP 异常处理</h2>
+<p>一些异常处理表示来自服务器的 HTTP 错误码，例如可能是「找不到页面」错误(404)，未授权错误(401)，或甚至是工程师导致的500错误。使用下列方法以回传这些回应：</p>
+<pre><code>App::abort(404);
+</code></pre>
+<p>或是您可以选择提供一个回应：</p>
+<pre><code>App::abort(403, 'Unauthorized action.');
+</code></pre>
+<p>您可以在请求回应的生命周期中任何时间点使用这个方法。</p>
+<p><a name="handling-404-errors"></a></p>
+<h2>404错误处理</h2>
+<p>您可以注册一个错误处理程序处理所有&quot;404 Not Found&quot;错误，让您可以简单的回传自定义的404错误页面。</p>
+<pre><code>App::missing(function($exception)
+{
+    return Response::view('errors.missing', array(), 404);
+});
+</code></pre>
+<p><a name="logging"></a></p>
+<h2>日志</h2>
+<p>Laravel 提供一个建立在强大的 <a href="http://github.com/seldaek/monolog" target="_blank">Monolog</a> 上的日志工具。Laravel 默认设定在应用程序里建立单一日志文件，这个文件储存在<code>app/storage/logs/laravel.log</code>。    您可以像下面这样写入信息：</p>
+<pre><code>Log::info('This is some useful information.');
+
+Log::warning('Something could be going wrong.');
+
+Log::error('Something is really going wrong.');
+</code></pre>
+<p>日志工具提供了七种定义在 <a href="http://tools.ietf.org/html/rfc5424" target="_blank">RFC 5424</a> 的级别：<strong>debug</strong>, <strong>info</strong>, <strong>notice</strong>, <strong>warning</strong>, <strong>error</strong>, <strong>critical</strong>, and <strong>alert</strong></p>
+<p>可以在传入上下文相关的数组到 log 的方法里：</p>
+<pre><code>Log::info('Log message', array('context' =&gt; 'Other helpful information'));
+</code></pre>
+<p>Monolog 提供很多额外的方法可以记录。若有需要，您可以使用 Laravel 里使用的 Monolog 实例：</p>
+<pre><code>$monolog = Log::getMonolog();
+</code></pre>
+<p>您可以注册事件捕捉所有传到日志的信息：</p>
+<h4>注册日志监听程序</h4>
+<pre><code>Log::listen(function($level, $message, $context)
+{
+    //
+});
+</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

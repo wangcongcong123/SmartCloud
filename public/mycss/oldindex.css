@@ -1,0 +1,156 @@
+@CHARSET "UTF-8";
+
+body {
+	background: #8af1d2;
+	font-family: Baskerville, "Palatino Linotype", Palatino,
+		"Century Schoolbook L", "Times New Roman", serif;
+}
+
+body h1 {
+	color: #fff;
+	text-align: center;
+	padding: 1em 0;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.login-box {
+	width: 28%;
+	margin: 0 auto;
+	text-align: center;
+	background: #46637f;
+	padding: 4em;
+}
+
+.login-box h4 {
+	color: #bdbcbe;
+	text-align: center;
+	padding: 4px 0;
+	font-size: 22px;
+	font-weight: 300;
+}
+
+.line {
+	position: relative;
+}
+
+.line span {
+	position: absolute;
+	top: 10%;
+	left: 39%;
+	background: #5b5c61;
+	height: 1px;
+	width: 20%;
+}
+
+.image {
+	padding: 1em 0;
+}
+
+.label {
+	color: #bdbcbe;
+}
+
+input[type="text"], input[type="password"] {
+	color: #858282;
+	/* 	background: #474a55; */
+}
+
+.new label a, .new label a {
+	text-decoration: none;
+	color: #adadde;
+	font-weight: 10;
+	font-size: 8px;
+}
+
+.new label a:hover, .new label a:hover {
+	color: #e3dcef;
+}
+
+/* .imagetest {
+	background: url(images/code_bg.png);
+	background-size: cover;
+	width: 300px;
+	height: 100px;
+}
+
+#checkCode {
+	background: url(images/code_bg.png);
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	font-family: Arial;
+	font-style: italic;
+	color: #656564;
+	font-size: 25px;
+	border: 0;
+	padding: 2px 5px;
+	letter-spacing: 3px;
+	font-weight: bolder;
+	float: left;
+	cursor: pointer;
+	width: 150px;
+	height: 60px;
+	background-size: cover;
+	line-height: 60px;
+	text-align: center;
+	vertical-align: middle;
+} */
+
+.copy-right {
+	padding: 3em 1em;
+}
+
+.copy-right p {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+/*!
+ * Completer v0.1.2
+ * https://github.com/fengyuanchen/completer
+ *
+ * Copyright 2014-2015 Fengyuan Chen
+ * Released under the MIT license
+ *
+ * Date: 2015-01-03T12:17:43.862Z
+ */
+
+.completer-container {
+	position: absolute;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: inherit;
+	font-size: 14px;
+	line-height: normal;
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-bottom-color: #39f;
+}
+
+.completer-container li {
+	padding: .5em .8em;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.completer-container .completer-selected,
+.completer-container li:hover {
+	margin-left: -1px;
+	background-color: #eee;
+	border-left: 1px solid #39f;
+}

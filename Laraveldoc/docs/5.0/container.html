@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>服务容器</h1>
+<ul>
+<li><a href="#introduction">介绍</a></li>
+<li><a href="#basic-usage">基本用法</a></li>
+<li><a href="#binding-interfaces-to-implementations">绑定实例的接口</a></li>
+<li><a href="#contextual-binding">上下文绑定</a></li>
+<li><a href="#tagging">标签</a></li>
+<li><a href="#practical-applications">实际应用</a></li>
+<li><a href="#container-events">容器事件</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介绍</h2>
+<p>Laravel 服务容器是管理类依赖的强力工具。依赖注入是比较专业的说法，真正意思是将类依赖透过构造器或 「setter」 方法注入。</p>
+<p>让我们来看一个简单的例子：</p>
+<pre><code>&lt;?php namespace App\Handlers\Commands;
+
+use App\User;
+use App\Commands\PurchasePodcast;
+use Illuminate\Contracts\Mail\Mailer;
+
+class PurchasePodcastHandler {
+
+    /**
+     * 一个发信功能的实现
+     */
+    protected $mailer;
+
+    /**
+     * 创建一个新的实例
+     *
+     * @param  Mailer  $mailer
+     * @return void
+     */
+    public function __construct(Mailer $mailer)
+    {
+        $this-&gt;mailer = $mailer;
+    }
+
+    /**
+     * 购买一个播客节目
+     *
+     * @param  PurchasePodcastCommand  $command
+     * @return void
+     */
+    public function handle(PurchasePodcastCommand $command)
+    {
+        //
+    }
+
+}
+</code></pre>
+<p>在这个例子中，当播客被购买时， <code>PurchasePodcast</code> 命令处理器需要发送一封电子邮件。所以，我们将<strong>注入</strong>一个服务来提供这个能力。当这个服务被注入以后，我们就可以轻易地切换到不同的实现。当测试我们的应用程序时，我们同样也可以轻易地「模拟」，或者创建一个虚拟的发信服务实现，来帮助我们进行测试。</p>
+<p>如果要创建一个强大并且大型的应用，或者对 Laravel 的内核做贡献，首先必须对 Laravel 的服务容器进行深入了解。</p>
+<p><a name="basic-usage"></a></p>
+<h2>基本用法</h2>
+<h3>绑定</h3>
+<p>几乎你所有服务容器将与已注册的<a href="../../doc/5.0/providers">服务提供者</a>绑定，这些例子都在情境(context)使用容器做说明，如果应用程序其它地方需要容器实例，如工厂(factory)，能以类型提示 <code>Illuminate\Contracts\Container\Container</code> 注入一个容器实例。另外，你可以使用 <code>App</code> facade 访问容器。</p>
+<h4>注册基本解析器</h4>
+<p>在一个服务提供者内部，你总是可以通过 <code>$this-&gt;app</code> 实例变量来访问到容器。</p>
+<p>在服务提供者里，总是通过 <code>$this-&gt;app</code> 实例变量使用容器。</p>
+<p>服务容器注册依赖有几种方式，包括闭包回调和绑定实例的接口。首先，我们来探讨闭包回调的方式。被注册至容器的闭包解析器包含一个 key (通常用类名称) 和一个有返回值的闭包:</p>
+<pre><code>$this-&gt;app-&gt;bind('FooBar', function($app)
+{
+    return new FooBar($app['SomethingElse']);
+});
+</code></pre>
+<h4>注册一个单例</h4>
+<p>有时候，你可能希望绑定到容器的对象只会被解析一次，之后的调用都返回相同的实例：</p>
+<pre><code>$this-&gt;app-&gt;singleton('FooBar', function($app)
+{
+    return new FooBar($app['SomethingElse']);
+});
+</code></pre>
+<h4>绑定一个已经存在的实例</h4>
+<p>你也可以使用 <code>instance</code> 方法，绑定一个已经存在的实例到容器，接下来将总是返回该实例：</p>
+<pre><code>$fooBar = new FooBar(new SomethingElse);
+
+$this-&gt;app-&gt;instance('FooBar', $fooBar);
+</code></pre>
+<h3>解析</h3>
+<p>从容器解析出实例有几种方式。<br>
+一、可以使用 <code>make</code> 方法：</p>
+<pre><code>$fooBar = $this-&gt;app-&gt;make('FooBar');
+</code></pre>
+<p>二、你可以像「访问数组」一样对容器进行访问，因为它实现了PHP的 <code>ArrayAccess</code> 接口：</p>
+<pre><code>$fooBar = $this-&gt;app['FooBar'];
+</code></pre>
+<p>最后，也是最重要的一点，你可以在构造函数中简单地「类型指定（type-hint）」你所需要的依赖，包括在控制器、事件监听器、队列任务，过滤器等等之中。容器将自动注入你所需的所有依赖：</p>
+<pre><code>&lt;?php namespace App\Http\Controllers;
+
+use Illuminate\Routing\Controller;
+use App\Users\Repository as UserRepository;
+
+class UserController extends Controller {
+
+    /**
+     * The user repository instance.
+     */
+    protected $users;
+
+    /**
+     * Create a new controller instance.
+     *
+     * @param  UserRepository  $users
+     * @return void
+     */
+    public function __construct(UserRepository $users)
+    {
+        $this-&gt;users = $users;
+    }
+
+    /**
+     * Show the user with the given ID.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+}
+</code></pre>
+<p><a name="binding-interfaces-to-implementations"></a></p>
+<h2>将接口绑定到实现</h2>
+<h3>注入具体依赖</h3>
+<p>服务容器有个非常强大特色，能够绑定特定实例的接口。举例，假设我们应用程序要集成 <a href="https://pusher.com" target="_blank">Pusher</a> 服务去收发即时事件，如果使用 Pusher 的 PHP SDK，可以在类注入一个 Pusher 客户端实例：</p>
+<pre><code>&lt;?php namespace App\Handlers\Commands;
+
+use App\Commands\CreateOrder;
+use Pusher\Client as PusherClient;
+
+class CreateOrderHandler {
+
+    /**
+     * Pusher SDK 客户端实例
+     */
+    protected $pusher;
+
+    /**
+     * 创建一个实例
+     *
+     * @param  PusherClient  $pusher
+     * @return void
+     */
+    public function __construct(PusherClient $pusher)
+    {
+        $this-&gt;pusher = $pusher;
+    }
+
+    /**
+     * 执行命令
+     *
+     * @param  CreateOrder  $command
+     * @return void
+     */
+    public function execute(CreateOrder $command)
+    {
+        //
+    }
+
+}
+</code></pre>
+<p>在上面这个例子中，注入类的依赖到类中已经能够满足需求；但同时，我们也紧密耦合于 Pusher 的 SDK 。如果 Pusher 的 SDK 方法发生改变，或者我们要切换到别的事件服务，那我们也需要同时修改 <code>CreateOrderHandler</code> 的代码。</p>
+<h3>为接口编程</h3>
+<p>为了将 <code>CreateOrderHandler</code> 和事件推送的修改「隔离」，我们可以定义一个 <code>EventPusher</code> 接口和一个 <code>PusherEventPusher</code> 实现：</p>
+<pre><code>&lt;?php namespace App\Contracts;
+
+interface EventPusher {
+
+    /**
+     * Push a new event to all clients.
+     *
+     * @param  string  $event
+     * @param  array  $data
+     * @return void
+     */
+    public function push($event, array $data);
+
+}
+</code></pre>
+<p>一旦 <code>PusherEventPusher</code> 实现这接口，就可以在服务容器像这样注册它：</p>
+<pre><code>$this-&gt;app-&gt;bind('App\Contracts\EventPusher', 'App\Services\PusherEventPusher');
+</code></pre>
+<p>当有类需要 <code>EventPusher</code> 接口时，会告诉容器应该注入 <code>PusherEventPusher</code>，现在就可以在构造器中「类型指定」一个 <code>EventPusher</code> 接口：</p>
+<pre><code>    /**
+     * Create a new order handler instance.
+     *
+     * @param  EventPusher  $pusher
+     * @return void
+     */
+    public function __construct(EventPusher $pusher)
+    {
+        $this-&gt;pusher = $pusher;
+    }
+</code></pre>
+<p><a name="contextual-binding"></a></p>
+<h2>上下文绑定</h2>
+<p>有时候，你可能会有两个类需要用到同一个接口，但是你希望为每个类注入不同的接口实现。例如当我们的系统收到一个新的订单时，我们需要使用 <a href="http://www.pubnub.com/" target="_blank">PubNub</a> 来代替 Pusher 发送消息。Laravel 提供了一个简单便利的接口来定义以上的行为：</p>
+<pre><code>$this-&gt;app-&gt;when('App\Handlers\Commands\CreateOrderHandler')
+          -&gt;needs('App\Contracts\EventPusher')
+          -&gt;give('App\Services\PubNubEventPusher');
+</code></pre>
+<p><a name="tagging"></a></p>
+<h2>标签</h2>
+<p>偶尔你可能需要解析绑定中的某个「类」。例如你正在建设一个汇总报表，它需要接收实现了 <code>Report</code> 接口的不同实现的数组。在注册了 <code>Report</code> 的这些实现之后，你可以用 <code>tag</code> 方法来给他们赋予一个标签：</p>
+<pre><code>$this-&gt;app-&gt;bind('SpeedReport', function()
+{
+    //
+});
+
+$this-&gt;app-&gt;bind('MemoryReport', function()
+{
+    //
+});
+
+$this-&gt;app-&gt;tag(['SpeedReport', 'MemoryReport'], 'reports');
+</code></pre>
+<p>一旦服务打上标签，可以通过 <code>tagged</code> 方法轻易地解析它们：</p>
+<pre><code>$this-&gt;app-&gt;bind('ReportAggregator', function($app)
+{
+    return new ReportAggregator($app-&gt;tagged('reports'));
+});
+</code></pre>
+<p><a name="practical-applications"></a></p>
+<h2>实际应用</h2>
+<p>Laravel 提供了几个机会来使用服务容器以提高应用程序的灵活性和可测试性。解析控制器是一个最主要的案例。所有的控制器都通过服务容器来进行解析，意味着你可以在控制器的构造函数中「类型指定」所需依赖，而且它们将被自动注入。</p>
+<pre><code>&lt;?php namespace App\Http\Controllers;
+
+use Illuminate\Routing\Controller;
+use App\Repositories\OrderRepository;
+
+class OrdersController extends Controller {
+
+    /**
+     * The order repository instance.
+     */
+    protected $orders;
+
+    /**
+     * Create a controller instance.
+     *
+     * @param  OrderRepository  $orders
+     * @return void
+     */
+    public function __construct(OrderRepository $orders)
+    {
+        $this-&gt;orders = $orders;
+    }
+
+    /**
+     * Show all of the orders.
+     *
+     * @return Response
+     */
+    public function index()
+    {
+        $orders = $this-&gt;orders-&gt;all();
+
+        return view('orders', ['orders' =&gt; $orders]);
+    }
+
+}
+</code></pre>
+<p>在这个例子中，<code>OrderRepository</code> 类将被自动注入到控制器中。这意味着在进行 <a href="testing.html">单元测试</a> 时，我们可以绑定一个假的 <code>OrderRepository</code> 到容器中来代替我们对数据库的真实操作，避免对真实数据库的影响。</p>
+<h4>使用容器的其他几个例子</h4>
+<p>当然，在上面提到过的，控制器并不是 Laravel 通过服务容器进行解析的唯一类。你也可以在路由的闭包中、过滤器中、队列任务中、事件监听器中来「类型指定」你所需要的依赖。对于在这些情境中如何使用服务容器，请参考相关文档。</p>
+<p><a name="container-events"></a></p>
+<h2>容器事件</h2>
+<h4>注册一个解析事件监听器</h4>
+<p>容器在解析每一个对象时就会触发一个事件。你可以用 <code>resolving</code> 方法来监听此事件：</p>
+<pre><code>$this-&gt;app-&gt;resolving(function($object, $app)
+{
+    // 当容器解析任意类型的依赖时被调用
+});
+
+$this-&gt;app-&gt;resolving(function(FooBar $fooBar, $app)
+{
+    // 当容器解析 `FooBar` 类型的依赖时被调用
+});
+</code></pre>
+<p>被解析的对象将被传入到闭包方法中。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

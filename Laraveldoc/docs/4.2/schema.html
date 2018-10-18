@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>结构生成器</h1>
+<ul>
+<li><a href="#introduction">介绍</a></li>
+<li><a href="#creating-and-dropping-tables">建立与删除数据库表</a></li>
+<li><a href="#adding-columns">加入字段</a></li>
+<li><a href="#renaming-columns">修改字段名称</a></li>
+<li><a href="#dropping-columns">移除字段</a></li>
+<li><a href="#checking-existence">检查是否存在</a></li>
+<li><a href="#adding-indexes">加入索引</a></li>
+<li><a href="#foreign-keys">外键</a></li>
+<li><a href="#dropping-indexes">移除索引</a></li>
+<li><a href="#dropping-timestamps">移除时间戳记和软删除</a></li>
+<li><a href="#storage-engines">储存引擎</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介绍</h2>
+<p>Laravel 的 <code>结构生成器</code> 提供一个数据库无关的操作数据库表方法（即不关心应用将使用何种数据库，只考虑数据表架构操作），它可以让 Laravel 很好的支持各种数据库类型，并且能在不同系统间提供一致性的 API 操作。</p>
+<p><a name="creating-and-dropping-tables"></a></p>
+<h2>建立与删除数据库表</h2>
+<p>要建立一个新的数据库表，可使用 <code>Schema::create</code> 方法:</p>
+<pre><code>Schema::create('users', function($table)
+{
+    $table-&gt;increments('id');
+});
+</code></pre>
+<p>传入 <code>create</code> 方法的第一个参数是数据库表名称，第二个参数是 <code>Closure</code> 并接收 <code>Blueprint</code> 对象被用来定义新的数据库表。</p>
+<p>要修改数据库表名称，可使用 <code>rename</code> 方法:</p>
+<pre><code>Schema::rename($from, $to);
+</code></pre>
+<p>要指定特定连接来操作，可使用 <code>Schema::connection</code> 方法:</p>
+<pre><code>Schema::connection('foo')-&gt;create('users', function($table)
+{
+    $table-&gt;increments('id');
+});
+</code></pre>
+<p>要移除数据库表，可使用 <code>Schema::drop</code> 方法:</p>
+<pre><code>Schema::drop('users');
+
+Schema::dropIfExists('users');
+</code></pre>
+<p><a name="adding-columns"></a></p>
+<h2>加入字段</h2>
+<p>更新现有的数据库表，可使用 <code>Schema::table</code> 方法:</p>
+<pre><code>Schema::table('users', function($table)
+{
+    $table-&gt;string('email');
+});
+</code></pre>
+<p>数据库表产生器提供多种字段类型可使用，在您建立数据库表时也许会用到:</p>
+<table>
+<thead>
+<tr><th>命令</th><th>功能描述</th></tr>
+</thead>
+<tbody>
+<tr><td><code>$table-&gt;bigIncrements('id');</code></td><td>ID 自动增量，使用相当于 &quot;big integer&quot; 类型.</td></tr>
+<tr><td><code>$table-&gt;bigInteger('votes');</code></td><td>相当于 BIGINT 类型</td></tr>
+<tr><td><code>$table-&gt;binary('data');</code></td><td>相当于 BLOB 类型</td></tr>
+<tr><td><code>$table-&gt;boolean('confirmed');</code></td><td>相当于 BOOLEAN 类型</td></tr>
+<tr><td><code>$table-&gt;char('name', 4);</code></td><td>相当于 CHAR 类型</td></tr>
+<tr><td><code>$table-&gt;date('created_at');</code></td><td>相当于 DATE 类型</td></tr>
+<tr><td><code>$table-&gt;dateTime('created_at');</code></td><td>相当于 DATETIME 类型</td></tr>
+<tr><td><code>$table-&gt;decimal('amount', 5, 2);</code></td><td>相当于 DECIMAL 类型，并带有精度与数值范围</td></tr>
+<tr><td><code>$table-&gt;double('column', 15, 8);</code></td><td>相当于 DOUBLE 类型，总共 15 位数，其中小数 8 位</td></tr>
+<tr><td><code>$table-&gt;enum('choices', array('foo', 'bar'));</code></td><td>相当于 ENUM 类型</td></tr>
+<tr><td><code>$table-&gt;float('amount');</code></td><td>相当于 FLOAT 类型</td></tr>
+<tr><td><code>$table-&gt;increments('id');</code></td><td>相当于 Incrementing 类型(数据库表主键)</td></tr>
+<tr><td><code>$table-&gt;integer('votes');</code></td><td>相当于 INTEGER 类型</td></tr>
+<tr><td><code>$table-&gt;longText('description');</code></td><td>相当于 LONGTEXT 类型</td></tr>
+<tr><td><code>$table-&gt;mediumInteger('numbers');</code></td><td>相当于 MEDIUMINT 类型</td></tr>
+<tr><td><code>$table-&gt;mediumText('description');</code></td><td>相当于 MEDIUMTEXT 类型</td></tr>
+<tr><td><code>$table-&gt;morphs('taggable');</code></td><td>加入整数 <code>taggable_id</code> 与字串 <code>taggable_type</code></td></tr>
+<tr><td><code>$table-&gt;nullableTimestamps();</code></td><td>与 <code>timestamps()</code> 相同，但允许 NULL</td></tr>
+<tr><td><code>$table-&gt;smallInteger('votes');</code></td><td>相当于 SMALLINT 类型</td></tr>
+<tr><td><code>$table-&gt;tinyInteger('numbers');</code></td><td>相当于 TINYINT 类型</td></tr>
+<tr><td><code>$table-&gt;softDeletes();</code></td><td>加入 <strong>deleted_at</strong> 字段于软删除使用</td></tr>
+<tr><td><code>$table-&gt;string('email');</code></td><td>相当于 VARCHAR 类型  equivalent column</td></tr>
+<tr><td><code>$table-&gt;string('name', 100);</code></td><td>相当于 VARCHAR 类型，并指定长度</td></tr>
+<tr><td><code>$table-&gt;text('description');</code></td><td>相当于 TEXT 类型</td></tr>
+<tr><td><code>$table-&gt;time('sunrise');</code></td><td>相当于 TIME 类型</td></tr>
+<tr><td><code>$table-&gt;timestamp('added_on');</code></td><td>相当于 TIMESTAMP 类型</td></tr>
+<tr><td><code>$table-&gt;timestamps();</code></td><td>加入 <strong>created_at</strong> 和 <strong>updated_at</strong> 字段</td></tr>
+<tr><td><code>$table-&gt;rememberToken();</code></td><td>加入 <code>remember_token</code> 使用 VARCHAR(100) NULL</td></tr>
+<tr><td><code>-&gt;nullable()</code></td><td>标示此字段允许 NULL</td></tr>
+<tr><td><code>-&gt;default($value)</code></td><td>定义此字段的默认值</td></tr>
+<tr><td><code>-&gt;unsigned()</code></td><td>设定整数是无分正负</td></tr>
+</tbody>
+</table>
+<h4>在 MySQL 使用 After 方法</h4>
+<p>若您使用 MySQL 数据库，您可以使用 <code>after</code> 方法来指定字段的顺序:</p>
+<pre><code>$table-&gt;string('name')-&gt;after('email');
+</code></pre>
+<p><a name="renaming-columns"></a></p>
+<h2>修改字段名称</h2>
+<p>要修改字段名称，可在结构生成器内使用 <code>renameColumn</code> 方法，请确认在修改前 <code>composer.json</code> 文件内已经加入 <code>doctrine/dbal</code>。</p>
+<pre><code>Schema::table('users', function($table)
+{
+    $table-&gt;renameColumn('from', 'to');
+});
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> <code>enum</code> 字段类型不支持修改字段名称</p>
+</blockquote>
+<p><a name="dropping-columns"></a></p>
+<h2>移除字段</h2>
+<p>要移除字段，可在结构生成器内使用 <code>dropColumn</code> 方法，请确认在移除前 <code>composer.json</code> 文件内已经加入 <code>doctrine/dbal</code>。</p>
+<h4>移除数据库表字段</h4>
+<pre><code>Schema::table('users', function($table)
+{
+    $table-&gt;dropColumn('votes');
+});
+</code></pre>
+<h4>移除数据库表多个字段</h4>
+<pre><code>Schema::table('users', function($table)
+{
+    $table-&gt;dropColumn(array('votes', 'avatar', 'location'));
+});
+</code></pre>
+<p><a name="checking-existence"></a></p>
+<h2>检查是否存在</h2>
+<h4>检查数据库表是否存在</h4>
+<p>您可以轻松的检查数据库表或字段是否存在，使用 <code>hasTable</code> 和 <code>hasColumn</code> 方法:</p>
+<pre><code>if (Schema::hasTable('users'))
+{
+    //
+}
+</code></pre>
+<h4>检查字段是否存在</h4>
+<pre><code>if (Schema::hasColumn('users', 'email'))
+{
+    //
+}
+</code></pre>
+<p><a name="adding-indexes"></a></p>
+<h2>加入索引</h2>
+<p>结构生成器支持多种索引类型，有两种方法可以加入，方法一，您可以在定义字段时顺道附加上去，或者是分开另外加入:</p>
+<pre><code>$table-&gt;string('email')-&gt;unique();
+</code></pre>
+<p>或者，您可以独立一行来加入索引，以下是支持的索引类型:</p>
+<table>
+<thead>
+<tr><th>命令</th><th>功能描述</th></tr>
+</thead>
+<tbody>
+<tr><td><code>$table-&gt;primary('id');</code></td><td>加入主键</td></tr>
+<tr><td><code>$table-&gt;primary(array('first', 'last'));</code></td><td>加入复合键</td></tr>
+<tr><td><code>$table-&gt;unique('email');</code></td><td>加入唯一索引</td></tr>
+<tr><td><code>$table-&gt;index('state');</code></td><td>加入基本索引</td></tr>
+</tbody>
+</table>
+<p><a name="foreign-keys"></a></p>
+<h2>外键</h2>
+<p>Laravel 也支持数据库表的外键约束:</p>
+<pre><code>$table-&gt;foreign('user_id')-&gt;references('id')-&gt;on('users');
+</code></pre>
+<p>例子中，我们关注字段 <code>user_id</code> 参照到 <code>users</code> 数据库表的 <code>id</code> 字段。</p>
+<p>您也可以指定选择在 &quot;on delete&quot; 和 &quot;on update&quot; 进行约束动作:</p>
+<pre><code>$table-&gt;foreign('user_id')
+      -&gt;references('id')-&gt;on('users')
+      -&gt;onDelete('cascade');
+</code></pre>
+<p>要移除外键，可使用 <code>dropForeign</code> 方法。外键的命名约定如同其他索引:</p>
+<pre><code>$table-&gt;dropForeign('posts_user_id_foreign');
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 当外键有参照到自动增量时，记得设定外键为 <code>unsigned</code> 类型。</p>
+</blockquote>
+<p><a name="dropping-indexes"></a></p>
+<h2>移除索引</h2>
+<p>要移除索引您必须指定索引名称，Laravel 默认有脉络可循的索引名称。简单地链接这些数据库表与索引的字段名称和类型。举例如下:</p>
+<table>
+<thead>
+<tr><th>命令</th><th>功能描述</th></tr>
+</thead>
+<tbody>
+<tr><td><code>$table-&gt;dropPrimary('users_id_primary');</code></td><td>从 &quot;users&quot; 数据库表移除主键</td></tr>
+<tr><td><code>$table-&gt;dropUnique('users_email_unique');</code></td><td>从 &quot;users&quot; 数据库表移除唯一索引</td></tr>
+<tr><td><code>$table-&gt;dropIndex('geo_state_index');</code></td><td>从 &quot;geo&quot; 数据库表移除基本索引</td></tr>
+</tbody>
+</table>
+<p><a name="dropping-timestamps"></a></p>
+<h2>移除时间戳记和软删除</h2>
+<p>要移除 <code>timestamps</code>, <code>nullableTimestamps</code> 或 <code>softDeletes</code> 字段类型，您可以使用以下方法:</p>
+<table>
+<thead>
+<tr><th>命令</th><th>功能描述</th></tr>
+</thead>
+<tbody>
+<tr><td><code>$table-&gt;dropTimestamps();</code></td><td>移除 <strong>created_at</strong> 和 <strong>updated_at</strong> 字段</td></tr>
+<tr><td><code>$table-&gt;dropSoftDeletes();</code></td><td>移除 <strong>deleted_at</strong> 字段</td></tr>
+</tbody>
+</table>
+<p><a name="storage-engines"></a></p>
+<h2>储存引擎</h2>
+<p>要设定数据库表的储存引擎，可在结构生成器设定 <code>engine</code> 属性:</p>
+<pre><code>Schema::create('users', function($table)
+{
+    $table-&gt;engine = 'InnoDB';
+
+    $table-&gt;string('email');
+});</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

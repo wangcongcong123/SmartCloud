@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>测试</h1>
+<ul>
+<li><a href="#introduction">介绍</a></li>
+<li><a href="#defining-and-running-tests">定义并执行测试</a></li>
+<li><a href="#test-environment">测试环境</a></li>
+<li><a href="#calling-routes-from-tests">从测试调用路由</a></li>
+<li><a href="#mocking-facades">模拟 Facades</a></li>
+<li><a href="#framework-assertions">框架 Assertions</a></li>
+<li><a href="#helper-methods">辅助方法</a></li>
+<li><a href="#refreshing-the-application">重置应用程序</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介绍</h2>
+<p>Laravel 在建立时就有考虑到单元测试。事实上，它支持立即使用被引入的 PHPUnit 做测试，而且已经为你的应用程序建立了 <code>phpunit.xml</code> 文件。</p>
+<p>在 <code>tests</code> 文件夹有提供一个测试例子。在安装新 Laravel 应用程序之后，只要在命令行上执行 <code>phpunit</code> 来进行测试流程。</p>
+<p><a name="defining-and-running-tests"></a></p>
+<h2>定义并执行测试</h2>
+<p>要建立一个测试案例，只要在 <code>tests</code> 文件夹建立新的测试文件。测试类必须继承自 <code>TestCase</code>，接着你可以如你平常使用 PHPUnit 一般去定义测试方法。</p>
+<h4>测试类例子</h4>
+<pre><code>class FooTest extends TestCase {
+
+    public function testSomethingIsTrue()
+    {
+        $this-&gt;assertTrue(true);
+    }
+
+}
+</code></pre>
+<p>你可以从终端机执行 <code>phpunit</code> 命令来执行应用程序的所有测试。</p>
+<blockquote>
+<p><strong>注意:</strong> 如果你定义自己的 <code>setUp</code> 方法， 请记得调用 <code>parent::setUp</code>。</p>
+</blockquote>
+<p><a name="test-environment"></a></p>
+<h2>测试环境</h2>
+<p>当执行单元测试的时候，Laravel 会自动将环境配置成 <code>testing</code>。另外 Laravel 会在测试环境导入 <code>session</code> 和 <code>cache</code> 的配置文件。当在测试环境里这两个驱动会被配置为 <code>array</code> (空数组)，代表在测试的时候没有 session 或 cache 数据将会被保留。视情况你可以任意的建立你需要的测试环境配置。</p>
+<p><code>testing</code> 环境的变量可以在 <code>phpunit.xml</code> 文件中配置。</p>
+<p><a name="calling-routes-from-tests"></a></p>
+<h2>从测试调用路由</h2>
+<h4>从单一测试中调用路由</h4>
+<p>你可以使用 <code>call</code> 方法，轻易地调用你的任何一个路由来测试：</p>
+<pre><code>$response = $this-&gt;call('GET', 'user/profile');
+
+$response = $this-&gt;call($method, $uri, $parameters,  $cookies, $files, $server, $content);
+</code></pre>
+<p>接着你可以检查 <code>Illuminate\Http\Response</code> 对象：</p>
+<pre><code>$this-&gt;assertEquals('Hello World', $response-&gt;getContent());
+</code></pre>
+<h4>从测试调用控制器</h4>
+<p>你也可以从测试调用控制器：</p>
+<pre><code>$response = $this-&gt;action('GET', 'HomeController@index');
+
+$response = $this-&gt;action('GET', 'UserController@profile', array('user' =&gt; 1));
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 当使用 <code>action</code> 方法的时候，你不需要指定完整的控制器命名空间。只需要指定 <code>App\Http\Controllers</code> 命名空间后面的类名称部分。</p>
+</blockquote>
+<p><code>getContent</code> 方法会返回求值后的字串内容响应。如果你的路由返回一个 <code>View</code>，你可以通过 <code>original</code> 属性访问它：</p>
+<pre><code>$view = $response-&gt;original;
+
+$this-&gt;assertEquals('John', $view['name']);
+</code></pre>
+<p>你可以使用 <code>callSecure</code> 方法去调用 HTTPS 路由：</p>
+<pre><code>$response = $this-&gt;callSecure('GET', 'foo/bar');
+</code></pre>
+<p><a name="mocking-facades"></a></p>
+<h2>模拟 Facades</h2>
+<p>当测试的时候，你或许常会想要模拟调用 Laravel 静态 facade。举个例子，思考下面的控制器行为：</p>
+<pre><code>public function getIndex()
+{
+    Event::fire('foo', ['name' =&gt; 'Dayle']);
+
+    return 'All done!';
+}
+</code></pre>
+<p>我们可以在 facade 上使用 <code>shouldReceive</code> 方法，来模拟调用 <code>Event</code> 类，它将会返回一个 <a href="https://github.com/padraic/mockery" target="_blank">Mockery</a> mock 对象实例。</p>
+<h4>模拟 Facade</h4>
+<pre><code>public function testGetIndex()
+{
+    Event::shouldReceive('fire')-&gt;once()-&gt;with('foo', ['name' =&gt; 'Dayle']);
+
+    $this-&gt;call('GET', '/');
+}
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 你不应该模拟 <code>Request</code> facade。取而代之，当执行你的测试，传递想要的输入数据进去 <code>call</code> 方法。</p>
+</blockquote>
+<p><a name="framework-assertions"></a></p>
+<h2>框架 Assertions</h2>
+<p>Laravel 附带几个 <code>assert</code> 方法，让测试更简单一点：</p>
+<h4>Assert 响应为 OK</h4>
+<pre><code>public function testMethod()
+{
+    $this-&gt;call('GET', '/');
+
+    $this-&gt;assertResponseOk();
+}
+</code></pre>
+<h4>Assert 响应的状态码</h4>
+<pre><code>$this-&gt;assertResponseStatus(403);
+</code></pre>
+<h4>Assert 响应为重定向</h4>
+<pre><code>$this-&gt;assertRedirectedTo('foo');
+
+$this-&gt;assertRedirectedToRoute('route.name');
+
+$this-&gt;assertRedirectedToAction('Controller@method');
+</code></pre>
+<h4>Assert 响应的视图包含一些数据</h4>
+<pre><code>public function testMethod()
+{
+    $this-&gt;call('GET', '/');
+
+    $this-&gt;assertViewHas('name');
+    $this-&gt;assertViewHas('age', $value);
+}
+</code></pre>
+<h4>Assert Session 包含一些数据</h4>
+<pre><code>public function testMethod()
+{
+    $this-&gt;call('GET', '/');
+
+    $this-&gt;assertSessionHas('name');
+    $this-&gt;assertSessionHas('age', $value);
+}
+</code></pre>
+<h4>Assert Session 有错误信息</h4>
+<pre><code>public function testMethod()
+{
+    $this-&gt;call('GET', '/');
+
+    $this-&gt;assertSessionHasErrors();
+
+    // Asserting the session has errors for a given key...
+    $this-&gt;assertSessionHasErrors('name');
+
+    // Asserting the session has errors for several keys...
+    $this-&gt;assertSessionHasErrors(array('name', 'age'));
+}
+</code></pre>
+<h4>Assert 旧输入内容有一些数据</h4>
+<pre><code>public function testMethod()
+{
+    $this-&gt;call('GET', '/');
+
+    $this-&gt;assertHasOldInput();
+}
+</code></pre>
+<p><a name="helper-methods"></a></p>
+<h2>辅助方法</h2>
+<p><code>TestCase</code> 类包含几个辅助方法让应用程序的测试更为简单。</p>
+<h4>从测试里配置和刷新 Sessions</h4>
+<pre><code>$this-&gt;session(['foo' =&gt; 'bar']);
+
+$this-&gt;flushSession();
+</code></pre>
+<h4>配置目前为通过身份验证的用户</h4>
+<p>你可以使用 <code>be</code> 方法配置目前为通过身份验证的用户：</p>
+<pre><code>$user = new User(array('name' =&gt; 'John'));
+
+$this-&gt;be($user);
+</code></pre>
+<p>你可以从测试中使用 <code>seed</code> 方法重新填充你的数据库：</p>
+<h4>在测试中重新填充数据库</h4>
+<pre><code>$this-&gt;seed();
+
+$this-&gt;seed($connection);
+</code></pre>
+<p>更多建立填充数据的信息可以在文档的 <a href="../migrations#database-seeding">迁移与数据填充</a> 部分找到。</p>
+<p><a name="refreshing-the-application"></a></p>
+<h2>重置应用程序</h2>
+<p>你可能已经知道，你可以通过 <code>$this-&gt;app</code> 在任何测试方法中访问你的应用程序服务容器。这个服务容器会在每个测试类被重置。如果你希望在给定的方法手动强制重置应用程序，你可以从你的测试方法使用 <code>refreshApplication</code> 方法。这将会重置任何额外的绑定，例如那些从测试案例执行开始被放到 IoC 容器的 mocks。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

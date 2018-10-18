@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="contributing.html">为Laravel做贡献</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="templates.html">模版</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="contributing.html">为Laravel做贡献</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="templates.html">模版</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>Facades</h1>
+<ul>
+<li><a href="#introduction">简介</a></li>
+<li><a href="#explanation">说明</a></li>
+<li><a href="#practical-usage">实际用例</a></li>
+<li><a href="#creating-facades">创建 Facades</a></li>
+<li><a href="#mocking-facades">模拟 Facades</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>简介</h2>
+<p>Facades 提供了一个“静态”接口到 <a href="../ioc">IoC 容器</a> 类 。Laravel 含有很多 facades，你可能不知道你在某些地方已经使用过它们了。</p>
+<p>有时候， 你可能想为你的应用程序或包创建自己的 facades， 所以，让我们来讨论一下如何开发和使用这些类。</p>
+<blockquote>
+<p><strong>注意</strong> 在深入 facades 之前，我们强烈建议你多了解一下 Laravel <a href="../ioc">Ioc 容器</a>。</p>
+</blockquote>
+<p><a name="explanation"></a></p>
+<h2>说明</h2>
+<p>在 Laravel 应用程序中， facade 是提供从容器中访问对象方法的类。<code>Facade</code> 类实现了该机制。</p>
+<p>你的 facade 类只需要实现一个方法： <code>getFacadeAccesor</code> 。 <code>getFacadeAccessor</code> 方法的工作是定义如何从容器中取得对象。 <code>Facades</code> 基类构建了 <code>__callStatic()</code> 魔术方法来从 facade 延迟访问取得对象。</p>
+<p><a name="practical-usage"></a></p>
+<h2>实际用例</h2>
+<p>在以下示例中，执行 Laravel 缓存系统， 查看该代码，我们可能会假定 <code>get</code> 静态方法是执行在 <code>Cache</code> 类。</p>
+<p>In the example below, a call is made to the Laravel cache system. By glancing at this code, one might assume that the static method <code>get</code> is being called on the <code>Cache</code> class.</p>
+<pre><code>$value = Cache::get('key');
+</code></pre>
+<p>然后，如果我们查看 <code>Illuminate\Support\Facades\Cache</code> 类， 你会发现该类没有任何 <code>get</code> 静态方法：</p>
+<pre><code>class Cache extends Facade {
+
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor() { return 'cache'; }
+
+}
+</code></pre>
+<p>Cache 类继承基本 <code>Facade</code> 类，并且定义了个 <code>getFacadeAccessor()</code> 方法。注意，该方法的工作是返回 IoC 绑定的名字。</p>
+<p>当用户引用任何在 <code>Cache</code> facade 静态方法， Laravel 从 IoC 容器绑定中取得 <code>cache</code>，并且执行请求该对象方法（在该例子中为<code>get</code>）。</p>
+<p>所以，我们 <code>Cache::get</code> 执行可以重写为：</p>
+<pre><code>$value = $app-&gt;make('cache')-&gt;get('key');
+</code></pre>
+<p><a name="creating-facades"></a></p>
+<h2>创建 Facades</h2>
+<p>要为自己的应用程序或者包创建一个 facade 是非常简单的。你需要做三件事情：</p>
+<ul>
+<li>一个 IoC 绑定。</li>
+<li>一个 facade 类。</li>
+<li>一个 facade 别名配置。</li>
+</ul>
+<p>让我们来看个例子。这里，我们定义一个 <code>PaymentGateway\Payment</code> 类。</p>
+<pre><code>namespace PaymentGateway;
+
+class Payment {
+
+    public function process()
+    {
+        //
+    }
+
+}
+</code></pre>
+<p>我们需要能够在 IoC 容器中取得该类。所以，让我们增加一个绑定：</p>
+<pre><code>App::bind('payment', function()
+{
+    return new \PaymentGateway\Payment;
+});
+</code></pre>
+<p>最好注册该绑定的位置是创建一个新的名为 <code>PaymentServiceProvider</code> <a href="../ioc#service-providers">服务提供器</a>，并且将该绑定加入到 <code>register</code> 方法。接下来你就可以配置 Laravel <code>app/config/app.php</code> 配置文件来加载该服务提供器。</p>
+<p>接下来，我们就可以创建我们的 facade 类：</p>
+<pre><code>use Illuminate\Support\Facades\Facade;
+
+class Payment extends Facade {
+
+    protected static function getFacadeAccessor() { return 'payment'; }
+
+}
+</code></pre>
+<p>最后，如果你想，我们可以为我们 facade 设置别名到 <code>app/config/app.php</code> 配置文件里的 <code>aliases</code> 数组。现在，我们能够调用 <code>Payment</code> 类实例的 <code>process</code> 方法。
+Payment::process();</p>
+<p><a name="mocking-facades"></a></p>
+<h2>模拟 Facades</h2>
+<p>单元测试是 facades 工作的重要体现。事实上，可测试性是 facedes 存在的主要原因。要了解更多信息，查看文档<a href="../testing#mocking-facades">模拟 facades</a>部分。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

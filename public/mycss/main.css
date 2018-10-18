@@ -1,0 +1,196 @@
+@CHARSET "UTF-8";
+body {
+	font-family: Baskerville, "Palatino Linotype", Palatino,
+		"Century Schoolbook L", "Times New Roman", serif;
+	background:#ecf0f5;
+}
+
+.main-header{
+	background:#4ec7d6;
+}
+
+.hidden-xs{
+	color:#666;
+}
+
+.user-header{
+	background:#3752ab;
+
+}
+.progress-group{
+	color:#23beb1;
+}
+.progress-group .progress-text {
+    font-weight: 600;
+}
+.progress-group .progress-number {
+    float: right;
+}
+.file-controls {
+    padding: 5px;
+}
+
+
+.file-name a,.folder-name a,.folder-download a,.file-download a,.folder-extend a,.file-attachment a{
+	color:#000;
+}
+
+
+
+.file-name a:hover,.folder-name a:hover,.folder-download a:hover,.file-download a:hover,.folder-extend a:hover,.file-attachment a:hover{
+	color:#666;
+}
+
+#foldernav li{
+	float:left;
+}
+
+.removebar,.file-options a{
+	color:#000;
+}
+
+.removebar:hover,.file-options a:hover{
+	color:#888;
+}
+
+.progressdiv{
+	display:none;
+	margin:20px;
+	padding:5px;
+	border: 1px solid #666;
+	-moz-box-shadow: 3px 3px 4px #666;
+	-webkit-box-shadow: 3px 3px 4px #666;
+	box-shadow: 3px 3px 4px #666;
+	background:#eee;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
+		Color='#666');
+}
+
+a{
+	color:#000;
+}
+
+a:hover{
+	color:#666;
+}
+
+
+
+
+
+
+
+
+/*
+autocompleter
+
+*/
+
+.autocompleter {
+	border: 1px solid rgba(53, 98, 102, 0.79);
+	background: rgba(203, 207, 208,0.8);
+	width: 100%;
+	display: none;
+}
+
+.autocompleter-show {
+	display: block;
+}
+
+.autocompleter,
+
+.autocompleter-hint {
+	position: absolute;
+	z-index: 1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: inherit;
+	font-size: 14px;
+	line-height: normal;
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-bottom-color: #39f;
+
+}
+
+.autocompleter-list {
+	list-style: none;
+	margin: 2px;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.autocompleter-item {
+	padding: .5em .8em;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.autocompleter-item:hover {
+	/* Hover State */
+	margin-left: -1px;
+	background-color: #eee;
+	border-left: 1px solid #39f;
+}
+
+.autocompleter-item-selected {
+	/* Selected State */
+	background: rgba(102, 102, 102, 0.24);
+}
+
+.autocompleter-item strong {
+	/* Highlight Matches */
+}
+
+.autocompleter-hint {
+	width: 100%;
+	display: none;
+
+	/** Need absolute position over input text */
+}
+
+.autocompleter-hint-show {
+	display: block;
+}
+
+.autocompleter-hint span {
+	color: transparent;
+}
+
+
+
+
+
+/* Normale usage
+
+ jQuery_Highlight
+ */
+.jQuery_Highlight{ /* Default ClassName */
+	background-color:yellow;
+}
+
+.marker{
+	background-color:#3EACDA;
+	color:white;
+}
+
+/*.marker .custom{*/
+	/*display:none;*/
+	/*top:0px;*/
+	/*right:0px;*/
+	/*color:black;*/
+/*}*/
+
+/*.marker:hover .custom{*/
+	/*display:block;*/
+/*}*/

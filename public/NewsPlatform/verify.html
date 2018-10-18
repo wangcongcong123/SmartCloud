@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+    <title>认证页面</title>
+
+    <!--<link rel="stylesheet" href="asserts/css/weuix.min.css"/>-->
+    <!--<link rel="stylesheet" href="asserts/css/style.css"/>-->
+    <link rel="stylesheet" href="asserts/css/cc.css"/>
+    <!--<link rel="stylesheet" href="asserts/css/index.css"/>-->
+    <style>
+
+    </style>
+
+</head>
+
+<body style="background-color: #f8f8f8;">
+
+<div class="cc-header">
+    <div class="cc-header-left"><a class="ccicon-undo2 cc-header-left-link" href="login.html"></a></div>
+    <div class="cc-header-right cc-header-status"><a class="ccicon-spinner3"></a></div>
+    <h1 class="cc-header-title">实名认证</h1>
+</div>
+
+
+<form class="responsive-form" action="#" method="get">
+
+    <div class="ccinput-container">
+        <span class="upper-text">请输入你的姓名</span>
+        <input type="text" class="ccinput" name="name">
+        <span class="bottom-line"></span>
+        <div class="error-line name-error">请输入你的姓名</div>
+    </div>
+
+    <div class="ccinput-container">
+        <span class="upper-text">请输入你的电话号码</span>
+        <input type="number" class="ccinput" name="number">
+        <span class="bottom-line"></span>
+        <div class="error-line number-error">电话号码不正确</div>
+    </div>
+
+    <div class="ccinput-picker">
+        <span class="ccinput-picker-value">其他员工</span>
+        <input class="hide" name="role" value="其他员工">
+        <div class="ccinput-picker-arrow"><span class="ccicon-arrow-down-right2"></span></div>
+    </div>
+
+    <button class="cc-btn bg-heavy" id="submit" type="submit">
+        提交
+    </button>
+
+</form>
+
+
+<div class="menu-contanier">
+    <!--<div class="menu-shadow">-->
+    <!--</div>-->
+
+
+    <div class="menu">
+        <div class="menu-header">
+            请选择部门
+        </div>
+
+        <ul class="menu-ul">
+            <li>综合部经理</li>
+            <li>新闻负责人</li>
+            <li>党群工作组</li>
+            <li>其他员工</li>
+        </ul>
+
+        <div class="menu-cancel">
+            <div class="menu-cancel-label"><a class="ccicon-cross"></a></div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<script src="asserts/js/jquery.min.js"></script>
+
+
+<script>
+    $(function () {
+
+
+//        if ($("input[name='account']").val().trim() != "" || $("input[name='number']").val()!="") {
+//            $(this).prev(".upper-text").css("top", "-10px");
+//        }
+
+        $(".ccinput").focus(function () {
+            $(this).prev(".upper-text").css("top", "-10px");
+        });
+
+
+        $(".ccinput-picker").click(function () {
+            $(".menu-contanier").css("top", "0");
+        });
+
+        $(".menu-shadow").click(function () {
+            $(".menu-contanier").css("top", "100%");
+        });
+
+
+        $(".menu-cancel-label").click(function () {
+            $(".menu-contanier").css("top", "100%");
+        });
+
+        $(".menu-ul li").click(function () {
+            $('.ccinput-picker-value').text($(this).text());
+            $('input[name="role"]').val($(this).text());
+            $(".menu-contanier").css("top", "100%");
+        });
+
+//        $(".cc-header-left-link").click(function () {
+//            history.back();
+//        });
+
+
+        $("input[name='name']").blur(function () {
+            if ($("input[name='name']").val().trim() == "") {
+                $("input[name='name']").siblings('.error-line').show();
+                $("input[name='name']").css('border-bottom', '2px solid #e82825');
+            } else {
+                $("input[name='name']").siblings('.error-line').hide();
+                $("input[name='name']").css('border-bottom', '2px solid #d1d1d1');
+            }
+        });
+
+
+        $("input[name='number']").blur(function () {
+            var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/;
+            if (!myreg.test($("input[name='number']").val())) {
+                $("input[name='number']").siblings('.error-line').show();
+                $("input[name='number']").css('border-bottom', '2px solid #e82825');
+            } else {
+                $("input[name='number']").siblings('.error-line').hide();
+                $("input[name='number']").css('border-bottom', '2px solid #d1d1d1');
+            }
+        });
+
+
+        $("#submit").click(function () {
+            var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/;
+
+            if ($("input[name='account']").val() == "" || !myreg.test($("input[name='number']").val())) {
+
+                if ($("input[name='name']").val().trim() == "") {
+                    $("input[name='name']").siblings('.error-line').show();
+                    $("input[name='name']").css('border-bottom', '2px solid #e82825');
+                }
+
+                if (!myreg.test($("input[name='number']").val())) {
+                    $("input[name='number']").siblings('.error-line').show();
+                    $("input[name='number']").css('border-bottom', '2px solid #e82825');
+                }
+                return false;
+            }
+
+        });
+
+
+    });
+
+</script>
+
+</body>
+</html>

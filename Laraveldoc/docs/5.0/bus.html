@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>Command Bus</h1>
+<ul>
+<li><a href="#introduction">简介</a></li>
+<li><a href="#creating-commands">建立命令</a></li>
+<li><a href="#dispatching-commands">调用命令</a></li>
+<li><a href="#queued-commands">命令队列</a></li>
+<li><a href="#command-pipeline">命令管道</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>简介</h2>
+<p>Command bus 提供一个简便的方法来封装任务，使你的程序更加容易阅读与执行，为了帮助我们更加了解使用「命令」的目的，让我们来模拟建立一个可以购买 podcast 的网站。</p>
+<p>用户购买 podcasts 的过程中需要做很多事。例如，我们需要从用户的信用卡扣款，将纪录添加到数据库以表示购买，并发送购买确认的电子邮件，或许，我们还需要进行许多验证来确认用户是否可以购买。</p>
+<p>我们可以将这些逻辑通通放在控制器的方法内，然而，这样做会有一些缺点，首先，控制器可能还需要处理许多其他的 HTTP 请求，包含复杂的逻辑，这会让控制器变得很臃肿且难易阅读，第二点，这些逻辑无法在这个控制器以外被重复使用，第三，这些命令无法被单元测试，为此我们还得额外产生一个 HTTP 请求，并向网站进行完整购买 podcast 的流程。</p>
+<p>比起将逻辑放在控制器内，我们可以选择使用一个「命令」对象来封装它，如 <code>PurchasePodcast</code> 命令。</p>
+<p><a name="creating-commands"></a></p>
+<h2>建立命令</h2>
+<p>使用 <code>make:command</code> 这个 Artisan 命令可以产生一个新的命令类 ：</p>
+<pre><code>php artisan make:command PurchasePodcast
+</code></pre>
+<p>新产生的类会被放在 <code>app/Commands</code> 目录中，命令默认包含了两个方法：构造器和 <code>handle</code> 。当然，<code>handle</code> 方法执行命令时，你可以使用构造器传入相关的对象到这个命令中。例如：</p>
+<pre><code>class PurchasePodcast extends Command implements SelfHandling {
+
+    protected $user, $podcast;
+
+    /**
+     * Create a new command instance.
+     *
+     * @return void
+     */
+    public function __construct(User $user, Podcast $podcast)
+    {
+        $this-&gt;user = $user;
+        $this-&gt;podcast = $podcast;
+    }
+
+    /**
+     * Execute the command.
+     *
+     * @return void
+     */
+    public function handle()
+    {
+        // Handle the logic to purchase the podcast...
+
+        event(new PodcastWasPurchased($this-&gt;user, $this-&gt;podcast));
+    }
+
+}
+</code></pre>
+<p><code>handle</code> 方法也可以使用类型提示依赖，并且通过 <a href="container.html">服务容器</a> 机制自动进行依赖注入。例如：</p>
+<pre><code>    /**
+     * Execute the command.
+     *
+     * @return void
+     */
+    public function handle(BillingGateway $billing)
+    {
+        // Handle the logic to purchase the podcast...
+    }
+</code></pre>
+<p><a name="dispatching-commands"></a></p>
+<h2>调用命令</h2>
+<p>所以，我们建立的命令该如何调用它呢？当然，我们可以直接调用 <code>handle</code> 方法，然而使用 Laravel 的 &quot;command bus&quot; 来调用命令将会有许多优点，待会我们会讨论这个部分。</p>
+<p>如果你有浏览过内置的基本控制器，将会发现 <code>DispatchesCommands</code> trait ，它将允许我们在控制器内调用 <code>dispatch</code> 方法，例如：</p>
+<pre><code>public function purchasePodcast($podcastId)
+{
+    $this-&gt;dispatch(
+        new PurchasePodcast(Auth::user(), Podcast::findOrFail($podcastId))
+    );
+}
+</code></pre>
+<p>Command bus 将会负责执行命令和调用 IoC 容器来将所需的依赖注入到 <code>handle</code> 方法。</p>
+<p>你也可以将 <code>Illuminate\Foundation\Bus\DispatchesCommands</code> trait 加入任何要使用的类内。若你想要在任何类的构造器内接收 command bus 的实体 ，你可以使用类型提示 <code>Illuminate\Contracts\Bus\Dispatcher</code> 这个接口。
+最后，你也可以使用 <code>Bus</code> facade 来快速派发命令：</p>
+<pre><code>    Bus::dispatch(
+        new PurchasePodcast(Auth::user(), Podcast::findOrFail($podcastId))
+    );
+</code></pre>
+<h3>从请求映射要注入命令的属性</h3>
+<p>映射 HTTP 请求到命令是很常见的，所以，与其要你针对每个请求苦命地进行手动对应，Laravel 则提供一些有用的方法来轻松达到，让我们来看一下 <code>DispatchesCommands</code> trait 提供的 <code>dispatchFrom</code> 方法：</p>
+<pre><code>$this-&gt;dispatchFrom('Command\Class\Name', $request);
+</code></pre>
+<p>这个方法将会检查这个被传入的命令类的构造器，并取出来自于 HTTP 请求的变量(或其他任何的 <code>ArrayAccess</code> 对象) 并将其填入构造器，所以，若命令类在构造器接受 <code>firstName</code> 参数，command bus 将会试图从 HTTP 请求取出 <code>firstName</code> 参数。</p>
+<p><code>dispatchFrom</code> 方法的第三个参数允许你传入数组，那些不在 HTTP 请求内的参数可用这个数组来填入构造器：</p>
+<pre><code>$this-&gt;dispatchFrom('Command\Class\Name', $request, [
+    'firstName' =&gt; 'Taylor',
+]);
+</code></pre>
+<p><a name="queued-commands"></a></p>
+<h2>命令队列</h2>
+<p>Command bus 不仅仅作为当下请求的同步作业，也可以作为 Laravel 队列任务的主要方法，所以，我们要如何指示 command bus 在背景作业而不是同步处理呢？非常简单，首先，在建立新的命令时加上 <code>--queued</code> 参数：</p>
+<pre><code>php artisan make:command PurchasePodcast --queued
+</code></pre>
+<p>正如你所见的，这让命令增加了一点功能，即 <code>Illuminate\Contracts\Queue\ShouldBeQueued</code> 接口和<code>SerializesModels</code> trait 。 他们指示 command bus 使用队列来执行命令，以及优雅的序列化和反序列化任何在命令内被保存的 Eloquent 模型。</p>
+<p>若你想将已存在的命令转换为队列命令，只需手动修改让命令类实现 <code>Illuminate\Contracts\Queue\ShouldBeQueued</code> 接口，它不包含方法，而是仅仅给调用员作为&quot;标记接口&quot;。</p>
+<p>然后，一如往常撰写你的命令，当你将命令派发到 bus，它将会自动将命令丢到背景队列执行，没有比这个更容易的方法了。</p>
+<p>想了解更多关于队列命令的方法，请见<a href="queues.html">队列文档</a>.</p>
+<p><a name="command-pipeline"></a></p>
+<h2>命令管道</h2>
+<p>在命令被派发到处理器之前，你也可以将它通过&quot;命令管道&quot;传递到其他类去。命令管道操作上如 HTTP 中间件，除了是专门来给命令用的，例如，一个命令管道能够在数据库事务处理期间包装全部的命令操作，或者仅作为执行纪录。</p>
+<p>要将管道添加到 bus，只要从<code>App\Providers\BusServiceProvider::boot</code> 方法调用调用员的<code>pipeThrough</code> 方法：</p>
+<pre><code>$dispatcher-&gt;pipeThrough(['UseDatabaseTransactions', 'LogCommand']);
+</code></pre>
+<p>一个命令管道被定义在 <code>handle</code> 方法，就如个中间件：</p>
+<pre><code>class UseDatabaseTransactions {
+
+    public function handle($command, $next)
+    {
+        return DB::transaction(function() use ($command, $next)
+        {
+            return $next($command);
+        });
+    }
+
+}
+</code></pre>
+<p>命令管道是透过 IoC 容器来达成，所以请自行在构造器类型提示所需的依赖。</p>
+<p>你甚至可以定义一个 <code>闭包</code> 来作为命令管道：</p>
+<pre><code>$dispatcher-&gt;pipeThrough([function($command, $next)
+{
+    return DB::transaction(function() use ($command, $next)
+    {
+        return $next($command);
+    }
+}]);
+</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

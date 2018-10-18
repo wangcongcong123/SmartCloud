@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+body {
+	background: #ecf0f5;
+	font-family: Baskerville, "Palatino Linotype", Palatino,
+		"Century Schoolbook L", "Times New Roman", serif;
+}
+
+.main-header{
+	background:#4ec7d6;
+}
+
+.user-header{
+	background:#3752ab;
+}
+
+.content {
+	margin-top:50px;
+	min-height: 250px;
+	padding: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+

@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>数据库使用基础</h1>
+<ul>
+<li><a href="#configuration">配置</a></li>
+<li><a href="#read-write-connections">读 / 写 连接</a></li>
+<li><a href="#running-queries">运行查询语句</a></li>
+<li><a href="#database-transactions">事务</a></li>
+<li><a href="#accessing-connections">同时使用多个数据库系统</a></li>
+<li><a href="#query-logging">查询日志</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>配置</h2>
+<p>Laravel让连接和使用数据库变得异常简单.数据库配置文件是 <code>app/config/database.php</code>.你可以在配置文件中定义所有你的数据库连接,以及指定默认连接.这个文件中已经提供了所有支持的数据库系统连接例子.</p>
+<p>目前Laravel支持四种数据库系统: MySQL, Postgres, SQLite, 和 SQL Server.</p>
+<p><a name="read-write-connections"></a></p>
+<h2>读 / 写 连接 (读写分离配置)</h2>
+<p>你可能需要使用一个连接来处理 SELECT(读)数据操作,而另一个链接来处理 INSERT, UPDATE, 和 DELETE 这样的操作(即读写分离).Laravel是这项工作变得简单,它会在你直接发送查询语句、使用查询构建器或者Eloquent ORM时自动选择适当的连接(来实现读写分离).</p>
+<p>以下是一个读/写 连接配置的例子:</p>
+<pre><code>'mysql' =&gt; array(
+    'read' =&gt; array(
+        'host' =&gt; '192.168.1.1',
+    ),
+    'write' =&gt; array(
+        'host' =&gt; '196.168.1.2'
+    ),
+    'driver'    =&gt; 'mysql',
+    'database'  =&gt; 'database',
+    'username'  =&gt; 'root',
+    'password'  =&gt; '',
+    'charset'   =&gt; 'utf8',
+    'collation' =&gt; 'utf8_unicode_ci',
+    'prefix'    =&gt; '',
+),
+</code></pre>
+<p>注意看两个增加的配置数组: <code>read</code> 和 <code>write</code>.这两个配置数组值都是一个键值对: <code>host</code>(用来标明连接的服务器).其余部分的配置由于 <code>read</code> 和 <code>write</code> 是相同的,因此他们都在 <code>mysql</code> 下面被合并到了一起.因此,我们只需要修改 <code>read</code> 和 <code>write</code> 配置中我们需要覆盖配置的值即可.在这个例子里, <code>192.168.1.1</code> 将会做为&quot;读&quot;连接 而 <code>192.168.1.2</code>将会做为&quot;写&quot;连接.数据库的用户名密码,表前缀,字符集和其他的配置项目会在 <code>mysql</code> 配置下为两个连接所共用.</p>
+<p><a name="running-queries"></a></p>
+<h2>执行crud语句</h2>
+<p>一旦你已经配置好了数据库的连接,你就可以直接使用 <code>DB</code> 类来发送sql请求了.</p>
+<h4>运行一个 Select 查询</h4>
+<pre><code>$results = DB::select('select * from users where id = ?', array(1));
+</code></pre>
+<p>这里的 <code>select</code> 方法将会一直返回一个 <code>array</code>(数组) 结果集.</p>
+<h4>运行一个 Insert(插入) 请求</h4>
+<pre><code>DB::insert('insert into users (id, name) values (?, ?)', array(1, 'Dayle'));
+</code></pre>
+<h4>运行一个 Update(更新) 请求</h4>
+<pre><code>DB::update('update users set votes = 100 where name = ?', array('John'));
+</code></pre>
+<h4>运行一个 Delete(删除) 请求</h4>
+<pre><code>DB::delete('delete from users');
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> <code>update</code>(更新) 和 <code>delete</code>(删除) 将会返回操作的影响行数(affect rows).</p>
+</blockquote>
+<h4>执行非crud操作</h4>
+<pre><code>DB::statement('drop table users');
+</code></pre>
+<h4>监听数据库操作事件</h4>
+<p>你可以使用 <code>DB::listen</code> 方法来监听query事件:</p>
+<pre><code>DB::listen(function($sql, $bindings, $time)
+{
+    //
+});
+</code></pre>
+<p><a name="database-transactions"></a></p>
+<h2>事务</h2>
+<p>你可以用 <code>transaction</code> 方法来调用一个事务集合:</p>
+<pre><code>DB::transaction(function()
+{
+    DB::table('users')-&gt;update(array('votes' =&gt; 1));
+
+    DB::table('posts')-&gt;delete();
+});
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 任何 <code>transaction</code> 抛出的异常都将导致事务自动回滚.</p>
+</blockquote>
+<p>有时你需要自己手动开启一个事务:</p>
+<pre><code>DB::beginTransaction();
+</code></pre>
+<p>你可以用过 <code>rollback</code> 方法手动回滚事务:</p>
+<pre><code>DB::rollback();
+</code></pre>
+<p>最后,你可以使用 <code>commit</code> 方法来提交:</p>
+<pre><code>DB::commit();
+</code></pre>
+<p><a name="accessing-connections"></a></p>
+<h2>同时使用多个数据库系统</h2>
+<p>你可能使用很多的数据库系统,你可以使用 <code>DB::connection</code> 方法来选择使用它们:</p>
+<pre><code>$users = DB::connection('foo')-&gt;select(...);
+</code></pre>
+<p>你可能需要在数据库系统的层面上操作数据库，使用PDO实例即可:</p>
+<pre><code>$pdo = DB::connection()-&gt;getPdo();
+</code></pre>
+<p>使用reconnect方法重新连接一个指定的数据库系统:</p>
+<pre><code>DB::reconnect('foo');
+</code></pre>
+<p>你可以使用 <code>disconnect</code> 方法来手动断开数据库连接,防止PDO连接数超过 <code>max_connections</code> 的限制:</p>
+<pre><code>DB::disconnect('foo');
+</code></pre>
+<p><a name="query-logging"></a></p>
+<h2>查询日志</h2>
+<p>Laravel默认会为当前请求执行的的所有查询生成日志并保存在内存中。 因此， 在某些特殊的情况下， 比如一次性向数据库中插入大量数据， 就可能导致内存不足。 在这种情况下，你可以通过 <code>disableQueryLog</code> 方法来关闭查询日志:</p>
+<pre><code>DB::connection()-&gt;disableQueryLog();
+</code></pre>
+<p>调用 <code>getQueryLog</code> 方法可以同时获取多个查询执行后的日志:</p>
+<pre><code>   $queries = DB::getQueryLog();</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

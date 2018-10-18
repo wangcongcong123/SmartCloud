@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>主页面</title>
+
+    <link rel="stylesheet" href="asserts/css/cc.css"/>
+    <!--<link rel="stylesheet" href="asserts/css/style.css"/>-->
+    <link rel="stylesheet" href="asserts/css/weuix.min.css"/>
+
+    <style>
+
+
+        .my-search-input {
+            height: 35px;
+            width: 80%;
+            transition: width 0.5s;
+            border: none;
+            text-indent: 30px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #b1d1f4;
+            background-color: #53697e;
+        }
+
+        .my-search-input:focus {
+            width: 100%;
+        }
+
+        .my-search-input:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+
+        .weui-header {
+            background-color: #8c9fb0;
+            height: 50px;
+        }
+
+        .weui-header-right i {
+            color: #607991;
+            cursor: pointer;
+        }
+
+        .weui-header-right i:hover {
+            color: #53697e;
+        }
+
+        .weui-header-left a img {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+        }
+
+        .weui-header-left a img:hover {
+            width: 42px;
+            height: 42px;
+        }
+
+        .weui_navbar_item.tab-customize {
+
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            border-bottom: 3px solid #5e6f81;
+            color: #97a7b6;
+            font-size: 18px;
+
+        }
+
+        .weui_navbar_item {
+            font-size: 13px;
+            transition: font-size 0.5s;
+
+        }
+
+        .credit-group {
+            padding: 20px;
+            border-bottom: 1px solid #cdcdcd;
+        }
+
+        .credit-group-name {
+            cursor: pointer;
+            display: inline-block;
+            color: #6c7f93;
+            font-size: 12px;
+            width: 100px;
+            overflow: hidden;
+        }
+
+        .credit-group-name span {
+            background-color: #c6dee1;
+            display: inline-block;
+            width: 18px;
+            height: 22px;
+            text-align: center;
+            transition: all 0.5s;
+            color: #fefefe;
+            border-radius: 3px;
+        }
+
+        .credit-group-name span:hover {
+            width: 30px;
+        }
+
+        .credit-group-name .number1 {
+            background-color: #e1525c;
+        }
+
+        .credit-group-name .number2 {
+            background-color: #e1ab3a;
+        }
+
+        .credit-group-name .number3 {
+            background-color: #60e18e;
+        }
+
+        .credit-items {
+            float: right;
+            display: flex;
+            width: 70%;
+
+        }
+
+        .credit-items li {
+            flex: 1;
+            margin: 0 20px;
+            color: #91abc7;
+            font-size: 12px;
+        }
+
+        .credit-items li p {
+            width: 40px;
+            cursor: pointer;
+            transition: font-size 0.5s;
+            background-color: #60babf;
+            text-align: center;
+            border-radius: 20px;
+            color: #f8f8f8;
+        }
+
+        .credit-items li p:hover {
+            font-size: 16px;
+        }
+
+        .credit-items .total_credit p {
+            background-color: #bf6aba;
+
+        }
+
+
+    </style>
+</head>
+
+<body style="background-color: #f8f8f8;">
+
+<div class="weui-header">
+    <div class="weui-header-left" style="top: 5px;left: 5px"><a href="userinfo.html"><img src="asserts/images/u241.png"></a>
+    </div>
+    <h1 class="weui-header-title" style="margin-left: 50px;margin-right: 50px;">
+
+        <form class="search-form" action="#" method="get">
+
+            <input type="text" name="search_input"
+                   class="my-search-input"
+                   placeholder="请输入您要搜索的内容...">
+        </form>
+    </h1>
+    <div class="weui-header-right"><i class="icon icon-45 f23" id="record_audio"></i></div>
+</div>
+
+
+<!--<div class="audio_prompt hide">-->
+<!--<div><i class="icon icon-44 f22"></i>-->
+<!--<p>录音中....</p><a class="f-white" id="finish_audio">完成录音</a></div>-->
+<!--</div>-->
+
+
+<div class="slide" id="slide1">
+
+    <ul>
+        <li>
+            <a href="#">
+                <img src="asserts/images/swipe/swipe1.jpg">
+            </a>
+            <div class="slide-desc">这是一张暂时替代的标题文本1</div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="asserts/images/swipe/swipe2.jpg">
+            </a>
+            <div class="slide-desc">这是一张暂时替代的标题文本2</div>
+        </li>
+        <li>
+            <a href="#">
+                <img src="asserts/images/swipe/swipe3.jpg">
+            </a>
+            <div class="slide-desc">这是一张暂时替代的标题文本3</div>
+        </li>
+    </ul>
+
+    <div class="dot">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+
+<div class="weui_tab " style="height:44px;color: #5d6e80" id="tab1"><!--tab-fixed添加顶部-->
+
+    <div class="weui_navbar" style="height:44px;">
+        <div class="weui_navbar_item  category">
+            分类查看
+        </div>
+        <div class="weui_navbar_item all">
+            浏览所有
+        </div>
+        <div class="weui_navbar_item points">
+            积分查看
+        </div>
+
+        <!--<div class="weui_navbar_item">-->
+        <!--照片墙-->
+        <!--</div>-->
+        <!---->
+    </div>
+</div>
+
+
+<div class="tab-content">
+
+    <!--<div class="list-header">-->
+    <!--<h1>所有新闻</h1>-->
+    <!--<a class="list-refresh ccicon-redo"></a>-->
+    <!--</div>-->
+
+
+    <div class="list">
+
+
+        <a class="list-item" href="news.html?page=1">
+
+            <h1 class="list-item-title">这是一张暂时替代的标题文本1</h1>
+            <div class="list-item-pics">
+
+                <ul>
+                    <li><img src="asserts/images/u669.png" rel="no this picture" width="100px" height="100px"></li>
+                    <li><img src="asserts/images/u669.png" rel="no this picture" width="100px" height="100px"></li>
+                </ul>
+
+            </div>
+
+            <div class="list-item-basics">
+                <ul>
+                    <li>15分钟前</li>
+                    <li>一般消息</li>
+                    <li>12次评论</li>
+                    <li>@聪聪那年</li>
+                </ul>
+            </div>
+
+        </a>
+
+
+        <a class="list-item">
+
+            <h1 class="list-item-title">这是一张暂时替代的这是一张暂时替代的一张暂时替代的标题文本2这是一张暂时替代的一张暂时替代的标题文本2一张暂时替代的标题文本2</h1>
+
+            <div class="list-item-pics">
+
+                <ul>
+                    <li><img src="asserts/images/u190.png" rel="no this picture" width="100px" height="100px"></li>
+                    <li><img src="asserts/images/u190.png" rel="no this picture" width="100px" height="100px"></li>
+                    <li><img src="asserts/images/u190.png" rel="no this picture" width="100px" height="100px"></li>
+                </ul>
+
+            </div>
+
+            <div class="list-item-basics">
+                <ul>
+                    <li>一天前</li>
+                    <li>一般消息</li>
+                    <li>12次评论</li>
+                    <li>@聪聪那年</li>
+                </ul>
+            </div>
+
+        </a>
+
+
+        <a class="list-item">
+
+            <h1 class="list-item-title">这是一张暂时替代的标题文本1</h1>
+            <div class="list-item-pics">
+
+                <ul>
+                    <li><img src="asserts/images/u190.png" rel="no this picture" width="100px" height="100px"></li>
+                    <li><img src="asserts/images/u669.png" rel="no this picture" width="100px" height="100px"></li>
+
+                </ul>
+
+            </div>
+
+            <div class="list-item-basics">
+                <ul>
+                    <li>15分钟前</li>
+                    <li>一般消息</li>
+                    <li>12次评论</li>
+                    <li>@聪聪那年</li>
+                </ul>
+            </div>
+
+        </a>
+
+
+        <a class="list-item">
+
+            <h1 class="list-item-title">这是一张暂时替代的标题文本1</h1>
+            <div class="list-item-pics">
+
+                <ul>
+                    <li><img src="asserts/images/u669.png" rel="no this picture" width="100px" height="100px"></li>
+
+                </ul>
+
+            </div>
+
+            <div class="list-item-basics">
+                <ul>
+                    <li>15分钟前</li>
+                    <li>一般消息</li>
+                    <li>12次评论</li>
+                    <li>@聪聪那年</li>
+                </ul>
+            </div>
+
+        </a>
+
+
+        <div id="bottom-refresh"></div>
+
+
+    </div>
+
+
+    <!--<div class="catagory">-->
+    <!--<ul class="catagory-list">-->
+    <!--<li class="category-group">-->
+    <!--<div class="category-group-name">公司动态</div>-->
+    <!--<ul class="category-items">-->
+    <!--<li><a href="category.html?type=market">市场经验</a></li>-->
+    <!--<li><a>网络建设</a></li>-->
+    <!--<li><a>综合管理</a></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+
+    <!--<li class="category-group">-->
+    <!--<div class="category-group-name">党群建设</div>-->
+    <!--<ul class="category-items">-->
+    <!--<li><a>党群</a></li>-->
+    <!--<li><a>工会</a></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+
+    <!--<li class="category-group">-->
+    <!--<div class="category-group-name">其他模块</div>-->
+    <!--<ul class="category-items">-->
+    <!--<li><a>员工风采</a></li>-->
+    <!--<li><a>通报模块</a></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+
+
+    <!--<div class="catagory">-->
+
+    <!--<ul class="catagory-list">-->
+
+    <!--<li class="category-group">-->
+    <!--<div class="category-group-name">公司动态</div>-->
+    <!--<ul class="category-items">-->
+    <!--<li><a href="category.html?type=market">市场经验</a></li>-->
+    <!--<li><a>网络建设</a></li>-->
+    <!--<li><a>综合管理</a></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+
+    <!--<li class="category-group">-->
+    <!--<div class="category-group-name">党群建设</div>-->
+    <!--<ul class="category-items">-->
+    <!--<li><a>党群</a></li>-->
+    <!--<li><a>工会</a></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+
+    <!--<li class="category-group">-->
+    <!--<div class="category-group-name">其他模块</div>-->
+    <!--<ul class="category-items">-->
+    <!--<li><a>员工风采</a></li>-->
+    <!--<li><a>通报模块</a></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+    <!--</div>-->
+
+
+    <!--<div class="catagory">-->
+
+    <!--<ul class="catagory-list">-->
+
+    <!--<li class="category-group">-->
+    <!--<div class="category-group-name">公司动态</div>-->
+    <!--<ul class="category-items">-->
+    <!--<li><a href="category.html?type=market">市场经验</a></li>-->
+    <!--<li><a>网络建设</a></li>-->
+    <!--<li><a>综合管理</a></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+
+    <!--<li class="category-group">-->
+    <!--<div class="category-group-name">党群建设</div>-->
+    <!--<ul class="category-items">-->
+    <!--<li><a>党群</a></li>-->
+    <!--<li><a>工会</a></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+
+    <!--<li class="category-group">-->
+    <!--<div class="category-group-name">其他模块</div>-->
+    <!--<ul class="category-items">-->
+    <!--<li><a>员工风采</a></li>-->
+    <!--<li><a>通报模块</a></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+
+    <!--</ul>-->
+    <!--</div>-->
+
+
+    <!--<div class="credit">-->
+
+    <!--<ul class="credit-list">-->
+
+    <!--<li class="credit-group">-->
+
+    <!--<div class="credit-group-name"><span class="number1">1</span> @聪聪那年</div>-->
+
+    <!--<ul class="credit-items">-->
+    <!--<li>评论数<p>23</p></li>-->
+    <!--<li>发布数<p>23</p></li>-->
+    <!--<li class="total_credit">总积分<p>36</p></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+
+    <!--<li class="credit-group">-->
+
+    <!--<div class="credit-group-name"><span class="number2">2</span> @聪聪那年</div>-->
+
+    <!--<ul class="credit-items">-->
+    <!--<li>评论数<p>23</p></li>-->
+    <!--<li>发布数<p>22</p></li>-->
+    <!--<li class="total_credit">总积分<p>45</p></li>-->
+    <!--</ul>-->
+
+    <!--</li>-->
+
+    <!--<li class="credit-group">-->
+
+    <!--<div class="credit-group-name"><span class="number3">3</span> @聪聪那年</div>-->
+
+    <!--<ul class="credit-items">-->
+    <!--<li>评论数<p>23</p></li>-->
+    <!--<li>发布数<p>20</p></li>-->
+    <!--<li class="total_credit">总积分<p>43</p></li>-->
+    <!--</ul>-->
+
+
+    <!--</li>-->
+
+    <!--<li class="credit-group">-->
+
+    <!--<div class="credit-group-name"><span>4</span> @聪聪那年</div>-->
+
+    <!--<ul class="credit-items">-->
+    <!--<li>评论数<p>22</p></li>-->
+    <!--<li>发布数<p>20</p></li>-->
+    <!--<li class="total_credit">总积分<p>42</p></li>-->
+    <!--</ul>-->
+
+
+    <!--</li>-->
+
+    <!--</ul>-->
+
+
+    <!--</div>-->
+
+
+</div>
+
+
+<div class="gotop"><span class="ccicon-arrow-up2"></span></div>
+<script src="asserts/js/zepto.min.js"></script>
+<script src="asserts/js/swipe.js"></script>
+
+
+<script>
+    $(function () {
+
+        $('#slide1').swipeSlide({
+            autoSwipe: true,//自动切换默认是
+            speed: 3000,//速度默认4000
+            continuousScroll: true,//默认否
+            transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',//过渡动画linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier
+            lazyLoad: true,//懒加载默认否
+            firstCallback: function (i, sum, me) {
+                me.find('.dot').children().first().addClass('cur');
+            },
+            callback: function (i, sum, me) {
+                me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+            }
+        });
+
+        var all = $(".tab-content").html();
+        var category = '<div class="catagory"><ul class="catagory-list"><li class="category-group"><div class="category-group-name">公司动态</div><ul class="category-items"><li><a>市场经验</a></li><li><a>网络建设</a></li><li><a>综合管理</a></li></ul></li><li class="category-group"><div class="category-group-name">党群建设</div><ul class="category-items"><li><a>党群</a></li><li><a>工会</a></li></ul></li><li class="category-group"><div class="category-group-name">其他模块</div><ul class="category-items"><li><a>员工风采</a></li><li><a>通报模块</a></li></ul></li></ul></div>';
+        var points = '<div class="credit"><ul class="credit-list"><li class="credit-group"><div class="credit-group-name"><span class="number1">1</span>@聪聪那年</div><ul class="credit-items"><li>评论数<p>23</p></li><li>发布数<p>23</p></li><li class="total_credit">总积分<p>36</p></li></ul></li><li class="credit-group"><div class="credit-group-name"><span class="number2">2</span>@聪聪那年</div><ul class="credit-items"><li>评论数<p>23</p></li><li>发布数<p>22</p></li><li class="total_credit">总积分<p>45</p></li></ul></li><li class="credit-group"><div class="credit-group-name"><span class="number3">3</span>@聪聪那年</div><ul class="credit-items"><li>评论数<p>23</p></li><li>发布数<p>20</p></li><li class="total_credit">总积分<p>43</p></li></ul></li><li class="credit-group"><div class="credit-group-name"><span>4</span>@聪聪那年</div><ul class="credit-items"><li>评论数<p>22</p></li><li>发布数<p>20</p></li><li class="total_credit">总积分<p>42</p></li></ul></li></ul></div>';
+
+        $('#tab1').tab({defaultIndex: 1, activeClass: "tab-customize"});
+
+        $(".weui_navbar_item").click(function () {
+
+            console.log($(this).hasClass('tab-customize'));
+
+            if (!$(this).hasClass('tab-customize') && $(this).hasClass('category')) {
+                $(".tab-content").html(category);
+            } else if (!$(this).hasClass('tab-customize') && $(this).hasClass('all')) {
+                $(".tab-content").html(all);
+            } else if (!$(this).hasClass('tab-customize') && $(this).hasClass('points')) {
+                $(".tab-content").html(points);
+            }
+
+        });
+
+        $(".gotop").click(function () {
+            var scrollTop = $(window).scrollTop();
+            var time = setInterval(function () {
+                scrollTop -= 50;
+                $(window).scrollTop(scrollTop);
+                if (scrollTop <= 0) {
+                    $(window).scrollTop(0);
+                    clearInterval(time);
+                }
+
+            }, 10);
+        });
+
+        $(".my-search-input").keydown(function (event) {
+
+            if (event.keyCode == "13") {
+                $(".search-form").submit();
+            }
+        });
+
+        var i = 1;
+        $(window).scroll(function () {
+
+            var scrollTop = $(this).scrollTop();
+            var scrollHeight = $(document).height();
+            var windowHeight = $(this).height();
+            if (scrollTop + windowHeight == scrollHeight) {
+//                alert("you are in the bottom");
+
+                if (i > 20) {
+                    alert("到底了");
+
+                } else {
+
+                    var newitem = '<a class="list-item"><h1 class="list-item-title">新增新闻' + i + '</h1><div class="list-item-pics"><ul><li><img src="asserts/images/u669.png"rel="no this picture"width="100px"height="100px"></li></ul></div><div class="list-item-basics"><ul><li>15分钟前</li><li>一般消息</li><li>12次评论</li><li>@聪聪那年</li></ul></div></a>';
+                    $("#bottom-refresh").before(newitem);
+                    i += 1;
+                }
+
+            }
+
+            console.log($(window).scrollTop());
+            if ($(window).scrollTop() > 300) {
+                $('.gotop').show();
+
+            } else {
+                $('.gotop').hide();
+            }
+
+
+        });
+
+
+    });
+
+
+</script>
+
+</body>
+</html>

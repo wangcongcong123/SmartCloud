@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>事件</h1>
+<ul>
+<li><a href="#basic-usage">基本用法</a></li>
+<li><a href="#wildcard-listeners">通配符监听者</a></li>
+<li><a href="#using-classes-as-listeners">使用类作为监听者</a></li>
+<li><a href="#queued-events">事件队列</a></li>
+<li><a href="#event-subscribers">事件订阅者</a></li>
+</ul>
+<p><a name="basic-usage"></a></p>
+<h2>基本用法</h2>
+<p>Laravel 的 <code>Event</code> 类提供一个简单的观察者实现，允许您在应用程序里订阅与监听事件。</p>
+<h4>订阅事件</h4>
+<pre><code>Event::listen('auth.login', function($user)
+{
+    $user-&gt;last_login = new DateTime;
+
+    $user-&gt;save();
+});
+</code></pre>
+<h4>触发事件</h4>
+<pre><code>$response = Event::fire('auth.login', array($user));
+</code></pre>
+<p><code>fire</code> 方法返回的是一个响应（response）数组，可以用来控制应用程序的后续行为。</p>
+<h4>订阅有优先顺序的事件</h4>
+<p>您也可以在订阅事件的时候指定一个优先顺序。 有较高优先权的监听者会先被执行，当监听者有一样的优先权时将会依照订阅的顺序执行.</p>
+<pre><code>Event::listen('auth.login', 'LoginHandler', 10);
+
+Event::listen('auth.login', 'OtherHandler', 5);
+</code></pre>
+<h4>停止继续传递事件</h4>
+<p>您有时候会希望停止继续传递事件到其他监听者。 您可以通过从监听者回传 <code>false</code> 来做到这件事：</p>
+<pre><code>Event::listen('auth.login', function($event)
+{
+    // Handle the event...
+
+    return false;
+});
+</code></pre>
+<h3>在哪里注册事件</h3>
+<p>现在您知道怎么注册事件了，但是您或许会想知道要在 <em>哪里</em> 注册它们。 不要担心，这是一个常见的问题。 不幸地，这是一个很难回答的问题，因为您几乎可以在任何地方注册事件！ 但是，这里有一些提示。 一样的，您可以在您的其中一个 <code>start</code> 文件注册事件，就像其他大部份的启动代码，例如： <code>app/start/global.php</code>。</p>
+<p>如果您的 <code>start</code> 文件变得越来越拥挤，您可以建立一个分离的 <code>app/events.php</code> 文件，并从 <code>start</code> 文件引入它。 这是个简单的解决方案，它保持您的事件注册与剩余的启动代码干净地分离。</p>
+<p>如果您喜欢基于类的方法，您可以在 <a href="../ioc#service-providers">服务提供者</a> 注册您的事件。 因为这些方法中没有一个是绝对正确的方案，基于您的应用程序大小选择一个让您感到舒服的方法。</p>
+<p><a name="wildcard-listeners"></a></p>
+<h2>通配符监听者</h2>
+<h4>注册通配符事件监听者</h4>
+<p>当注册事件监听者，您可以使用星号(*) 指定通配符监听者：</p>
+<pre><code>Event::listen('foo.*', function($param)
+{
+    // Handle the event...
+});
+</code></pre>
+<p>这个监听者将会处理所有 <code>foo.</code> 开头的事件。</p>
+<p>您可以使用 <code>Event::firing</code> 方法准确的判定是什么事件被触发：</p>
+<pre><code>Event::listen('foo.*', function($param)
+{
+    if (Event::firing() == 'foo.bar')
+    {
+        //
+    }
+});
+</code></pre>
+<p><a name="using-classes-as-listeners"></a></p>
+<h2>使用类作为监听者</h2>
+<p>在一些案例中，您或许会希望使用类取代闭包来处理事件。 类事件监听者将会被 <a href="../ioc">Laravel IoC container</a> 处理，提供依赖注入的全部功能给您的监听者。</p>
+<h4>注册类监听者</h4>
+<pre><code>Event::listen('auth.login', 'LoginHandler');
+</code></pre>
+<h4>定义事件监听者类</h4>
+<p><code>LoginHandler</code> 类默认将会调用 <code>handle</code> 方法：</p>
+<pre><code>class LoginHandler {
+
+    public function handle($data)
+    {
+        //
+    }
+
+}
+</code></pre>
+<h4>指定被订阅的方法</h4>
+<p>如果您不希望使用默认的 <code>handle</code> 方法, 您可以指定应该被订阅的方法：</p>
+<pre><code>Event::listen('auth.login', 'LoginHandler@onLogin');
+</code></pre>
+<p><a name="queued-events"></a></p>
+<h2>事件队列</h2>
+<h4>注册事件队列</h4>
+<p>使用 <code>queue</code> 和 <code>flush</code> 方法， 您可以把事件加到队列等待触发，但是不立即触发它：</p>
+<pre><code>Event::queue('foo', array($user));
+</code></pre>
+<p>您可以执行 &quot;flusher&quot; 并触发全部的事件队列，使用 <code>flush</code> 方法：</p>
+<pre><code>Event::flush('foo');
+</code></pre>
+<p><a name="event-subscribers"></a></p>
+<h2>事件订阅者</h2>
+<h4>定义事件订阅者</h4>
+<p>事件订阅者是个可以从类自身里面订阅多个事件的类。 订阅者应该定义 <code>subscribe</code> 方法，它将会被传递到事件配送器实例：</p>
+<pre><code>class UserEventHandler {
+
+    /**
+     * Handle user login events.
+     */
+    public function onUserLogin($event)
+    {
+        //
+    }
+
+    /**
+     * Handle user logout events.
+     */
+    public function onUserLogout($event)
+    {
+        //
+    }
+
+    /**
+     * Register the listeners for the subscriber.
+     *
+     * @param  Illuminate\Events\Dispatcher  $events
+     * @return array
+     */
+    public function subscribe($events)
+    {
+        $events-&gt;listen('auth.login', 'UserEventHandler@onUserLogin');
+
+        $events-&gt;listen('auth.logout', 'UserEventHandler@onUserLogout');
+    }
+
+}
+</code></pre>
+<h4>注册事件订阅者</h4>
+<p>当订阅者被定义时，它或许会使用 <code>Event</code> 类注册。</p>
+<pre><code>$subscriber = new UserEventHandler;
+
+Event::subscribe($subscriber);
+</code></pre>
+<p>您也可以使用 <a href="../ioc">Laravel IoC container</a> 去处理您的订阅者。 简单地传递订阅者的名字给 <code>subscribe</code> 方法就可以做到：</p>
+<pre><code>Event::subscribe('UserEventHandler');
+</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

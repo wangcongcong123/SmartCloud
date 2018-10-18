@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>视图（ View ）与响应（ Response ）</h1>
+<ul>
+<li><a href="#basic-responses">基本响应</a></li>
+<li><a href="#redirects">重定向跳转</a></li>
+<li><a href="#views">视图</a></li>
+<li><a href="#view-composers">视图组件</a></li>
+<li><a href="#special-responses">特殊响应</a></li>
+<li><a href="#response-macros">响应宏</a></li>
+</ul>
+<p><a name="basic-responses"></a></p>
+<h2>基本响应</h2>
+<h4>从路由回传字串</h4>
+<pre><code>Route::get('/', function()
+{
+    return 'Hello World';
+});
+</code></pre>
+<h4>建立自定义响应</h4>
+<p><code>Response</code> 实例继承了 <code>Symfony\Component\HttpFoundation\Response</code> 类，其提供了很多方法建立 HTTP 响应。</p>
+<pre><code>$response = Response::make($contents, $statusCode);
+
+$response-&gt;header('Content-Type', $value);
+
+return $response;
+</code></pre>
+<p>如果想要使用 <code>Response</code> 类的方法，但最终回传视图给用户，您可以使用简便的 <code>Response::view</code> 方法：</p>
+<pre><code>return Response::view('hello')-&gt;header('Content-Type', $type);
+</code></pre>
+<h4>附加 Cookies 到响应</h4>
+<pre><code>$cookie = Cookie::make('name', 'value');
+
+return Response::make($content)-&gt;withCookie($cookie);
+</code></pre>
+<p><a name="redirects"></a></p>
+<h2>重定向跳转</h2>
+<h4>回传重定向跳转</h4>
+<pre><code>return Redirect::to('user/login');
+</code></pre>
+<h4>回传重定向跳转并且加上快闪数据（ Flash Data ）</h4>
+<pre><code>return Redirect::to('user/login')-&gt;with('message', 'Login Failed');
+</code></pre>
+<blockquote>
+<p><strong>提示：</strong> <code>with</code> 方法会设定快闪数据到 session，所以可以使用 <code>Session::get</code> 取得数据。</p>
+</blockquote>
+<h4>回传根据路由名称的重定向跳转</h4>
+<pre><code>return Redirect::route('login');
+</code></pre>
+<h4>回传根据路由名称的重定向跳转，并给予路由参数赋值</h4>
+<pre><code>return Redirect::route('profile', array(1));
+</code></pre>
+<h4>回传根据路由名称的重定向跳转，并给予特定名称路由参数赋值</h4>
+<pre><code>return Redirect::route('profile', array('user' =&gt; 1));
+</code></pre>
+<h4>回传根据控制器动作的重定向跳转</h4>
+<pre><code>return Redirect::action('HomeController@index');
+</code></pre>
+<h4>回传根据控制器动作的重定向跳转，并给予参数赋值</h4>
+<pre><code>return Redirect::action('UserController@profile', array(1));
+</code></pre>
+<h4>回传根据控制器动作的重定向跳转，并给予特定名称参数赋值</h4>
+<pre><code>return Redirect::action('UserController@profile', array('user' =&gt; 1));
+</code></pre>
+<p><a name="views"></a></p>
+<h2>Views</h2>
+<p>视图通常包含 HTML，并且提供便利的方式分开控制器和表现层。视图储存在 <code>app/views</code> 目录下。</p>
+<p>一个简单的视图可能看起来如下：</p>
+<pre><code>&lt;!-- View stored in app/views/greeting.php --&gt;
+
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, &lt;?php echo $name; ?&gt;&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>视图可以像这样回传到用户浏览器：</p>
+<pre><code>Route::get('/', function()
+{
+    return View::make('greeting', array('name' =&gt; 'Taylor'));
+});
+</code></pre>
+<p><code>View::make</code> 方法传入的第二个参数是可以在视图里使用的数组数据。</p>
+<h4>传递数据到视图</h4>
+<pre><code>// 使用通用方式
+$view = View::make('greeting')-&gt;with('name', 'Steve');
+
+// 使用魔术方法
+$view = View::make('greeting')-&gt;withName('steve');
+</code></pre>
+<p>上面的例子里，将可以在视图里使用变量 <code>$name</code> ，其值为 <code>Steve</code> 。</p>
+<p>您可以传入数组作为 <code>make</code> 方法第二个参数：</p>
+<pre><code>$view = View::make('greetings', $data);
+</code></pre>
+<p>您也可以设定所有视图共用数据：</p>
+<pre><code>View::share('name', 'Steve');
+</code></pre>
+<h4>传递子视图到视图</h4>
+<p>有时候您可能想要传递子视图到另一个视图。例如，有一个子视图存在 <code>app/views/child/view.php</code>，可以像这样将它传递到另一个视图：</p>
+<pre><code>$view = View::make('greeting')-&gt;nest('child', 'child.view');
+
+$view = View::make('greeting')-&gt;nest('child', 'child.view', $data);
+</code></pre>
+<p>如此可以在视图里渲染子视图：</p>
+<pre><code>&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello!&lt;/h1&gt;
+        &lt;?php echo $child; ?&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4>确认视图是否存在</h4>
+<p>如果您需要确认视图是否存在，使用 <code>View::exists</code> 方法：</p>
+<pre><code>if (View::exists('emails.customer'))
+{
+    //
+}
+</code></pre>
+<p><a name="view-composers"></a></p>
+<h2>视图组件</h2>
+<p>视图组件是当渲染视图时调用的回调函数或类方法。如果您想在每次渲染某些视图时绑定数据，视图组件可以把这样的逻辑组织在同一个地方。因此，视图组件的作用可能如 &quot;view models&quot; 或是 &quot;presenters&quot;。</p>
+<h4>定义一个组件</h4>
+<pre><code>View::composer('profile', function($view)
+{
+    $view-&gt;with('count', User::count());
+});
+</code></pre>
+<p>之后每当 <code>profile</code> 视图被渲染时， <code>count</code> 变量就会被绑定到视图。</p>
+<p>您也可以把一个组件同时附加到很多视图。</p>
+<pre><code>View::composer(array('profile','dashboard'), function($view)
+{
+    $view-&gt;with('count', User::count());
+});
+</code></pre>
+<p>如使用类作为组件，提供了可以从 <a href="../ioc">IoC 容器</a>自动解析组件的好处，您可以像这样做：</p>
+<pre><code>View::composer('profile', 'ProfileComposer');
+</code></pre>
+<p>一个视图组件类应该像这样定义：</p>
+<pre><code>class ProfileComposer {
+
+    public function compose($view)
+    {
+        $view-&gt;with('count', User::count());
+    }
+
+}
+</code></pre>
+<h4>定义很多组件</h4>
+<p>您可以使用 <code>composers</code> 方法群组视图组件：</p>
+<pre><code>View::composers(array(
+    'AdminComposer' =&gt; array('admin.index', 'admin.profile'),
+    'UserComposer' =&gt; 'user',
+    'ProductComposer@create' =&gt; 'product' 
+));
+</code></pre>
+<blockquote>
+<p><strong>提示：</strong> 组件类没有一定要放在什么地方，您可以将它们放在任何地方，只要可以使用 <code>composer.json</code> 自动载入即可。</p>
+</blockquote>
+<h3>视图创建者</h3>
+<p>视图 <strong>创建者</strong> 几乎和组件运作方式一样；只是他们会在视图初始化时就立刻建立起来。要注册一个创建者，只要使用 <code>creator</code> 方法：</p>
+<pre><code>View::creator('profile', function($view)
+{
+    $view-&gt;with('count', User::count());
+});
+</code></pre>
+<p><a name="special-responses"></a></p>
+<h2>特殊响应</h2>
+<h4>建立 JSON 响应</h4>
+<pre><code>return Response::json(array('name' =&gt; 'Steve', 'state' =&gt; 'CA'));
+</code></pre>
+<h4>建立 JSONP 响应</h4>
+<pre><code>return Response::json(array('name' =&gt; 'Steve', 'state' =&gt; 'CA'))-&gt;setCallback(Input::get('callback'));
+</code></pre>
+<h4>建立下载文件响应</h4>
+<pre><code>return Response::download($pathToFile);
+
+return Response::download($pathToFile, $name, $headers);
+</code></pre>
+<blockquote>
+<p><strong>提醒：</strong> 管理文件下载的扩展包，Symfony HttpFoundation，要求下载文件名必须为 ASCII 。</p>
+</blockquote>
+<p><a name="response-macros"></a></p>
+<h2>响应宏</h2>
+<p>如果您想要自定义可以在很多路由和控制器重复使用的响应，可以使用 <code>Response::macro</code> 方法：</p>
+<pre><code>Response::macro('caps', function($value)
+{
+    return Response::make(strtoupper($value));
+});
+</code></pre>
+<p><code>macro</code> 方法第一个参数为宏名称，第二个参数为闭合函数。闭合函数会在 <code>Response</code> 调用宏名称的时候被执行：</p>
+<pre><code>return Response::caps('foo');
+</code></pre>
+<p>您可以把定义自己的宏放在 <code>app/start</code> 里面的文件。又或者，您可以将宏组织成独立的文件，并且从其中一个 <code>start</code> 文件里引入。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

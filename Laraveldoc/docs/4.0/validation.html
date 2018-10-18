@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="contributing.html">为Laravel做贡献</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="templates.html">模版</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="contributing.html">为Laravel做贡献</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="templates.html">模版</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>验证</h1>
+<ul>
+<li><a href="#basic-usage">基本使用</a></li>
+<li><a href="#working-with-error-messages">使用错误消息</a></li>
+<li><a href="#error-messages-and-views">错误消息 &amp; 视图</a></li>
+<li><a href="#available-validation-rules">可用的验证规则</a></li>
+<li><a href="#conditionally-adding-rules">有条件的添加规则</a></li>
+<li><a href="#custom-error-messages">自定义错误消息</a></li>
+<li><a href="#custom-validation-rules">自定义验证规则</a></li>
+</ul>
+<p><a name="basic-usage"></a></p>
+<h2>基本使用</h2>
+<p>Laravel 自带一个简单、方便的 <code>Validation</code> 类用于验证数据以及获取错误消息。</p>
+<p><strong>基本验证例子</strong></p>
+<pre><code>$validator = Validator::make(
+    array('name' =&gt; 'Dayle'),
+
+    array('name' =&gt; 'required|min:5')
+);
+</code></pre>
+<p>传递给 <code>make</code> 函数的第一个参数是待验证的数据，第二个参数是对该数据需要应用的验证规则。</p>
+<p>多个验证规则可以通过 &quot;|&quot; 字符进行分隔，或者作为数组的一个单独的元素。</p>
+<p><strong>通过数组指定验证规则</strong></p>
+<pre><code>$validator = Validator::make(
+    array('name' =&gt; 'Dayle'),
+    array('name' =&gt; array('required', 'min:5'))
+);
+</code></pre>
+<p><strong>验证多个字段</strong></p>
+<pre><code>$validator = Validator::make(
+    array(
+        'name' =&gt; 'Dayle',
+        'password' =&gt; 'lamepassword',
+        'email' =&gt; 'email@example.com'
+    ),
+    array(
+        'name' =&gt; 'required',
+        'password' =&gt; 'required|min:8',
+        'email' =&gt; 'required|email|unique:users'
+    )
+);
+</code></pre>
+<p>一旦一个 <code>Validator</code> 实例被创建，可以使用 <code>fails</code> （或者 <code>passes</code>）函数执行这个验证。</p>
+<pre><code>if ($validator-&gt;fails())
+{
+    // The given data did not pass validation
+}
+</code></pre>
+<p>如果验证失败，你可以从验证器中获取错误消息。</p>
+<pre><code>$messages = $validator-&gt;messages();
+</code></pre>
+<p>你也可以使用 <code>failed</code> 函数得到不带错误消息的没有通过验证的规则的数组。</p>
+<pre><code>$failed = $validator-&gt;failed();
+</code></pre>
+<p><strong>文件验证</strong></p>
+<p><code>Validator</code> 类提供了一些验证规则用于验证文件，比如 <code>size</code>、<code>mimes</code>等。在验证文件的时候，你可以和其他数据一起传递给验证器。</p>
+<p><a name="working-with-error-messages"></a></p>
+<h2>使用错误消息</h2>
+<p>在一个 <code>Validator</code> 实例上调用 <code>messages</code> 函数之后，将会得到一个 <code>MessageBag</code> 实例，该实例拥有很多方便使用错误消息的函数。</p>
+<p><strong>获取一个字段的第一个错误消息</strong></p>
+<pre><code>echo $messages-&gt;first('email');
+</code></pre>
+<p><strong>获取一个字段的全部错误消息</strong></p>
+<pre><code>foreach ($messages-&gt;get('email') as $message)
+{
+    //
+}
+</code></pre>
+<p><strong>获取全部字段的全部错误消息</strong></p>
+<pre><code>foreach ($messages-&gt;all() as $message)
+{
+    //
+}
+</code></pre>
+<p><strong>检查一个字段是否存在消息</strong></p>
+<pre><code>if ($messages-&gt;has('email'))
+{
+    //
+}
+</code></pre>
+<p><strong>以某种格式获取一条错误消息</strong></p>
+<pre><code>echo $messages-&gt;first('email', '&lt;p&gt;:message&lt;/p&gt;');
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 默认情况下，消息将使用与 Bootstrap 兼容的语法进行格式化。</p>
+</blockquote>
+<p><strong>以某种格式获取所有错误消息</strong></p>
+<pre><code>foreach ($messages-&gt;all('&lt;li&gt;:message&lt;/li&gt;') as $message)
+{
+    //
+}
+</code></pre>
+<p><a name="error-messages-and-views"></a></p>
+<h2>错误消息 &amp; 视图</h2>
+<p>一旦你执行了验证，你需要一种简单的方法向视图反馈错误消息。这在 Lavavel 中能够方便的处理。以下面的路由作为例：</p>
+<pre><code>Route::get('register', function()
+{
+    return View::make('user.register');
+});
+
+Route::post('register', function()
+{
+    $rules = array(...);
+
+    $validator = Validator::make(Input::all(), $rules);
+
+    if ($validator-&gt;fails())
+    {
+        return Redirect::to('register')-&gt;withErrors($validator);
+    }
+});
+</code></pre>
+<p>注意当验证失败，我们使用 <code>withErrors</code> 函数把 <code>Validator</code> 实例传递给 Redirect。这个函数将刷新 Session 中保存的错误消息，使得它们在下次请求中可用。</p>
+<p>然而，请注意在我们的 GET 路由中并没有明确的绑定错误消息到视图。这是因为 Laravel 总会检查 Session 中的错误，并且如果它们是可用的将自动绑定到视图。<strong>所以，需要特别注意的是，对于每个请求，一个 <code>$errors</code> 变量在所有视图中总是可用的</strong>，允许你方便的认为 <code>$errors</code> 变量总是被定义并可以安全使用的。<code>$errors</code> 变量将是一个 <code>MessageBag</code> 类的实例。</p>
+<p>所以，在跳转之后，你可以在视图中使用自动绑定的 <code>$errors</code> 变量：</p>
+<pre><code>&lt;?php echo $errors-&gt;first('email'); ?&gt;
+</code></pre>
+<p><a name="available-validation-rules"></a></p>
+<h2>可用的验证规则</h2>
+<p>下面是一个所有可用的验证规则的列表以及它们的功能：</p>
+<ul>
+<li><a href="#rule-accepted">Accepted</a></li>
+<li><a href="#rule-active-url">Active URL</a></li>
+<li><a href="#rule-after">After (Date)</a></li>
+<li><a href="#rule-alpha">Alpha</a></li>
+<li><a href="#rule-alpha-dash">Alpha Dash</a></li>
+<li><a href="#rule-alpha-num">Alpha Numeric</a></li>
+<li><a href="#rule-before">Before (Date)</a></li>
+<li><a href="#rule-between">Between</a></li>
+<li><a href="#rule-confirmed">Confirmed</a></li>
+<li><a href="#rule-date">Date</a></li>
+<li><a href="#rule-date-format">Date Format</a></li>
+<li><a href="#rule-different">Different</a></li>
+<li><a href="#rule-digits">Digits</a></li>
+<li><a href="#rule-digitsbetween">Digits Between</a></li>
+<li><a href="#rule-email">E-Mail</a></li>
+<li><a href="#rule-exists">Exists (Database)</a></li>
+<li><a href="#rule-image">Image (File)</a></li>
+<li><a href="#rule-in">In</a></li>
+<li><a href="#rule-integer">Integer</a></li>
+<li><a href="#rule-ip">IP Address</a></li>
+<li><a href="#rule-max">Max</a></li>
+<li><a href="#rule-mimes">MIME Types</a></li>
+<li><a href="#rule-min">Min</a></li>
+<li><a href="#rule-not-in">Not In</a></li>
+<li><a href="#rule-numeric">Numeric</a></li>
+<li><a href="#rule-regex">Regular Expression</a></li>
+<li><a href="#rule-required">Required</a></li>
+<li><a href="#rule-required-if">Required If</a></li>
+<li><a href="#rule-required-with">Required With</a></li>
+<li><a href="#rule-required-without">Required Without</a></li>
+<li><a href="#rule-same">Same</a></li>
+<li><a href="#rule-size">Size</a></li>
+<li><a href="#rule-unique">Unique (Database)</a></li>
+<li><a href="#rule-url">URL</a></li>
+</ul>
+<p><a name="rule-accepted"></a></p>
+<h4>accepted</h4>
+<p>验证此规则的值必须是 <em>yes</em>、 <em>on</em> 或者是 <em>1</em>。这在验证是否同意&quot;服务条款&quot;的时候非常有用。</p>
+<p><a name="rule-active-url"></a></p>
+<h4>active_url</h4>
+<p>验证此规则的值必须是一个合法的 URL，根据 PHP 函数 <code>checkdnsrr</code>。</p>
+<p><a name="rule-after"></a></p>
+<h4>after:<em>date</em></h4>
+<p>验证此规则的值必须在给定日期之后，该日期将被传递到 PHP 的 <code>strtotime</code> 函数。</p>
+<p><a name="rule-alpha"></a></p>
+<h4>alpha</h4>
+<p>验证此规则的值必须全部由字母字符构成。</p>
+<p><a name="rule-alpha-dash"></a></p>
+<h4>alpha_dash</h4>
+<p>验证此规则的值必须全部由字母、数字、中划线或下划线字符构成。</p>
+<p><a name="rule-alpha-num"></a></p>
+<h4>alpha_num</h4>
+<p>验证此规则的值必须全部由字母和数字构成。</p>
+<p><a name="rule-before"></a></p>
+<h4>before:<em>date</em></h4>
+<p>验证此规则的值必须在给定日期之前，该日期将被传递到 PHP 的 <code>strtotime</code> 函数。</p>
+<p><a name="rule-between"></a></p>
+<h4>between:<em>min</em>,<em>max</em></h4>
+<p>验证此规则的值必须在给定的 <em>min</em> 和 <em>max</em> 之间。字符串、数字以及文件都将使用大小规则进行比较。</p>
+<p><a name="rule-confirmed"></a></p>
+<h4>confirmed</h4>
+<p>验证此规则的值必须和 <code>foo_confirmation</code> 的值相同。比如，需要验证此规则的字段是 <code>password</code>，那么在输入中必须有一个与之相同的 <code>password_confirmation</code> 字段。</p>
+<p><a name="rule-date"></a></p>
+<h4>date</h4>
+<p>验证此规则的值必须是一个合法的日期，根据 PHP 函数 <code>strtotime</code>。</p>
+<p><a name="rule-date-format"></a></p>
+<h4>date_format:<em>format</em></h4>
+<p>验证此规则的值必须符合给定的 <em>format</em> 的格式，根据 PHP 函数 <code>date_parse_from_format</code>。</p>
+<p><a name="rule-different"></a></p>
+<h4>different:<em>field</em></h4>
+<p>验证此规则的值必须与指定的 <em>field</em> 字段的值不同。</p>
+<p><a name="rule-digits"></a></p>
+<h4>digits:<em>value</em></h4>
+<p>The field under validation must be <em>numeric</em> and must have an exact length of <em>value</em>.</p>
+<p><a name="rule-digitsbetween"></a></p>
+<h4>digitsbetween:<em>min</em>,<em>max</em></h4>
+<p>The field under validation must have a length between the given <em>min</em> and <em>max</em>.</p>
+<p><a name="rule-email"></a></p>
+<h4>email</h4>
+<p>验证此规则的值必须是一个合法的电子邮件地址。</p>
+<p><a name="rule-exists"></a></p>
+<h4>exists:<em>table</em>,<em>column</em></h4>
+<p>验证此规则的值必须在指定的数据库的表中存在。</p>
+<p><strong>Exists 规则的基础使用</strong></p>
+<pre><code>'state' =&gt; 'exists:states'
+</code></pre>
+<p><strong>指定列名</strong></p>
+<pre><code>'state' =&gt; 'exists:states,abbreviation'
+</code></pre>
+<p>你也可以指定更多的条件，将以 &quot;where&quot; 的形式添加到查询。</p>
+<pre><code>'email' =&gt; 'exists:staff,email,account_id,1'
+</code></pre>
+<p><a name="rule-image"></a></p>
+<h4>image</h4>
+<p>验证此规则的值必须是一个图片 (jpeg, png, bmp 或者 gif)。</p>
+<p><a name="rule-in"></a></p>
+<h4>in:<em>foo</em>,<em>bar</em>,...</h4>
+<p>验证此规则的值必须在给定的列表中存在。</p>
+<p><a name="rule-integer"></a></p>
+<h4>integer</h4>
+<p>验证此规则的值必须是一个整数。</p>
+<p><a name="rule-ip"></a></p>
+<h4>ip</h4>
+<p>验证此规则的值必须是一个合法的 IP 地址。</p>
+<p><a name="rule-max"></a></p>
+<h4>max:<em>value</em></h4>
+<p>验证此规则的值必须小于最大值 <em>value</em>。字符串、数字以及文件都将使用大小规则进行比较。</p>
+<p><a name="rule-mimes"></a></p>
+<h4>mimes:<em>foo</em>,<em>bar</em>,...</h4>
+<p>验证此规则的文件的 MIME 类型必须在给定的列表中。</p>
+<p><strong>MIME 规则的基础使用</strong></p>
+<pre><code>'photo' =&gt; 'mimes:jpeg,bmp,png'
+</code></pre>
+<p><a name="rule-min"></a></p>
+<h4>min:<em>value</em></h4>
+<p>验证此规则的值必须大于最小值 <em>value</em>。字符串、数字以及文件都将使用大小规则进行比较。</p>
+<p><a name="rule-not-in"></a></p>
+<h4>not_in:<em>foo</em>,<em>bar</em>,...</h4>
+<p>验证此规则的值必须在给定的列表中不存在。</p>
+<p><a name="rule-numeric"></a></p>
+<h4>numeric</h4>
+<p>验证此规则的值必须是一个数字。</p>
+<p><a name="rule-regex"></a></p>
+<h4>regex:<em>pattern</em></h4>
+<p>验证此规则的值必须符合给定的正则表达式。</p>
+<p><strong>注意：</strong> 当使用 <code>regex</code> 模式的时候，可能需要在一个数组中指定规则，而不是使用 &quot;|&quot; 分隔符，特别是正则表达式中包含一个 &quot;|&quot; 字符的时候。</p>
+<p><a name="rule-required"></a></p>
+<h4>required</h4>
+<p>验证此规则的值必须在输入数据中存在。</p>
+<p><a name="rule-required-if"></a></p>
+<h4>required_if:<em>field</em>,<em>value</em></h4>
+<p>如果指定的 <em>field</em> 字段等于指定的 <em>value</em> ，那么验证此规则的值必须存在。</p>
+<p><a name="rule-required-with"></a></p>
+<h4>required_with:<em>foo</em>,<em>bar</em>,...</h4>
+<p><em>仅当</em>其它指定的字段存在的时候，验证此规则的值必须存在。</p>
+<p><a name="rule-required-without"></a></p>
+<h4>required_without:<em>foo</em>,<em>bar</em>,...</h4>
+<p><em>仅当</em>其它指定的字段不存在的时候，验证此规则的值必须存在。</p>
+<p><a name="rule-same"></a></p>
+<h4>same:<em>field</em></h4>
+<p>验证此规则的值必须与给定的 <em>field</em> 字段的值相同。</p>
+<p><a name="rule-size"></a></p>
+<h4>size:<em>value</em></h4>
+<p>验证此规则的值的大小必须与给定的 <em>value</em> 相同。对于字符串，<em>value</em> 代表字符的个数；对于数字，<em>value</em> 代表它的整数值，对于文件，<em>value</em> 代表文件以KB为单位的大小。</p>
+<p><a name="rule-unique"></a></p>
+<h4>unique:<em>table</em>,<em>column</em>,<em>except</em>,<em>idColumn</em></h4>
+<p>验证此规则的值必须在给定的数据库的表中唯一。如果 <code>column</code> 没有被指定，将使用该字段的名字。</p>
+<p><strong>Unique 规则的基础使用</strong></p>
+<pre><code>'email' =&gt; 'unique:users'
+</code></pre>
+<p><strong>指定列名</strong></p>
+<pre><code>'email' =&gt; 'unique:users,email_address'
+</code></pre>
+<p><strong>强制忽略一个给定的 ID</strong></p>
+<pre><code>'email' =&gt; 'unique:users,email_address,10'
+</code></pre>
+<p><strong>添加额外的where语句</strong></p>
+<p>你还可以指定更多条件，这些条件将被添加到查询的&quot;where&quot;语句中：</p>
+<pre><code>'email' =&gt; 'unique:users,email_address,NULL,id,account_id,1'
+</code></pre>
+<p>在上面的规则中，只有<code>account_id</code> 为 <code>1</code> 的行才会被包含到unique检查中。</p>
+<p><a name="rule-url"></a></p>
+<h4>url</h4>
+<p>验证此规则的值必须是一个合法的 URL。</p>
+<p><a name="conditionally-adding-rules"></a></p>
+<h2>有条件的添加规则</h2>
+<p>有时你可能希望给定的字段仅当另一个字段的值大于100的时候必须存在。或者你可能需要两个字段均含有一个给定的值，仅当另一个字段存在的时候。添加这些验证规则并没有那么麻烦。首先，创建一个使用你永远不会改变的 <em>static rules</em> 的 <code>Validator</code> 实例：</p>
+<pre><code>$v = Validator::make($data, array(
+    'email' =&gt; 'required|email',
+    'games' =&gt; 'required|numeric',
+));
+</code></pre>
+<p>假设我们的WEB应用程序是服务于游戏收藏爱好者们。如果一个游戏收藏爱好者注册了我们的应用程序，并且他们拥有100多款游戏，我们想让他们说明为什么他们会拥有如此多的游戏。例如，或许他们要开一个游戏转售店，或者也许他们只是喜欢收集。为了有条件的添加这个需求，我们可以使用 <code>Validator</code> 实例的 <code>sometimes</code> 函数。</p>
+<pre><code>$v-&gt;sometimes('reason', 'required|max:500', function($input)
+{
+    return $input-&gt;games &gt;= 100;
+});
+</code></pre>
+<p><code>sometimes</code> 函数的第一个参数是我们有条件的验证的字段名。第二个参数是我们要添加的规则。如果 <code>Closure</code> 作为第三个参数且返回了 <code>true</code>，规则将被添加。这种方法可以很容易构建复杂的条件验证。你甚至可以一次性为多个字段添加条件验证：</p>
+<pre><code>$v-&gt;sometimes(array('reason', 'cost'), 'required', function($input)
+{
+    return $input-&gt;games &gt;= 100;
+});
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 传递到你的 <code>Closure</code> 中的 <code>$input</code> 参数将被作为 <code>Illuminate\Support\Fluent</code> 的一个实例，并且可能被用作一个对象来访问你的输入和文件。</p>
+</blockquote>
+<p><a name="custom-error-messages"></a></p>
+<h2>自定义错误消息</h2>
+<p>如果有需要，你可以使用自定义的错误消息代替默认的消息。这里有好几种自定义错误消息的方法。</p>
+<p><strong>传递自定义消息到验证器</strong></p>
+<pre><code>$messages = array(
+    'required' =&gt; 'The :attribute field is required.',
+);
+
+$validator = Validator::make($input, $rules, $messages);
+</code></pre>
+<p><em>注意:</em> <code>:attribute</code> 占位符将被实际要验证的字段名替换，你也可以在错误消息中使用其他占位符。</p>
+<p><strong>其他验证占位符</strong></p>
+<pre><code>$messages = array(
+    'same'    =&gt; 'The :attribute and :other must match.',
+    'size'    =&gt; 'The :attribute must be exactly :size.',
+    'between' =&gt; 'The :attribute must be between :min - :max.',
+    'in'      =&gt; 'The :attribute must be one of the following types: :values',
+);
+</code></pre>
+<p>有些时候，你可能希望只对一个指定的字段指定自定义的错误消息：</p>
+<p><strong>对一个指定的字段指定自定义的错误消息</strong></p>
+<pre><code>$messages = array(
+    'email.required' =&gt; 'We need to know your e-mail address!',
+);
+</code></pre>
+<p>在一些情况下，你可能希望在一个语言文件中指定你的错误消息而不是直接传递给 <code>Validator</code>。为了实现这个目的，请在 <code>app/lang/xx/validation.php</code> 文件中添加你的自定义消息到 <code>custom</code> 数组。</p>
+<p><a name="localization"></a>
+<strong>在语言文件中指定错误消息</strong></p>
+<pre><code>'custom' =&gt; array(
+    'email' =&gt; array(
+        'required' =&gt; 'We need to know your e-mail address!',
+    ),
+),
+</code></pre>
+<p><a name="custom-validation-rules"></a></p>
+<h2>自定义验证规则</h2>
+<p>Laravel 提供了一系列有用的验证规则；但是，你可能希望添加自己的验证规则。其中一种方法是使用 <code>Validator::extend</code> 函数注册自定义的验证规则：</p>
+<p><strong>注册一个自定义的验证规则</strong></p>
+<pre><code>Validator::extend('foo', function($attribute, $value, $parameters)
+{
+    return $value == 'foo';
+});
+</code></pre>
+<p>自定义的验证器接受三个参数：待验证属性的名字、待验证属性的值以及传递给这个规则的参数。</p>
+<p>你也可以传递一个类的函数到 <code>extend</code> 函数，而不是使用闭包：</p>
+<pre><code>Validator::extend('foo', 'FooValidator@validate');
+</code></pre>
+<p>注意你需要为你的自定义规则定义错误消息。你既可以使用一个行内的自定义消息数组，也可以在验证语言文件中进行添加。</p>
+<p>你也可以扩展 <code>Validator</code> 类本身，而不是使用闭包回调扩展验证器。为了实现这个目的，添加一个继承自 <code>Illuminate\Validation\Validator</code> 的验证器类。你可以在类中添加以 <code>validate</code> 开头的验证函数：</p>
+<p><strong>扩展验证器类</strong></p>
+<pre><code>&lt;?php
+
+class CustomValidator extends Illuminate\Validation\Validator {
+
+    public function validateFoo($attribute, $value, $parameters)
+    {
+        return $value == 'foo';
+    }
+
+}
+</code></pre>
+<p>下面，你需要注册自定义的验证器扩展：</p>
+<p><strong>你需要注册自定义的验证器扩展</strong></p>
+<pre><code>Validator::resolver(function($translator, $data, $rules, $messages)
+{
+    return new CustomValidator($translator, $data, $rules, $messages);
+});
+</code></pre>
+<p>当创建一个自定义的验证规则，你有时需要为错误消息定义一个自定义的占位符。为了实现它，你可以像上面那样创建一个自定义的验证器，并且在验证器中添加一个 <code>replaceXXX</code> 函数：</p>
+<pre><code>protected function replaceFoo($message, $attribute, $rule, $parameters)
+{
+    return str_replace(':foo', $parameters[0], $message);
+}
+</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

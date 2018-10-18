@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>HTTP 响应</h1>
+<ul>
+<li><a href="#basic-responses">基本响应</a></li>
+<li><a href="#redirects">重定向</a></li>
+<li><a href="#other-responses">其他响应</a></li>
+<li><a href="#response-macros">响应宏</a></li>
+</ul>
+<p><a name="basic-responses"></a></p>
+<h2>基本响应</h2>
+<h4>从路由返回字串</h4>
+<p>最基本的响应就是从 Laravel 的路由返回字串：</p>
+<pre><code>Route::get('/', function()
+{
+    return 'Hello World';
+});
+</code></pre>
+<h4>建立自定义响应</h4>
+<p>但是以大部分的路由及控制器所执行的动作来说，你需要返回完整的 <code>Illuminate\Http\Response</code> 实例或是一个<a href="views.html">视图</a>。返回一个完整的 <code>Response</code> 实例时，你能够自定义响应的 HTTP 状态码以及响应头。<code>Response</code> 实例继承了 <code>Symfony\Component\HttpFoundation\Response</code> 类，它提供了很多方法来建立 HTTP 响应。</p>
+<pre><code>use Illuminate\Http\Response;
+
+return (new Response($content, $status))
+              -&gt;header('Content-Type', $value);
+</code></pre>
+<p>为了方便起见，你可以使用辅助方法 <code>response</code>：</p>
+<pre><code>return response($content, $status)
+              -&gt;header('Content-Type', $value);
+</code></pre>
+<blockquote>
+<p><strong>提示：</strong> 有关 <code>Response</code> 方法的完整列表可以参照 <a href="http://laravel.com/api/5.0/Illuminate/Http/Response.html" target="_blank">API 文档</a> 以及 <a href="http://api.symfony.com/2.5/Symfony/Component/HttpFoundation/Response.html" target="_blank">Symfony API 文档</a>.</p>
+</blockquote>
+<h4>在响应送出视图</h4>
+<p>如果想要使用 <code>Response</code> 类的方法，但最终返回视图给用户，你可以使用简便的 <code>view</code> 方法：</p>
+<pre><code>return response()-&gt;view('hello')-&gt;header('Content-Type', $type);
+</code></pre>
+<h4>附加 Cookies 到响应</h4>
+<pre><code>return response($content)-&gt;withCookie(cookie('name', 'value'));
+</code></pre>
+<h4>链式方法</h4>
+<p>切记，大多数的 <code>Response</code> 方法都是可以链式调用的，用以建立流畅的响应：</p>
+<pre><code>return response()-&gt;view('hello')-&gt;header('Content-Type', $type)
+                 -&gt;withCookie(cookie('name', 'value'));
+</code></pre>
+<p><a name="redirects"></a></p>
+<h2>重定向</h2>
+<p>重定向响应通常是类 <code>Illuminate\Http\RedirectResponse</code> 的实例，并且包含用户要重定向至另一个 URL 所需的响应头。</p>
+<h4>返回重定向</h4>
+<p>有几种方法可以产生 <code>RedirectResponse</code> 的实例，最简单的方式就是透过辅助方法 <code>redirect</code>。当在测试时，建立一个模拟重定向响应的测试并不常见，所以使用辅助方法通常是可行的：</p>
+<pre><code>return redirect('user/login');
+</code></pre>
+<h4>返回重定向并且加上快闪数据（ Flash Data ）</h4>
+<p>通常重定向至新的 URL 时会一并将<a href="session.html">数据存进一次性 Session</a>。所以为了方便，你可以利用方法连接的方式创建一个 <code>RedirectResponse</code> 的实例<strong>并</strong>将数据存进一次性 Session：</p>
+<pre><code>return redirect('user/login')-&gt;with('message', 'Login Failed');
+</code></pre>
+<h4>返回根据前一个 URL 的重定向</h4>
+<p>你可能希望将用户重定向至前一个位置，例如当表单提交之后。你可以使用 <code>back</code> 方法来达成这个目的：</p>
+<pre><code>return redirect()-&gt;back();
+
+return redirect()-&gt;back()-&gt;withInput();
+</code></pre>
+<h4>返回根据路由名称的重定向</h4>
+<p>当你调用辅助方法 <code>redirect</code> 且不带任何参数时，将会返回 <code>Illuminate\Routing\Redirector</code> 的实例，你可以对该实例调用任何的方法。举个例子，要产生一个 <code>RedirectResponse</code> 到一个路由名称，你可以使用 <code>route</code> 方法：</p>
+<pre><code>return redirect()-&gt;route('login');
+</code></pre>
+<h4>返回根据路由名称的重定向，并给予路由参数赋值</h4>
+<p>如果你的路由有参数，你可以放进 <code>route</code> 方法的第二个参数。</p>
+<pre><code>// 路由的 URI 为：profile/{id}
+
+return redirect()-&gt;route('profile', [1]);
+</code></pre>
+<p>如果你要重定向至路由且路由的参数为 Eloquent 模型的「ID」，你可以直接将模型传入，ID 将会自动被提取：</p>
+<pre><code>return redirect()-&gt;route('profile', [$user]);
+</code></pre>
+<h4>返回根据路由名称的重定向，并给予特定名称路由参数赋值</h4>
+<pre><code>// 路由的 URI 为：profile/{user}
+
+return redirect()-&gt;route('profile', ['user' =&gt; 1]);
+</code></pre>
+<h4>返回根据控制器动作的重定向</h4>
+<p>既然可以产生 <code>RedirectResponse</code> 的实例并重定向至路由名称，同样的也可以重定向至<a href="controllers.html">控制器动作</a>：</p>
+<pre><code>return redirect()-&gt;action('App\Http\Controllers\HomeController@index');
+</code></pre>
+<blockquote>
+<p><strong>提示：</strong> 如果你已经通过 <code>URL::setRootControllerNamespace</code> 注册了根控制器的命名空间，那么就不需要对 <code>action()</code> 方法内的控制器指定完整的命名空间。</p>
+</blockquote>
+<h4>返回根据控制器动作的重定向，并给予参数赋值</h4>
+<pre><code>return redirect()-&gt;action('App\Http\Controllers\UserController@profile', [1]);
+</code></pre>
+<h4>返回根据控制器动作的重定向，并给予特定名称参数赋值</h4>
+<pre><code>return redirect()-&gt;action('App\Http\Controllers\UserController@profile', ['user' =&gt; 1]);
+</code></pre>
+<p><a name="other-responses"></a></p>
+<h2>其他响应</h2>
+<p>使用辅助方法 <code>response</code> 可以轻松的产生其他类型的响应实例。当你调用辅助方法 <code>response</code> 且不带任何参数时，将会返回 <code>Illuminate\Contracts\Routing\ResponseFactory</code> <a href="contracts.html">Contract</a> 的实做。Contract 提供了一些有用的方法来产生响应。</p>
+<h4>建立 JSON 响应</h4>
+<p><code>json</code> 方法会自动将响应头的 <code>Content-Type</code> 配置为 <code>application/json</code>：</p>
+<pre><code>return response()-&gt;json(['name' =&gt; 'Abigail', 'state' =&gt; 'CA']);
+</code></pre>
+<h4>建立 JSONP 响应</h4>
+<pre><code>return response()-&gt;json(['name' =&gt; 'Abigail', 'state' =&gt; 'CA'])
+                 -&gt;setCallback($request-&gt;input('callback'));
+</code></pre>
+<h4>建立文件下载的响应</h4>
+<pre><code>return response()-&gt;download($pathToFile);
+
+return response()-&gt;download($pathToFile, $name, $headers);
+
+return response()-&gt;download($pathToFile)-&gt;deleteFileAfterSend(true);
+</code></pre>
+<blockquote>
+<p>**提醒：**管理文件下载的扩展包，Symfony HttpFoundation，要求下载文件名必须为 ASCII。</p>
+</blockquote>
+<p><a name="response-macros"></a></p>
+<h2>响应宏</h2>
+<p>如果你想要自定义可以在很多路由和控制器重复使用的响应，你可以使用 <code>Illuminate\Contracts\Routing\ResponseFactory</code> 实做的方法 <code>macro</code>。</p>
+<p>举个例子，来自<a href="providers.html">服务提供者的</a> <code>boot</code> 方法:</p>
+<pre><code>&lt;?php namespace App\Providers;
+
+use Response;
+use Illuminate\Support\ServiceProvider;
+
+class ResponseMacroServiceProvider extends ServiceProvider {
+
+    /**
+     * Perform post-registration booting of services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        Response::macro('caps', function($value) use ($response)
+        {
+            return $response-&gt;make(strtoupper($value));
+        });
+    }
+
+}
+</code></pre>
+<p><code>macro</code> 函数第一个参数为宏名称，第二个参数为闭包函数。闭包函数会在 <code>ResponseFactory</code>的实做或者辅助方法 <code>response</code> 调用宏名称的时候被执行：</p>
+<pre><code>return response()-&gt;caps('foo');
+</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

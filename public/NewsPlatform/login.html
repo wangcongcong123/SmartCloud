@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="asserts/css/cc.css"/>
+
+    <style>
+        .bottom-options {
+            width: 100%;
+            font-size: 0.7em;
+            padding-bottom: 10px
+        }
+        .bottom-options a{
+            color: #708dac;
+            text-decoration: none;
+        }
+
+        .bottom-options a:active{
+            color: #3c4c5d;
+        }
+
+
+    </style>
+</head>
+
+<body style="background-color: #f8f8f8;">
+
+
+<div class="cc-header">
+    <div class="cc-header-left"><a class="ccicon-undo2 cc-header-left-link"></a></div>
+    <div class="cc-header-right cc-header-status"><a class="ccicon-spinner3"></a></div>
+    <h1 class="cc-header-title">登录页面</h1>
+</div>
+
+
+<div class="face-container">
+
+    <div class="face-img">
+        <img src="asserts/images/u241.png" width="100px" height="100px">
+    </div>
+
+</div>
+
+
+<form class="responsive-form" action="index.html" method="get" style="margin-top: -30px;margin-bottom: 0">
+    <div class="ccinput-container">
+        <span class="upper-text">请输入您的账号</span>
+        <input type="text" class="ccinput" name="account">
+        <span class="bottom-line"></span>
+        <div class="error-line name-error">请输入您的账号</div>
+    </div>
+
+    <div class="ccinput-container">
+        <span class="upper-text">请输入您的密码</span>
+        <input type="password" class="ccinput" name="password">
+        <span class="bottom-line"></span>
+        <div class="error-line number-error">请输入您的密码</div>
+    </div>
+
+    <button class="cc-btn bg-heavy" id="submit" type="submit" style="margin-bottom: 10px">
+        确认登录
+    </button>
+
+    <div class="container" style="margin-top: 20px">
+
+        <a class="wechat-login"></a>
+
+
+        <div class="bottom-options" style="margin: 20px auto">
+            <a class="toleft" href="#">忘记密码?</a>
+            <a class="toright" href="verify.html">没有认证?去认证</a>
+        </div>
+
+
+    </div>
+
+
+</form>
+
+
+<script src="asserts/js/jquery.min.js"></script>
+
+
+<script>
+    $(function () {
+
+
+        $(".ccinput").focus(function () {
+            $(this).prev(".upper-text").css("top", "-10px");
+        });
+
+        $(".cc-header-left-link").click(function () {
+            history.back();
+        });
+
+
+        $("input[name='account']").blur(function () {
+            if ($("input[name='account']").val().trim() == "") {
+                $("input[name='account']").siblings('.error-line').show();
+                $("input[name='account']").css('border-bottom', '2px solid #e82825');
+            } else {
+                $("input[name='account']").siblings('.error-line').hide();
+                $("input[name='account']").css('border-bottom', '2px solid #d1d1d1');
+            }
+        });
+
+
+        $("input[name='password']").blur(function () {
+            if ($("input[name='password']").val().trim() == "") {
+                $("input[name='password']").siblings('.error-line').show();
+                $("input[name='password']").css('border-bottom', '2px solid #e82825');
+            } else {
+                $("input[name='password']").siblings('.error-line').hide();
+                $("input[name='password']").css('border-bottom', '2px solid #d1d1d1');
+            }
+        });
+
+
+        $("#submit").click(function () {
+
+            if ($("input[name='account']").val().trim() == "" || $("input[name='password']").val().trim() == "") {
+
+                if ($("input[name='account']").val().trim() == "") {
+                    $("input[name='account']").siblings('.error-line').show();
+                    $("input[name='account']").css('border-bottom', '2px solid #e82825');
+                }
+
+                if ($("input[name='password']").val().trim() == "") {
+                    $("input[name='password']").siblings('.error-line').show();
+                    $("input[name='password']").css('border-bottom', '2px solid #e82825');
+                }
+
+                return false;
+            }
+
+
+        });
+
+
+    });
+</script>
+
+</body>
+</html>

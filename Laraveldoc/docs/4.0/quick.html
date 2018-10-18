@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="contributing.html">为Laravel做贡献</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="templates.html">模版</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="contributing.html">为Laravel做贡献</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="templates.html">模版</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>Laravel 快速入门</h1>
+<ul>
+<li><a href="#installation">安装</a></li>
+<li><a href="#routing">路由</a></li>
+<li><a href="#creating-a-view">创建视图</a></li>
+<li><a href="#creating-a-migration">创建迁移</a></li>
+<li><a href="#eloquent-orm">Eloquent ORM</a></li>
+<li><a href="#displaying-data">显示数据</a></li>
+</ul>
+<p><a name="installation"></a></p>
+<h2>安装</h2>
+<p>Laravel框架使用 <a href="http://getcomposer.org" target="_blank">Composer</a> 执行安装和依赖管理。如果还没有安装的话，现在就开始 <a href="http://getcomposer.org/doc/00-intro.md" target="_blank">安装 Composer</a> 吧。</p>
+<p>安装Composer之后，你就可以通过命令行使用如下命令安装Laravel了：</p>
+<pre><code>composer create-project laravel/laravel=4.0.* your-project-name --prefer-dist
+</code></pre>
+<p>或者，你可以从 <a href="https://github.com/laravel/laravel/archive/master.zip" target="_blank">Github仓库</a> 下载。接下来，在 <a href="http://getcomposer.org" target="_blank">安装Composer</a> 之后，在项目根目录下执行 <code>composer install</code> 命令。该命令将会下载以及安装框架的依赖组件。</p>
+<p><a name="permissions"></a></p>
+<h3>写入权限</h3>
+<p>安装完 Laravel ，你还需要为web服务器设置 <code>app/storage</code> 目录的写入权限。请参考 <a href="../installation">安装</a> 一节以获取更多关于配置方面的信息。</p>
+<p><a name="directories"></a></p>
+<h3>目录结构</h3>
+<p>安装完框架后，你需要熟悉一下该项目的目录结构。<code>app</code> 文件夹包含了一些例如 <code>views</code> ，<code>controllers</code> 和 <code>models</code> 目录。 程序中大部分代码将要存放这些目录下。你也可以查看一下 <code>app/config</code> 文件夹里一些配置项目。</p>
+<p><a name="routing"></a></p>
+<h2>路由</h2>
+<p>我们开始创建我们第一个路由。在 Laravel，简单路由的方法是闭包。打开 <code>app/routes.php</code> 文件加入如下代码:</p>
+<pre><code>Route::get('users', function()
+{
+    return 'Users!';
+});
+</code></pre>
+<p>现在，你在 web 浏览器输入 <code>/users</code>，你应该会看到 <code>Users!</code> 输出。真棒！已经创建了你第一个路由。</p>
+<p>路由也可以赋予控制器类。例如：</p>
+<pre><code>Route::get('users', 'UserController@getIndex');
+</code></pre>
+<p>该路由告知框架 <code>/users</code> 路由请求应该调用 <code>UserController</code> 类的 <code>getIndex</code> 方法。要查看更多关于路由控制器信息，查看 <a href="../controllers">控制器文档</a> 。</p>
+<p><a name="creating-a-view"></a></p>
+<h2>创建视图</h2>
+<p>接下来，我们要创建视图来显示我们用户数据。视图以HTML代码存放在 <code>app/views</code> 文件夹。我们将存放两个视图文件到该文件夹：<code>layout.blade.php</code> 和 <code>users.blade.php</code>。首先，让我们先创建 <code>layout.blade.php</code> 文件：</p>
+<pre><code>&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Laravel Quickstart&lt;/h1&gt;
+
+        @yield('content')
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>接着， 我们创建 <code>users.blade.php</code> 视图：</p>
+<pre><code>@extends('layout')
+
+@section('content')
+    Users!
+@stop
+</code></pre>
+<p>这里的语法可能让你感到陌生。因为我们使用的是 Laravel 模板系统：Blade。Blade 非常快，因为仅使用了少量的正则表达式来为你的模板编译成原始PHP代码。Blade提供强大的功能，例如模板继承，还有一些常用的PHP控制结构语法糖，例如 <code>if</code> 和 <code>for</code>。 查看 <a href="../templates">Blade 文档</a> 了解更多。</p>
+<p>现在我们有了我们视图，让我们返回 <code>/users</code> 路由。我们用视图来替代返回 <code>Users!</code>:</p>
+<pre><code>Route::get('users', function()
+{
+    return View::make('users');
+});
+</code></pre>
+<p>漂亮！现在你成功创建了继承至layout的视图。接下来，让我们开始数据库层。</p>
+<p><a name="creating-a-migration"></a></p>
+<h2>创建迁移</h2>
+<p>要创建表来保存我们数据，我们将使用 Laravel 迁移系统。迁移描述数据库的改变，这让分享给他们团队成员非常简单。</p>
+<p>首先，我们配置数据库连接。你可以在 <code>app/config/database.php</code> 文件配置所有数据库连接信息。默认，Laravel 被配置为使用 SQLite，并且一个 SQLite 数据库存放在 <code>app/database</code> 目录。你可以将数据库配置文件的 <code>driver</code> 选项修改为 <code>mysql</code> 并且配置 <code>mysql</code> 连接信息。</p>
+<p>接下来，要创建迁移，我们将使用 <a href="../artisan">Artisan CLI</a>。在项目根目录中，在终端中执行以下命令：</p>
+<pre><code>php artisan migrate:make create_users_table
+</code></pre>
+<p>然后，找到生成的迁移文件 <code>app/database/migrations</code> 目录。该文件包含了一个包含两个方法： <code>up</code> 和 <code>down</code> 的类。在 <code>up</code> 方法，你要指名数据库表的修改，在 <code>down</code> 方法中你只需要移除它。</p>
+<p>让我们定义如下迁移：</p>
+<pre><code>public function up()
+{
+    Schema::create('users', function($table)
+    {
+        $table-&gt;increments('id');
+        $table-&gt;string('email')-&gt;unique();
+        $table-&gt;string('name');
+        $table-&gt;timestamps();
+    });
+}
+
+public function down()
+{
+    Schema::drop('users');
+}
+</code></pre>
+<p>然后，我们在项目根目录中使用终端运行 <code>migrate</code> 命令来执行迁移：</p>
+<pre><code>php artisan migrate
+</code></pre>
+<p>如果你想回滚迁移，你可以执行 <code>migrate:rollback</code> 命令。现在我们已经有了数据库表，让我们让添加一些数据！</p>
+<p><a name="eloquent-orm"></a></p>
+<h2>Eloquent ORM</h2>
+<p>Laravel 提供非常棒的 ORM：Eloquent。如果你使用过 Ruby on Rails 框架，你会发现 Eloquent 很相似，因为它遵循数据库交互的 ActiveRecord ORM 风格。</p>
+<p>首先，让我们来定义个模型。ELoquent 模型可以用来查询相关数据表，以及表内的某一行。别着急，我们很快会谈及！模型通常存放在 <code>app/models</code> 目录。让我们在该目录定义个 <code>User.php</code> 模型，如：</p>
+<pre><code>class User extends Eloquent {}
+</code></pre>
+<p>注意我们并没有告诉 Eloquent 使用哪个表。Eloquent 有多种约定， 一个是使用模型的复数形式作为模型的数据库表。非常方便！</p>
+<p>使用你喜欢的数据库管理工具，插入几行数据到 <code>users</code> 表，我们将使用 Eloquent 取得它们并传递到视图中。</p>
+<p>现在我们修改我们 <code>/users</code> 路由如下：</p>
+<pre><code>Route::get('users', function()
+{
+    $users = User::all();
+
+    return View::make('users')-&gt;with('users', $users);
+});
+</code></pre>
+<p>让我们来看看该路由。首先，<code>User</code> 模型的 <code>all</code> 方法将会从 <code>users</code> 表中取得所有记录。接下来，我们通过 <code>with</code> 方法将这些记录传递到视图。<code>with</code> 方法接受一个键和一个值，那么该值就可以在视图中使用了。</p>
+<p>激动啊。现在我们准备将用户显示在我们视图！</p>
+<p><a name="displaying-data"></a></p>
+<h2>显示数据</h2>
+<p>现在我们视图中已经可以访问 <code>users</code> 类，我们可以如下显示它们：</p>
+<pre><code>@extends('layout')
+
+@section('content')
+    @foreach($users as $user)
+        &lt;p&gt;{{ $user-&gt;name }}&lt;/p&gt;
+    @endforeach
+@stop
+</code></pre>
+<p>你可以发现没有找到 <code>echo</code> 语句。当使用 Blade 时，你可以使用两个花括号来输出数据。非常简单，你现在应该可以通过 <code>/users</code> 路由来查看到用户姓名作为响应输出。</p>
+<p>这仅仅是开始。在本系列教程中，你已经了解了 Laravel 基础部分，但是还有更让人兴奋的东西要学。继续阅读该文档并且深入<a href="../eloquent">Eloquent</a>和<a href="../templates">Blade</a>这些强大的特性。或者你对<a href="../queues">队列</a> 和 <a href="../testing">单元测试</a> 感兴趣。或许是你想了解<a href="../ioc">IoC Container</a>, 选择权在于你!</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

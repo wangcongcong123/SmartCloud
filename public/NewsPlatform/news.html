@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>新闻详情</title>
+    <link rel="stylesheet" href="asserts/css/weuix.min.css"/>
+
+    <style>
+
+        body {
+            margin: 0;
+
+        }
+
+        .news {
+            padding: 20px;
+        }
+
+        .news-title {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .title-info {
+            margin: 10px 0;
+            text-align: center;
+            display: flex;
+        }
+
+        .left-line {
+            flex: 1;
+            height: 1px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 13px;
+            background-color: #cfcac6;
+        }
+
+        .right-line {
+            margin-left: 20px;
+            margin-right: 20px;
+            flex: 1;
+            height: 1px;
+            margin-top: 13px;
+            background-color: #cfcac6;
+        }
+
+        .abstract-info {
+            flex: 2;
+            color: #cfcac6;
+            font-size: 12px;
+        }
+
+        .news-paragraph {
+            text-indent: 24px;
+            font-size: 16px;
+        }
+
+        .picture {
+            text-align: center;
+            margin: 3px 0;
+
+        }
+
+        .picture img {
+            width: 100%;
+        }
+
+        .bottom-comment {
+            position: fixed;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            background: #e9e9e9;
+            color: #cdcdcd;
+        }
+
+        .bottom-comment .go-back {
+            display: inline-block;
+            margin-left: 20px;
+            color: #4a5765;
+            margin-top: 13px;
+            cursor: pointer;
+        }
+
+        .bottom-comment .go-back:hover {
+            color: #6c7f93;
+        }
+
+        .comment {
+            cursor: pointer;
+            float: right;
+            display: inline-block;
+            padding: 2px 80px;
+            margin-top: 10px;
+            margin-right: 30px;
+            border-radius: 15px;
+            background-color: #fefefe;
+        }
+
+        .comment:hover {
+            background-color: #f4f4f4;
+        }
+
+        .my-comment-contanier {
+            display: none;
+            position: fixed;
+            background-color: #f8f8f8;
+            width: 100%;
+            top: 100%;
+            height: 100%;
+            transition: top 0.5s;
+        }
+
+        .my-comment-header {
+            background-color: #fefefe;
+            border-bottom: 2px solid #6c7f93;
+            width: 100%;
+            height: 40px;
+        }
+
+        .my-comment-cancel, .my-comment-confirm {
+            cursor: pointer;
+            color: #4a5765;;
+        }
+
+        .my-comment-cancel {
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .my-comment-confirm {
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .my-comment-cancel:hover, .my-comment-confirm:hover {
+            color: #6c7f93;;
+        }
+
+        .my-comment-input-area {
+            background-color: #fefefe;
+
+            text-align: center;
+        }
+
+        .my-comment-input-area textarea {
+            resize: none;
+            width: 94%;
+            border: none;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #4a5765;
+        }
+
+        .my-comment-input-area textarea:focus {
+            outline: none;
+
+        }
+
+        .comment-list {
+            list-style: none;
+        }
+
+        .comment-list li {
+            padding-top: 10px;
+            padding-bottom: 30px;
+            /*box-shadow: 0 1px 0 1px #bfbfbf;*/
+            /*border-bottom: 0.001em solid #bfbfbf;*/
+        }
+
+        .comment-user-face {
+            float: left;
+
+        }
+
+        .comment-user-face img {
+            border-radius: 20px;
+        }
+
+        .comment-extra {
+            color: #959595;
+            font-size: 16px;
+            margin-left: 50px;
+
+        }
+
+        .comment-user-name {
+            float: left;
+        }
+
+        .comment-thumbup {
+            cursor: pointer;
+            float: right;
+        }
+
+        .comment-time {
+            float: right;
+            font-size: 12px;
+        }
+
+        .comment-content {
+            font-size: 14px;
+            clear: right;
+            padding: 10px;
+            color: #3a444f;
+        }
+
+
+    </style>
+</head>
+
+<body style="background-color: #f8f8f8;">
+
+
+<div class="news">
+
+    <h1 class="news-title">这里是新闻标题,这里是新闻标题比</h1>
+
+    <div class="title-info">
+        <div class="left-line"></div>
+        <div class="abstract-info">发布者/一般消息 <br>2017-09-08 12:00:00</div>
+        <div class="right-line"></div>
+
+    </div>
+
+
+    <div class="news-content">
+
+
+        <p class="news-paragraph">这里是文章的具体内容，文字部分，哈哈哈，这里就是新闻的文字部分啦，大概就长这个样子，我也不知到我现在在写什么</p>
+        <div class="picture"><img src="asserts/images/pic.png"></div>
+
+        <p class="news-paragraph">这里是文章的具体内容，文字部分，哈哈哈，这里就是新闻的文字部分啦，大概就长这个样子，我也不知到我现在在写什么</p>
+        <div class="picture"><img src="asserts/images/pic.png"></div>
+
+    </div>
+
+
+    <div class="title-info">
+        <div class="left-line"></div>
+        <div class="abstract-info">用户评论 <br>c o m m e n t s</div>
+        <div class="right-line"></div>
+    </div>
+
+
+    <ul class="comment-list">
+
+        <li>
+            <div class="comment-user-face"><img src="asserts/images/u190.png" width="40px" height="40px"></div>
+
+
+            <div class="comment-extra">
+                <div class="name-and-thumbup">
+                    <div class="comment-user-name">@爱思聪聪</div>
+
+                    <div class="comment-thumbup">
+                        <small>2</small>
+                        <span class="icon icon-65"></span></div>
+
+                </div>
+                <div class="comment-content">好兴奋啊哈哈好兴奋啊哈哈好兴奋啊,看到这条新闻,太棒了</div>
+                <div class="comment-time">2016-01-09 12:00:00</div>
+
+            </div>
+
+        </li>
+
+        <li>
+            <div class="comment-user-face"><img src="asserts/images/u669.png" width="40px" height="40px"></div>
+
+
+            <div class="comment-extra">
+                <div class="name-and-thumbup">
+                    <div class="comment-user-name">@爱思聪聪</div>
+
+                    <div class="comment-thumbup">
+                        <small>2</small>
+                        <span class="icon icon-65"></span></div>
+
+                </div>
+                <div class="comment-content">好兴奋啊哈哈好兴奋啊哈哈好兴奋啊,看到这条新闻,太棒了</div>
+                <div class="comment-time">2016-01-09 12:00:00</div>
+
+            </div>
+
+        </li>
+
+        <li>
+            <div class="comment-user-face"><img src="asserts/images/u241.png" width="40px" height="40px"></div>
+
+
+            <div class="comment-extra">
+                <div class="name-and-thumbup">
+                    <div class="comment-user-name">@爱思聪聪</div>
+
+                    <div class="comment-thumbup">
+                        <small>2</small>
+                        <span class="icon icon-65"></span></div>
+
+                </div>
+                <div class="comment-content">哈哈好兴奋啊哈哈好兴奋啊哈哈好兴奋啊哈哈好兴奋啊哈哈好兴奋啊哈哈好兴奋啊哈哈好兴奋啊哈哈好兴奋啊哈哈好兴奋啊哈哈好兴奋啊,看到这条新闻,太棒了
+                </div>
+                <div class="comment-time">2016-01-09 12:00:00</div>
+
+            </div>
+
+        </li>
+
+    </ul>
+
+
+</div>
+
+
+<div style="margin-top: 100px">&nbsp;</div>
+
+
+<div class="bottom-comment">
+    <div class="go-back"><span class="icon icon-109"></span></div>
+    <div class="comment">发表评论</div>
+
+
+</div>
+
+
+<div class="my-comment-contanier">
+
+
+
+    <div class="my-comment">
+
+        <div class="my-comment-header">
+            <a class="my-comment-cancel">取消</a>
+            <a class="my-comment-confirm">确认</a>
+        </div>
+
+        <div class="my-comment-input-area">
+            <textarea rows="10" placeholder="请输入您的评论"></textarea>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script src="asserts/js/zepto.min.js"></script>
+
+
+<script>
+    $(function () {
+
+        $(".comment").click(function () {
+
+            $(".my-comment-contanier").show();
+            $(".my-comment-contanier").css("top", "0");
+            $(".my-comment-input-area").children('textarea').focus();
+
+
+        });
+
+        $(".my-comment-cancel").click(function () {
+            $(".my-comment-contanier").hide();
+            $(".my-comment-contanier").css("top", "100%");
+        });
+
+
+
+        $(".my-comment-confirm").click(function () {
+
+            alert($(".my-comment-input-area").children('textarea').val());
+
+            $(".my-comment-contanier").hide();
+            $(".my-comment-contanier").css("top", "100%");
+        });
+
+
+        $(".comment-thumbup").click(function () {
+
+            if ($(this).children('span').hasClass('icon-65')) {
+
+                $(this).children('span').removeClass('icon-65').addClass('icon-38');
+            } else {
+                $(this).children('span').removeClass('icon-38').addClass('icon-65');
+            }
+
+        });
+
+
+        $(".go-back").click(function () {
+
+            window.location.href = "index.html";
+
+        });
+
+
+
+
+    });
+</script>
+
+</body>
+</html>

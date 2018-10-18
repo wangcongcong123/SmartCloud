@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>扩展包开发</h1>
+<ul>
+<li><a href="#introduction">介绍</a></li>
+<li><a href="#views">视图</a></li>
+<li><a href="#translations">语言</a></li>
+<li><a href="#configuration">配置文件</a></li>
+<li><a href="#public-assets">公共资源</a></li>
+<li><a href="#publishing-file-groups">发布分类文件</a></li>
+<li><a href="#routing">路由</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>介绍</h2>
+<p>开发扩展包是添加功能到 Laravel 最主要的方法。扩展包可以是任何处理日期的方式。例如，<a href="https://github.com/briannesbitt/Carbon" target="_blank">Carbon</a>，或是一个全套的 BDD testing 框架。例如，<a href="https://github.com/Behat/Behat" target="_blank">Behat</a></p>
+<p>当然，有非常多不同类型的扩展包。有些扩展包是独立的，意思是此扩展包运作且兼容于任何的框架，不只有 Laravel。Carbon 以及 Behat 都是这类的扩展包。任何这类的扩展包只需要在您的 <code>composer.json</code> 文件里配置就可以使用。</p>
+<p>另一方面，其他的扩展包所设计的目的是只要在 Laravel 上使用。这些扩展包可能包含路由、控制器、视图以及扩展包的相关配置，目的是为了增加 Laravel 的应用。接下来的说明主要涵盖了 Laravel 开发这些扩展包的重点。</p>
+<p>所有 Laravel 扩展包都发布到 <a href="http://packagist.org" target="_blank">Packagist</a> 以及 <a href="http://getcomposer.org" target="_blank">Composer</a>，所以学习这些美好的 PHP 扩展包管理工具是必须的。</p>
+<p><a name="views"></a></p>
+<h2>视图</h2>
+<p>您扩展包内部的架构全部由您自己规划。然而，原则上会有一个或更多的 <a href="providers.html">服务提供者</a>. 服务提供者包含着所有的 <a href="container.html">服务容器</a> 绑定，也定义了所有您扩展包的相关配置、视图以及语言文件在什么地方。</p>
+<h3>视图</h3>
+<p>扩展包的视图基本上使用两个双冒号来指定:</p>
+<pre><code>return view('package::view.name');
+</code></pre>
+<p>所有您所要做的只有告诉 Laravel 您所配置扩展包名称视图的位置在哪里。如果您的扩展包取名为 “courier” 您可能需要添加如下到您的服务提供者的 <code>boot</code> 方法:</p>
+<pre><code>public function boot()
+{
+    $this-&gt;loadViewsFrom(__DIR__.'/path/to/views', 'courier');
+}
+</code></pre>
+<p>现在您可以使用如下的语法来加载扩展包的视图:</p>
+<pre><code>return view('courier::view.name');
+</code></pre>
+<p>当您使用 <code>loadViewsFrom</code> 方法，Laravel 实际上为了您的视图注册了<strong>两个位置</strong>。一个是您应用程序的 <code>resources/views/vendor</code> 目录，一个是您指定的目录。所以使用我们的例子 <code>courier</code> 当要求一个扩展包的视图时，Laravel 会第一时间检查是否有一个开发者自行自定义在 <code>resources/views/vendor/courier</code> 的视图存在。然而如果还没有这个路径的视图被自定义。Laravel 会搜索您在扩展包 <code>loadViewsFrom</code> 方法里所指定的视图。这个方法让个别的用户可以方便的自定义且覆写您在扩展包里的视图。</p>
+<h4>视图的发布</h4>
+<p>发布扩展包的视图到 <code>resources/views/vendor</code> 目录，您必须在服务提供者里的 <code>boot</code> 方法里使用 <code>publishes</code> 方法:</p>
+<pre><code>public function boot()
+{
+    $this-&gt;loadViewsFrom(__DIR__.'/path/to/views', 'courier');
+
+    $this-&gt;publishes([
+        __DIR__.'/path/to/views' =&gt; base_path('resources/views/vendor/courier'),
+    ]);
+}
+</code></pre>
+<p>现在当您扩展包的用户使用 Laravel 的命令 <code>vendor:publish</code> 您的视图目录将会被复制到所特定的目录</p>
+<p>如果您想要覆写已存在的文件，可以使用 <code>--force</code>:</p>
+<pre><code>php artisan vendor:publish --force
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 您可以使用 <code>publishes</code> 方法，发布任何您的文件到<strong>任何</strong>您想要的地方。</p>
+</blockquote>
+<p><a name="translations"></a></p>
+<h2>语言</h2>
+<p>扩展包的语言文件基本上使用两个双冒号来指定:</p>
+<pre><code>return trans('package::file.line');
+</code></pre>
+<p>所有您所要做的只有告诉 Laravel 您所配置扩展包名称的语言位置在哪里。如果您的扩展包取名为 &quot;courier&quot; 您可能需要添加如下的语法到您的服务提供者的 <code>boot</code> 方法:</p>
+<pre><code>public function boot()
+{
+    $this-&gt;loadTranslationsFrom(__DIR__.'/path/to/translations', 'courier');
+}
+</code></pre>
+<p>注意在您的 <code>translations</code> 目录里，必须要有更下一层的目录，例如 <code>en</code> <code>es</code> <code>ru</code>。</p>
+<p>现在您可以使用下方的语法来加载您扩展包的语言:</p>
+<pre><code>return trans('courier::file.line');
+</code></pre>
+<p><a name="configuration"></a></p>
+<h2>配置文件</h2>
+<p>基本上，您可能想要将您扩展包相关配置的文件发布到应用程序本身的配置目录 <code>config</code>。这将允许您扩展包的用户简单的覆写这些默认的配置文件。</p>
+<p>发布扩展包的配置文件只需要在服务提供者里的 <code>boot</code> 方法里使用 <code>publishes</code> 方法:</p>
+<pre><code>$this-&gt;publishes([
+    __DIR__.'/path/to/config/courier.php' =&gt; config_path('courier.php'),
+]);
+</code></pre>
+<p>现在当扩展包的用户执行 <code>vendor:publish</code> 命令，您的文件将会被复制到特定的位置。当然只要配置文件已经被发布，就可以如其他配置文件一样被访问:</p>
+<pre><code>$value = config('courier.option');
+</code></pre>
+<p>您可能也选择想要合并您扩展包的配置文件和应用程序里的副本配置文件。这允许您的用户在已经被发布的副本配置文件里只包含任何他们想要覆写的配置选项。如果想要合并配置文件，可在服务提供者里的 <code>register</code> 方法里使用 <code>mergeConfigFrom</code>方法</p>
+<pre><code>$this-&gt;mergeConfigFrom(
+    __DIR__.'/path/to/config/courier.php', 'courier'
+);
+</code></pre>
+<p><a name="public-assets"></a></p>
+<h2>公共资源</h2>
+<p>您的扩展包也许会有一些资源文件比如 JavaScript，CSS，和图片。如果要发布资源，可以在您的服务提供商的 <code>boot</code> 方法中使用 <code>publishes</code> 方法。在这个例子中，我们同样增加了 “public” 资源的分区标记。</p>
+<pre><code>$this-&gt;publishes([
+    __DIR__.'/path/to/assets' =&gt; public_path('vendor/courier'),
+], 'public');
+</code></pre>
+<p>现在当扩展包的用户执行 <code>vendor:publish</code> 命令，您的文件将会被复制到特定的位置。由于每次扩展更新时都会覆盖这些资源，你可以使用 <code>--force</code> 标识：</p>
+<pre><code>php artisan vendor:publish --tag=public --force
+</code></pre>
+<p>如果你想确保你的公共资源始终是最新的，你可以把这条命名添加到 <code>composer.json</code> 文件中的 <code>post-update-cmd</code> 列表中。</p>
+<p><a name="publishing-file-groups"></a></p>
+<h2>发布分类文件</h2>
+<p>您可能想要分别的发布一些分类的文件。举例，您可能想要您的用户可以分别发布扩展包的配置文件与静态资源文件。您可以使用 <code>tagging</code> 来达成:</p>
+<pre><code>// Publish a config file
+$this-&gt;publishes([
+    __DIR__.'/../config/package.php' =&gt; config_path('package.php')
+], 'config');
+
+// Publish your migrations
+$this-&gt;publishes([
+    __DIR__.'/../database/migrations/' =&gt; base_path('/database/migrations')
+], 'migrations');
+</code></pre>
+<p>您可以使用这些 <code>tag</code>，来分别发布这些扩展包里的文件。</p>
+<pre><code>php artisan vendor:publish --provider=&quot;Vendor\Providers\PackageServiceProvider&quot; --tag=&quot;config&quot;
+</code></pre>
+<p><a name="routing"></a></p>
+<h2>路由</h2>
+<p>在扩展包里加载一个路由文件，只需要在服务提供者里的 <code>boot</code> 方法里使用 <code>include</code> :</p>
+<h4>根据服务提供者来包含一个路由文件</h4>
+<pre><code>public function boot()
+{
+    include __DIR__.'/../../routes.php';
+}
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 如果您的扩展包里使用了控制器，您必须要确认您在 <code>composer.json</code> 文件里的 auto-load 区块里，是否适当的配置这些控制器。</p>
+</blockquote>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

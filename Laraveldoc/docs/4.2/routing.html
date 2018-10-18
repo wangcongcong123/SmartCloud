@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<p># 路由</p>
+<ul>
+<li><a href="#basic-routing">基本路由</a></li>
+<li><a href="#route-parameters">路由参数</a></li>
+<li><a href="#route-filters">路由过滤器</a></li>
+<li><a href="#named-routes">命名路由</a></li>
+<li><a href="#route-groups">路由组</a></li>
+<li><a href="#sub-domain-routing">子域名路由</a></li>
+<li><a href="#route-prefixing">路由前缀</a></li>
+<li><a href="#route-model-binding">路由与模型绑定</a></li>
+<li><a href="#throwing-404-errors">抛出 404 错误</a></li>
+<li><a href="#routing-to-controllers">控制器路由</a></li>
+</ul>
+<p><a name="basic-routing"></a></p>
+<h2>基本路由</h2>
+<p>应用中的大多数路都会定义在 <code>app/routes.php</code> 文件中。最简单的Laravel路由由URI和闭包回调函数组成。</p>
+<h4>基本 GET 路由</h4>
+<pre><code>Route::get('/', function()
+{
+    return 'Hello World';
+});
+</code></pre>
+<h4>基本 POST 路由</h4>
+<pre><code>Route::post('foo/bar', function()
+{
+    return 'Hello World';
+});
+</code></pre>
+<h4>为多个动作注册同一个路由</h4>
+<pre><code>Route::match(array('GET', 'POST'), '/', function()
+{
+    return 'Hello World';
+});
+</code></pre>
+<h4>注册一个可以响应任何HTTP动作的路由</h4>
+<pre><code>Route::any('foo', function()
+{
+    return 'Hello World';
+});
+</code></pre>
+<h4>仅支持HTTPS的路由</h4>
+<pre><code>Route::get('foo', array('https', function()
+{
+    return 'Must be over HTTPS';
+}));
+</code></pre>
+<p>实际开发中经常需要根据路由生成 URL，<code>URL::to</code>方法就可以满足此需求：</p>
+<pre><code>$url = URL::to('foo');
+</code></pre>
+<p><a name="route-parameters"></a></p>
+<h2>路由参数</h2>
+<pre><code>Route::get('user/{id}', function($id)
+{
+    return 'User '.$id;
+});
+</code></pre>
+<h4>可选路由参数</h4>
+<pre><code>Route::get('user/{name?}', function($name = null)
+{
+    return $name;
+});
+</code></pre>
+<h4>带有默认值的可选路由参数</h4>
+<pre><code>Route::get('user/{name?}', function($name = 'John')
+{
+    return $name;
+});
+</code></pre>
+<h4>用正则表达式限定的路由参数</h4>
+<pre><code>Route::get('user/{name}', function($name)
+{
+    //
+})
+-&gt;where('name', '[A-Za-z]+');
+
+Route::get('user/{id}', function($id)
+{
+    //
+})
+-&gt;where('id', '[0-9]+');
+</code></pre>
+<h4>传递参数限定的数组</h4>
+<p>当然，必要的时候你还可以传递一个包含参数限定的数组作为参数：</p>
+<pre><code>Route::get('user/{id}/{name}', function($id, $name)
+{
+    //
+})
+-&gt;where(array('id' =&gt; '[0-9]+', 'name' =&gt; '[a-z]+'))
+</code></pre>
+<h4>定义全局模式</h4>
+<p>如果希望在全局范围用指定正则表达式限定路由参数，可以使用 <code>pattern</code> 方法：</p>
+<pre><code>Route::pattern('id', '[0-9]+');
+
+Route::get('user/{id}', function($id)
+{
+    // Only called if {id} is numeric.
+});
+</code></pre>
+<h4>访问路由参数</h4>
+<p>如果想在路由范围外访问路由参数，可以使用 <code>Route::input</code> 方法：</p>
+<pre><code>Route::filter('foo', function()
+{
+    if (Route::input('id') == 1)
+    {
+        //
+    }
+});
+</code></pre>
+<p><a name="route-filters"></a></p>
+<h2>路由过滤器</h2>
+<p>路由过滤器提供了非常方便的方法来限制对应用程序中某些功能访问，例如对于需要验证才能访问的功能就非常有用。Laravel框架自身已经提供了一些过滤器，包括 <code>auth</code>过滤器、<code>auth.basic</code>过滤器、<code>guest</code>过滤器以及<code>csrf</code>过滤器。这些过滤器都定义在<code>app/filter.php</code>文件中。</p>
+<h4>定义一个路由过滤器</h4>
+<pre><code>Route::filter('old', function()
+{
+    if (Input::get('age') &lt; 200)
+    {
+        return Redirect::to('home');
+    }
+});
+</code></pre>
+<p>如果过滤器返回了response，那么该response将被认为对应的是此次request，路由将不会被执行，并且，此路由中所有定义在此过滤器之后的代码也都不会被执行。</p>
+<h4>为路由绑定过滤器</h4>
+<pre><code>Route::get('user', array('before' =&gt; 'old', function()
+{
+    return 'You are over 200 years old!';
+}));
+</code></pre>
+<h4>将过滤器绑定为控制器Action</h4>
+<pre><code>Route::get('user', array('before' =&gt; 'old', 'uses' =&gt; 'UserController@showProfile'));
+</code></pre>
+<h4>为路由绑定多个过滤器</h4>
+<pre><code>Route::get('user', array('before' =&gt; 'auth|old', function()
+{
+    return 'You are authenticated and over 200 years old!';
+}));
+</code></pre>
+<h4>通过数据绑定多个过滤器</h4>
+<pre><code>Route::get('user', array('before' =&gt; array('auth', 'old'), function()
+{
+    return 'You are authenticated and over 200 years old!';
+}));
+</code></pre>
+<h4>指定过滤器参数</h4>
+<pre><code>Route::filter('age', function($route, $request, $value)
+{
+    //
+});
+
+Route::get('user', array('before' =&gt; 'age:200', function()
+{
+    return 'Hello World';
+}));
+</code></pre>
+<p>After filters receive a <code>$response</code> as the third argument passed to the filter:</p>
+<pre><code>Route::filter('log', function($route, $request, $response)
+{
+    //
+});
+</code></pre>
+<h4>基于模式的过滤器</h4>
+<p>你也可以只针对URI为一组路由指定过滤器。</p>
+<pre><code>Route::filter('admin', function()
+{
+    //
+});
+
+Route::when('admin/*', 'admin');
+</code></pre>
+<p>上述案例中，<code>admin</code>过滤器将会应用到所有以<code>admin/</code>开头的路由中。星号是通配符，将会匹配任意多个字符的组合。</p>
+<p>还可以针对HTTP动作限定模式过滤器：</p>
+<pre><code>Route::when('admin/*', 'admin', array('post'));
+</code></pre>
+<h4>过滤器类</h4>
+<p>过滤器的高级用法中，还可以使用类来替代闭包函数。由于过滤器类是通过<a href="../ioc">IoC container</a>实现解析的，所有，你可以在这些过滤器中利用依赖注入（dependency injection）的方法实现更好的测试能力。</p>
+<h4>注册过滤器类</h4>
+<pre><code>Route::filter('foo', 'FooFilter');
+</code></pre>
+<p>默认情况下，FooFilter类里的filter方法将被调用：</p>
+<pre><code>class FooFilter {
+
+    public function filter()
+    {
+        // Filter logic...
+    }
+
+}
+</code></pre>
+<p>如果你不想使用filter方法，那就指定另一个方法：</p>
+<pre><code>Route::filter('foo', 'FooFilter@foo');
+</code></pre>
+<p><a name="named-routes"></a></p>
+<h2>命名路由</h2>
+<p>重定向和生成URL时，使用命名路由会更方便。你可以为路由指定一个名字，如下所示：</p>
+<pre><code>Route::get('user/profile', array('as' =&gt; 'profile', function()
+{
+    //
+}));
+</code></pre>
+<p>还可以为 controller action指定路由名称：</p>
+<pre><code>Route::get('user/profile', array('as' =&gt; 'profile', 'uses' =&gt; 'UserController@showProfile'));
+</code></pre>
+<p>现在，你可以使用路由名称来创建URL和重定向：</p>
+<pre><code>$url = URL::route('profile');
+
+$redirect = Redirect::route('profile');
+</code></pre>
+<p>可以使用<code>currentRouteName</code>方法来获取当前运行的路由名称:</p>
+<pre><code>$name = Route::currentRouteName();
+</code></pre>
+<p><a name="route-groups"></a></p>
+<h2>路由组</h2>
+<p>有时你可能需要为一组路由应用过滤器。使用路由组就可以避免单独为每个路由指定过滤器了：</p>
+<pre><code>Route::group(array('before' =&gt; 'auth'), function()
+{
+    Route::get('/', function()
+    {
+        // Has Auth Filter
+    });
+
+    Route::get('user/profile', function()
+    {
+        // Has Auth Filter
+    });
+});
+</code></pre>
+<p>你也可以在组数组中使用<code>namespace</code>参数来指定此组里的控制器都在一个给定的命名空间里：</p>
+<pre><code>Route::group(array('namespace' =&gt; 'Admin'), function()
+{
+    //
+});
+</code></pre>
+<p><a name="sub-domain-routing"></a></p>
+<h2>子域名路由</h2>
+<p>Laravel中的路由功能还支持通配符子域名，并且能将域名中匹配通配符的参数传递给你:</p>
+<h4>注册子域名路由</h4>
+<pre><code>Route::group(array('domain' =&gt; '{account}.myapp.com'), function()
+{
+
+    Route::get('user/{id}', function($account, $id)
+    {
+        //
+    });
+
+});
+</code></pre>
+<p><a name="route-prefixing"></a></p>
+<h2>路由前缀</h2>
+<p>可以通过<code>prefix</code>属性为组路由设置前缀：</p>
+<pre><code>Route::group(array('prefix' =&gt; 'admin'), function()
+{
+
+    Route::get('user', function()
+    {
+        //
+    });
+
+});
+</code></pre>
+<p><a name="route-model-binding"></a></p>
+<h2>路由与模型绑定</h2>
+<p>模型绑定，为在路由中注入模型实例提供了便捷的途径。例如，你可以向路由中注入匹配用户ID的整个模型实例，而不是仅仅注入用户ID。首先，使用 <code>Route::model</code> 方法指定要被注入的模型：</p>
+<h4>给模型绑定参数</h4>
+<pre><code>Route::model('user', 'User');
+</code></pre>
+<p>然后，定义一个包含<code>{user}</code>参数的路由：</p>
+<pre><code>Route::get('profile/{user}', function(User $user)
+{
+    //
+});
+</code></pre>
+<p>由于我们已将<code>{user}</code>参数绑定到了<code>User</code>模型，因此可以向路由中注入一个<code>User</code>实例。例如，对<code>profile/1</code>的访问将会把ID为1的<code>User</code>实例注入到路由中。</p>
+<blockquote>
+<p><strong>注意：</strong> 如果在数据库中无法匹配到对应的模型实例，404错误将被抛出。</p>
+</blockquote>
+<p>如果你希望自定义&quot;not found&quot;行为，可以通过传递一个闭包函数作为 <code>model</code> 方法的第三个参数：</p>
+<pre><code>Route::model('user', 'User', function()
+{
+    throw new NotFoundHttpException;
+});
+</code></pre>
+<p>如果你想自己实现路由参数的解析，只需使用<code>Route::bind</code>方法即可：</p>
+<pre><code>Route::bind('user', function($value, $route)
+{
+    return User::where('name', $value)-&gt;first();
+});
+</code></pre>
+<p><a name="throwing-404-errors"></a></p>
+<h2>抛出 404 错误</h2>
+<p>有两种从路由中手动触发404错误的方法。首先，你可以使用<code>App::abort</code>方法：</p>
+<pre><code>App::abort(404);
+</code></pre>
+<p>其次，你可以抛出<code>Symfony\Component\HttpKernel\Exception\NotFoundHttpException</code>异常。</p>
+<p>更多关于处理404异常以及错误发生时自定义response的信息可以查看<a href="../errors#handling-404-errors">错误</a>文档。</p>
+<p><a name="routing-to-controllers"></a></p>
+<h2>控制器路由</h2>
+<p>Laravel不光提供了利用闭包函数处理路由的功能，还可以路由到控制器，甚至支持创建 <a href="../controllers#restful-resource-controllers">resource controllers</a>。</p>
+<p>参见文档 <a href="../controllers">Controllers</a> 以获取更多信息。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

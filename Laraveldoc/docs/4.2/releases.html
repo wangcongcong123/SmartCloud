@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>版本说明</h1>
+<ul>
+<li>[Laravel 4.2]（#laravel-4.2）</li>
+<li>[Laravel 4.1]（#laravel-4.1）</li>
+</ul>
+<p><a name="laravel-4.2"></a></p>
+<h2>Laravel 4.2</h2>
+<p>通过在4.2版本的安装目录下运行命令“php artisan changes”来获得此版本完整的变更列表, 也可以查看Github上的变更文件（https://github.com/laravel/framework/blob/4.2/src/Illuminate/Foundation/changes.json）。 这些更改记录只包含当前版本主要的功能改进和变更。</p>
+<blockquote>
+<p><strong>注意:</strong> 在4.2版本的发布周期中，很多小的bug修复和功能改进被合并进了Laravel 4.1的各个发布版本中。所以，也一定要检查Laravel 4.1的变更列表！</p>
+</blockquote>
+<h3>最低要求PHP 5.4</h3>
+<p>Laravel 4.2 要求 PHP 5.4 或更高版本. 这个PHP版本的升级需求使得我们能够使用PHP的新特性，例如，为Laravel Cashier（/docs/billing）等工具提供的更具表现力的接口。 与PHP 5.3相比，PHP 5.4 在速度和执行效率上也有显著的提高。</p>
+<h3>Laravel Forge</h3>
+<p>Laravel Forge是一个新的基于web的应用程序，它提供一种简单的方式来创建和管理你自己云端的PHP服务，这些服务包括Linode、DigitalOcean、Rackspace和Amazon EC2。Forge支持Nginx配置自动化，访问SSH key，Cron job的自动化，通过NewRelic或Papertrail进行服务监控，“Push To Deploy”，配置Laravel队列工人，此外，Forge提供最简单且最经济的方式来运行你的所有Laravel应用程序。</p>
+<p>默认情况下，Laravel 4.2安装目录下的文件“app/config/database.php”是用来配置Forge的，使得新的应用能更方便的部署到这个平台上来。</p>
+<p>在Forge的官方网站（https://forge.laravel.com）上，可以找到更多的有关Laravel Forge的信息。</p>
+<h3>Laravel Homestead</h3>
+<p>Laravel Homestead是一个官方的Vagrant环境，它被用来开发强健的Laravel和PHP应用程序。在箱子被打包派发之前，绝大部分的箱子供应需求会被处理，它允许箱子极其快速的启动。Homestead包括Nginx 1.6、PHP 5.5.12、MySQL、Postgres、Redis、Memcached、Beanstalk、Node、Gulp、Grunt和Bower。Homestaed包含一个简单的配置文件“Homestead.yaml”，它能在单个箱子里管理多个Laravel应用程序。</p>
+<p>默认情况下，Laravel 4.2安装目录包含一个配置文件“app/config/local/database.php”，它是用来配置使用箱子以外的Homestead数据库的，这使得Laravel初始化安装目录和配置更加方便。</p>
+<p>官方文档已经包括Homestead文档（/docs/homestead）。</p>
+<h3>Laravel Cashier</h3>
+<p>Laravel Cashier是一个简单的、富于表现力的库，它用来管理条形码的订阅计费。随着Laravel 4.2的引入，尽管安装组件本身仍然是可选的，但是我们在Laravel主文档里包含了Cashier文档。这个版本的Cashier修复了很多bug，支持多币种，并兼容最新的条形码API。</p>
+<h3>守护进程队列工人（Daemon Queue Workers）</h3>
+<p>Artisan的“queue:work”命令现在支持“--daemon”选项，它用来启动一个“守护进程模式”的工人，这个模式使得工人在不需要重启框架的情况下继续工作。这会显著的减少CPU的使用率，其代价只是使得应用程序的部署过程稍显复杂。</p>
+<p>在队列文档（/docs/queues#daemon-queue-workers）里能找到更多的队列工人相关的信息。</p>
+<h3>邮件API驱动</h3>
+<p>Laravel 4.2为“邮件”功能引入了新的Mailgun和Mandrill接口驱动程序。对很多应用程序来说，比起SMTP方式，此接口提供了一种更快和更可靠发送电子邮件的方法。新的驱动程序采用Guzzle 4 HTTP库。</p>
+<h3>软删除特性（Soft Deleting Traits）</h3>
+<p>一种为“软删除”和其它“全局范围”而生的更干净的架构通过PHP 5.4的特性被引入进来。这种新架构考虑到了更简单的构建全局特性等功能，也可考虑到了一个更干净的框架本身的关注点分离问题。</p>
+<p>在文档（/docs/eloquent#soft-deleting）里能找到更多的关于“软删除特性”的信息。</p>
+<h3>方便的认证和提醒特性（Convenient Auth &amp; Remindable Traits）</h3>
+<p>现在，Laravel 4.2的安装目录默认使用简单的特性来包含认证和密码提醒用户接口所需要的属性。这提供了一个更干净的默认的箱子之外的“用户”模型文件。</p>
+<h3>简单的分页</h3>
+<p>一个新方法“simplePaginate”被加入到查询和Eloquent构建器里，当在分页页面里使用简单的“上一个”和“下一个”链接时，使用此方法查询就会更高效。</p>
+<h3>迁移确认（Migration Confirmation）</h3>
+<p>现在，在生产中的破坏性操作将被要求确认。使用“--force”选项的迁移命令可以强制执行而不会有任何提示。</p>
+<p><a name="laravel-4.1"></a></p>
+<h2>Laravel 4.1</h2>
+<h3>全部变更列表</h3>
+<p>通过在4.1版本的安装目录下运行命令“php artisan changes”来获得此版本完整的变更列表, 也可以查看Github上的变更文件（https://github.com/laravel/framework/blob/4.1/src/Illuminate/Foundation/changes.json）。这些更改记录只包含当前版本主要的功能改进和变更。</p>
+<h3>新SSH组件</h3>
+<p>一个全新的“SSH”组件被引入到此版本中。其特性允许你很容易的SSH到远程服务器并运行命令。想了解更多信息，请查阅SSH组件文档（/docs/ssh）。</p>
+<p>新的“php artisan tail”命令使用了新SSH组件。更多信息，请查阅“tail”命令文档（http://laravel.com/docs/ssh#tailing-remote-logs）。</p>
+<h3>Boris In Tinker</h3>
+<p>命令“php artisan tinker”使用的是Boris REPL（https://github.com/d11wtq/boris），首先你的系统得支持Boris REPL。要使用这个特性必须安装PHP扩展“readline”和“pcntl”。如果你没有这两个扩展，将使用4.0版本的shell.</p>
+<h3>Eloquent改进点</h3>
+<p>一种新的“hasManyThrough”关系已经被加入到Eloquent里。要学习怎样使用，请查阅Eloquent文档（/docs/eloquent#has-many-through）。</p>
+<p>一个新方法“whereHas”也已经被引入，此方法允许基于关系约束的索引模型，相关文档（/docs/eloquent#querying-relations）。</p>
+<h3>数据库读写连接</h3>
+<p>在数据库层有可供使用的自动处理单独读写的连接，包括队列构建器和Eloquent。更多相关信息，请查阅文档（/docs/database#read-write-connections）。</p>
+<h3>队列优先权</h3>
+<p>现在支持通过传递给命令“queue:listen”一组以逗号分隔的列表来设定队列的优先级。</p>
+<h3>失败的队列工作处理</h3>
+<p>现在，在命令“queue:listen”中使用“--tries”选项时，队列功能会自动处理失败的工作。在队列文档（/docs/queues#failed-jobs）里可以找到处理失败工作的更多信息。</p>
+<h3>缓存标记</h3>
+<p>缓存章节（sections）已经被标记（tags）取代。缓存标记允许你把多个标记赋值给一个缓存项，也允许把所有的缓存项赋值给一个标记。在缓存文档（/docs/cache#cache-tags）里可以找到使用缓存标记相关的更多信息。</p>
+<h3>灵活的密码提醒</h3>
+<p>密码提醒引擎已经被改成当验证密码的时候为开发者提供很大的灵活性，引擎会闪存状态信息到会话里。有关使用增强的密码提醒的更多信息，请查阅文档（/docs/security#password-reminders-and-reset）。</p>
+<h3>改善的路由引擎</h3>
+<p>Laravel 4.1以完全重写的路由层为特色。虽然接口是相同的，但是路由注册比4.0版本要快100%。整个引擎被大大的简化了，而且依赖于Symfony的路由被最小化到路由表达式的编译里了。</p>
+<h3>改善的会话引擎</h3>
+<p>在这个版本中，我们也引入了一个全新的会话引擎。 类似于路由的改进，新的会话层更简洁更快。我们不再使用Symfony（PHP的）会话处理功能，而是使用一种更简单更容易维护的定制的解决方案。</p>
+<h3>Doctrine DBAL</h3>
+<p>如果你在迁移（migrations）中用到了“renameColumn”方法，你需要在“composer.json”文件中添加“doctrine/dbal”依赖。这个包不再默认包含在Laravel中。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

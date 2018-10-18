@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>队列</h1>
+<ul>
+<li><a href="#configuration">设置</a></li>
+<li><a href="#basic-usage">基本用法</a></li>
+<li><a href="#queueing-closures">队列闭包</a></li>
+<li><a href="#running-the-queue-listener">启动队列监听</a></li>
+<li><a href="#daemon-queue-worker">常驻队列工作</a></li>
+<li><a href="#push-queues">推送队列</a></li>
+<li><a href="#failed-jobs">失败的工作</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>设置</h2>
+<p>Laravel 队列组件提供一个统一的 API 集成了许多不同的队列服务，队列允许你延后执行一个耗时的任务，例如延后至指定的时间才发送邮件，进而大幅的加快了应用程序处理请求的速度。</p>
+<p>队列的配置文件在 <code>config/queue.php</code>，在这个文件你将可以找到框架中每种不同的队列服务的连接设置，其中包含了 <a href="http://kr.github.com/beanstalkd" target="_blank">Beanstalkd</a>、<a href="http://iron.io" target="_blank">IronMQ</a>、<a href="http://aws.amazon.com/sqs" target="_blank">Amazon SQS</a>、<a href="http://redis.io" target="_blank">Redis</a>、<code>null</code>，以及同步 (本地端使用) 驱动设置。驱动 <code>null</code> 只是简单的舍弃队列工作，因此那些工作永远不会执行。</p>
+<h3>队列数据表</h3>
+<p>为了能够使用 <code>database</code> 驱动，你需要建立一个数据表来保存工作。要使用一个迁移建立这个数据表，可以执行 <code>queue:table</code>  Artisan 命令：</p>
+<pre><code>php artisan queue:table
+</code></pre>
+<h3>其他队列依赖</h3>
+<p>下面的依赖是使用对应的队列驱动所需的扩展包：</p>
+<ul>
+<li>Amazon SQS: <code>aws/aws-sdk-php</code></li>
+<li>Beanstalkd: <code>pda/pheanstalk ~3.0</code></li>
+<li>IronMQ: <code>iron-io/iron_mq</code></li>
+<li>Redis: <code>predis/predis ~1.0</code></li>
+</ul>
+<p><a name="basic-usage"></a></p>
+<h2>基本用法</h2>
+<h4>推送一个工作至队列</h4>
+<p>应用程序中能够放进队列的工作都存放在 <code>App\Commands</code> 目录下，你可以借由下面 Artisan 命令产生一个可使用队列的命令：</p>
+<pre><code>php artisan make:command SendEmail --queued
+</code></pre>
+<p>要推送一个新的工作至队列，请使用 <code>Queue::push</code> 方法：</p>
+<pre><code>Queue::push(new SendEmail($message));
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 在这个例子当中，我们直接使用 <code>Queue</code> Facade，然而，常见的作法是借由 <a href="bus.html">Command Bus</a> 去分派队列命令。我们将会在这篇文章中继续使用 <code>Queue</code> Facade，不过，也要熟悉使用 command bus，因为它能够同时分派你的网站应用程序中队列与同步的命令。</p>
+</blockquote>
+<p>默认情况下，<code>make:command</code> Artisan 命令会产生一个 &quot;self-handling&quot; 的命令，意味着命令里会包含一个 <code>handle</code> 方法。这个方法将会在队列执行时被调用。你可以在 <code>handle</code> 方法使用时提示传入任何你需要的依赖，而 <a href="container.html">服务容器</a> 会自动注入他们：</p>
+<pre><code>public function handle(UserRepository $users)
+{
+    //
+}
+</code></pre>
+<p>如果你希望你的命令有独立的处理类别，你可以在使用 <code>make:command</code> 命令时加上 <code>--handler</code> 标识。</p>
+<pre><code>php artisan make:command SendEmail --queued --handler
+</code></pre>
+<p>这个被产生出来的处理类别将会放在 <code>App\Handlers\Commands</code> 目录下面，并且服务容器会自动解析。</p>
+<h4>指定队列使用特定连接</h4>
+<p>你也可指定队列工作送至指定的连接：</p>
+<pre><code>Queue::pushOn('emails', new SendEmail($message));
+</code></pre>
+<h4>发送相同的数据去多个队列工作</h4>
+<p>如果你需要发送一样的数据去几个不同的队列工作，你可以使用 <code>Queue::bulk</code> 方法：</p>
+<pre><code>Queue::bulk(array(new SendEmail($message), new AnotherCommand));
+</code></pre>
+<h4>延迟执行一个工作</h4>
+<p>有时候你可能想要延迟执行一个队列工作，举例来说你希望一个队列工作在客户注册 15 分钟后才寄送 e-mail，你可以使用 <code>Queue::later</code> 方法来完成这件事情：</p>
+<pre><code>$date = Carbon::now()-&gt;addMinutes(15);
+
+Queue::later($date, new SendEmail($message));
+</code></pre>
+<p>在这个例子中，我们使用 <a href="https://github.com/briannesbitt/Carbon" target="_blank">Carbon</a> 日期类库来指定我们希望队列工作希望延迟的时间，另外你也可发送一个整数来设置你希望延迟的秒数。</p>
+<blockquote>
+<p><strong>注意:</strong> 在 Amazon SQS 服务中，有最大 900 秒（ 15 分钟 ）的限制。</p>
+</blockquote>
+<h4>将 Eloquent 模型放进队列</h4>
+<p>如果你队列工作的构造器接收一个 Eloquent 模型，只有这个模型的标记（ identifier ） 会被序列化后放到队列中。当工作真正开始被处理的时候，队列系统会自动从数据库中重新取得完整的模型实例。这个对你的网站应用程序来说是完全透明的，并且预防一些在序列化完整 Eloquent 模型实例时可能遇到的问题。</p>
+<h4>删除一个处理中的工作</h4>
+<p>一旦一个工作被处理过后，这个工作必须从队列中删除。假如在工作执行后没有发生错误，这个将会自动完成。</p>
+<p>如果你希望能够手动删除或着释放工作，在 <code>Illuminate\Queue\InteractsWithQueue</code> trait 中提供 <code>release</code> 以及 <code>delete</code> 方法的接口。其中 <code>release</code> 方法接受单一一个值：你想要等待工作再次能够执行的秒数。</p>
+<pre><code>public function handle(SendEmail $command)
+{
+    if (true)
+    {
+        $this-&gt;release(30);
+    }
+}
+</code></pre>
+<h4>释放一个工作回到队列中</h4>
+<p>假如在工作执行后发生错误，这个工作将会自动被释放回到队列之中，如此一来便能够再次尝试执行工作。工作会一直被释放回队列直到到达应用程序的尝试上限。这个上限数值可以在使用 <code>queue:listen</code> 或 <code>queue:work</code> Artisan 命令时候借由 <code>--tries</code> 开关来设置。</p>
+<h4>检查工作执行次数</h4>
+<p>当一个工作执行后发生错误，这个工作将会自动的释放回队列当中，你可以透过 <code>attempts</code> 方法来检查这个工作已经被执行的次数：</p>
+<pre><code>if ($this-&gt;attempts() &gt; 3)
+{
+    //
+}
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 你的命令处理类别必须使用 <code>Illuminate\Queue\InteractsWithQueue</code> 这个 trait 才能够使用这个方法。</p>
+</blockquote>
+<p><a name="queueing-closures"></a></p>
+<h2>队列闭包</h2>
+<p>你也可以推送一个闭包去队列，这个方法非常的方便及快速的来处理需要使用队列的简单的任务：</p>
+<h4>推送一个闭包至队列</h4>
+<pre><code>Queue::push(function($job) use ($id)
+{
+    Account::delete($id);
+
+    $job-&gt;delete();
+});
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 要让一个组件变量可以在队列闭包中可以使用我们会通过 <code>use</code> 命令，试着发送主键及重复使用的相关模块在你的队列工作中，这可以避免其他的序列化行为。</p>
+</blockquote>
+<p>当使用 Iron.io <a href="#push-queues">push queues</a> 时,你应该在队列闭包中采取一些其他的预防措施，我们应该在执行工作收到队列数据时检查token是否真来自 Iron.io，举例来说你推送一个队列工作到 <code>https://yourapp.com/queue/receive?token=SecretToken</code>，接下来在你的工作收到队列的请求时，你就可以检查token的值是否正确。</p>
+<p><a name="running-the-queue-listener"></a></p>
+<h2>执行一个队列监听</h2>
+<p>Laravel 内含一个 Artisan 命令，它将推送到队列的工作拉来下执行，你可以使用 <code>queue:listen</code> 命令，来执行这件常驻任务：</p>
+<h4>开始队列监听</h4>
+<pre><code>php artisan queue:listen
+</code></pre>
+<p>你也可以指定特定队列连接让监听器使用：</p>
+<pre><code>php artisan queue:listen connection
+</code></pre>
+<p>注意当这个任务开始时，这将会一直持续执行到他被手动停止，你也可以使用一个处理监控如 <a href="http://supervisord.org/" target="_blank">Supervisor</a> 来确保这个队列监听不会停止执行。</p>
+<p>你也可以在 <code>listen</code> 命令中使用逗号分隔的队列连接，来设置不同队列连接的优先层级：</p>
+<pre><code>php artisan queue:listen --queue=high,low
+</code></pre>
+<p>在这个范列中，总是会优先处理 <code>high-connection</code> 中的工作，然后才处理 <code>low-connection</code>。</p>
+<h4>指定工作超时参数</h4>
+<p>你也可以设置给每个工作允许执行的秒数：</p>
+<pre><code>php artisan queue:listen --timeout=60
+</code></pre>
+<h4>指定队列休息时间</h4>
+<p>此外，你也可以指定让监听器在拉取新工作时要等待几秒：</p>
+<pre><code>php artisan queue:listen --sleep=5
+</code></pre>
+<p>注意队列只会在工作时休息，假如有许多可执行的工作，队列会持续的处理工作而不会休息</p>
+<h4>处理队列上的第一个工作</h4>
+<p>当你只想处理队列上的一个工作你可以使用 <code>queue:work</code> Artisan 命令：</p>
+<pre><code>php artisan queue:work
+</code></pre>
+<p><a name="daemon-queue-worker"></a></p>
+<h2>常驻队列处理器</h2>
+<p>在 <code>queue:work</code> 中也包含了一个 <code>--daemon</code> 选项，强迫队列处理器持续处理工作，而不会每次都重新启动框架，这个作法比起 <code>queue:listen</code> 可有效减少 CPU 使用量，但是却增加了布署时，对于处理中队列任务的复杂性。</p>
+<p>要启动一个常驻的队列处理器，使用 <code>--daemon</code>：</p>
+<pre><code>php artisan queue:work connection --daemon
+
+php artisan queue:work connection --daemon --sleep=3
+
+php artisan queue:work connection --daemon --sleep=3 --tries=3
+</code></pre>
+<p>如你所见 <code>queue:work</code> 命令支持 <code>queue:listen</code> 大多相同的选项参数，你也可使用 <code>php artisan help queue:work</code> 命令来观看全部可用的选项参数。</p>
+<h3>布署常驻队列处理器</h3>
+<p>最简单布署一个应用程序使用常驻队列处理器的方式，就是将应用程序在开始布署时转成维护模式，你可以使用 <code>php artisan down</code> 命令来完成这件事情，当这个应用程序在维护模式，Laravel 将不会允许任何来自队列上的新工作，但会持续的处理已存在的工作。</p>
+<p>要重新启动 <code>queue</code> 也是非常容易，请将底下命令加到部署命令：</p>
+<pre><code>php artisan queue:restart
+</code></pre>
+<p>上述命令会在执行完目前的工作后，重新启动队列。</p>
+<blockquote>
+<p><strong>注意:</strong> 这个命令依赖缓存系统来排定重新启动任务。默认 APCu 无法在命令提示字符中工作。如果你正在使用 APCu 请将 <code>apc.enable_cli=1</code> 加到你的 APCu 设置当中。</p>
+</blockquote>
+<h3>撰写常驻队列处理器</h3>
+<p>常驻队列处理器不会在处理每一个工作之前都重新启动框架。因此，你应该注意并小心地在工作处理完成之前释放占用的资源。例如，如果你正在使用 GD 函式库操作图片，当你完成工作的时候，你应该使用 <code>imagedestroy</code> 方法来释放占用的内存。</p>
+<p>同样地，数据库连接可能在长时间执行的队列处理器中断线，你可以使用 <code>DB::reconnect</code> 方法来确保你每次都有一个全新的连接。</p>
+<p><a name="push-queues"></a></p>
+<h2>推送队列</h2>
+<p>你可以利用强大的 Laravel 5 队列架构来进行推送队列工作，不需要执行任何的常驻或背景监听，目前只支持 <a href="http://iron.io" target="_blank">Iron.io</a> 驱动，在你开始前建立一个 Iron.io 帐号及添加你的 Iron 凭证到 <code>config/queue.php</code> 配置文件。</p>
+<h4>注册一个推送队列订阅</h4>
+<p>接下来，你可以使用 <code>queue:subscribe</code> Artisan 命令注册一个 URL，这将会接收新的推送队列工作：</p>
+<pre><code>php artisan queue:subscribe queue_name http://foo.com/queue/receive
+</code></pre>
+<p>现在当你登录你的 Iron 管理后台，你将会看到你新的推送队列，以及订阅的 URL，你可以订阅许多的 URLs 给你希望的队列，接下来建立一个 route 给你的 <code>queue/receive</code> 及从 <code>Queue::marshal</code> 方法回传回应：</p>
+<pre><code>Route::post('queue/receive', function()
+{
+    return Queue::marshal();
+});
+</code></pre>
+<p>这里的 <code>marshal</code> 方法会将触发正确的处理类别，而发送工作到队列中只要使用一样的 <code>Queue::push</code> 方法。</p>
+<p><a name="failed-jobs"></a></p>
+<h2>已失败的工作</h2>
+<p>事情往往不会如你预期的一样，有时候你推送工作到队列会失败，别担心，Laravel 包含一个简单的方法去指定一个工作最多可以被执行几次，在工作被执行到一定的次数时，他将会添加至 <code>failed_jobs</code> 数据表里，然后失败工作的数据表名称可以在 <code>config/queue.php</code> 里进行设置：</p>
+<p>要产生一个迁移来建立 <code>failed_jobs</code> 数据表，你可以使用 <code>queue:failed-table</code> Artisan 命令：</p>
+<pre><code>php artisan queue:failed-table
+</code></pre>
+<p>你可以指定一个最大值来限制一个工作应该最多被执行几次，在你执行 <code>queue:listen</code> 时加上 <code>--tries</code>：</p>
+<pre><code>php artisan queue:listen connection-name --tries=3
+</code></pre>
+<p>假如你会想注册一个事件，这个事件会将会在队列失败时被调用，你可以使用 <code>Queue::failing</code> 方法，这个事件是一个很好的机会让你可以通知你的团队通过 e-mail 或 <a href="https://www.hipchat.com" target="_blank">HipChat</a>。</p>
+<pre><code>Queue::failing(function($connection, $job, $data)
+{
+    //
+});
+</code></pre>
+<p>你可能够直接在队列工作类别中定义一个 <code>failed</code> 方法，这让你能够在工作失败时候，执行一些特定的动作：</p>
+<pre><code>public function failed()
+{
+    // 当工作失败的时候会被调用……
+}
+</code></pre>
+<h3>重新尝试失败的工作</h3>
+<p>要看到所有失败的工作，你可以使用 <code>queue:failed</code> 命令：</p>
+<pre><code>php artisan queue:failed
+</code></pre>
+<p>这个 <code>queue:failed</code> 命令将会列出工作 ID、连接、队列名称及失败的时间，可以使用工作 ID 重新执行一个失败的工作，例如一个已经失败的工作的 ID 是 5，我们可以使用下面的命令：</p>
+<pre><code>php artisan queue:retry 5
+</code></pre>
+<p>假如你想删除一个失败的工作，可以使用 <code>queue:forget</code> 命令：</p>
+<pre><code>php artisan queue:forget 5
+</code></pre>
+<p>要删除全部失败的工作，可以使用 <code>queue:flush</code> 命令：</p>
+<pre><code>php artisan queue:flush
+</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

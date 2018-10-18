@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>扩展框架</h1>
+<ul>
+<li><a href="#managers-and-factories">管理者和工厂</a></li>
+<li><a href="#cache">缓存</a></li>
+<li><a href="#session">Session</a></li>
+<li><a href="#authentication">认证</a></li>
+<li><a href="#container-based-extension">基于服务容器的扩展</a></li>
+</ul>
+<p><a name="managers-and-factories"></a></p>
+<h2>管理者和工厂</h2>
+<p>Laravel 有几个 <code>Manager</code> 类，用来管理创建基于驱动的组件。这些类包括缓存、session 、认证和队列组件。管理者类负责基于应用程序的配置建立一个特定的驱动实现。例如，<code>CacheManager</code> 类可以建立 APC 、 Memcached 、文件和各种其他的缓存驱动实现。</p>
+<p>这些管理者都拥有 <code>extend</code> 方法，可以简单地用它来注入新的驱动解析功能到管理者。我们将会在下面的例子，随着讲解如何为它们注入自定义驱动支持，涵盖这些管理者的内容。</p>
+<blockquote>
+<p><strong>注意：</strong> 建议花点时间来探索 Laravel 附带的各种 <code>Manager</code> 类，例如：<code>CacheManager</code> 和 <code>SessionManager</code>。看过这些类将会让你更彻底了解 Laravel 表面下是如何运作。所有的管理者类继承  <code>Illuminate\Support\Manager</code> 基础类，它提供一些有用、常见的功能给每一个管理者。</p>
+</blockquote>
+<p><a name="cache"></a></p>
+<h2>缓存</h2>
+<p>为了扩展 Laravel 缓存功能，我们将会使用 <code>CacheManager</code> 的 <code>extend</code> 方法，这方法可以用来绑定一个自定义驱动解析器到管理者，并且是全部的管理者类通用的。例如，注册一个新的缓存驱动名为「mongo」，我们将执行以下操作：</p>
+<pre><code>Cache::extend('mongo', function($app)
+{
+    return Cache::repository(new MongoStore);
+});
+</code></pre>
+<p>传递到 <code>extend</code> 方法的第一个参数是驱动的名称。这将会对应到你的 <code>config/cache.php</code> 配置文件里的 <code>driver</code> 选项。第二个参数是个应该返回 <code>Illuminate\Cache\Repository</code> 实例的闭包。 <code>$app</code> 将会被传递到闭包，它是 <code>Illuminate\Foundation\Application</code> 和服务容器的实例。</p>
+<p><code>Cache::extend</code> 的调用可以在新的 Laravel 应用程序默认附带的 <code>App\Providers\AppServiceProvider</code> 的 <code>boot</code> 方法中完成，或者你可以建立自己的服务提供者来放置这个扩展 - 记得不要忘记在 <code>config/app.php</code> 的提供者数组注册提供者。</p>
+<p>要建立自定义缓存驱动，首先需要实现 <code>Illuminate\Contracts\Cache\Store</code> contract 。所以，我们的 MongoDB 缓存实现将会看起来像这样：</p>
+<pre><code>class MongoStore implements Illuminate\Contracts\Cache\Store {
+
+    public function get($key) {}
+    public function put($key, $value, $minutes) {}
+    public function increment($key, $value = 1) {}
+    public function decrement($key, $value = 1) {}
+    public function forever($key, $value) {}
+    public function forget($key) {}
+    public function flush() {}
+
+}
+</code></pre>
+<p>我们只需要使用 MongoDB 连接来实现这些方法。当实现完成，就可以完成自定义驱动注册：</p>
+<pre><code>Cache::extend('mongo', function($app)
+{
+    return Cache::repository(new MongoStore);
+});
+</code></pre>
+<p>如果你正在考虑要把自定义缓存驱动代码放在哪里，请考虑把它放上  Packagist ！或者，你可以在 <code>app</code> 的目录中建立 <code>Extensions</code> 命名空间。记得 Laravel 没有严格的应用程序架构，你可以依照喜好自由的组织应用程序。</p>
+<p><a name="session"></a></p>
+<h2>Session</h2>
+<p>自定义 session 驱动来扩展 Laravel 和扩展缓存系统一样简单。我们将会再一次使用 <code>extend</code> 方法来注册自定义代码：</p>
+<pre><code>Session::extend('mongo', function($app)
+{
+    // Return implementation of SessionHandlerInterface
+});
+</code></pre>
+<h3>在哪里扩展 Session</h3>
+<p>你应该把 session 扩展代码放置在 <code>AppServiceProvider</code> 的 <code>boot</code> 方法里。</p>
+<h3>实现 Session 扩展</h3>
+<p>要注意我们的自定义缓存驱动应该要实现 <code>SessionHandlerInterface</code> 。这个接口只包含少数需要实现的简单方法。一个基本的 MongoDB 实现会看起来像这样：</p>
+<pre><code>class MongoHandler implements SessionHandlerInterface {
+
+    public function open($savePath, $sessionName) {}
+    public function close() {}
+    public function read($sessionId) {}
+    public function write($sessionId, $data) {}
+    public function destroy($sessionId) {}
+    public function gc($lifetime) {}
+
+}
+</code></pre>
+<p>因为这些方法不像缓存的 <code>StoreInterface</code> 一样容易理解，让我们快速地看过这些方法做些什么：</p>
+<ul>
+<li><code>open</code> 方法通常会被用在基于文件的 session 保存系统。因为 Laravel 附带一个 <code>file</code> session 驱动，几乎不需要在这个方法放任何东西。你可以让它留空。PHP 要求我们去实现这个方法，事实上明显是个差劲的接口设计 (我们将会晚点讨论它)。</li>
+<li><code>close</code> 方法，就像 <code>open</code> 方法，通常也可以忽略。对大部份的驱动来说，并不需要它。</li>
+<li><code>read</code> 方法应该返回与给定 <code>$sessionId</code> 关联的 session 数据的字串形态。当你的驱动取回或保存 session 数据时不需要做任何序列化或进行其他编码，因为 Laravel 将会为你进行序列化</li>
+<li><code>write</code> 方法应该写入给定 <code>$data</code> 字串与 <code>$sessionId</code> 的关联到一些永久存储系统，例如：MongoDB、 Dynamo、等等。</li>
+<li><code>destroy</code> 方法应该从永久存储移除与 <code>$sessionId</code> 关联的数据。</li>
+<li><code>gc</code> 方法应该销毁所有比给定 <code>$lifetime</code> UNIX 时间戳记还旧的 session 数据。对于会自己过期的系统如 Memcached 和 Redis，这个方法可以留空。</li>
+</ul>
+<p>当 <code>SessionHandlerInterface</code> 实现完成，我们准备好要用 Session 管理者注册它：</p>
+<pre><code>Session::extend('mongo', function($app)
+{
+    return new MongoHandler;
+});
+</code></pre>
+<p>当 session 驱动已经被注册，我们可以在 <code>config/session.php</code> 配置文件使用 <code>mongo</code> 驱动。</p>
+<blockquote>
+<p><strong>注意：</strong> 记住，如果你写了个自定义 session 处理器，请在 Packagist 分享它！</p>
+</blockquote>
+<p><a name="authentication"></a></p>
+<h2>认证</h2>
+<p>认证可以用与缓存和 session 功能相同的方法扩展。再一次的，使用我们已经熟悉的 <code>extend</code> 方法：</p>
+<pre><code>Auth::extend('riak', function($app)
+{
+    // 返回 Illuminate\Contracts\Auth\UserProvider 的实现
+});
+</code></pre>
+<p><code>UserProvider</code> 实现只负责从永久存储系统抓取 <code>Illuminate\Contracts\Auth\Authenticatable</code> 实现，存储系统例如： MySQL 、 Riak ，等等。这两个接口让 Laravel 认证机制无论用户数据如何保存或用什么种类的类来代表它都能继续运作。</p>
+<p>让我们来看一下 <code>UserProvider</code> contract ：</p>
+<pre><code>interface UserProvider {
+
+    public function retrieveById($identifier);
+    public function retrieveByToken($identifier, $token);
+    public function updateRememberToken(Authenticatable $user, $token);
+    public function retrieveByCredentials(array $credentials);
+    public function validateCredentials(Authenticatable $user, array $credentials);
+
+}
+</code></pre>
+<p><code>retrieveById</code> 函数通常接收一个代表用户的数字键，例如：MySQL 数据库的自动递增 ID。这方法应该取得符合 ID 的 <code>Authenticatable</code> 实现并返回。</p>
+<p><code>retrieveByToken</code> 函数用用户唯一的 <code>$identifier</code> 和保存在 <code>remember_token</code> 字段的「记住我」 <code>$token</code> 来取得用户。跟前面的方法一样，应该返回 <code>Authenticatable</code> 的实现。</p>
+<p><code>updateRememberToken</code> 方法用新的 <code>$token</code> 更新 <code>$user</code> 的 <code>remember_token</code> 字段。新 token 可以是在「记住我」成功地登录时，传入一个新的 token，或当用户注销时传入一个 null。</p>
+<p><code>retrieveByCredentials</code> 方法接收当尝试登录应用程序时，传递到 <code>Auth::attempt</code> 方法的凭证数组。这个方法应该接着「查找」底层使用的永久存储，找到符合凭证的用户。这个方法通常会对 <code>$credentials['username']</code> 用「 where 」条件查找。 并且应该返回一个 <code>UserInterface</code> 接口的实现。<strong>这个方法不应该尝试做任何密码验证或认证。</strong></p>
+<p><code>validateCredentials</code> 方法应该通过比较给定的 <code>$user</code> 与 <code>$credentials</code> 来验证用户。举例来说，这个方法可以比较 <code>$user-&gt;getAuthPassword()</code> 字串跟 <code>Hash::make</code> 后的 <code>$credentials['password']</code>。这个方法应该只验证用户的凭证数组并且返回布尔值。</p>
+<p>现在我们已经看过 <code>UserProvider</code> 的每个方法，接着来看一下 <code>Authenticatable</code>。记住，提供者应该从 <code>retrieveById</code> 和 <code>retrieveByCredentials</code> 方法返回这个接口的实现：</p>
+<pre><code>interface Authenticatable {
+
+    public function getAuthIdentifier();
+    public function getAuthPassword();
+    public function getRememberToken();
+    public function setRememberToken($value);
+    public function getRememberTokenName();
+
+}
+</code></pre>
+<p>这个接口很简单。 The <code>getAuthIdentifier</code> 方法应该返回用户的「主键」。在 MySQL 后台，同样，这将会是个自动递增的主键。<code>getAuthPassword</code> 应该返回用户哈希过的密码。这个接口让认证系统可以与任何用户类一起运作，无论你使用什么 ORM 或保存抽象层。默认，Laravel 包含一个实现这个接口的 <code>User</code> 类在 <code>app</code> 文件夹里，所以你可以参考这个类当作实现的例子。</p>
+<p>最后，当我们已经实现了 <code>UserProvider</code>，我们准备好用 <code>Auth</code> facade 来注册扩展：</p>
+<pre><code>Auth::extend('riak', function($app)
+{
+    return new RiakUserProvider($app['riak.connection']);
+});
+</code></pre>
+<p>用 <code>extend</code> 方法注册驱动之后，在你的 <code>config/auth.php</code> 配置文件切换到新驱动。</p>
+<p><a name="container-based-extension"></a></p>
+<h2>基于服务容器的扩展</h2>
+<p>几乎每个 Laravel 框架引入的服务提供者都会绑定对象到服务容器中。你可以在 <code>config/app.php</code> 配置文件中找到应用程序的服务提供者清单。如果你有时间，你应该浏览过这里面每一个提供者的源代码。通过这样做，你将会更了解每一个提供者添加什么到框架，以及用什么键值来绑定各种服务到服务容器。</p>
+<p>例如， <code>HashServiceProvider</code> 绑定 <code>hash</code> 做为键值到服务容器，它将解析成 <code>Illuminate\Hashing\BcryptHasher</code> 实例。你可以在应用程序中覆写这个 IoC 绑定，轻松地扩展并覆写这个类。例如：</p>
+<pre><code>&lt;?php namespace App\Providers;
+
+class SnappyHashProvider extends \Illuminate\Hashing\HashServiceProvider {
+
+    public function boot()
+    {
+        parent::boot();
+
+        $this-&gt;app-&gt;bindShared('hash', function()
+        {
+            return new \Snappy\Hashing\ScryptHasher;
+        });
+    }
+
+}
+</code></pre>
+<p>要注意的是这个类扩展 <code>HashServiceProvider</code>，不是默认的 <code>ServiceProvider</code> 基础类。当你扩展了服务提供者，在 <code>config/app.php</code> 配置文件把 <code>HashServiceProvider</code> 换成你扩展的提供者名称。</p>
+<p>这是被绑定在容器的所有核心类的一般扩展方法。实际上，每个以这种方式绑定在容器的核心类都可以被覆写。再次强调，看过每个框架引入的服务提供者将会使你熟悉：每个类被绑在容器的哪里、它们是用什么键值绑定。这是个好方法可以了解更多关于 Laravel 如何结合它们。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>表单与 HTML</h1>
+<ul>
+<li><a href="#opening-a-form">开启表单</a></li>
+<li><a href="#csrf-protection">CSRF 保护</a></li>
+<li><a href="#form-model-binding">表单模型绑定</a></li>
+<li><a href="#labels">标签（Label）</a></li>
+<li><a href="#text">文字字段（Text）、多行文字字段（Text Area）、密码字段（Password）和隐藏字段（Hidden Field）</a></li>
+<li><a href="#checkboxes-and-radio-buttons">核取方块（Checkboxe）和单选按钮（Radio Button）</a></li>
+<li><a href="#file-input">文件输入</a></li>
+<li><a href="#number">数字输入</a></li>
+<li><a href="#drop-down-lists">下拉式选单</a></li>
+<li><a href="#buttons">按钮</a></li>
+<li><a href="#custom-macros">自定义宏（Macro）</a></li>
+<li><a href="#generating-urls">产生 URL</a></li>
+</ul>
+<p><a name="opening-a-form"></a></p>
+<h2>开启表单</h2>
+<h4>开启表单</h4>
+<pre><code>{{ Form::open(array('url' =&gt; 'foo/bar')) }}
+    //
+{{ Form::close() }}
+</code></pre>
+<p>默认表单使用 POST 方法，当然您也可以指定传参其他表单的方法：</p>
+<pre><code>echo Form::open(array('url' =&gt; 'foo/bar', 'method' =&gt; 'put'))
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 因为 HTML 表单只支持 <code>POST</code> 和 <code>GET</code> 方法，所以在使用 <code>PUT</code> 及 <code>DELETE</code> 的方法时，Laravel 将会自动加入隐藏的 <code>_method</code> 字段到表单中，来伪装表单传送的方法。</p>
+</blockquote>
+<p>您也可以建立指向命名的路由或控制器至表单：</p>
+<pre><code>echo Form::open(array('route' =&gt; 'route.name'))
+
+echo Form::open(array('action' =&gt; 'Controller@method'))
+</code></pre>
+<p>您也可以传递路由参数：</p>
+<pre><code>echo Form::open(array('route' =&gt; array('route.name', $user-&gt;id)))
+
+echo Form::open(array('action' =&gt; array('Controller@method', $user-&gt;id)))
+</code></pre>
+<p>如果您的表单允许上传文件，可以加入 <code>files</code> 选项到参数中:</p>
+<pre><code>echo Form::open(array('url' =&gt; 'foo/bar', 'files' =&gt; true))
+</code></pre>
+<p><a name="csrf-protection"></a></p>
+<h2>CSRF 保护</h2>
+<h4>添加 CSRF Token 到表单</h4>
+<p>Laravel 提供了一个简易的方法，让您可以保护您的应用程序不受到 CSRF (跨网站请求伪造) 攻击。首先 Laravel 会自动在用户的 session 中放置随机的 token，别担心这些会自动完成。如果你为 <code>POST</code>、<code>PUT</code> 或 <code>DELETE</code> 方法调用了 <code>Form::open</code> 方法，这个 CSRF 参数会用隐藏字段的方式自动加到您的表单中。另外，您也可以使用 <code>token</code> 方法去产生这个隐藏的 CSRF 字段的 HTML 标签：</p>
+<pre><code>echo Form::token();
+</code></pre>
+<h4>附加 CSRF 过滤器到路由</h4>
+<pre><code>Route::post('profile', array('before' =&gt; 'csrf', function() `POST`, `PUT` or `DELETE`
+{
+    //
+}));
+</code></pre>
+<p><a name="form-model-binding"></a></p>
+<h2>表单模型绑定</h2>
+<h4>开启模型表单</h4>
+<p>您经常会想要将模型内容加入至表单中，您可以使用 <code>Form::model</code> 方法实现：</p>
+<pre><code>echo Form::model($user, array('route' =&gt; array('user.update', $user-&gt;id)))
+</code></pre>
+<p>现在当您产生表单元素时，如 text 字段，模型的值将会自动比对到字段名称，并设定此字段值，举例来说，用户模型的 <code>email</code> 属性，将会设定到名称为 <code>email</code> 的 text 字段的字段值，不仅如此，当 Session 中有与字段名称相符的名称， Session 的值将会优先于模型的值，而优先顺序如下：</p>
+<ol>
+<li>Session 的数据 (旧的输入值)</li>
+<li>明确传递的数据</li>
+<li>模型属性数据</li>
+</ol>
+<p>这样可以允许您快速地建立表单，不仅是绑定模型数据，也可以在服务器端数据验证错误时，轻松的回填用户输入的旧数据！</p>
+<blockquote>
+<p><strong>注意：</strong> 当使用 <code>Form::model</code> 方法时，必须确保有使用 <code>Form::close</code> 方法来关闭表单！</p>
+</blockquote>
+<p><a name="labels"></a></p>
+<h2>标签（Label）</h2>
+<h4>产生标签（Label）元素</h4>
+<pre><code>echo Form::label('email', 'E-Mail Address');
+</code></pre>
+<h4>指定额外的 HTML 属性</h4>
+<pre><code>echo Form::label('email', 'E-Mail Address', array('class' =&gt; 'awesome'));
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 在建立标签时，任何您建立的表单元素名称与标签相符时，将会自动在 ID 属性建立与标签名称相同的 ID。</p>
+</blockquote>
+<p><a name="text"></a></p>
+<h2>文字字段、多行文字字段、密码字段,、隐藏字段</h2>
+<h4>产生文字字段</h4>
+<pre><code>echo Form::text('username');
+</code></pre>
+<h4>指定默认值</h4>
+<pre><code>echo Form::text('email', 'example@gmail.com');
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> <em>hidden</em> 和 <em>textarea</em> 方法和 <em>text</em> 方法使用属性参数是相同的。</p>
+</blockquote>
+<h4>产生密码输入字段</h4>
+<pre><code>echo Form::password('password');
+</code></pre>
+<h4>产生其他输入字段</h4>
+<pre><code>echo Form::email($name, $value = null, $attributes = array());
+echo Form::file($name, $attributes = array());
+</code></pre>
+<p><a name="checkboxes-and-radio-buttons"></a></p>
+<h2>复选框和单选项钮</h2>
+<h4>产生复选框或单选按钮</h4>
+<pre><code>echo Form::checkbox('name', 'value');
+
+echo Form::radio('name', 'value');
+</code></pre>
+<h4>产生已选取的复选框或单选按钮</h4>
+<pre><code>echo Form::checkbox('name', 'value', true);
+
+echo Form::radio('name', 'value', true);
+</code></pre>
+<p><a name="number"></a></p>
+<h2>数字输入</h2>
+<h4>生成一个数字输入域</h4>
+<pre><code>echo Form::number('name', 'value');
+</code></pre>
+<p><a name="file-input"></a></p>
+<h2>文件输入</h2>
+<h4>产生文件输入</h4>
+<pre><code>echo Form::file('image');
+</code></pre>
+<blockquote>
+<p>**注意：**表单必须已将 <code>files</code> 选项设定为 <code>true</code>。</p>
+</blockquote>
+<p><a name="drop-down-lists"></a></p>
+<h2>下拉式选单</h2>
+<h4>产生下拉式选单</h4>
+<pre><code>echo Form::select('size', array('L' =&gt; 'Large', 'S' =&gt; 'Small'));
+</code></pre>
+<h4>产生选择默认值的下拉式选单</h4>
+<pre><code>echo Form::select('size', array('L' =&gt; 'Large', 'S' =&gt; 'Small'), 'S');
+</code></pre>
+<h4>产生群组清单</h4>
+<pre><code>echo Form::select('animal', array(
+    'Cats' =&gt; array('leopard' =&gt; 'Leopard'),
+    'Dogs' =&gt; array('spaniel' =&gt; 'Spaniel'),
+));
+</code></pre>
+<h4>产生范围的下拉式选单</h4>
+<pre><code>echo Form::selectRange('number', 10, 20);
+</code></pre>
+<h4>产生月份名称的清单</h4>
+<pre><code>echo Form::selectMonth('month');
+</code></pre>
+<p><a name="buttons"></a></p>
+<h2>按钮</h2>
+<h4>产生提交按钮</h4>
+<pre><code>echo Form::submit('Click Me!');
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 需要产生按钮（Button）元素吗? 可以试着使用 <em>button</em> 方法去产生按钮（Button）元素，button 方法与 <em>submit</em> 使用属性参数是相同的。</p>
+</blockquote>
+<p><a name="custom-macros"></a></p>
+<h2>自定义宏</h2>
+<h4>注册表单宏</h4>
+<p>您可以轻松的定义您自己的表单类的辅助方法叫「宏（macros）」，首先只要注册 宏 ，并给预期名称及封闭函数：</p>
+<pre><code>Form::macro('myField', function()
+{
+    return '&lt;input type=&quot;awesome&quot;&gt;';
+});
+</code></pre>
+<p>现在您可以使用注册的名称调用您的宏：</p>
+<h4>调用自定义表单宏</h4>
+<pre><code>echo Form::myField();
+</code></pre>
+<p><a name="generating-urls"></a>
+##产生 URL</p>
+<p>更多产生 URL 的信息，请参阅文件<a href="../helpers#urls">辅助方法</a>。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

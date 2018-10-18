@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>缓存</h1>
+<ul>
+<li><a href="#configuration">配置</a></li>
+<li><a href="#cache-usage">缓存用法</a></li>
+<li><a href="#increments-and-decrements">递增 &amp; 递减</a></li>
+<li><a href="#cache-tags">缓存标签</a></li>
+<li><a href="#database-cache">数据库缓存</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>配置</h2>
+<p>Laravel对不同的缓存系统提供了统一的API. 请在 <code>app/config/cache.php</code> 文件中配置缓存信息. 你可以在此文件中指定整个应用程序默认使用哪种缓存驱动. Laravel支持系统以外的流行后端缓存如 <a href="http://memcached.org" target="_blank">Memcached</a> 和 <a href="http://redis.io" target="_blank">Redis</a>.</p>
+<p>缓存配置文件还包含了其他配置项, 都已记录在文件中, 请详细阅读. 默认情况下, Laravel被配置为使用 'file' 缓存驱动, 它将缓存数据序列化的存储在文件系统中, 对于大型的应用, 我们建议你使用内存缓存, 如 Memcached 或 APC.</p>
+<p><a name="cache-usage"></a></p>
+<h2>缓存用法</h2>
+<h4>将某一条数据存入缓存</h4>
+<pre><code>Cache::put('key', 'value', $minutes);
+</code></pre>
+<h4>使用Carbon对象并设置过期时间</h4>
+<pre><code>$expiresAt = Carbon::now()-&gt;addMinutes(10);
+
+Cache::put('key', 'value', $expiresAt);
+</code></pre>
+<h4>当一条数据不在缓存中才存储</h4>
+<pre><code>Cache::add('key', 'value', $minutes);
+</code></pre>
+<p>如果该数据实际上 <strong>已经添加</strong> 到缓存中, 那么 <code>add</code> 方法将返回 <code>true</code> . 否则, 此方法将返回 <code>false</code>.</p>
+<h4>检查缓存中是否存在某个key对应的数据</h4>
+<pre><code>if (Cache::has('key'))
+{
+    //
+}
+</code></pre>
+<h4>从缓存中取得一条key对应的数据</h4>
+<pre><code>$value = Cache::get('key');
+</code></pre>
+<h4>从缓存中取得数据, 如果不存在, 则返回指定的默认值</h4>
+<pre><code>$value = Cache::get('key', 'default');
+
+$value = Cache::get('key', function() { return 'default'; });
+</code></pre>
+<h4>在缓存中永久存储数据</h4>
+<pre><code>Cache::forever('key', 'value');
+</code></pre>
+<p>有时候你可能希望从缓存中取得数据, 并且数据不存在时还可以存储一个默认值, 这时可以使用 <code>Cache::remember</code> 方法:</p>
+<pre><code>$value = Cache::remember('users', $minutes, function()
+{
+    return DB::table('users')-&gt;get();
+});
+</code></pre>
+<p>你还可以结合使用 <code>remember</code> 和 <code>forever</code> 方法:</p>
+<pre><code>$value = Cache::rememberForever('users', function()
+{
+    return DB::table('users')-&gt;get();
+});
+</code></pre>
+<p>注意: 所有项目都是序列化的存储在缓存中, 所以你可以自由存储任何类型的数据.</p>
+<h4>在缓存中拉出一条数据</h4>
+<p>如果你需要从缓存中先取出一条数据, 然后删除它, 你可以使用 <code>pull</code> 方法:</p>
+<pre><code>$value = Cache::pull('key');
+</code></pre>
+<h4>从缓存中删除某条数据</h4>
+<pre><code>Cache::forget('key');
+</code></pre>
+<p><a name="increments-and-decrements"></a></p>
+<h2>递增 &amp; 递减</h2>
+<p>除了 <code>file</code> 和 <code>database</code> , 其他驱动都支持 <code>increment</code> and <code>decrement</code> 操作:</p>
+<h4>递增某一个值</h4>
+<pre><code>Cache::increment('key');
+
+Cache::increment('key', $amount);
+</code></pre>
+<h4>递减某一个值</h4>
+<pre><code>Cache::decrement('key');
+
+Cache::decrement('key', $amount);
+</code></pre>
+<p><a name="cache-tags"></a></p>
+<h2>缓存标签</h2>
+<blockquote>
+<p><strong>注意:</strong> 使用 <code>file</code> 或 <code>database</code> 缓存驱动时不支持缓存标签. 此外, 在使用多个缓存标签时它们将存储为 &quot;forever&quot;, 使用一个如 <code>memcached</code> 的驱动性能将会是最好, 它会自动清除过时的记录.</p>
+</blockquote>
+<h4>访问一个标记的缓存</h4>
+<p>缓存标签允许你在缓存中标记相关的项目, 刷新指定名称标记的所有缓存. 要访问一个标记的缓存, 可以使用 <code>tags</code> 方法.</p>
+<p>你可以通过传递一个标记名称的有序列表作为参数, 或是一个标记名称的有序数数组, 来存储一个标记的缓存:</p>
+<pre><code>Cache::tags('people', 'authors')-&gt;put('John', $john, $minutes);
+
+Cache::tags(array('people', 'artists'))-&gt;put('Anne', $anne, $minutes);
+</code></pre>
+<p>你可以在任何缓存存储方法中组合使用标签, 包括<code>remember</code>, <code>forever</code>, 和 <code>rememberForever</code>. 你也可以从标记的缓存中访问已缓存的项目, 以及使用其它的缓存方法, 如 <code>increment</code> 和 <code>decrement</code>.</p>
+<h4>从标记的缓存中访问项目</h4>
+<p>通过与保存时所用相同的标签, 作为参数列表来访问一个标记的缓存.</p>
+<pre><code>$anne = Cache::tags('people', 'artists')-&gt;get('Anne');
+
+$john = Cache::tags(array('people', 'authors'))-&gt;get('John');
+</code></pre>
+<p>你可以通过一个名称或名称的列表来刷新所有的项目. 例如, 下面的语句将移除标记有任何'people', 'authors', 或两者都有的所有缓存. 所以, 无论是“Anne”和“John”将从缓存中被移除:</p>
+<pre><code>Cache::tags('people', 'authors')-&gt;flush();
+</code></pre>
+<p>相比之下, 下面的语句将移除标记中只包含 'authors' 的缓存, 因此 &quot;John&quot; 将被移除, 但不影响 &quot;Anne&quot;.</p>
+<pre><code>Cache::tags('authors')-&gt;flush();
+</code></pre>
+<p><a name="database-cache"></a></p>
+<h2>数据库缓存</h2>
+<p>当使用'数据库'缓存驱动时, 你将需要设置一个表来存储缓存数据. 以下是一个使用 <code>Schema</code> 声明的例子:</p>
+<pre><code>Schema::create('cache', function($table)
+{
+    $table-&gt;string('key')-&gt;unique();
+    $table-&gt;text('value');
+    $table-&gt;integer('expiration');
+});
+</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

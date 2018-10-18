@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>Laravel Elixir</h1>
+<ul>
+<li><a href="#introduction">简介</a></li>
+<li><a href="#installation">安装</a></li>
+<li><a href="#usage">使用方式</a></li>
+<li><a href="#gulp">Gulp</a></li>
+<li><a href="#defaults">默认目录</a></li>
+<li><a href="#extensions">功能扩充</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>简介</h2>
+<p>Laravel Elixir 提供了简洁流畅的 API，让你能够为你的 Laravel 应用程序定义基本的 <a href="http://gulpjs.com" target="_blank">Gulp</a> 任务。Elixir 支持许多常见的 CSS 与 JavaScrtip 预处理器，甚至包含了测试工具。</p>
+<p>如果你曾经对于使用 Gulp 及编译资源感到困惑，那么你绝对会爱上 Laravel Elixir！</p>
+<p><a name="installation"></a></p>
+<h2>安装与配置</h2>
+<h3>安装 Node</h3>
+<p>在开始使用 Elixir 之前，你必须先确定你的开发环境上有安装 Node.js。</p>
+<pre><code>node -v
+</code></pre>
+<p>默认情况下，Laravel Homestead 会包含你所需的一切；当然，如果你没有使用 Vagrant，那么你可以浏览 <a href="http://nodejs.org/download/" target="_blank">Node  的下载页</a>进行安装。别担心，安装是很简单又快速的！</p>
+<h3>Gulp</h3>
+<p>接着你需要全局安装 <a href="http://gulpjs.com" target="_blank">Gulp</a> 的 NPM 安装包，如这样：</p>
+<pre><code>npm install --global gulp
+</code></pre>
+<h3>Laravel Elixir</h3>
+<p>最后的步骤就是安装 Elixir！伴随着新安装的 Laravel，你会发现根目录有个名为 <code>package.json</code> 的文件。想像它就如同你的 <code>composer.json</code> 文件，只是它定义的是 Node 的依赖，而不是 PHP。你可以使用以下的命令进行安装依赖的动作：</p>
+<pre><code>npm install
+</code></pre>
+<p><a name="usage"></a></p>
+<h2>使用方式</h2>
+<p>现在你已经安装好 Elixir，未来任何时候你都能进行编译及合并文件！ 在项目根目录下的 <code>gulpfile.js</code> 已经包含了所有的 Elixir 任务。</p>
+<h4>编译 Less</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.less(&quot;app.less&quot;);
+});
+</code></pre>
+<p>在上述例子中，Elixir 会假设你的 Less 文件保存在 <code>resources/assets/less</code> 里。</p>
+<h4>编译多个 Less 文件</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.less([
+        'app.less',
+        'something-else.less'
+    ]);
+});
+</code></pre>
+<h4>编译 Sass</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.sass(&quot;app.scss&quot;);
+});
+</code></pre>
+<p>在上述例子中，Elixir 会假设你的 Sass 文件保存在 <code>resources/assets/sass</code> 里。</p>
+<h4>编译 CoffeeScript</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.coffee();
+});
+</code></pre>
+<p>在上述例子中，Elixir 会假设你的 CoffeeScript 文件保存在 <code>resources/assets/coffee</code> 里。</p>
+<h4>编译所有的 Less 及 CoffeeScript</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.less()
+       .coffee();
+});
+</code></pre>
+<h4>触发 PHPUnit 测试</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.phpUnit();
+});
+</code></pre>
+<h4>触发 PHPSpec 测试</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.phpSpec();
+});
+</code></pre>
+<h4>合并样式文件</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.styles([
+        &quot;normalize.css&quot;,
+        &quot;main.css&quot;
+    ]);
+});
+</code></pre>
+<p>传递给此方法的文件路径均相对于 <code>resources/css</code> 目录。</p>
+<h4>合并样式文件且保存在自定义的路径</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.styles([
+        &quot;normalize.css&quot;,
+        &quot;main.css&quot;
+    ], 'public/build/css/everything.css');
+});
+</code></pre>
+<h4>从特定相对目录合并样式文件</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.styles([
+        &quot;normalize.css&quot;,
+        &quot;main.css&quot;
+    ], 'public/build/css/everything.css', 'public/css');
+});
+</code></pre>
+<p><code>styles</code> 与 <code>scrtips</code> 方法可以通过传入第三个参数来决定来源文件的相对目录。</p>
+<h4>合并指定目录里所有的样式文件</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.stylesIn(&quot;public/css&quot;);
+});
+</code></pre>
+<h4>合并脚本文件</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.scripts([
+        &quot;jquery.js&quot;,
+        &quot;app.js&quot;
+    ]);
+});
+</code></pre>
+<p>同样的，传递给此方法的文件路径均相对于 <code>resources/js</code> 目录</p>
+<h4>合并指定目录里所有的脚本文件</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.scriptsIn(&quot;public/js/some/directory&quot;);
+});
+</code></pre>
+<h4>合并多组脚本文件</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.scripts(['jquery.js', 'main.js'], 'public/js/main.js')
+       .scripts(['forum.js', 'threads.js'], 'public/js/forum.js');
+});
+</code></pre>
+<h4>压缩文件并加上哈希的版本号</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.version(&quot;css/all.css&quot;);
+});
+</code></pre>
+<p>这个动作会为你的文件名称加上独特的哈希值，以防止文件被缓存。举例来说，产生出来的文件名称可能像这样：<code>all-16d570a7.css</code>。</p>
+<p>接着在你的视图中，你能够使用 <code>elixir()</code> 函数来正确加载名称被哈希后的文件。举例如下：</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;{{ elixir(&quot;css/all.css&quot;) }}&quot;&gt;
+</code></pre>
+<p>程序的作用下，<code>elixir()</code> 函数会将参数内的源文件名转换成被哈希后的文件名并加载。是否有如释重担的感觉呢？</p>
+<p>您也可以传给一个数组给 <code>version</code> 方法来为多个文件进行版本管理：</p>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.version([&quot;css/all.css&quot;, &quot;js/app.js&quot;]);
+});
+</code></pre>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;{{ elixir(&quot;css/all.css&quot;) }}&quot;&gt;
+&lt;script src=&quot;{{ elixir(&quot;js/app.js&quot;) }}&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h4>复制文件到新的位置</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.copy('vendor/foo/bar.css', 'public/css/bar.css');
+});
+</code></pre>
+<h4>将整个目录都复制到新的位置</h4>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.copy('vendor/package/views', 'resources/views');
+});
+</code></pre>
+<h4>方法连接</h4>
+<p>当然，你能够串连 Elixir 大部份的方法来建立一连串的任务：</p>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.less(&quot;app.less&quot;)
+       .coffee()
+       .phpUnit()
+       .version(&quot;css/bootstrap.css&quot;);
+});
+</code></pre>
+<p><a name="gulp"></a></p>
+<h2>Gulp</h2>
+<p>现在你已经告诉 Elixir 要执行的任务，接着只需要在命令行执行 Gulp。</p>
+<h4>执行一次所有注册的任务</h4>
+<pre><code>gulp
+</code></pre>
+<h4>监控文件变更</h4>
+<pre><code>gulp watch
+</code></pre>
+<h4>仅编译 javascript</h4>
+<pre><code>gulp scripts
+</code></pre>
+<h4>仅编译 css 样式</h4>
+<pre><code>gulp styles
+</code></pre>
+<h4>监控测试以及 PHP 类的变更</h4>
+<pre><code>gulp tdd
+</code></pre>
+<blockquote>
+<p><strong>提示：</strong> 所有的任务都会使用开发环境进行，所以压缩功能不会被执行。如果要使用上线环境，可以使用 <code>gulp --production</code>。</p>
+</blockquote>
+<p><a name="extensions"></a></p>
+<h2>功能扩充</h2>
+<p>你甚至能够建立自己的 Gulp 任务至 Elixir 里。想像一下，你想加入一个有趣的任务，使用终端机后会打打印一些消息。看起来可能会如下：</p>
+<pre><code class="language-javascript"> var gulp = require(&quot;gulp&quot;);
+ var shell = require(&quot;gulp-shell&quot;);
+ var elixir = require(&quot;laravel-elixir&quot;);
+
+ elixir.extend(&quot;message&quot;, function(message) {
+
+     gulp.task(&quot;say&quot;, function() {
+         gulp.src(&quot;&quot;).pipe(shell(&quot;say &quot; + message));
+     });
+
+     return this.queueTask(&quot;say&quot;);
+
+ });
+</code></pre>
+<p>请注意我们 <code>扩增（ extend ）</code> Elixir 的 API 时所使用的第一个参数，稍后我们需要在 Gulpfile 中使用它，以及建立 Gulp 任务所使用的回调函数。</p>
+<p>如果你想要让你的自定义任务能被监控，只要在监控器注册就行了。</p>
+<pre><code class="language-javascript">this.registerWatcher(&quot;message&quot;, &quot;**/*.php&quot;);
+</code></pre>
+<p>这行程序的意思是指，当符合正则表达式的文件一经修改，就会触发 <code>message</code> 任务。</p>
+<p>很好！接着你可以将这行程序写在 Gulpfile 的顶端，或者将它放到自定义任务的文件里。如果你选择后者，那么你必须将它加载至你的 Gulpfile，例如：</p>
+<pre><code class="language-javascript">require(&quot;./custom-tasks&quot;)
+</code></pre>
+<p>大功告成！最后你只需要将他们结合。</p>
+<pre><code class="language-javascript">elixir(function(mix) {
+    mix.message(&quot;Tea, Earl Grey, Hot&quot;);
+});
+</code></pre>
+<p>加入之后，每当你触发 Gulp，Picard 就会要求一些茶。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

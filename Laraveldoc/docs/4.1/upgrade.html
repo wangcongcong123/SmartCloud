@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.1
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">Release Notes</a></li>
+<li><a href="upgrade.html">Upgrade Guide</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">Authentication</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">Release Notes</a></li>
+<li><a href="upgrade.html">Upgrade Guide</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">Authentication</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>升级向导</h1>
+<ul>
+<li><a href="#upgrade-4.1.29">Upgrading To 4.1.29 From &lt;= 4.1.x</a></li>
+<li><a href="#upgrade-4.1.26">Upgrading To 4.1.26 From &lt;= 4.1.25</a></li>
+<li><a href="#upgrade-4.1">从 4.0 升级到 4.1</a></li>
+</ul>
+<p><a name="upgrade-4.1.29"></a></p>
+<h2>Upgrading To 4.1.29 From &lt;= 4.1.x</h2>
+<p>aravel 4.1.29 improves the column quoting for all database drivers. This protects your application from some mass assignment vulnerabilities when <strong>not</strong> using the <code>fillable</code> property on models. If you are using the <code>fillable</code> property on your models to protect against mass assignment, your application is not vulnerable. However, if you are using <code>guarded</code> and are passing a user controlled array into an &quot;update&quot; or &quot;save&quot; type function, you should upgrade to <code>4.1.29</code> immediately as your application may be at risk of mass assignment.</p>
+<p>To upgrade to Laravel 4.1.29, simply <code>composer update</code>. No breaking changes are introduced in this release.</p>
+<p><a name="upgrade-4.1.26"></a></p>
+<h2>Upgrading To 4.1.26 From &lt;= 4.1.25</h2>
+<p>Laravel 4.1.26 introduces security improvements for &quot;remember me&quot; cookies. Before this update, if a remember cookie was hijacked by another malicious user, the cookie would remain valid for a long period of time, even after the true owner of the account reset their password, logged out, etc.</p>
+<p>This change requires the addition of a new <code>remember_token</code> column to your <code>users</code> (or equivalent) database table. After this change, a fresh token will be assigned to the user each time they login to your application. The token will also be refreshed when the user logs out of the application. The implications of this change are: if a &quot;remember me&quot; cookie is hijacked, simply logging out of the application will invalidate the cookie.</p>
+<h3>Upgrade Path</h3>
+<p>First, add a new, nullable <code>remember_token</code> of VARCHAR(100), TEXT, or equivalent to your <code>users</code> table.</p>
+<p>Next, if you are using the Eloquent authentication driver, update your <code>User</code> class with the following three methods:</p>
+<pre><code>public function getRememberToken()
+{
+    return $this-&gt;remember_token;
+}
+
+public function setRememberToken($value)
+{
+    $this-&gt;remember_token = $value;
+}
+
+public function getRememberTokenName()
+{
+    return 'remember_token';
+}
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> All existing &quot;remember me&quot; sessions will be invalidated by this change, so all users will be forced to re-authenticate with your application.</p>
+</blockquote>
+<h3>Package Maintainers</h3>
+<p>Two new methods were added to the <code>Illuminate\Auth\UserProviderInterface</code> interface. Sample implementations may be found in the default drivers:</p>
+<pre><code>public function retrieveByToken($identifier, $token);
+
+public function updateRememberToken(UserInterface $user, $token);
+</code></pre>
+<p>The <code>Illuminate\Auth\UserInterface</code> also received the three new methods described in the &quot;Upgrade Path&quot;.</p>
+<p><a name="upgrade-4.1"></a></p>
+<h2>从 4.0 升级到 4.1</h2>
+<h3>升级 Composer 依赖项</h3>
+<p>为把应用程序升级为 Laravel 4.1，需要将 <code>composer.json</code> 文件中 <code>laravel/framework</code> 的版本改为 <code>4.1.*</code> 。</p>
+<h3>替换文件</h3>
+<p>把 <code>public/index.php</code> 文件替换为 <a href="https://github.com/laravel/laravel/blob/master/public/index.php" target="_blank">仓库里这个新版本</a>。</p>
+<p>把 <code>artisan</code> 文件替换为 <a href="https://github.com/laravel/laravel/blob/master/artisan" target="_blank">仓库里这个新版本</a>。</p>
+<h3>添加配置文件 &amp; 选项</h3>
+<p>更新 <code>app/config/app.php</code> 配置文件中的 <code>aliases</code> 和 <code>providers</code> 数组。更新后的数组值可以 <a href="https://github.com/laravel/laravel/blob/master/app/config/app.php" target="_blank">在这个文件中</a> 找到。记得在更新完成后将你自定义的服务提供器/别名添加回数组中。</p>
+<p><a href="https://github.com/laravel/laravel/blob/master/app/config/remote.php" target="_blank">从仓库</a> 添加新的 <code>app/config/remote.php</code> 文件。</p>
+<p>在 <code>app/config/session.php</code> 文件中添加新的 <code>expire_on_close</code> 配置选项，默认值为 <code>false</code>。</p>
+<p>在 <code>app/config/queue.php</code> 文件中添加新的 <code>failed</code> 配置区，默认值如下：</p>
+<pre><code>'failed' =&gt; array(
+    'database' =&gt; 'mysql', 'table' =&gt; 'failed_jobs',
+),
+</code></pre>
+<p><strong>(可选)</strong> 更新 <code>app/config/view.php</code> 文件中的 <code>pagination</code> 配置选项为 <code>pagination::slider-3</code>。</p>
+<h3>更新控制器</h3>
+<p>如果 <code>app/controllers/BaseController.php</code> 的顶部有 <code>use</code> 语句，把 <code>use Illuminate\Routing\Controllers\Controller;</code> 改为 <code>use Illuminate\Routing\Controller;</code>。</p>
+<h3>更新密码提示功能</h3>
+<p>框架的密码提示功能进行了较大修改以提供更好的灵活性。你可以运行 Artisan 命令 <code>php artisan auth:reminders-controller</code> （看完下面的内容之后再运行）来查看新版密码提示控制器是什么样的。你还可以浏览并根据 <a href="../security#password-reminders-and-reset">更新过的文档</a> 来更新你的应用程序。</p>
+<p>更新 <code>app/lang/en/reminders.php</code> 语言文件以匹配 <a href="https://github.com/laravel/laravel/blob/master/app/lang/en/reminders.php" target="_blank">这个更新过的文件</a>。</p>
+<h3>更新环境检测</h3>
+<p>出于安全原因，不再使用 URL 域名来检测你的应用程序环境，因为很容易被攻击者伪造从而修改请求的运行环境。你应该改用主机名(Mac、Linux 和 Windows 的 <code>hostname</code> 命令)来进行环境检测。</p>
+<h3>简化的日志文件</h3>
+<p>Laravel 现在创建一个单一的日志文件：<code>app/storage/logs/laravel.log</code>。不过，你还是可以在 <code>app/start/global.php</code> 文件中配置日志行为。</p>
+<h3>移除重定向的尾部斜杠</h3>
+<p>在 <code>bootstrap/start.php</code> 文件中，移除 <code>$app-&gt;redirectIfTrailingSlash()</code> 调用。由于该方法的功能已经通过框架自带的 <code>.htaccess</code> 文件实现了，所以不再需要了。</p>
+<p>然后，替换 Apache 的 <code>.htaccess</code> 文件为 <a href="https://github.com/laravel/laravel/blob/master/public/.htaccess" target="_blank">这个新版本</a>，用于处理尾部斜杠。</p>
+<h3>获取当前路由</h3>
+<p>现在通过 <code>Route::current()</code> 获取当前路由，以前是 <code>Route::getCurrentRoute()</code>。</p>
+<h3>Composer 更新</h3>
+<p>完成上述修改后，运行 <code>composer update</code> 更新应用程序的核心文件即可。If you receive class load errors, try running the <code>update</code> command with the <code>--no-scripts</code> option enabled like so: <code>composer update --no-scripts</code>(On Linux, you may have to run <code>sudo composer update</code> if you are getting Permission Denied errors).</p>
+<h3>Wildcard Event Listeners</h3>
+<p>The wildcard event listeners no longer append the event to your handler functions parameters. If you require finding the event that was fired you should use <code>Event::firing()</code>.</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

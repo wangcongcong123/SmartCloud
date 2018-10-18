@@ -1,0 +1,59 @@
+
+
+{
+  "code": 0,
+  "msg": "",
+  "data": {
+    "mine": {
+      "username": "congwangcong",
+      "id": "88888888",
+      "status": "online",
+      "remark": "welcome to smartcloud, I am amdin",
+      "avatar": "images/admin.jpg"
+    },
+    "friend": [
+      {
+        "groupname": "前端码屌",
+        "id": 1,
+        "online": 2,
+        "list": [
+          {
+            "username": "贤心",
+            "id": "100001",
+            "avatar": "http://tp1.sinaimg.cn/1571889140/180/40030060651/1",
+            "sign": "这些都是测试数据，实际使用请严格按照该格式返回"
+          },
+          {
+            "username": "Z_子晴",
+            "id": "108101",
+            "avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+            "sign": "微电商达人"
+          },
+          {
+            "username": "Lemon_CC",
+            "id": "102101",
+            "avatar": "http://tp2.sinaimg.cn/1833062053/180/5643591594/0",
+            "sign": ""
+          },
+          {
+            "username": "马小云",
+            "id": "168168",
+            "avatar": "http://tp4.sinaimg.cn/2145291155/180/5601307179/1",
+            "sign": "让天下没有难写的代码",
+            "status": "offline"
+          },
+          {
+            "username": "徐小峥",
+            "id": "666666",
+            "avatar": "http://tp2.sinaimg.cn/1783286485/180/5677568891/1",
+            "sign": "代码在囧途，也要写到底"
+          }
+        ]
+      }
+    ],
+    "group": []
+  }
+}
+
+
+

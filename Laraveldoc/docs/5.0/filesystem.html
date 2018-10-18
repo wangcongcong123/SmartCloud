@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>文件系统 / 云存储</h1>
+<ul>
+<li><a href="#introduction">简介</a></li>
+<li><a href="#configuration">配置文件</a></li>
+<li><a href="#basic-usage">基本用法</a></li>
+<li><a href="#custom-filesystems">自定义文件系统</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>简介</h2>
+<p>Laravel 有很棒的文件系统抽象层，是基于 Frank de Jonge 的 <a href="https://github.com/thephpleague/flysystem" target="_blank">Flysystem</a> 扩展包。 Laravel 集成的 Flysystem 提供了简单的接口，可以操作本地端空间、 Amazon S3 、 Rackspace Cloud Storage 。更好的是，它可以非常简单的切换不同保存方式，但仍使用相同的 API 操作！</p>
+<p><a name="configuration"></a></p>
+<h2>配置文件</h2>
+<p>文件系统的配置文件放在 <code>config/filesystems.php</code> 。在这个文件内你可以配置所有的「硬盘」。每个硬盘代表一种保存方式和地点。默认的配置文件内已经包含了所有保存方式的例子。所以只要修改保存配置和认证即可！</p>
+<p>在使用 S3 或 Rackspace 之前，你必须先用 Composer 安装相对应的扩展包：</p>
+<ul>
+<li>Amazon S3: <code>league/flysystem-aws-s3-v2 ~1.0</code></li>
+<li>Rackspace: <code>league/flysystem-rackspace ~1.0</code></li>
+</ul>
+<p>当然，你可以加入任意数量的硬盘配置文件，甚至配置多个硬盘都使用同一种保存方式。</p>
+<p>使用本地端空间时，要注意所有的操作路径都是相对于配置文件里 <code>local</code> 的 <code>root</code> ，默认的路径是 <code>storage/app</code> 。因此下列的操作将会保存一个文件在 <code>storage/app/file.txt</code> ：</p>
+<pre><code>Storage::disk('local')-&gt;put('file.txt', 'Contents');
+</code></pre>
+<p><a name="basic-usage"></a></p>
+<h2>基本用法</h2>
+<p>可以用 <code>Storage</code> facade 操作所有写在配置文件里的硬盘。或者是，你也可以将 <code>Illuminate\Contracts\Filesystem\Factory</code> 类型提示写到任何类里，经由 Laravel 的 <a href="container.html">服务容器</a> 解析。</p>
+<h4>取得一个特定硬盘</h4>
+<pre><code>$disk = Storage::disk('s3');
+
+$disk = Storage::disk('local');
+</code></pre>
+<h4>确认文件是否存在</h4>
+<pre><code>$exists = Storage::disk('s3')-&gt;exists('file.jpg');
+</code></pre>
+<h4>使用默认硬盘调用方法</h4>
+<pre><code>if (Storage::exists('file.jpg'))
+{
+    //
+}
+</code></pre>
+<h4>取得文件内容</h4>
+<pre><code>$contents = Storage::get('file.jpg');
+</code></pre>
+<h4>配置文件内容</h4>
+<pre><code>Storage::put('file.jpg', $contents);
+</code></pre>
+<h4>附加内容到文件结尾</h4>
+<pre><code>Storage::prepend('file.log', 'Prepended Text');
+</code></pre>
+<h4>加入内容到文件开头</h4>
+<pre><code>Storage::append('file.log', 'Appended Text');
+</code></pre>
+<h4>删除文件</h4>
+<pre><code>Storage::delete('file.jpg');
+
+Storage::delete(['file1.jpg', 'file2.jpg']);
+</code></pre>
+<h4>复制文件到新的路径</h4>
+<pre><code>Storage::copy('old/file1.jpg', 'new/file1.jpg');
+</code></pre>
+<h4>移动文件到新的路径</h4>
+<pre><code>Storage::move('old/file1.jpg', 'new/file1.jpg');
+</code></pre>
+<h4>取得文件大小</h4>
+<pre><code>$size = Storage::size('file1.jpg');
+</code></pre>
+<h4>取得最近修改时间 (UNIX)</h4>
+<pre><code>$time = Storage::lastModified('file1.jpg');
+</code></pre>
+<h4>取得目录下所有文件</h4>
+<pre><code>$files = Storage::files($directory);
+
+// Recursive...
+$files = Storage::allFiles($directory);
+</code></pre>
+<h4>取得目录下所有子目录</h4>
+<pre><code>$directories = Storage::directories($directory);
+
+// Recursive...
+$directories = Storage::allDirectories($directory);
+</code></pre>
+<h4>建立目录</h4>
+<pre><code>Storage::makeDirectory($directory);
+</code></pre>
+<h4>删除目录</h4>
+<pre><code>Storage::deleteDirectory($directory);
+</code></pre>
+<p><a name="custom-filesystems"></a></p>
+<h2>自定义文件系统</h2>
+<p>Laravel 的文件系统默认已经集成了不少驱动。不过，文件系统并不仅限于这些，还有针对其他存储系统的一些适配器。如果你想使用这些适配器，你可以创建一个自定义的驱动。不用担心，它没有那么复杂！</p>
+<p>如果要创建一个自定义的文件系统，你需要创建一个服务提供者，比如 <code>DropboxFilesystemServiceProvider</code>。在提供者的 <code>boot</code> 方法中，你可以注入一个实现了 <code>Illuminate\Contracts\Filesystem\Factory</code> 接口的实例并且调用注入实例的 <code>extend</code> 方法。
+或者你也可以使用 <code>Disk</code> facade 的 <code>extend</code> 方法。</p>
+<p><code>extend</code> 方法的第一个参数是驱动的名字，第二个参数是一个闭包，接受 <code>$app</code> 和 <code>$config</code> 变量。这个闭包的返回值必须是 <code>League\Flysystem\Filesystem</code> 的一个实例。</p>
+<blockquote>
+<p><strong>注意：</strong> $config 变量已经包含了定义在 <code>config/filesystems.php</code> 中特定硬盘的配置。</p>
+</blockquote>
+<h4>Dropbox 示例</h4>
+<pre><code>&lt;?php namespace App\Providers;
+
+use Storage;
+use League\Flysystem\Filesystem;
+use Dropbox\Client as DropboxClient;
+use League\Flysystem\Dropbox\DropboxAdapter;
+
+class DropboxFilesystemServiceProvider {
+
+    public function boot()
+    {
+        Storage::extend('dropbox', function($app, $config)
+        {
+            $client = new DropboxClient($config['accessToken'], $config['clientIdentifier']);
+
+            return new Filesystem(new DropboxAdapter($client));
+        });
+    }
+
+}</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

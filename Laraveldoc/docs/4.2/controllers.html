@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.2
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">版本说明</a></li>
+<li><a href="upgrade.html">升级指南</a></li>
+<li><a href="contributions.html">贡献指南</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead 开发环境部署工具</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图与响应</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">身份验证</a></li>
+<li><a href="billing.html">计费</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单与 HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">Mail</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">校验</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 扩展开发</a></li>
+</ul>
+</li>
+<li><a href="contributors.html">中文文档贡献者名单</a></li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>控制器</h1>
+<ul>
+<li><a href="#basic-controllers">基本控制器</a></li>
+<li><a href="#controller-filters">控制器过滤器</a></li>
+<li><a href="#implicit-controllers">隐式控制器</a></li>
+<li><a href="#restful-resource-controllers">RESTful 风格的资源控制器</a></li>
+<li><a href="#handling-missing-methods">处理缺失的方法</a></li>
+</ul>
+<p><a name="basic-controllers"></a></p>
+<h2>基本控制器</h2>
+<p>与在单个<code>routes.php</code>文件中定义所有的路由逻辑不同，你可能想要使用多个控制器类来组织控制器逻辑行为。控制器可以将与之相关的路由逻辑组织进一个类中，同时控制器也能使用一些更加高级的框架特性例如自动<a href="../ioc">依赖注入</a>。</p>
+<p>控制器一般放在<code>app/controllers</code>目录下，这个目录默认会在你的<code>composer.json</code>文件的<code>classmap</code>选项中被注册。但是，从技术上来说，控制器可以存放在任意目录或者子目录中。路由声明并不依赖于控制器类文件在磁盘中的具体为止。因此，只要Composer能够知道在怎样自动加载控制器类，具体的控制器文件可以放在任何你想存放的地方。</p>
+<p>下面是一个基本控制器类的例子：</p>
+<pre><code>class UserController extends BaseController {
+
+    /**
+     * 显示给定用户的资料。
+     */
+    public function showProfile($id)
+    {
+        $user = User::find($id);
+
+        return View::make('user.profile', array('user' =&gt; $user));
+    }
+
+}
+</code></pre>
+<p>所有的控制器都应该扩展<code>BaseController</code>类。<code>BaseController</code>类文件也存放在<code>app/controllers</code>目录中，它主要用于存放一些共享的控制器逻辑。<code>BaseController</code>类继承了框架中的<code>Controller</code>类。现在，我们可以像下面的代码一样路由到这整个控制器的行为：</p>
+<pre><code>Route::get('user/{id}', 'UserController@showProfile');
+</code></pre>
+<p>如果你选择使用PHP命名空间嵌套或者组织你的控制器，可以在定义路由时简单是使用完整的类名:</p>
+<pre><code>Route::get('foo', 'Namespace\FooController@method');
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 由于我们使用<a href="http://getcomposer.com" target="_blank">Composer</a>来自动加载我们的PHP类，控制器可以存放在文件系统中的任何地方，只要composer知道应该在哪里加载它们。在你的应用中，控制器不会被强制要求以某种特定的文件结构存放。路由到该控制器的逻辑和文件系统之前完全解耦。</p>
+</blockquote>
+<p>你也可以在控制器路由中指定一个名词:</p>
+<pre><code>Route::get('foo', array('uses' =&gt; 'FooController@method',
+                                        'as' =&gt; 'name'));
+</code></pre>
+<p>为了给控制器行为生成一个URL，你可以使用<code>URL::action</code>方法或者<code>action</code>辅助方法:</p>
+<pre><code>$url = URL::action('FooController@method');
+
+$url = action('FooController@method');
+</code></pre>
+<p>你可以使用<code>currentRouteAction</code>方法来获得目前正在运行的控制器名称:</p>
+<pre><code>$action = Route::currentRouteAction();
+</code></pre>
+<p><a name="controller-filters"></a></p>
+<h2>控制器过滤器</h2>
+<p><a href="../routing#route-filters">过滤器</a> 可以在控制器的路由中指定，它和&quot;一般的&quot;路由很相似：</p>
+<pre><code>Route::get('profile', array('before' =&gt; 'auth',
+            'uses' =&gt; 'UserController@showProfile'));
+</code></pre>
+<p>然而，你也可以在你的控制器内部指定过滤器:</p>
+<pre><code>class UserController extends BaseController {
+
+    /**
+     * 生成一个UserController实例
+     */
+    public function __construct()
+    {
+        $this-&gt;beforeFilter('auth', array('except' =&gt; 'getLogin'));
+
+        $this-&gt;beforeFilter('csrf', array('on' =&gt; 'post'));
+
+        $this-&gt;afterFilter('log', array('only' =&gt;
+                            array('fooAction', 'barAction')));
+    }
+
+}
+</code></pre>
+<p>你可以使用一个闭包来内联的指定控制器过滤器:</p>
+<pre><code>class UserController extends BaseController {
+
+    /**
+     * 生成一个UserController实例
+     */
+    public function __construct()
+    {
+        $this-&gt;beforeFilter(function()
+        {
+            //
+        });
+    }
+
+}
+</code></pre>
+<p>如果你想要在控制器中将另一个方法作为过滤器使用，你可以使用<code>@</code>语法来定义这个过滤器:</p>
+<pre><code>class UserController extends BaseController {
+
+    /**
+     * 生成一个UserController实例
+     */
+    public function __construct()
+    {
+        $this-&gt;beforeFilter('@filterRequests');
+    }
+
+    /**
+     * 过滤进入该控制器的请求
+     */
+    public function filterRequests($route, $request)
+    {
+        //
+    }
+
+}
+</code></pre>
+<p><a name="implicit-controllers"></a></p>
+<h2>隐式控制器</h2>
+<p>Laravel允许你在控制器中通过简单的定义一个单一的路由就能处理所有行为。首先，使用<code>Route::controller</code>方法来定义路由:</p>
+<pre><code>Route::controller('users', 'UserController');
+</code></pre>
+<p><code>controller</code>方法接收两个参数。第一个参数是控制器处理的基本URI，第二个参数是控制器的类名。其次，为你的控制器添加方法，并在方法名称之前加上对应的HTTP动词：</p>
+<pre><code>class UserController extends BaseController {
+
+    public function getIndex()
+    {
+        //
+    }
+
+    public function postProfile()
+    {
+        //
+    }
+
+    public function anyLogin()
+    {
+        //
+    }
+
+}
+</code></pre>
+<p><code>index</code>方法将会想要由控制器处理的根URI，在上面的例子中，即<code>users</code>。</p>
+<p>如果你的控制器行为包含多个词，你可以在URI中使用&quot;破折号&quot;语法。例如，在我们的<code>UserController</code>类中，下面的控制器行为将会响应<code>users/admin-profile</code>URI:</p>
+<pre><code>public function getAdminProfile() {}
+</code></pre>
+<p><a name="restful-resource-controllers"></a></p>
+<h2>RESTful 风格的资源控制器</h2>
+<p>使用资源控制器能够围绕资源构建RESTful风格的控制器。例如，你可能想要创建一个控制器来管理存放在你的应用中的&quot;照片&quot;。通过使用Artisan命令行工具的<code>controller:make</code>命令以及<code>Route::resource</code>方法，我们可以快速的构建出这样一个控制器。</p>
+<p>执行下面的命令，通过命令行创建一个控制器:</p>
+<pre><code>php artisan controller:make PhotoController
+</code></pre>
+<p>现在我们可以为这个控制器注册一个resourceful风格的路由:</p>
+<pre><code>Route::resource('photo', 'PhotoController');
+</code></pre>
+<p>这个简单的路由声明创建了多个路由来处理与照片资源相关的一系列RESTful行为。与此同时，生成的控制器也已经具备了一系列的方法来处理每一种路由。</p>
+<h4>资源控制器处理的行为</h4>
+<table>
+<thead>
+<tr><th>动词</th><th>路径</th><th>动作</th><th>路由名称</th></tr>
+</thead>
+<tbody>
+<tr><td>GET</td><td>/resource</td><td>index</td><td>resource.index</td></tr>
+<tr><td>GET</td><td>/resource/create</td><td>create</td><td>resource.create</td></tr>
+<tr><td>POST</td><td>/resource</td><td>store</td><td>resource.store</td></tr>
+<tr><td>GET</td><td>/resource/{resource}</td><td>show</td><td>resource.show</td></tr>
+<tr><td>GET</td><td>/resource/{resource}/edit</td><td>edit</td><td>resource.edit</td></tr>
+<tr><td>PUT/PATCH</td><td>/resource/{resource}</td><td>update</td><td>resource.update</td></tr>
+<tr><td>DELETE</td><td>/resource/{resource}</td><td>destroy</td><td>resource.destroy</td></tr>
+</tbody>
+</table>
+<p>有时你只想要处理资源行为的一个子集:</p>
+<pre><code>php artisan controller:make PhotoController --only=index,show
+
+php artisan controller:make PhotoController --except=index
+</code></pre>
+<p>同时，你也也可以在路由中制定一个行为的子集:</p>
+<pre><code>Route::resource('photo', 'PhotoController',
+                array('only' =&gt; array('index', 'show')));
+
+Route::resource('photo', 'PhotoController',
+                array('except' =&gt; array('create', 'store', 'update', 'destroy')));
+</code></pre>
+<p>默认情况下，所有的资源控制器行为都有一个路由名称；然而，你可以通过在选项中使用一个<code>name</code>数组重载这些名称:</p>
+<pre><code>Route::resource('photo', 'PhotoController',
+                array('names' =&gt; array('create' =&gt; 'photo.build')));
+</code></pre>
+<h4>为资源控制器添加额外的路由</h4>
+<p>如果你需要为你的资源控制器添加默认资源路由之外的路由，你应该在调用<code>Route::resource</code>方法之前定义这些路由:</p>
+<pre><code>Route::get('photos/popular');
+Route::resource('photos', 'PhotoController');
+</code></pre>
+<p><a name="handling-missing-methods"></a></p>
+<h2>处理缺失的方法</h2>
+<p>当使用 <code>Route::controller</code>时，你可以在控制器中定义一个万能的方法，用来处理不能被其他所有方法处理的请求。这个方法的名称必须为<code>missingMethod</code>，它接收这个未被处理的请求的方法和参数数组作为参数。</p>
+<h4>定义一个万能方法</h4>
+<pre><code>public function missingMethod($parameters = array())
+{
+    //
+}
+</code></pre>
+<p>如果你正在使用资源控制器，你应当在控制器中定义一个 <code>__call</code> 魔术方法，用于处理对任何不存在的方法的调用。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

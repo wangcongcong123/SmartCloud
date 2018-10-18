@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="contributing.html">为Laravel做贡献</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="templates.html">模版</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="contributing.html">为Laravel做贡献</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="templates.html">模版</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>请求与输入</h1>
+<ul>
+<li><a href="#basic-input">基本输入</a></li>
+<li><a href="#cookies">Cookies</a></li>
+<li><a href="#old-input">用户提交信息持久化</a></li>
+<li><a href="#files">文件上传</a></li>
+<li><a href="#request-information">用户请求的详细信息</a></li>
+</ul>
+<p><a name="basic-input"></a></p>
+<h2>基本输入</h2>
+<p>Laravel使用一种简单的方式来访问用户提交的信息。 你可以用统一的方式来访问用户提交的信息，而不用为用户提交信息的方式操心。</p>
+<p><strong>获取一个用户提交的值</strong></p>
+<p>$name = Input::get('name');</p>
+<p><strong>为用户提交信息指定一个的默认返回值(如果用户未提交)</strong></p>
+<pre><code>$name = Input::get('name', 'Sally');
+</code></pre>
+<p><strong>判断指定的提交信息是否存在</strong></p>
+<pre><code>if (Input::has('name'))
+{
+    //
+}
+</code></pre>
+<p><strong>获取所有用户提交的信息</strong></p>
+<pre><code>$input = Input::all();
+</code></pre>
+<p><strong>获取指定的信息，或者获取排除指定几个提交项之外的所有提交信息</strong></p>
+<pre><code>$input = Input::only('username', 'password');
+
+$input = Input::except('credit_card');
+</code></pre>
+<p>如果提交的表单含有 &quot;数组&quot; 形式的输入，可以使用点符号访问数组：</p>
+<pre><code>$input = Input::get('products.0.name');
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 有一些javascript库，比如 Backbone 会以json格式提交信息。 通过 <code>Input::get</code> 来获取信息，使用上无差别。</p>
+</blockquote>
+<p><a name="cookies"></a></p>
+<h2>Cookies</h2>
+<p>Laravel会加密所有已创建的cookie信息，并附加上授权码，当客户端擅自修改cookie信息时，该cookie将被废弃，从而保证安全性。</p>
+<p><strong>获取一个指定的cookie值</strong></p>
+<pre><code>$value = Cookie::get('name');
+</code></pre>
+<p><strong>添加一个新的cookie键值对</strong></p>
+<pre><code>$response = Response::make('Hello World');
+
+$response-&gt;withCookie(Cookie::make('name', 'value', $minutes));
+</code></pre>
+<p><strong>Queueing A Cookie For The Next Response</strong></p>
+<p>If you would like to set a cookie before a response has been created, use the <code>Cookie::queue()</code> method. The cookie will automatically be attached to the final response from your application.</p>
+<pre><code>Cookie::queue($name, $value, $minutes);
+</code></pre>
+<p><strong>创建一个永不过期的cookie键值对</strong></p>
+<pre><code>$cookie = Cookie::forever('name', 'value');
+</code></pre>
+<p><a name="old-input"></a></p>
+<h2>用户提交信息持久化</h2>
+<p>有时可能需要在多个用户请求之间持久化用户提交的信息。 比如，当用户提交的信息验证失败重新返回提交信息页面时还原用户的输入。</p>
+<p><strong>将用户提交的信息存入Session</strong></p>
+<pre><code>Input::flash();
+</code></pre>
+<p><strong>把指定的用户提交的信息存入Session</strong></p>
+<pre><code>Input::flashOnly('username', 'email');
+
+Input::flashExcept('password');
+</code></pre>
+<p>如果你需要关联持久用户提交的信息的操作和重定向操作，可以使用如下的链式调用的方法：</p>
+<pre><code>return Redirect::to('form')-&gt;withInput();
+
+return Redirect::to('form')-&gt;withInput(Input::except('password'));
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 如果你想持久化其它的信息，请参考 <a href="../session">Session</a> 类.</p>
+</blockquote>
+<p><strong>获取已持久化的用户提交的信息</strong></p>
+<pre><code>Input::old('username');
+</code></pre>
+<p><a name="files"></a></p>
+<h2>文件上传</h2>
+<p><strong>获取用户上传的文件</strong></p>
+<pre><code>$file = Input::file('photo');
+</code></pre>
+<p><strong>判断指定文件是否已经被上传</strong></p>
+<pre><code>if (Input::hasFile('photo'))
+{
+    //
+}
+</code></pre>
+<p><code>file</code> 方法返回了一个 <code>Symfony\Component\HttpFoundation\File\UploadedFile</code> 类的实例, 该类继承自PHP的 <code>SplFileInfo</code> 类，并提供了大量操作该用户上传的文件的方法。</p>
+<p><strong>移动一个已上传的文件</strong></p>
+<pre><code>Input::file('photo')-&gt;move($destinationPath);
+
+Input::file('photo')-&gt;move($destinationPath, $fileName);
+</code></pre>
+<p><strong>获取一个已上传的文件在服务器的真实路径</strong></p>
+<pre><code>$path = Input::file('photo')-&gt;getRealPath();
+</code></pre>
+<p><strong>获取一个已上传的文件的大小</strong></p>
+<pre><code>$size = Input::file('photo')-&gt;getSize();
+</code></pre>
+<p><strong>获取一个已上传的文件的 MIME 类型</strong></p>
+<pre><code>$mime = Input::file('photo')-&gt;getMimeType();
+</code></pre>
+<p><a name="request-information"></a></p>
+<h2>用户请求的详细信息</h2>
+<p><code>Request</code> 类提供了许多 方法 用于获取关于请求的详细信息，该类继承自 <code>Symfony\Component\HttpFoundation\Request</code> 类。 下面提供了几个具有代表性的方法：</p>
+<p><strong>获取请求URI</strong></p>
+<pre><code>$uri = Request::path();
+</code></pre>
+<p><strong>判断请求路径是否符合指定模式</strong></p>
+<pre><code>if (Request::is('admin/*'))
+{
+    //
+}
+</code></pre>
+<p><strong>获取请求URL</strong></p>
+<pre><code>$url = Request::url();
+</code></pre>
+<p><strong>获取请求URI信息</strong></p>
+<pre><code>$segment = Request::segment(1);
+</code></pre>
+<p><strong>获取请求头里的Content-Type信息</strong></p>
+<pre><code>$value = Request::header('Content-Type');
+</code></pre>
+<p><strong>获取 $_SERVER 数组里指定的值</strong></p>
+<pre><code>$value = Request::server('PATH_INFO');
+</code></pre>
+<p><strong>判断请求是否是通过 HTTPS 连接发送过来的</strong></p>
+<pre><code>if (Request::secure())
+{
+    //
+}
+</code></pre>
+<p><strong>判断是否是使用ajax请求</strong></p>
+<pre><code>if (Request::ajax())
+{
+    //
+}
+</code></pre>
+<p><strong>检测是否是任何可能的 JSON 类型的请求</strong></p>
+<pre><code>if (Request::ajax() or Request::isJson() or Request::wantsJson())
+{
+    //
+}</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

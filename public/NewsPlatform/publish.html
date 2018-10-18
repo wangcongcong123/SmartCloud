@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,publish-scalable=0">
+    <title>发布新闻</title>
+    <link rel="stylesheet" href="asserts/css/weuix.min.css"/>
+    <style>
+
+
+        body {
+            margin: 0;
+        }
+
+        .publish-header {
+            background-color: #526071;
+            width: 100%;
+            height: 40px;
+
+        }
+
+        .cancel {
+            float: left;
+            margin-top: 10px;
+            margin-left: 20px;
+            color: #f4f4f4;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .cancel:hover {
+            color: #cfcfcf;
+        }
+
+        .publish-confirm {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            color: #f4f4f4;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .publish-confirm:hover {
+            color: #cfcfcf;
+        }
+
+        .publication-title {
+            background-color: #fefefe;
+            text-align: center;
+            height: 40px;
+            border-bottom: 1px solid #e3e3e3;
+        }
+
+        .publication-title input {
+            resize: none;
+            width: 94%;
+            border: none;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #4a5765;
+        }
+
+        .publication-title input:focus {
+            outline: none;
+        }
+
+        .my-publication-input-area {
+            background-color: #fefefe;
+            text-align: center;
+        }
+
+
+        .my-publication-input-area textarea {
+            resize: none;
+            width: 94%;
+            border: none;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #4a5765;
+        }
+
+        .my-publication-input-area textarea:focus {
+            outline: none;
+
+        }
+
+        .pictures {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        .upload-pictures{
+            width: 50px;
+            height: 50px;
+        }
+
+        .overview-picture img{
+            width: 100px;
+            height: 100px;
+        }
+
+        .pictures li {
+            margin: 10px;
+            flex: 1;
+        }
+
+        .pictures li img {
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .pictures li img:hover {
+            transform: scale(1.1);
+        }
+
+        .option-group {
+
+            margin-top: 0;
+            margin-bottom: 30px;
+
+        }
+
+        .option-group-title {
+            color: #838f99;
+            margin-left: 20px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .option {
+            display: block;
+            width: 100%;
+            height: 40px;
+            background-color: #fefefe;
+            cursor: pointer;
+            border-top: 1px solid #e3e3e3;
+            border-bottom: 1px solid #e3e3e3;
+        }
+
+        .option:hover {
+            background-color: #e9e9e9;
+        }
+
+        .option-name {
+            clear: right;
+            float: left;
+            color: #949494;
+            margin-left: 20px;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .option-arrow {
+            color: #b3b3b3;
+            float: right;
+            margin-right: 20px;
+            margin-top: 8px;
+        }
+
+        .menu-contanier {
+            position: fixed;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: top 0.2s;
+        }
+
+        /*.menu-shadow {*/
+        /*width: 100%;*/
+        /*height: 60%;*/
+        /*background-color: rgba(134, 134, 134, 0);*/
+        /*}*/
+
+        .menu {
+            top: 60%;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 5px 4px #e3e3e3;
+        }
+
+        .menu-ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-header {
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            padding-top: 6px;
+            color: #7e8e9f;
+            background-color: rgb(250, 250, 250);
+        }
+
+        .menu-cancel {
+            width: 100%;
+            margin-top: 20px;
+            height: 40px;
+            padding-top: 6px;
+            cursor: pointer;
+            color: #eaeaea;
+            background-color: rgba(250, 250, 250, 0);
+        }
+
+        .menu-cancel div {
+            background-color: #f7f7f7;
+            margin: 0 auto;
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .menu-cancel div a {
+
+            display: inline-block;
+            margin-top: 8px;
+            color: #3c4c5d;
+            margin-left: 12px;
+        }
+
+        .menu-cancel div:hover {
+            background-color: #f0f0f0;
+            color: #cccccc;
+        }
+
+        .menu-cancel a:active {
+            background-color: #f0f0f0;
+        }
+
+        .menu-ul li {
+            cursor: pointer;
+            width: 100%;
+            height: 25%;
+            background-color: #ffffff;
+            color: #7e8e9f;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f3f3f3;
+        }
+
+        .menu-ul li:active {
+            background-color: #f3f3f3;
+        }
+
+        .visibility-contanier {
+            position: fixed;
+            background-color: #f8f8f8;
+            width: 100%;
+            top: 100%;
+            height: 100%;
+            transition: top 0.2s;
+        }
+
+        .visibility-header {
+            background-color: #5e6f81;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+        }
+
+        .visibility-cancel, .visibility-confirm {
+            cursor: pointer;
+            color: #f8f8f8;;
+        }
+
+        .visibility-cancel:hover, .visibility-confirm:hover {
+            color: #c6c6c6;;
+        }
+
+        .visibility-cancel {
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .visibility-confirm {
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .visibility-title {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 14px;
+            color: #a5c0d2;
+        }
+
+        .visibility-input-area input {
+            resize: none;
+            width: 94%;
+            border: none;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #4a5765;
+        }
+
+        .visibility-input-area input:focus {
+            outline: none;
+        }
+
+        .visibility-overview {
+            list-style: none;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+        }
+
+        .visibility-overview li {
+            width: 60px;
+            height: 20px;
+            font-size: 12px;
+            padding: 5px 10px;
+            margin: 10px;
+            float: left;
+            border-radius: 30px;
+            background-color: #ffffff;
+            border: 1px solid #e6e6e6;
+            cursor: pointer;
+        }
+
+        .visibility-overview li:hover {
+            background-color: #e7e7e7;
+        }
+
+        .visibility-picker {
+            margin-top: 50px;
+            background-color: #ffffff;
+
+        }
+
+        .visibility-picker li {
+            cursor: pointer;
+            color: #3c4c5d;
+            padding: 10px;
+            border-bottom: 1px solid #e3e3e3;
+        }
+
+        .visibility-picker li:hover {
+            background-color: #f3f3f3;
+        }
+
+        .visibility-name {
+            display: inline-block;
+            float: right;
+        }
+
+
+
+    </style>
+
+
+</head>
+
+<body style="background-color: #f8f8f8;">
+
+
+<div class="publish-header">
+
+    <div class="cancel">取消</div>
+
+    <div class="publish-confirm">发布</div>
+</div>
+
+
+<form method="post" action="#" class="publish-form">
+
+
+    <div class="my-publication">
+
+        <div class="publication-title">
+            <input placeholder="请输入您的新闻标题" name="news-title">
+        </div>
+
+
+        <div class="my-publication-input-area">
+            <textarea rows="10" placeholder="请输入您的新闻描述" name="news-desc"></textarea>
+
+            <ul class="pictures">
+
+                <li class="edit-pictures"><img class="upload-pictures" src="asserts/images/u765.png"><input
+                        type="file" accept="image/*" multiple name="files" hidden></li>
+
+
+
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+    <div class="option-group">
+        <!--<div class="option-title"></div>-->
+        <a class="option option-visibility">
+            <div class="option-name"><span class="icon icon-64"></span> <span class="visibility-span">所有可见</span></div>
+            <div class="option-arrow"><span class="icon icon-108"></span></div>
+        </a>
+
+        <input class="visibility" name="visibility" type="text" hidden>
+
+    </div>
+
+
+    <div class="visibility-contanier">
+
+        <div class="visibility">
+
+            <div class="visibility-header">
+                <a class="visibility-cancel">取消</a>
+                <span class="visibility-title"></span>
+                <a class="visibility-confirm">确认</a>
+            </div>
+
+            <ul class="visibility-overview">
+                <li>综合部经理</li>
+            </ul>
+
+            <ul class="visibility-picker">
+
+                <li><span class="icon icon-18"></span>
+                    <div class="visibility-name">综合部经理</div>
+                </li>
+                <li><span class="icon icon-19"></span>
+                    <div class="visibility-name">新闻负责人</div>
+                </li>
+                <li><span class="icon icon-19"></span>
+                    <div class="visibility-name">党群工作部</div>
+                </li>
+                <li><span class="icon icon-19"></span>
+                    <div class="visibility-name">其他员工</div>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="option-group">
+        <div class="option-group-title">消息类型</div>
+
+        <a class="option option-newstype">
+            <div class="option-name">一般消息</div>
+            <div class="option-arrow"><span class="icon icon-108"></span></div>
+        </a>
+
+        <input class="newstype" name="newstype" type="text" hidden>
+
+    </div>
+
+
+    <div class="menu-contanier">
+        <!--<div class="menu-shadow">-->
+        <!--</div>-->
+
+        <div class="menu">
+
+            <div class="menu-header">
+                请选择消息类型
+            </div>
+
+            <ul class="menu-ul">
+                <li>一般消息</li>
+                <li>市场经营</li>
+                <li>网络建设</li>
+                <li>综合管理</li>
+                <li>党会建设</li>
+                <li>工会</li>
+                <li>员工风采</li>
+                <li>通报消息</li>
+            </ul>
+
+            <div class="menu-cancel">
+                <div class="menu-cancel-label"><a class="icon icon-95"></a></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</form>
+
+
+<script src="asserts/js/zepto.min.js"></script>
+
+<script>
+    $(function () {
+        $(".upload-pictures").click(function () {
+
+            $(this).next().trigger("click");
+
+        });
+
+        $(".visibility-picker li").click(function () {
+
+            var name = "";
+
+            if ($(this).children("span").hasClass('icon-18')) {
+                $(this).children("span").removeClass('icon-18').addClass('icon-19');
+                name = $(this).children("div").text();
+                $(".visibility-overview li").each(function () {
+
+                    if ($(this).text().indexOf(name) > -1) {
+                        $(this).remove();
+                    }
+
+                });
+
+
+            } else {
+                $(this).children("span").removeClass('icon-19').addClass('icon-18');
+
+                name = $(this).children("div").text();
+                var li = '<li>' + name + '</li>';
+                $('.visibility-overview').append(li);
+
+            }
+
+
+        });
+
+
+
+        $(".option-visibility").click(function () {
+            $(".visibility-contanier").css("top", "0");
+        });
+
+
+        $(".visibility-cancel").click(function () {
+            $(".visibility-contanier").css("top", "100%");
+        });
+
+
+        $(".visibility-confirm").click(function () {
+
+            var returnvalues = "";
+
+            var count = 0;
+
+
+            $(".visibility-overview li").each(function () {
+                count += 1;
+
+                returnvalues += $(this).text() + '/';
+
+
+            });
+
+            if (count == 4) {
+                returnvalues = "所有可见";
+            }
+
+
+            $(".visibility-span").text(returnvalues);
+
+            $("input[name='visibility']").val(returnvalues);
+
+            $(".visibility-contanier").css("top", "100%");
+
+
+        });
+
+
+        $("input[name='files']").change(function () {
+//            console.log(this.files);
+
+            var items="";
+
+            for (var i=0;i<this.files.length;i+=1){
+                var objUrl = getObjectURL(this.files[i]);
+                items+='<li class="edit-pictures overview-picture"><img class="upload-pictures" src="';
+                items+=objUrl;
+                items+='"></li>';
+            }
+
+            console.log(items);
+
+            $(".overview-picture").remove();
+
+            $(".edit-pictures").before(items);
+//            $("#preview").attr("src", objUrl);
+
+
+        });
+
+
+        function getObjectURL(file) {
+            var url = null;
+            // 下面函数执行的效果是一样的，只是需要针对不同的浏览器执行不同的 js 函数而已
+            if (window.createObjectURL != undefined) { // basic
+                url = window.createObjectURL(file);
+            } else if (window.URL != undefined) { // mozilla(firefox)
+                url = window.URL.createObjectURL(file);
+            } else if (window.webkitURL != undefined) { // webkit or chrome
+                url = window.webkitURL.createObjectURL(file);
+            }
+            return url;
+        }
+
+
+
+        $(".option-newstype").click(function () {
+            $(".menu-contanier").css("top", "0");
+        });
+
+
+        $(".menu-shadow").click(function () {
+            $(".menu-contanier").css("top", "100%");
+        });
+
+        $(".menu-cancel-label").click(function () {
+            $(".menu-contanier").css("top", "100%");
+        });
+
+        $(".menu-ul li").click(function () {
+            $('.option-newstype').children('.option-name').text($(this).text());
+            $('input[name="newstype"]').val($(this).text());
+            $(".menu-contanier").css("top", "100%");
+
+        });
+
+
+        $(".publish-confirm").click(function () {
+
+
+            $.confirm("您确定要发布吗?", "确认发布?", function () {
+                $(".publish-form").submit();
+            }, function () {
+                window.location.href = "#";
+            });
+
+        });
+
+        $(".cancel").click(function () {
+
+            window.location.href = "userinfo.html";
+
+        });
+
+
+    });
+</script>
+
+</body>
+</html>

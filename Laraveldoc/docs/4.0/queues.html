@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="contributing.html">为Laravel做贡献</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="templates.html">模版</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="contributing.html">为Laravel做贡献</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="templates.html">模版</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>队列</h1>
+<ul>
+<li><a href="#configuration">配置</a></li>
+<li><a href="#basic-usage">基础用法</a></li>
+<li><a href="#queueing-closures">队列闭包</a></li>
+<li><a href="#running-the-queue-listener">运行队列监听器</a></li>
+<li><a href="#push-queues">推送队列</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>配置</h2>
+<p>Laravel的队列组件为许多队列服务提供了统一的API接口。队列服务让你可以异步处理一个耗时任务，比如延迟发送一封邮件，从而大大加快了应用的Web请求处理速度。</p>
+<p>队列的设置信息储存在 <code>app/config/queue.php</code> 文件中。在这个文件中你可以找到所有目前支持的队列驱动的连接设置，包括<a href="http://kr.github.com/beanstalkd" target="_blank">Beanstalkd</a>、<a href="http://iron.io" target="_blank">IronMQ</a>、<a href="http://aws.amazon.com/sqs" target="_blank">Amazon SQS</a>和同步处理（本地环境使用）驱动。</p>
+<p>下面是相应队列驱动所需的依赖性包：</p>
+<ul>
+<li>Beanstalkd: <code>pda/pheanstalk</code></li>
+<li>Amazon SQS: <code>aws/aws-sdk-php</code></li>
+<li>IronMQ: <code>iron-io/iron_mq</code></li>
+</ul>
+<p><a name="basic-usage"></a></p>
+<h2>基础用法</h2>
+<p>使用 <code>Queue::push</code> 方法推送一个新任务到队列中：</p>
+<p><strong>推送一个任务到队列中</strong></p>
+<pre><code>Queue::push('SendEmail', array('message' =&gt; $message));
+</code></pre>
+<p><code>push</code> 方法的第一个参数是用来处理任务的类的名称。第二个参数是一个数组，包含了需要传递给处理器的数据。一个任务处理器应该像这样定义：</p>
+<p><strong>定义一个任务处理器</strong></p>
+<pre><code>class SendEmail {
+
+    public function fire($job, $data)
+    {
+        //
+    }
+
+}
+</code></pre>
+<p>注意，类唯一需要的方法是 <code>fire</code> 方法，它接受一个 <code>Job</code> 实例就像 <code>data</code> 数组一样发送到队列。</p>
+<p>如果你希望任务调用 <code>fire</code> 以外的方法，你可以在推送任务时指定相应方法：</p>
+<p><strong>指定一个自定义处理器方法</strong></p>
+<pre><code>Queue::push('SendEmail@send', array('message' =&gt; $message));
+</code></pre>
+<p>一旦你处理完了一个任务，必须从队列中将它删除，可以通过 <code>Job</code> 实例中的 <code>delete</code> 方法完成这项工作：</p>
+<p><strong>删除一个处理完的任务</strong></p>
+<pre><code>public function fire($job, $data)
+{
+    // Process the job...
+
+    $job-&gt;delete();
+}
+</code></pre>
+<p>如果你想要将一个任务放回队列，你可以使用 <code>release</code> 方法：</p>
+<p><strong>将一个任务放回队列</strong></p>
+<pre><code>public function fire($job, $data)
+{
+    // Process the job...
+
+    $job-&gt;release();
+}
+</code></pre>
+<p>你也可以指定几秒后将任务放回队列：</p>
+<pre><code>$job-&gt;release(5);
+</code></pre>
+<p>如果任务在处理时发生异常，它会被自动放回队列。你可以使用 <code>attempts</code> 方法获取尝试处理任务的次数：</p>
+<p><strong>获取尝试处理任务的次数</strong></p>
+<pre><code>if ($job-&gt;attempts() &gt; 3)
+{
+    //
+}
+</code></pre>
+<p>你也可以获取任务的ID：</p>
+<p><strong>获取任务ID</strong></p>
+<pre><code>$job-&gt;getJobId();
+</code></pre>
+<p><a name="queueing-closures"></a></p>
+<h2>队列闭包</h2>
+<p>你可以将一个闭包函数推送到队列中。这非常便于快速、简单地处理队列任务：</p>
+<p><strong>推送一个闭包函数到队列中</strong></p>
+<pre><code>Queue::push(function($job) use ($id)
+{
+    Account::delete($id);
+
+    $job-&gt;delete();
+});
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 当推送闭包到队列时，不能使用 <code>__DIR__</code> 和 <code>__FILE__</code> 常量。</p>
+</blockquote>
+<p>当使用 Iron.io <a href="#push-queues">推送队列</a> 时，你需要特别谨慎地处理队列闭包。接受队列信息的结尾应该带有Iron.io的验证令牌。例如，推送队列的结尾应该类似： <code>https://yourapp.com/queue/receive?token=SecretToken</code>。你也许需要在封装队列请求前检查一下应用的秘密令牌的值。</p>
+<p><a name="running-the-queue-listener"></a></p>
+<h2>运行队列监听器</h2>
+<p>Laravel包含了一个用于运行已推送到队列的任务的Artisan服务。可以使用 <code>queue:listen</code> 命令来运行这个功能：</p>
+<p><strong>开启队列监听器</strong></p>
+<pre><code>php artisan queue:listen
+</code></pre>
+<p>你也可以指定队列监听器需要使用的连接：</p>
+<pre><code>php artisan queue:listen connection
+</code></pre>
+<p>注意一旦任务启动，它会一直运行除非你手动停止它。可以使用进程监视工具（例如 <a href="http://supervisord.org/" target="_blank">Supervisor</a>）来确保队列监听器处于运行状态。</p>
+<p>你也可以设置单个任务可以执行的最长时间（单位秒）：</p>
+<p><strong>设置任务的超时参数</strong></p>
+<pre><code>php artisan queue:listen --timeout=60
+</code></pre>
+<p>另外，你还可以指定新任务轮询之前所需要等待的秒数：</p>
+<pre><code>php artisan queue:listen --sleep=5
+</code></pre>
+<p>如果只想处理队列的第一个任务，你可以使用 <code>queue:work</code> 命令：</p>
+<p><strong>处理队列的第一个任务</strong></p>
+<pre><code>php artisan queue:work
+</code></pre>
+<p><a name="push-queues"></a></p>
+<h2>推送队列</h2>
+<p>推送队列可以让你在没有守护进程和后台监听器的情况下使用 Laravel 4 强大的队列工具。当前，推送队列仅支持<a href="http://iron.io" target="_blank">Iron.io</a>驱动。在开始前，创建一个 Iron.io 账户，然后将Iron的认证信息填入到 <code>app/config/queue.php</code> 配置文件中。</p>
+<p>接下来，你可以使用 <code>queue:subscribe</code> Artisan命令注册一个用来接收新的推送队列任务的URL结尾。</p>
+<p><strong>注册一个推送队列订阅</strong></p>
+<pre><code>php artisan queue:subscribe queue_name http://foo.com/queue/receive
+</code></pre>
+<p>现在，当你登录到Iron后台，你可以看见新的推送队列和订阅的URL。你可以为一个指定的队列订阅多个URL。接下来，为 <code>queue/receive</code> 结尾的URL创建一个路由，并且返回来自 <code>Queue::marshal</code> 方法的响应：</p>
+<pre><code>Route::post('queue/receive', function()
+{
+    return Queue::marshal();
+});
+</code></pre>
+<p><code>marshal</code> 方法会自动执行相应的任务处理器类。想要处理推送队列上的任务，可以像处理一般的队列一样使用 <code>Queue::push</code> 方法。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

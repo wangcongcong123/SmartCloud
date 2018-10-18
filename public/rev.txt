@@ -1,0 +1,14 @@
+
+<xml>
+  <openid><![CDATA[ou9dHt0L8qFLI1foP-kj5x1mDWsM]]></openid>
+  <body><![CDATA[方倍工作室]]></body>
+  <out_trade_no><![CDATA[wx88888888888888881414411779]]></out_trade_no>
+  <total_fee>1</total_fee>
+  <notify_url><![CDATA[http://www.fangbei.org/wxpay/notify_url.php]]></notify_url>
+  <trade_type><![CDATA[JSAPI]]></trade_type>
+  <appid><![CDATA[wx8888888888888888]]></appid>
+  <mch_id>10012345</mch_id>
+  <spbill_create_ip><![CDATA[61.50.221.43]]></spbill_create_ip>
+  <nonce_str><![CDATA[60uf9sh6nmppr9azveb2bn7arhy79izk]]></nonce_str>
+  <sign><![CDATA[2D8A96553672D56BB2908CE4B0A23D0F]]></sign>
+</xml>

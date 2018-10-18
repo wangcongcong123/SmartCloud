@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.1
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">Release Notes</a></li>
+<li><a href="upgrade.html">Upgrade Guide</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">Authentication</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">Release Notes</a></li>
+<li><a href="upgrade.html">Upgrade Guide</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">Authentication</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>IoC 容器</h1>
+<ul>
+<li><a href="#introduction">简介</a></li>
+<li><a href="#basic-usage">基本用例</a></li>
+<li><a href="#where-to-register">Where To Register Bindings</a></li>
+<li><a href="#automatic-resolution">自动解析</a></li>
+<li><a href="#practical-usage">实际用例</a></li>
+<li><a href="#service-providers">服务提供器</a></li>
+<li><a href="#container-events">容器事件</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>简介</h2>
+<p>Laravel 控制器反转容器是一个强大的工具来处理类依赖关系。依赖注入是一个不用硬代码处理类依赖关系的方法。依赖关系是在运行时注入的，允许处理依赖时具有更大的灵活性。</p>
+<p>理解 Laravel IoC 容器是构建强大应用程序所必要的，也有助于 Laravel 核心本身。</p>
+<p><a name="basic-usage"></a></p>
+<h2>基本用例</h2>
+<p>IoC 容器有两种方法来解决依赖关系：通过闭包回调或者自动解析。首先，我们来探究一下闭包回调。首先，需要绑定一个“类型”到容器中：</p>
+<p><strong>绑定一个类型到容器</strong></p>
+<pre><code>App::bind('foo', function($app)
+{
+    return new FooBar;
+});
+</code></pre>
+<p><strong>从容器中取得一个类型</strong></p>
+<pre><code>$value = App::make('foo');
+</code></pre>
+<p>当执行 <code>App::make</code> 方法，闭包函数被执行并返回结果。</p>
+<p>有时，你只想将绑定到容器的类型只应该取得一次，然后接下来从容器中取得的都应该是相同实例：</p>
+<p><strong>绑定一个”共享“类型到容器</strong></p>
+<pre><code>App::singleton('foo', function()
+{
+    return new FooBar;
+});
+</code></pre>
+<p>你也可以使用 <code>instance</code>方法 将一个已经存在的类型绑定到容器中：</p>
+<p><strong>绑定一个已经存在的类型实例到容器</strong></p>
+<pre><code>$foo = new Foo;
+
+App::instance('foo', $foo);
+</code></pre>
+<p><a name="where-to-register"></a></p>
+<h2>Where To Register Bindings</h2>
+<p>IoC bindings, like event handlers or route filters, generally fall under the title of &quot;bootstrap code&quot;. In other words, they prepare your application to actually handle requests, and usually need to be executed before a route or controller is actually called. Like most other bootstrap code, the <code>start</code> files are always an option for registering IoC bindings. Alternatively, you could create an <code>app/ioc.php</code> (filename does not matter) file and require that file from your <code>start</code> file.</p>
+<p>If your application has a very large number of IoC bindings, or you simply wish to organize your IoC bindings in separate files by category, you may register your bindings in a <a href="#service-providers">service provider</a>.</p>
+<p><a name="automatic-resolution"></a></p>
+<h2>自动解析</h2>
+<p>IoC 容器在许多场景下足够强大来取得类而不需要任何配置。例如：</p>
+<p><strong>取得一个类</strong></p>
+<pre><code>class FooBar {
+
+    public function __construct(Baz $baz)
+    {
+        $this-&gt;baz = $baz;
+    }
+
+}
+
+$fooBar = App::make('FooBar');
+</code></pre>
+<p>注意我们虽然没有在容器中注册FooBar类，容器仍然可以取得该类，甚至自动注入 <code>Baz</code> 依赖！</p>
+<p>当某个类型没有绑定到容器，将使用 PHP 的反射工具来检查类和读取构造器的类型提示。使用这些信息，容器可以自动构建类实例。</p>
+<p>然而，在某些情况下，一个类可能依赖某个接口实现，而不是一个 “具体的类”。当在这种情况下，<code>App::bind</code> 方法必须通知容器注入该实现哪个接口：</p>
+<p><strong>绑定一个接口给实现类</strong></p>
+<pre><code>App::bind('UserRepositoryInterface', 'DbUserRepository');
+</code></pre>
+<p>现在考虑以下控制器：</p>
+<pre><code>class UserController extends BaseController {
+
+    public function __construct(UserRepositoryInterface $users)
+    {
+        $this-&gt;users = $users;
+    }
+
+}
+</code></pre>
+<p>由于我们将 <code>UserRepositoryInterface</code> 绑定了具体类，<code>DbUserRepository</code> 在该控制器创建时将自动注入到该控制器。</p>
+<p><a name="practical-usage"></a></p>
+<h2>实际用例</h2>
+<p>Laravel 提供了几个方法使用 IoC 容器增强应用程序可扩展性和可测试性。一个主要的例子是取得控制器。所有控制器都通过 IoC 容器取得，意味着可以解决控制器构造方法类型提示的依赖关系，它们将自动被注入。</p>
+<p><strong>控制器类型提示依赖关系</strong></p>
+<pre><code>class OrderController extends BaseController {
+
+    public function __construct(OrderRepository $orders)
+    {
+        $this-&gt;orders = $orders;
+    }
+
+    public function getIndex()
+    {
+        $all = $this-&gt;orders-&gt;all();
+
+        return View::make('orders', compact('all'));
+    }
+
+}
+</code></pre>
+<p>在这个例子中，<code>OrderRepository</code> 将会自动注入到控制器。意味着当 <a href="../testing">单元测试</a> 模拟请求时，<code>OrderRepository</code> 将会绑定到容器以及注入到控制器中，允许无痛与数据库层交互。</p>
+<p><a href="../routing#route-filters">过滤器</a>, <a href="../responses#view-composers">composers</a>, 和 <a href="../events#using-classes-as-listeners">事件处理器</a> 也通过 IoC 容器来取得。当注册了它们，仅简单提供要使用的类名：</p>
+<p><strong>IoC 使用的其他例子</strong></p>
+<pre><code>Route::filter('foo', 'FooFilter');
+
+View::composer('foo', 'FooComposer');
+
+Event::listen('foo', 'FooHandler');
+</code></pre>
+<p><a name="service-providers"></a></p>
+<h2>服务提供器</h2>
+<p>服务器提供器是将一组相关 IoC 注册到单一路径的有效方法。将它们看做是一种引导组件的方法。在服务器提供器里，你可以注册自定义的验证驱动器，使用 IoC 容器注册应用程序仓库类，甚至是自定义 Artisan 命令。</p>
+<p>事实上，大多数核心 Laravel 组件 包含服务提供器。应用程序所有注册在服务提供器的均列在 <code>app/config/app.php</code> 配置文件的 <code>providers</code> 数组中。</p>
+<p>要创建服务提供器，简单的继承 <code>Illuminate\Support\ServiceProvider</code> 类并且定义一个 <code>register</code> 方法：</p>
+<p><strong>定义一个服务提供器</strong></p>
+<pre><code>use Illuminate\Support\ServiceProvider;
+
+class FooServiceProvider extends ServiceProvider {
+
+    public function register()
+    {
+        $this-&gt;app-&gt;bind('foo', function()
+        {
+            return new Foo;
+        });
+    }
+
+}
+</code></pre>
+<p>注意在 <code>register</code> 方法，应用程序通过 <code>$this-&gt;app</code> 属性访问 IoC 容器。一旦你已经创建了提供器并且想将它注册到应用程序中， 只需简单的放入 <code>app</code> 配置文件里 <code>providers</code> 数组中。</p>
+<p>也可以使用 <code>App::register</code> 方法在运行时注册服务提供器：</p>
+<p><strong>运行时注册服务提供器</strong></p>
+<pre><code>App::register('FooServiceProvider');
+</code></pre>
+<p><a name="container-events"></a></p>
+<h2>容器事件</h2>
+<p>容器在每次获取对象时都触发一个时间。你可以通过使用 <code>resolving</code> 方法来监听该事件：</p>
+<p><strong>注册获取事件监听者</strong></p>
+<pre><code>App::resolvingAny(function($object)
+{
+    //
+});
+
+App::resolving('foo', function($foo)
+{
+    //
+});
+</code></pre>
+<p>注意获取的对象将会传入回调函数中。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.1
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">Release Notes</a></li>
+<li><a href="upgrade.html">Upgrade Guide</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">Authentication</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">Release Notes</a></li>
+<li><a href="upgrade.html">Upgrade Guide</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">Authentication</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>SSH(Secure Shell)</h1>
+<ul>
+<li><a href="#configuration">配置</a></li>
+<li><a href="#basic-usage">基本用法</a></li>
+<li><a href="#tasks">任务</a></li>
+<li><a href="#sftp-uploads">SFTP上传</a></li>
+<li><a href="#tailing-remote-logs">显示远程日志的末尾几行</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>配置</h2>
+<p>Laravel 为 SSH 登录远程服务器并运行命令提供了一种简单的方式，允许你轻松创建运行在远程服务器上的 Artisan 任务。<code>SSH</code> 门面类(facade)提供了连接远程服务器和运行命令的访问入口。</p>
+<p>配置文件位于 <code>app/config/remote.php</code>，该文件包含了配置远程连接所需的所有选项。<code>connections</code> 数组包含了一个以名称作为键的服务器列表。只需将 <code>connections</code> 数组中的凭证信息填好，就可以开始运行远程任务了。注意 <code>SSH</code> 可以使用密码或 SSH 密钥进行身份验证。</p>
+<p><a name="basic-usage"></a></p>
+<h2>基本用法</h2>
+<p><strong>在默认服务器上运行命令</strong></p>
+<p>使用 <code>SSH::run</code> 方法在 <code>default</code> 远程服务器连接上运行命令：</p>
+<pre><code>SSH::run(array(
+    'cd /var/www',
+    'git pull origin master',
+));
+</code></pre>
+<p><strong>在指定连接上运行命令</strong></p>
+<p>或者，你可以使用 <code>into</code> 方法在指定的服务器连接上运行命令：</p>
+<pre><code>SSH::into('staging')-&gt;run(array(
+    'cd /var/www',
+    'git pull origin master',
+));
+</code></pre>
+<p><strong>捕获命令输出结果</strong></p>
+<p>你可以通过向 <code>run</code> 方法传递一个闭包来捕获远程命令的“实时”输出结果：</p>
+<pre><code>SSH::run($commands, function($line)
+{
+    echo $line.PHP_EOL;
+});
+</code></pre>
+<p><a name="tasks"></a></p>
+<h2>任务</h2>
+<p>如果需要定义一组经常放在一起运行的命令，你可以使用 <code>define</code> 方法来定义一个任务( <code>task</code> )：</p>
+<pre><code>SSH::into('staging')-&gt;define('deploy', array(
+    'cd /var/www',
+    'git pull origin master',
+    'php artisan migrate',
+));
+</code></pre>
+<p>任务一旦创建，就可以使用 <code>task</code> 来执行：</p>
+<pre><code>SSH::into('staging')-&gt;task('deploy', function($line)
+{
+    echo $line.PHP_EOL;
+});
+</code></pre>
+<p><a name="sftp-uploads"></a></p>
+<h2>SFTP 上传</h2>
+<p><code>SSH</code> 类的 <code>put</code> 和 <code>putString</code> 方法提供了一种简单的上传方式，用于将文件或字符串上传到服务器：</p>
+<pre><code>SSH::into('staging')-&gt;put($localFile, $remotePath);
+
+SSH::into('staging')-&gt;putString('Foo', $remotePath);
+</code></pre>
+<p><a name="tailing-remote-logs"></a></p>
+<h2>显示远程日志的末尾几行</h2>
+<p>Laravel 提供了一个有用的命令用来查看任何远程连接服务器上的 <code>laravel.log</code> 文件的末尾几行内容。只需使用 Artisan 命令 <code>tail</code> 并指定你想要查看日志的远程连接的名称即可：</p>
+<pre><code>php artisan tail staging
+
+php artisan tail staging --path=/path/to/log.file
+</code></pre>
+<p><a name="envoy-task-runner"></a></p>
+<h2>Envoy Task Runner</h2>
+<ul>
+<li><a href="#envoy-installation">Installation</a></li>
+<li><a href="#envoy-running-tasks">Running Tasks</a></li>
+<li><a href="#envoy-multiple-servers">Multiple Servers</a></li>
+<li><a href="#envoy-parallel-execution">Parallel Execution</a></li>
+<li><a href="#envoy-task-macros">Task Macros</a></li>
+<li><a href="#envoy-notifications">Notifications</a></li>
+<li><a href="#envoy-updating-envoy">Updating Envoy</a></li>
+</ul>
+<p>Laravel Envoy provides a clean, minimal syntax for defining common tasks you run on your remote servers. Using a <a href="../templates#blade-templating">Blade</a> style syntax, you can easily setup tasks for deployment, Artisan commands, and more.</p>
+<blockquote>
+<p><strong>Note:</strong> Envoy requires PHP version 5.4 or greater, and only runs on Mac / Linux operating systems.</p>
+</blockquote>
+<p><a name="envoy-installation"></a></p>
+<h3>Installation</h3>
+<p>First, install Envoy using the Composer <code>global</code> command:</p>
+<pre><code>composer global require &quot;laravel/envoy=~1.0&quot;
+</code></pre>
+<p>Make sure to place the <code>~/.composer/vendor/bin</code> directory in your PATH so the <code>envoy</code> executable is found when you run the <code>envoy</code> command in your terminal.</p>
+<p>Next, create an <code>Envoy.blade.php</code> file in the root of your project. Here's an example to get you started:</p>
+<pre><code>@servers(['web' =&gt; '192.168.1.1'])
+
+@task('foo', ['on' =&gt; 'web'])
+    ls -la
+@endtask
+</code></pre>
+<p>As you can see, an array of <code>@servers</code> is defined at the top of the file. You can reference these servers in the <code>on</code> option of your task declarations. Within your <code>@task</code> declarations you should place the Bash code that will be run on your server when the task is executed.</p>
+<p>The <code>init</code> command may be used to easily create a stub Envoy file:</p>
+<pre><code>envoy init user@192.168.1.1
+</code></pre>
+<p><a name="envoy-running-tasks"></a></p>
+<h3>Running Tasks</h3>
+<p>To run a task, use the <code>run</code> command of your Envoy installation:</p>
+<pre><code>envoy run foo
+</code></pre>
+<p>If needed, you may pass variables into the Envoy file using command line switches:</p>
+<pre><code>envoy run deploy --branch=master
+</code></pre>
+<p>You may use the options via the Blade syntax you are used to:</p>
+<pre><code>@servers(['web' =&gt; '192.168.1.1'])
+
+@task('deploy', ['on' =&gt; 'web'])
+    cd site
+    git pull origin {{ $branch }}
+    php artisan migrate
+@endtask
+</code></pre>
+<h4>Bootstrapping</h4>
+<p>You may use the <code>@setup</code> directive to declare variables and do general PHP work inside the Envoy file:</p>
+<pre><code>@setup
+    $now = new DateTime();
+
+    $environment = isset($env) ? $env : &quot;testing&quot;;
+@endsetup
+</code></pre>
+<p>You may also use <code>@include</code> to include any PHP files:</p>
+<pre><code>@include('vendor/autoload.php');
+</code></pre>
+<p><a name="envoy-multiple-servers"></a></p>
+<h3>Multiple Servers</h3>
+<p>You may easily run a task across multiple servers. Simply list the servers in the task declaration:</p>
+<pre><code>@servers(['web-1' =&gt; '192.168.1.1', 'web-2' =&gt; '192.168.1.2'])
+
+@task('deploy', ['on' =&gt; ['web-1', 'web-2']])
+    cd site
+    git pull origin {{ $branch }}
+    php artisan migrate
+@endtask
+</code></pre>
+<p>By default, the task will be executed on each server serially. Meaning, the task will finish running on the first server before proceeding to execute on the next server.</p>
+<p><a name="envoy-parallel-execution"></a></p>
+<h3>Parallel Execution</h3>
+<p>If you would like to run a task across multiple servers in parallel, simply add the <code>parallel</code> option to your task declaration:</p>
+<pre><code>@servers(['web-1' =&gt; '192.168.1.1', 'web-2' =&gt; '192.168.1.2'])
+
+@task('deploy', ['on' =&gt; ['web-1', 'web-2'], 'parallel' =&gt; true])
+    cd site
+    git pull origin {{ $branch }}
+    php artisan migrate
+@endtask
+</code></pre>
+<p><a name="envoy-task-macros"></a></p>
+<h3>Task Macros</h3>
+<p>Macros allow you to define a set of tasks to be run in sequence using a single command. For instance:</p>
+<pre><code>@servers(['web' =&gt; '192.168.1.1'])
+
+@macro('deploy')
+    foo
+    bar
+@endmacro
+
+@task('foo')
+    echo &quot;HELLO&quot;
+@endtask
+
+@task('bar')
+    echo &quot;WORLD&quot;
+@endtask
+</code></pre>
+<p>The <code>deploy</code> macro can now be run via a single, simple command:</p>
+<pre><code>envoy run deploy
+</code></pre>
+<p><a name="envoy-notifications"></a></p>
+<h3>Notifications</h3>
+<p><a name="envoy-hipchat-notifications"></a></p>
+<h4>HipChat</h4>
+<p>After running a task, you may send a notification to your team's HipChat room using the simple <code>@hipchat</code> directive:</p>
+<pre><code>@servers(['web' =&gt; '192.168.1.1'])
+
+@task('foo', ['on' =&gt; 'web'])
+    ls -la
+@endtask
+
+@after
+    @hipchat('token', 'room', 'Envoy')
+@endafter
+</code></pre>
+<p>You can also specify a custom message to the hipchat room. Any variables declared in <code>@setup</code> or included with <code>@include</code> will be available for use in the message:</p>
+<pre><code>@after
+    @hipchat('token', 'room', 'Envoy', &quot;$task ran on [$environment]&quot;)
+@endafter
+</code></pre>
+<p>This is an amazingly simple way to keep your team notified of the tasks being run on the server.</p>
+<h4>Slack</h4>
+<p>The following syntax may be used to send a notification to <a href="https://slack.com" target="_blank">Slack</a>:</p>
+<pre><code>@after
+    @slack('team', 'token', 'channel')
+@endafter
+</code></pre>
+<p><a name="envoy-updating-envoy"></a></p>
+<h3>Updating Envoy</h3>
+<p>To update Envoy, simply run the <code>self-update</code> command:</p>
+<pre><code>envoy self-update
+</code></pre>
+<p>If your Envoy installation is in <code>/usr/local/bin</code>, you may need to use <code>sudo</code>:</p>
+<pre><code>sudo envoy self-update
+</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

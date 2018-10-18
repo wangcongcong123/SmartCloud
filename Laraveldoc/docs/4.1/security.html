@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							4.1
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../5.0/index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">Release Notes</a></li>
+<li><a href="upgrade.html">Upgrade Guide</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">Authentication</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>序言
+<ul>
+<li><a href="introduction.html">简介</a></li>
+<li><a href="quick.html">快速入门</a></li>
+<li><a href="releases.html">Release Notes</a></li>
+<li><a href="upgrade.html">Upgrade Guide</a></li>
+</ul>
+</li>
+<li>开始学习
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="lifecycle.html">Request的生命周期</a></li>
+<li><a href="routing.html">路由</a></li>
+<li><a href="requests.html">请求与输入</a></li>
+<li><a href="responses.html">视图 &amp; Response</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="errors.html">错误 &amp; 日志</a></li>
+</ul>
+</li>
+<li>深度历险
+<ul>
+<li><a href="security.html">Authentication</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="html.html">表单 &amp; HTML</a></li>
+<li><a href="helpers.html">有用的工具函数</a></li>
+<li><a href="ioc.html">IoC 容器</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="security.html">安全</a></li>
+<li><a href="session.html">Session</a></li>
+<li><a href="ssh.html">SSH</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移 &amp; 数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">Artisan 开发</a></li>
+</ul>
+</li>
+<li>贡献者
+<ul>
+<li><a href="contributors.html">中文翻译贡献者名单</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>安全</h1>
+<ul>
+<li><a href="#configuration">配置</a></li>
+<li><a href="#storing-passwords">保存密码</a></li>
+<li><a href="#authenticating-users">验证用户</a></li>
+<li><a href="#manually">手动登陆用户</a></li>
+<li><a href="#protecting-routes">保护路由</a></li>
+<li><a href="#http-basic-authentication">HTTP基本验证</a></li>
+<li><a href="#password-reminders-and-reset">密码提示和重置</a></li>
+<li><a href="#encryption">加密</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>配置</h2>
+<p>Laravel 旨在让验证实现简单。事实上，大部分都已经配置好了。验证配置文件位于 <code>app/config/auth.php</code>，该文件包含了一些文档说明非常齐全的配置选项，通过它们可以调整用户验证的具体形式。</p>
+<p>一般情况下，Laravel在<code>app/models</code>目录下包含有一个<code>User</code> 模型，通常被作为默认的Eloquent验证驱动所使用。请注意在构建该数据库结构模型时确保密码字段至少能容纳60个字符。</p>
+<p>如果你的应用中不使用 Eloquent，你可以使用 Laravel 查询构造器来使用 <code>数据库</code> 验证驱动。</p>
+<p><a name="storing-passwords"></a></p>
+<h2>保存密码</h2>
+<p>Laravel <code>Hash</code> 类提供了可靠的<a href="http://en.wikipedia.org/wiki/Bcrypt" target="_blank">Bcrypt</a>散列算法：</p>
+<p><strong>使用Bcrypt散列密码</strong></p>
+<pre><code>$password = Hash::make('secret');
+</code></pre>
+<p><strong>验证散列密码</strong></p>
+<pre><code>if (Hash::check('secret', $hashedPassword))
+{
+    // 密码匹配...
+}
+</code></pre>
+<p><strong>检查密码是否需要重新散列</strong></p>
+<pre><code>if (Hash::needsRehash($hashed))
+{
+    $hashed = Hash::make('secret');
+}
+</code></pre>
+<p><a name="authenticating-users"></a></p>
+<h2>用户验证</h2>
+<p>要在应用程序中登陆用户，使用 <code>Auth::attempt</code> 方法。</p>
+<pre><code>if (Auth::attempt(array('email' =&gt; $email, 'password' =&gt; $password)))
+{
+    return Redirect::intended('dashboard');
+}
+</code></pre>
+<p>注意 <code>email</code> 不是必需选项，这里仅作为示例。你应该使用任意数据库字段名来作为&quot;用户名&quot;。  <code>Redirect::intended</code> 方法会将用户请求重定向至被用户验证过滤器拦截之前用户试图访问URL中去。可以给该方法提供个回退URI，用于在访问目的无效时，重定向到该URI。</p>
+<p>在调用 <code>attempt</code> 方法时，<code>auth.attempt</code> <a href="../events">事件</a> 将会触发。如果验证成功以及用户登陆了，<code>auth.login</code> 事件也会被触发。</p>
+<p>要在应用程序中判断用户是否已经登陆，可以使用 <code>check</code> 方法：</p>
+<p><strong>判断用户是否已经验证</strong></p>
+<pre><code>if (Auth::check())
+{
+    // 用户已经登陆...
+}
+</code></pre>
+<p>如果你想在应用中提供“记住我”功能，你可以传递true作为第二个参数传递给attempt方法，应用程序将会无期限地保持用户验证状态（除非手动退出）：</p>
+<p><strong>验证用户并且“记住”她们</strong></p>
+<pre><code>if (Auth::attempt(array('email' =&gt; $email, 'password' =&gt; $password), true))
+{
+    // 用户状态永久保存...
+}
+</code></pre>
+<p><strong>注意：</strong> 如果 <code>attempt</code> 方法返回 <code>true</code>， 用户就已经成功登陆应用程序了。</p>
+<p><strong>确定用户是否是通过“Remember”得到的授权</strong></p>
+<p>如果你在应用中“记住”了用户的登录状态，你可以使用 <code>viaRemember</code> 方法来确定用户是否正在使用“remember me”这个 cookie 来获得授权：</p>
+<pre><code>if (Auth::viaRemember())
+{
+    //
+}
+</code></pre>
+<p>你也可以在用户验证查询中加入其它条件：</p>
+<p><strong>指定其它条件验证用户</strong></p>
+<pre><code>if (Auth::attempt(array('email' =&gt; $email, 'password' =&gt; $password, 'active' =&gt; 1)))
+{
+    // 用户激动状态，没有暂停，并且存在。
+}
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 为了增强安全性，防止会话固定，用户的 SESSION ID 会在每次验证后重新生成。</p>
+</blockquote>
+<p>一旦用户验证通过了，就可以查看 User 模型/记录：</p>
+<p><strong>查看登陆用户</strong></p>
+<pre><code>$email = Auth::user()-&gt;email;
+</code></pre>
+<p>要简单使用用户ID来登陆应用程序，可以使用 <code>loginUsingId</code> 方法：</p>
+<pre><code>Auth::loginUsingId(1);
+</code></pre>
+<p><code>validate</code> 方法可以在不登录应用程序的情况下来验证用户的信息：</p>
+<p><strong>验证用户但不登陆</strong></p>
+<pre><code>if (Auth::validate($credentials))
+{
+    //
+}
+</code></pre>
+<p>也可以使用 <code>once</code> 方法将一个用户登录到系统中做一个单次请求。这样的方式不会使用Session或Cookie来进行状态保持。</p>
+<p><strong>登陆用户做单次请求</strong></p>
+<pre><code>if (Auth::once($credentials))
+{
+    //
+}
+</code></pre>
+<p><strong>应用程序中注销用户登陆状态</strong></p>
+<pre><code>Auth::logout();
+</code></pre>
+<p><a name="manually"></a></p>
+<h2>手动登陆用户</h2>
+<p>如果想登陆一个存在的用户实例，只需要简单使用<code>login</code>方法并传入该实例即可：</p>
+<pre><code>$user = User::find(1);
+
+Auth::login($user);
+</code></pre>
+<p>这与使用 <code>attempt</code> 方法验证用户登陆是一样的。</p>
+<p><a name="protecting-routes"></a></p>
+<h2>保护路由</h2>
+<p>路由过滤器可以保证只有通过了验证的用户才能访问指定路由。Laravel 默认提供了 <code>auth</code> 过滤器，它定义在 <code>app/filters.php</code>文件。</p>
+<p><strong>保护路由</strong></p>
+<pre><code>Route::get('profile', array('before' =&gt; 'auth', function()
+{
+    // 只有验证用户可以访问……
+}));
+</code></pre>
+<h3>跨站请求伪造（CSRF）保护</h3>
+<p>Laravel 提供便捷的方法来避免应用程序受到跨站伪造请求的攻击。</p>
+<p><strong>表单中插入 CSRF Token</strong></p>
+<pre><code>&lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;&lt;?php echo csrf_token(); ?&gt;&quot;&gt;
+</code></pre>
+<p><strong>提供表单时验证 CSRF Token</strong></p>
+<pre><code>Route::post('register', array('before' =&gt; 'csrf', function()
+{
+    return 'You gave a valid CSRF token!';
+}));
+</code></pre>
+<p><a name="http-basic-authentication"></a></p>
+<h2>HTTP 基本验证</h2>
+<p>HTTP基本验证可以在不设定专门的登录页面的情况下便捷的对应用程序中的用户进行验证。要使用该功能，在路由中附加 <code>auth.filter</code> 过滤器：</p>
+<p><strong>HTTP 基本验证来保护路由</strong></p>
+<pre><code>Route::get('profile', array('before' =&gt; 'auth.basic', function()
+{
+    // 只有验证用户可以访问……
+}));
+</code></pre>
+<p>默认情况下，<code>basic</code> 过滤器验证时会使用用户记录里的 <code>email</code> 字段。如果你想使用其他字段，你可以通过传递该字段名字给 <code>basic</code> 方法作为第一个参数：</p>
+<pre><code>return Auth::basic('username');
+</code></pre>
+<p>你也可以使用 HTTP 基本验证时不将用户cookie标识写入 session，对 API 验证极其有用。要实现该功能，请定义一个返回 <code>onceBasic</code> 方法的过滤器：</p>
+<p><strong>设置无状态的 HTTP 基本过滤器</strong></p>
+<pre><code>Route::filter('basic.once', function()
+{
+    return Auth::onceBasic();
+});
+</code></pre>
+<p>如果你正在使用PHP FastCGI，那么HTTP 基本验证在默认情况下是不会正常工作的。应该将下面的代码加入到<code>.htaccess</code>文件中：</p>
+<pre><code>RewriteCond %{HTTP:Authorization} ^(.+)$
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</code></pre>
+<p><a name="password-reminders-and-reset"></a></p>
+<h2>密码提示和重置</h2>
+<h3>Model &amp; Table</h3>
+<p>大多web应用程序提供了让用户重置密码功能。与其让你在每个应用程序中重复去实现该功能，Laravel 提供非常方便的方法来发送密码提示以及执行密码重置。在开始前，请确认你的 <code>User</code> 模型实现了 <code>Illuminate\Auth\Reminders\RemindableInterface</code> 接口。 当然，框架中的默认的 <code>User</code> 模型已经实现了该接口。</p>
+<p><strong>实现 RemindableInterface 接口</strong></p>
+<pre><code>class User extends Eloquent implements RemindableInterface {
+
+    public function getReminderEmail()
+    {
+        return $this-&gt;email;
+    }
+
+}
+</code></pre>
+<p>接下来，要创建一个表来存储密码重置 token。要为该表生成迁移，简单执行 Artisan 命令 <code>auth::reminders</code>：</p>
+<p><strong>为提示表建立迁移</strong></p>
+<pre><code>php artisan auth:reminders
+
+php artisan migrate
+</code></pre>
+<h3>Password Reminder Controller</h3>
+<p>Now we're ready to generate the password reminder controller. To automatically generate a controller, you may use the <code>auth:reminders-controller</code> Artisan command, which will create a <code>RemindersController.php</code> file in your <code>app/controllers</code> directory.</p>
+<pre><code>php artisan auth:reminders-controller
+</code></pre>
+<p>The generated controller will already have a <code>getRemind</code> method that handles showing your password reminder form. All you need to do is create a <code>password.remind</code> <a href="../responses#views">view</a>. This view should have a basic form with an <code>email</code> field. The form should POST to the <code>RemindersController@postRemind</code> action.</p>
+<p>A simple form on the <code>password.remind</code> view might look like this:</p>
+<pre><code>&lt;form action=&quot;{{ action('RemindersController@postReset') }}&quot; method=&quot;POST&quot;&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Send Reminder&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<p>In addition to <code>getRemind</code>, the generated controller will already have a <code>postRemind</code> method that handles sending the password reminder e-mails to your users. This method expects the <code>email</code> field to be present in the <code>POST</code> variables. If the reminder e-mail is successfully sent to the user, a <code>status</code> message will be flashed to the session. If the reminder fails, an <code>error</code> message will be flashed instead.</p>
+<p>Your user will receive an e-mail with a link that points to the <code>getReset</code> method of the controller. The password reminder token, which is used to identify a given password reminder attempt, will also be passed to the controller method. The action is already configured to return a <code>password.reset</code> view which you should build. The <code>token</code> will be passed to the view, and you should place this token in a hidden form field named <code>token</code>. In addition to the <code>token</code>, your password reset form should contain <code>email</code>, <code>password</code>, and <code>password_confirmation</code> fields. The form should POST to the <code>RemindersController@postReset</code> method.</p>
+<p>A simple form on the <code>password.reset</code> view might look like this:</p>
+<pre><code>&lt;form action=&quot;{{ action('RemindersController@postReset') }}&quot; method=&quot;POST&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;token&quot; value=&quot;{{ $token }}&quot;&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;
+    &lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;
+    &lt;input type=&quot;password&quot; name=&quot;password_confirmation&quot;&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Reset Password&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Finally, the <code>postReset</code> method is responsible for actually changing the password in storage. In this controller action, the Closure passed to the <code>Password::reset</code> method sets the <code>password</code> attribute on the <code>User</code> and calls the <code>save</code> method. Of course, this Closure is assuming your <code>User</code> model is an <a href="../eloquent">Eloquent model</a>; however, you are free to change this Closure as needed to be compatible with your application's database storage system.</p>
+<p>If the password is successfully reset, the user will be redirected to the root of your application. Again, you are free to change this redirect URL. If the password reset fails, the user will be redirect back to the reset form, and an <code>error</code> message will be flashed to the session.</p>
+<h3>密码的验证规则</h3>
+<p>默认情况下 <code>Password::reset</code> 方法将会验证这个密码的长度 &gt;= 6。你可以使用 <code>Password::validator</code> 方法，在它接收的匿名函数中自定义验证规则。在这个匿名函数中你可以做任何你想要的密码验证。请注意，你不需要验证密码是否匹配，因为这将由框架自动完成。</p>
+<pre><code>Password::validator(function($credentials)
+{
+    return strlen($credentials['password']) &gt;= 8;
+});
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 默认情况下，密码重置令牌的过期时间为1小时。你可以在 <code>app/config/auth.php</code> 文件的 <code>reminder.expire</code> 配置项中进行修改。</p>
+</blockquote>
+<p><a name="encryption"></a></p>
+<h2>加密</h2>
+<p>Laravel通过 mcrypt PHP 的扩展提供了强大的AES-256 加密组件：</p>
+<p><strong>加密</strong></p>
+<pre><code>$encrypted = Crypt::encrypt('secret');
+</code></pre>
+<blockquote>
+<p><strong>注意:</strong> 确认在 <code>app/config/app.php</code> 文件设置了一个32随机字符给 <code>key</code> 项。否则，加密的值是不安全的。</p>
+</blockquote>
+<p><strong>解密</strong></p>
+<pre><code>$decrypted = Crypt::decrypt($encryptedValue);
+</code></pre>
+<p>你也可以设置在encrypter中使用的 cipher 和 mode：</p>
+<p><strong>设置 Cipher 和 Mode</strong></p>
+<pre><code>Crypt::setMode('crt');
+
+Crypt::setCipher($cipher);
+</code></pre>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

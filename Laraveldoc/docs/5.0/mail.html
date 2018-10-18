@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>邮件</h1>
+<ul>
+<li><a href="#configuration">配置</a></li>
+<li><a href="#basic-usage">基本用法</a></li>
+<li><a href="#embedding-inline-attachments">内嵌附件</a></li>
+<li><a href="#queueing-mail">邮件队列</a></li>
+<li><a href="#mail-and-local-development">邮件与本地端开发</a></li>
+</ul>
+<p><a name="configuration"></a></p>
+<h2>配置</h2>
+<p>Laravel 基于热门的 <a href="http://swiftmailer.org" target="_blank">SwiftMailer</a> 函数库之上，提供了一个简洁的 API。邮件配置文件为 <code>config/mail.php</code>，包含若干选项，让您可以更改 SMTP  主机、连接端口、凭证，也可以让您对函数库发送出去的所有消息配置全局的 <code>from</code> 地址。您可使用任何您想要的 SMTP 服务器。如果想使用 PHP <code>mail</code> 函数来发送邮件，您可以将配置文件中的 <code>driver</code> 更改为 <code>mail</code>。您也可以使用 <code>sendmail</code>  驱动器。</p>
+<h3>API 驱动</h3>
+<p>Laravel 也包含了 Mailgun 及 Mandrill HTTP API 的驱动。这些 API 通常比 SMTP  服务器更简单快速。这两套驱动都需要在应用程序中安装 Guzzle 4 HTTP 函数库。您可在 <code>composer.josn</code> 中加入下列代码， 以便在应用中加入 Guzzle 4：</p>
+<pre><code>&quot;guzzlehttp/guzzle&quot;: &quot;~4.0&quot;
+</code></pre>
+<h4>Mailgun 驱动</h4>
+<p>要使用 Mailgun 驱动，请将 <code>config/mail.php</code> 配置文件中的 <code>driver</code> 选项配置为 <code>mailgun</code>。接下来，若 <code>config/service.php</code> 配置文件还不存在于您的应用中，请建立此文件，并确认其包含下列选项：</p>
+<pre><code>'mailgun' =&gt; array(
+    'domain' =&gt; 'your-mailgun-domain',
+    'secret' =&gt; 'your-mailgun-key',
+),
+</code></pre>
+<h4>Mandrill 驱动</h4>
+<p>要使用 Mandrill 驱动，将 <code>config/mail.php</code> 配置文件中的 <code>driver</code> 选项配置为 <code>mandrill</code>。接下来，若 <code>config/service.php</code> 配置文件还不存在于您的应用中，请建立此文件，并确认其包含下列选项：</p>
+<pre><code>'mandrill' =&gt; array(
+    'secret' =&gt; 'your-mandrill-key',
+),
+</code></pre>
+<h3>日志驱动</h3>
+<p>若您的 <code>config/mail.php</code> 配置文件中的 <code>driver</code> 选项配置为 <code>log</code> ，所有的电子邮件都会被写入日志文件，而不会真正寄给任何收件者。这主要用于快速的本地端除错及内容验证。</p>
+<p><a name="basic-usage"></a></p>
+<h2>基本用法</h2>
+<p>您可使用 <code>Mail::send</code> 方法来发送电子邮件消息：</p>
+<pre><code>Mail::send('emails.welcome', array('key' =&gt; 'value'), function($message)
+{
+    $message-&gt;to('foo@example.com', 'John Smith')-&gt;subject('Welcome!');
+});
+</code></pre>
+<p>传入 <code>send</code> 方法的第一个参数为邮件视图的名称。第二个是传递给该视图的数据，通常是一个关联式数组，让视图可通过 <code>$key</code> 来取得数据对象。第三个参数是一个闭包，可以对 message 进行各种配置。</p>
+<blockquote>
+<p><strong>注意：</strong> <code>$message</code> 变量总是会被传入邮件视图中，并且允许内嵌附件。因此最好避免在您的视图本体中传入 <code>message</code> 变量。</p>
+</blockquote>
+<p>除了 HTML 视图外，您也可以指定使用纯文本视图：</p>
+<pre><code>Mail::send(array('html.view', 'text.view'), $data, $callback);
+</code></pre>
+<p>或者，您可使用 <code>html</code> 或 <code>text</code> 作为键值来指定单一类型的视图：</p>
+<pre><code>Mail::send(array('text' =&gt; 'view'), $data, $callback);
+</code></pre>
+<p>您也可以在邮件消息中指定其他选项，例如副本收件者或附件：</p>
+<pre><code>Mail::send('emails.welcome', $data, function($message)
+{
+    $message-&gt;from('us@example.com', 'Laravel');
+
+    $message-&gt;to('foo@example.com')-&gt;cc('bar@example.com');
+
+    $message-&gt;attach($pathToFile);
+});
+</code></pre>
+<p>要附加文件至 message 时，可以指定 MIME 的类型、显示名称：</p>
+<pre><code>$message-&gt;attach($pathToFile, array('as' =&gt; $display, 'mime' =&gt; $mime));
+</code></pre>
+<p>若您只需发送一个简单的字串而非完整的视图，可使用 <code>raw</code> 方法：</p>
+<pre><code>Mail::raw('Text to e-mail', function($message)
+{
+    $message-&gt;from('us@example.com', 'Laravel');
+
+    $message-&gt;to('foo@example.com')-&gt;cc('bar@example.com');
+});
+</code></pre>
+<blockquote>
+<p><strong>注意：</strong> 传递至 <code>Mail::send</code> 闭包的 message 实例是继承了 SwiftMailer 的 message  类，你可以调用该类的任何方法来建立电子邮件消息。</p>
+</blockquote>
+<p><a name="embedding-inline-attachments"></a></p>
+<h2>内嵌附件</h2>
+<p>在电子邮件中嵌入内部图像通常很麻烦；然而 Laravel 提供一个便利的方法让您对电子邮件附加图像，并取得相应的 CID。</p>
+<h4>在邮件视图中嵌入图像</h4>
+<pre><code>&lt;body&gt;
+    这是一张图像：
+
+    &lt;img src=&quot;&lt;?php echo $message-&gt;embed($pathToFile); ?&gt;&quot;&gt;
+&lt;/body&gt;
+</code></pre>
+<h4>在邮件视图中嵌入原始数据</h4>
+<pre><code>&lt;body&gt;
+    这是一张从原始数据来的图像：
+
+    &lt;img src=&quot;&lt;?php echo $message-&gt;embedData($data, $name); ?&gt;&quot;&gt;
+&lt;/body&gt;
+</code></pre>
+<p>请注意 <code>Mail</code> 类总是会将 <code>$message</code> 变量传递给电子邮件视图。</p>
+<p><a name="queueing-mail"></a></p>
+<h2>邮件队列</h2>
+<h4>将邮件消息加入队列</h4>
+<p>发送电子邮件消息会大幅延长应用程序的响应时间，因此许多开发者选择将邮件消息加入队列并于后台发送。 Laravel  使用内置 <a href="queues.html">统一的 queue API</a> ，让您轻松地完成此工作。要将邮件消息加入队列，只要使用 <code>Mail</code> 类的 <code>queue</code> 方法：</p>
+<pre><code>Mail::queue('emails.welcome', $data, function($message)
+{
+    $message-&gt;to('foo@example.com', 'John Smith')-&gt;subject('Welcome!');
+});
+</code></pre>
+<p>您也可以使用 <code>later</code> 方法来指定您希望延迟发送邮件消息的秒数：</p>
+<pre><code>Mail::later(5, 'emails.welcome', $data, function($message)
+{
+    $message-&gt;to('foo@example.com', 'John Smith')-&gt;subject('Welcome!');
+});
+</code></pre>
+<p>若您想要指定特定的队列或「管道」来加入消息，您可使用 <code>queueOn</code> 以及 <code>laterOn</code> 方法：</p>
+<pre><code>Mail::queueOn('queue-name', 'emails.welcome', $data, function($message)
+{
+    $message-&gt;to('foo@example.com', 'John Smith')-&gt;subject('Welcome!');
+});
+</code></pre>
+<p><a name="mail-and-local-development"></a></p>
+<h2>邮件与本地端开发</h2>
+<p>当开发发送电子邮件的应用程序时，我们通常希望不要真的从本地端或开发环境发送邮件。您可以使用 <code>Mail::pretend</code> 方法或将 <code>config/mail.php</code> 配置文件中的 <code>pretend</code> 选项配置为 <code>true</code>。在 <code>pretend</code>  模式下，消息会改而写入应用程序的日志文件，而不会真的发送给收件者。</p>
+<p>若您想要实际阅览测试的邮件，可考虑使用如 <a href="https://mailtrap.io" target="_blank">MailTrap</a> 的服务。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>

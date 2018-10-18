@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>Laravel - 为 WEB 艺术家创造的 PHP 框架。 | Laravel 中文网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="Laravel 中文网">
+	<meta name="description" content="Laravel - 为 WEB 艺术家创造的 PHP 框架。| Laravel 中文网">
+	<meta name="keywords" content="Laravel中文社区,php框架,laravel中文网,php framework,restful routing,laravel,laravel php">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lte IE 9]>
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../assets/css/laravel.css">
+</head>
+<body class="docs language-php">
+
+	<span class="overlay"></span>
+
+	<nav class="main">
+		<div class="container">
+			<a href="../../index.html" class="brand">
+				<img src="../../assets/img/laravel-logo.png" height="30">
+				Laravel
+			</a>
+
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
+
+				<div class="switcher">
+					<div class="dropdown">
+						<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<!--<span class="faint">v</span> -->
+							5.0
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="index.html">5.0</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.2/index.html">4.2</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.1/index.html">4.1</a>
+								</li>
+								<li role="presentation">
+									<a role="menuitem" tabindex="-1" href="../4.0/index.html">4.0</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+
+			<ul class="main-nav">
+				<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+				<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+				<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+				<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+				<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+		<nav id="slide-menu" class="slide-menu" role="navigation">
+		
+		<div class="brand">
+			<a href="../../index.html">
+				<img src="../../assets/img/laravel-logo-white.png" height="50">
+			</a>
+		</div>
+
+		<ul class="slide-main-nav">
+			<li><a href="../../index.html">首页</a></li>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+
+		<div class="slide-docs-nav">
+			<h2>文档目录</h2>
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="docs-wrapper container">
+
+		<section class="sidebar">
+			<ul>
+<li>前言
+<ul>
+<li><a href="releases.html">发行说明</a></li>
+<li><a href="upgrade.html">升级向导</a></li>
+<li><a href="contributions.html">贡献向导</a></li>
+</ul>
+</li>
+<li>环境配置
+<ul>
+<li><a href="installation.html">安装</a></li>
+<li><a href="configuration.html">配置</a></li>
+<li><a href="homestead.html">Homestead</a></li>
+</ul>
+</li>
+<li>基本功能
+<ul>
+<li><a href="routing.html">路由</a></li>
+<li><a href="middleware.html">中间件</a></li>
+<li><a href="controllers.html">控制器</a></li>
+<li><a href="requests.html">请求</a></li>
+<li><a href="responses.html">响应</a></li>
+<li><a href="views.html">视图</a></li>
+</ul>
+</li>
+<li>系统架构
+<ul>
+<li><a href="providers.html">服务提供者</a></li>
+<li><a href="container.html">服务容器</a></li>
+<li><a href="contracts.html">Contracts</a></li>
+<li><a href="facades.html">Facades</a></li>
+<li><a href="lifecycle.html">请求的生命周期</a></li>
+<li><a href="structure.html">应用程序结构</a></li>
+</ul>
+</li>
+<li>系统服务
+<ul>
+<li><a href="authentication.html">认证</a></li>
+<li><a href="billing.html">交易</a></li>
+<li><a href="cache.html">缓存</a></li>
+<li><a href="collections.html">集合</a></li>
+<li><a href="bus.html">Command Bus</a></li>
+<li><a href="extending.html">核心扩展</a></li>
+<li><a href="elixir.html">Elixir</a></li>
+<li><a href="encryption.html">加密</a></li>
+<li><a href="envoy.html">Envoy 任务执行器</a></li>
+<li><a href="errors.html">错误与日志</a></li>
+<li><a href="events.html">事件</a></li>
+<li><a href="filesystem.html">文件系统与云存储</a></li>
+<li><a href="hashing.html">哈希</a></li>
+<li><a href="helpers.html">辅助方法</a></li>
+<li><a href="localization.html">本地化</a></li>
+<li><a href="mail.html">邮件</a></li>
+<li><a href="packages.html">扩展包开发</a></li>
+<li><a href="pagination.html">分页</a></li>
+<li><a href="queues.html">队列</a></li>
+<li><a href="session.html">会话</a></li>
+<li><a href="templates.html">模板</a></li>
+<li><a href="testing.html">单元测试</a></li>
+<li><a href="validation.html">表单验证</a></li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li><a href="database.html">基本用法</a></li>
+<li><a href="queries.html">查询构造器</a></li>
+<li><a href="eloquent.html">Eloquent ORM</a></li>
+<li><a href="schema.html">结构生成器</a></li>
+<li><a href="migrations.html">迁移与数据填充</a></li>
+<li><a href="redis.html">Redis</a></li>
+</ul>
+</li>
+<li>Artisan 命令行工具
+<ul>
+<li><a href="artisan.html">概览</a></li>
+<li><a href="commands.html">开发</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<article>
+			<h1>Artisan 开发</h1>
+<ul>
+<li><a href="#introduction">简介</a></li>
+<li><a href="#building-a-command">建立自定义命令</a></li>
+<li><a href="#registering-commands">注册自定义命令</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2>简介</h2>
+<p>除了 Artisan 本身提供的命令之外，您也可以为您的应用程序建立属于你自己的命令。你可以将自定义命令存放在 <code>app/Console/commands</code> 目录底下；然而，您也可以任意选择存放位置，只要您的命令能够被 <code>composer.json</code> 自动加载。</p>
+<p><a name="building-a-command"></a></p>
+<h2>建立自定义命令</h2>
+<h3>自动创建类（Class）</h3>
+<p>要创建一个新的自定义命令，您可以使用 <code>make:console</code> 这个 Artisan 命令，这将会自动产生一个 Command stub 协助您开始创建您的自定义命令：</p>
+<h4>自动创建一个新的命令类</h4>
+<pre><code>php artisan make:console FooCommand
+</code></pre>
+<p>上面的命令将会协助你自动创建一个类，并保存为文件 <code>app/Console/FooCommand.php</code>。</p>
+<p>在创建自定义命令时，加上 <code>--command</code> 这个选项，将可以指定之后在终端机使用此自定义命令时，所要输入的自定义命令名称：</p>
+<pre><code>php artisan make:console AssignUsers --command=users:assign
+</code></pre>
+<h3>撰写自定义命令</h3>
+<p>一旦你的自定义命令被创建后，你需要填写自定义命令的 <code>名称（name）</code> 与 <code>描述（description）</code>，您所填写的内容将会被显示在 Artisan 的 <code>list</code> 画面中。</p>
+<p>当您的自定义命令被执行时，将会调用 <code>fire</code> 方法，您可以在此为自定义命令加入任何的逻辑判断。</p>
+<h3>参数与选项</h3>
+<p>你可以通过 <code>getArguments</code> 与 <code>getOptions</code> 为自定义命令自行定义任何需要的参数与选项。这两个方法都会返回一组命令数组，并由选项数组的清单所组成。</p>
+<p>当定义 <code>arguments</code> 时，该数组值的定义分别如下：</p>
+<pre><code>array($name, $mode, $description, $defaultValue)
+</code></pre>
+<p>参数 <code>mode</code> 可以是下列其中一项： <code>InputArgument::REQUIRED</code> 或 <code>InputArgument::OPTIONAL</code>。</p>
+<p>当定义 <code>options</code> 时，该数组值的定义分别如下：</p>
+<pre><code>array($name, $shortcut, $mode, $description, $defaultValue)
+</code></pre>
+<p>对选项而言，参数 <code>mode</code> 可以是下列其中一项：<code>InputOption::VALUE_REQUIRED</code>, <code>InputOption::VALUE_OPTIONAL</code>, <code>InputOption::VALUE_IS_ARRAY</code>, <code>InputOption::VALUE_NONE</code>。</p>
+<p>模式为 <code>VALUE_IS_ARRAY</code> 表示调用命令时可以多次使用此选项来传入多个值：</p>
+<pre><code>php artisan foo --option=bar --option=baz
+</code></pre>
+<p>模式为 <code>VALUE_NONE</code> 则表示将此选项纯粹作为一种有或无的「开关」使用：</p>
+<pre><code>php artisan foo --option
+</code></pre>
+<h3>取得输入值（参数与选项）</h3>
+<p>当您的自定义命令执行时，您需要让您的应用程序可以访问到这些参数和选项的值，要做到这一点，您可以使用 <code>argument</code> 和 <code>option</code> 方法：</p>
+<h4>取得自定义命令被输入的参数</h4>
+<pre><code>$value = $this-&gt;argument('name');
+</code></pre>
+<h4>取得自定义命令被输入的所有参数</h4>
+<pre><code>$arguments = $this-&gt;argument();
+</code></pre>
+<h4>取得自定义命令被输入的选项</h4>
+<pre><code>$value = $this-&gt;option('name');
+</code></pre>
+<h4>取得自定义命令被输入的所有选项</h4>
+<pre><code>$options = $this-&gt;option();
+</code></pre>
+<h3>产生输出</h3>
+<p>想要显示信息到终端屏幕上，您可以使用 <code>info</code>、<code>comment</code>、<code>question</code> 和 <code>error</code> 方法。每一种方法将会依据它所代表的目的，分别对应一种适当的 ANSI 颜色。</p>
+<h4>显示一般消息到终端屏幕</h4>
+<pre><code>$this-&gt;info('Display this on the screen');
+</code></pre>
+<h4>显示错误消息到终端屏幕</h4>
+<pre><code>$this-&gt;error('Something went wrong!');
+</code></pre>
+<h3>询问式输入</h3>
+<p>您也可以使用 <code>ask</code> 和 <code>confirm</code> 方法来提示用户进行输入：</p>
+<h4>提示用户进行输入</h4>
+<pre><code>$name = $this-&gt;ask('What is your name?');
+</code></pre>
+<h4>提示用户进行加密输入</h4>
+<pre><code>$password = $this-&gt;secret('What is the password?');
+</code></pre>
+<h4>提示用户进行确认</h4>
+<pre><code>if ($this-&gt;confirm('Do you wish to continue? [yes|no]'))
+{
+    //
+}
+</code></pre>
+<p>您也可以指定一个默认值给 <code>confirm</code> 方法，可以是 <code>true</code> 或 <code>false</code>：</p>
+<pre><code>$this-&gt;confirm($question, true);
+</code></pre>
+<h3>调用其它命令</h3>
+<p>有时候您可能希望在您的命令内部调用其它命令，此时您可以使用 <code>call</code> 方法：</p>
+<pre><code>$this-&gt;call('command:name', ['argument' =&gt; 'foo', '--option' =&gt; 'bar']);
+</code></pre>
+<p><a name="registering-commands"></a></p>
+<h2>注册自定义命令</h2>
+<h4>注册一个 Artisan 命令</h4>
+<p>一旦你的自定义命令撰写完成后，你需要将它注册于 Artisan 它才能被使用。这通常位于 <code>app/Console/Kernel.php</code> 这个文件中。在此文件的 <code>commands</code> 属性，你会找到一份命令的清单。若要注册你的自定义命令，很简单的你只要将它加入清单中。当 Artisan 启动时，被列于此属性中的所有命令都将被 <a href="container.html">service container</a> 解析，并且被注册于 Artisan 。</p>
+
+		</article>
+	</div>
+
+
+	<footer class="main">
+		<ul>
+			<li class="nav-docs"><a href="../index.html">中文文档</a></li>
+			<li class="nav-community"><a href="http://wenda.golaravel.com" target="_blank">问答社区</a></li>
+			<li class="nav-api"><a href="http://laravel.com/api/5.0/" target="_blank">API</a></li>
+			<li class="nav-laracasts"><a href="https://laracasts.com" target="_blank">视频教程（国外）</a></li>
+			<li class="nav-forge"><a href="https://forge.laravel.com" target="_blank">Forge</a></li>
+			
+		</ul>
+		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p class="less-significant"><a href="http://jackmcdade.com" target="_blank">Design by Jack McDade</a></p>
+	</footer>
+
+	<script src="../../assets/js/laravel.js"></script>
+	<script src="../../assets/js/viewport-units-buggyfill.js"></script>
+	<script>window.viewportUnitsBuggyfill.init();</script>
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8d13872a523d9c286aa7affbe0921f1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</body>
+</html>
