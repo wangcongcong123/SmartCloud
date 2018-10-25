@@ -1,0 +1,26 @@
+//open server in the root dir, namely, the smartcloud dir
+
+php artisan ser
+
+
+//create a new migration file
+
+php artisan make:migration create_table
+
+//run the migrate 
+
+php artisan migrate
+
+php artisan migrate:rollback
+
+php artisan migrate:reset
+
+
+//make model
+
+php artisan make:model Models
+
+
+//
+php artisan make:controller HomeController
+
